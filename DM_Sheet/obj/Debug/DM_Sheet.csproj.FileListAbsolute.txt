@@ -6,3 +6,11 @@ C:\Users\code\Documents\Visual Studio 2008\Projects\DM_Sheet\DM_Sheet\obj\Debug\
 C:\Users\code\Documents\Visual Studio 2008\Projects\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe
 C:\Users\code\Documents\Visual Studio 2008\Projects\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.pdb
 C:\Users\code\Documents\Visual Studio 2008\Projects\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.Main.resources
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.pdb
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\bin\Debug\DM_Sheet.exe
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\bin\Debug\DM_Sheet.pdb
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.Main.resources
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache

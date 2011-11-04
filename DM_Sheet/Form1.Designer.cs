@@ -36,9 +36,8 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.FScharName2 = new System.Windows.Forms.TextBox();
             this.char1Name = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.FScharName2 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Char1Age = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -54,6 +53,7 @@
             this.Char1Language = new System.Windows.Forms.TextBox();
             this.Char1Armor = new System.Windows.Forms.TextBox();
             this.Char1Weapon = new System.Windows.Forms.TextBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -62,11 +62,13 @@
             // menuStrip1
             // 
             this.menuStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.menuStrip1.AllowMerge = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1135, 24);
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.menuStrip1.Size = new System.Drawing.Size(1136, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -124,13 +126,9 @@
             this.tabPage1.Controls.Add(this.Char1Weapon);
             this.tabPage1.Controls.Add(this.Char1Armor);
             this.tabPage1.Controls.Add(this.Char1Language);
-            this.tabPage1.Controls.Add(this.Char1Align);
             this.tabPage1.Controls.Add(this.Char1Deity);
             this.tabPage1.Controls.Add(this.Char1Weight);
-            this.tabPage1.Controls.Add(this.Char1Gender);
             this.tabPage1.Controls.Add(this.Char1Class);
-            this.tabPage1.Controls.Add(this.Char1Level);
-            this.tabPage1.Controls.Add(this.Char1Size);
             this.tabPage1.Controls.Add(this.Char1Race);
             this.tabPage1.Controls.Add(this.Char1Height);
             this.tabPage1.Controls.Add(this.textBox3);
@@ -138,6 +136,10 @@
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.FScharName2);
             this.tabPage1.Controls.Add(this.char1Name);
+            this.tabPage1.Controls.Add(this.Char1Align);
+            this.tabPage1.Controls.Add(this.Char1Gender);
+            this.tabPage1.Controls.Add(this.Char1Level);
+            this.tabPage1.Controls.Add(this.Char1Size);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -146,29 +148,21 @@
             this.tabPage1.Text = "New sheet";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // char1Name
+            // 
+            this.char1Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.char1Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.char1Name.Location = new System.Drawing.Point(12, 30);
+            this.char1Name.Name = "char1Name";
+            this.char1Name.Size = new System.Drawing.Size(204, 13);
+            this.char1Name.TabIndex = 0;
+            // 
             // FScharName2
             // 
             this.FScharName2.Location = new System.Drawing.Point(238, 23);
             this.FScharName2.Name = "FScharName2";
             this.FScharName2.Size = new System.Drawing.Size(207, 20);
             this.FScharName2.TabIndex = 1;
-            // 
-            // char1Name
-            // 
-            this.char1Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.char1Name.Location = new System.Drawing.Point(12, 25);
-            this.char1Name.Name = "char1Name";
-            this.char1Name.Size = new System.Drawing.Size(204, 20);
-            this.char1Name.TabIndex = 0;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1134, 778);
-            this.tabControl1.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -180,9 +174,10 @@
             // Char1Age
             // 
             this.Char1Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Age.Location = new System.Drawing.Point(73, 114);
+            this.Char1Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Age.Location = new System.Drawing.Point(73, 120);
             this.Char1Age.Name = "Char1Age";
-            this.Char1Age.Size = new System.Drawing.Size(42, 20);
+            this.Char1Age.Size = new System.Drawing.Size(42, 13);
             this.Char1Age.TabIndex = 4;
             // 
             // textBox3
@@ -195,17 +190,19 @@
             // Char1Height
             // 
             this.Char1Height.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Height.Location = new System.Drawing.Point(125, 114);
+            this.Char1Height.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Height.Location = new System.Drawing.Point(125, 120);
             this.Char1Height.Name = "Char1Height";
-            this.Char1Height.Size = new System.Drawing.Size(42, 20);
+            this.Char1Height.Size = new System.Drawing.Size(42, 13);
             this.Char1Height.TabIndex = 6;
             // 
             // Char1Race
             // 
             this.Char1Race.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Race.Location = new System.Drawing.Point(12, 56);
+            this.Char1Race.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Race.Location = new System.Drawing.Point(12, 61);
             this.Char1Race.Name = "Char1Race";
-            this.Char1Race.Size = new System.Drawing.Size(155, 20);
+            this.Char1Race.Size = new System.Drawing.Size(155, 13);
             this.Char1Race.TabIndex = 7;
             // 
             // Char1Size
@@ -253,9 +250,10 @@
             // Char1Class
             // 
             this.Char1Class.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Class.Location = new System.Drawing.Point(12, 86);
+            this.Char1Class.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Class.Location = new System.Drawing.Point(12, 90);
             this.Char1Class.Name = "Char1Class";
-            this.Char1Class.Size = new System.Drawing.Size(155, 20);
+            this.Char1Class.Size = new System.Drawing.Size(155, 13);
             this.Char1Class.TabIndex = 10;
             // 
             // Char1Gender
@@ -274,17 +272,19 @@
             // Char1Weight
             // 
             this.Char1Weight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Weight.Location = new System.Drawing.Point(174, 116);
+            this.Char1Weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Weight.Location = new System.Drawing.Point(174, 121);
             this.Char1Weight.Name = "Char1Weight";
-            this.Char1Weight.Size = new System.Drawing.Size(42, 20);
+            this.Char1Weight.Size = new System.Drawing.Size(42, 13);
             this.Char1Weight.TabIndex = 12;
             // 
             // Char1Deity
             // 
             this.Char1Deity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Deity.Location = new System.Drawing.Point(12, 145);
+            this.Char1Deity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Deity.Location = new System.Drawing.Point(12, 149);
             this.Char1Deity.Name = "Char1Deity";
-            this.Char1Deity.Size = new System.Drawing.Size(145, 20);
+            this.Char1Deity.Size = new System.Drawing.Size(145, 13);
             this.Char1Deity.TabIndex = 13;
             // 
             // Char1Align
@@ -308,7 +308,8 @@
             // Char1Language
             // 
             this.Char1Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Language.Location = new System.Drawing.Point(12, 190);
+            this.Char1Language.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Language.Location = new System.Drawing.Point(12, 192);
             this.Char1Language.Multiline = true;
             this.Char1Language.Name = "Char1Language";
             this.Char1Language.Size = new System.Drawing.Size(205, 20);
@@ -317,18 +318,29 @@
             // Char1Armor
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Armor.Location = new System.Drawing.Point(13, 238);
+            this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Armor.Location = new System.Drawing.Point(13, 244);
             this.Char1Armor.Name = "Char1Armor";
-            this.Char1Armor.Size = new System.Drawing.Size(204, 20);
+            this.Char1Armor.Size = new System.Drawing.Size(204, 13);
             this.Char1Armor.TabIndex = 16;
             // 
             // Char1Weapon
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Weapon.Location = new System.Drawing.Point(13, 271);
+            this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Weapon.Location = new System.Drawing.Point(13, 275);
             this.Char1Weapon.Name = "Char1Weapon";
-            this.Char1Weapon.Size = new System.Drawing.Size(204, 20);
+            this.Char1Weapon.Size = new System.Drawing.Size(204, 13);
             this.Char1Weapon.TabIndex = 17;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(1, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1134, 778);
+            this.tabControl1.TabIndex = 1;
             // 
             // Main
             // 
@@ -365,24 +377,24 @@
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TextBox FScharName2;
-        private System.Windows.Forms.TextBox char1Name;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TextBox Char1Age;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox Char1Height;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox Char1Race;
-        private System.Windows.Forms.ComboBox Char1Size;
-        private System.Windows.Forms.ComboBox Char1Level;
-        private System.Windows.Forms.TextBox Char1Class;
-        private System.Windows.Forms.ComboBox Char1Gender;
-        private System.Windows.Forms.TextBox Char1Weight;
-        private System.Windows.Forms.TextBox Char1Deity;
-        private System.Windows.Forms.ComboBox Char1Align;
-        private System.Windows.Forms.TextBox Char1Language;
         private System.Windows.Forms.TextBox Char1Weapon;
         private System.Windows.Forms.TextBox Char1Armor;
+        private System.Windows.Forms.TextBox Char1Language;
+        private System.Windows.Forms.TextBox Char1Deity;
+        private System.Windows.Forms.TextBox Char1Weight;
+        private System.Windows.Forms.TextBox Char1Class;
+        private System.Windows.Forms.TextBox Char1Race;
+        private System.Windows.Forms.TextBox Char1Height;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Char1Age;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox FScharName2;
+        private System.Windows.Forms.TextBox char1Name;
+        private System.Windows.Forms.ComboBox Char1Align;
+        private System.Windows.Forms.ComboBox Char1Gender;
+        private System.Windows.Forms.ComboBox Char1Level;
+        private System.Windows.Forms.ComboBox Char1Size;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }
 
