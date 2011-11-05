@@ -106,11 +106,12 @@ namespace DM_Sheet
 
     class Save
     {
-        public Save(String PathFile, Character PC1)
+        public Save(String PathFile, List<Character> Group)
         {
             using (StreamWriter outfile = new StreamWriter(PathFile))
             {
-                outfile.Write(PC1.ToString());
+                foreach(Character PC in Group)
+                    outfile.Write(PC.ToString());
             }//end of using
         }//end of Save method
 
