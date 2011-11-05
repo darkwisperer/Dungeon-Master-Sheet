@@ -121,6 +121,14 @@ namespace DM_Sheet
             Char1OH.Text = PC.GetOH().ToString();
             Char1OG.Text = PC.GetOG().ToString();
             Char1PD.Text = PC.GetPD().ToString();
+            Char1Fort.Text = PC.GetFort().ToString();
+            Char1REF.Text = PC.GetRef().ToString();
+            Char1WILL.Text = PC.GetWill().ToString();
+            Char1SavingThrowMods.Text = PC.GetSaving_Throw_Mod();
+            Char1AC.Text = PC.GetAC().ToString();
+            Char1FlatFoot.Text = PC.GetFlatFoot().ToString();
+            Char1Touch.Text = PC.GetTouch().ToString();
+            Char1AC_MOD.Text = PC.GetAC_Mod();
         }//end of populateFields1
 
         private void char1Name_TextChanged(object sender, EventArgs e)
@@ -255,6 +263,46 @@ namespace DM_Sheet
         private void Char1PD_TextChanged(object sender, EventArgs e)
         {
             Group[0].SetPD(Convert.ToInt32(Char1PD.Text));
+        }
+
+        private void Char1Fort_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetFort(Convert.ToInt32(Char1Fort.Text));        
+        }
+
+        private void Char1REF_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetRef(Convert.ToInt32(Char1REF.Text));
+        }
+
+        private void Char1WILL_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetWill(Convert.ToInt32(Char1WILL.Text));
+        }
+
+        private void Char1SavingThrowMods_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetSaving_Throw_Mod(Char1SavingThrowMods.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char1AC_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetAC(Convert.ToInt32(Char1AC.Text));
+        }
+
+        private void Char1FlatFoot_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetFlatFoot(Convert.ToInt32(Char1FlatFoot.Text));
+        }
+
+        private void Char1Touch_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetTouch(Convert.ToInt32(Char1Touch.Text));
+        }
+
+        private void Char1AC_MOD_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetAC_Mod(Char1AC_MOD.Text.Replace(Environment.NewLine, ","));
         }//end of populateFields
 
     }//end of class
