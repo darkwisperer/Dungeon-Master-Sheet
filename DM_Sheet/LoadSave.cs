@@ -1,34 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.IO; 
+using System.IO;
+using System.Collections;
+ 
 namespace DM_Sheet
 {
     class Load
     {
-        public Load(String PathFile, Character[] PCS)
+        public Load(String PathFile, List<Character> Group)
         {
             //read in file
             StreamReader reader = new StreamReader(PathFile);
             String tmp;
-            
+            ArrayList  input  = new ArrayList();
             try
-            {
-                //do
-                //{
+            {                
+                do
+                {
                     //load items from file
                     tmp = reader.ReadLine();
-                   
-               // }
-               // while (reader.Peek() != -1);
+                    input.Add(tmp);
+               }
+               while (reader.Peek() != -1);
 
-                string[] words = tmp.Split('/');//right now set up for only one character
+                //assuming that there are only one line of strings per character. (max 4)
 
-                foreach (Character pc in PCS)
-                    ;
+                for (int i = 0; i< input.Count && i < Group.Count ;i++)
+                {
+                    Group[i] = setCharacter(input[i].ToString().Split('/'), (Character)Group[i]);
+                    i++;
+                }
                 //add it to the character
 
-            }
+            }//end of try
 
             catch
             {
@@ -38,10 +43,11 @@ namespace DM_Sheet
             finally
             {
                 reader.Close();
+
             }
         }//end of Load
 
-        private void setCharacter(String[] input, Character PC)
+        private Character setCharacter(String[] input, Character PC)
         {
             //assuming that input has 41 strings
             try
@@ -61,7 +67,7 @@ namespace DM_Sheet
                 PC.SetAC_Mod(input[12]);
                 PC.SetSize(Convert.ToChar(input[13]));
                 PC.SetGender(Convert.ToChar(input[14]));
-                PC.Setlvl(Convert.ToInt16( input[15]));
+                PC.Setlvl(Convert.ToInt16(input[15]));
                 PC.SetAge(Convert.ToInt16(input[16]));
                 PC.SetSTR(Convert.ToInt16(input[17]));
                 PC.SetSTR_Mod(Convert.ToInt16(input[18]));
@@ -87,11 +93,13 @@ namespace DM_Sheet
                 PC.SetTouch(Convert.ToInt16(input[38]));
                 PC.SetHP(Convert.ToInt16(input[39]));
                 PC.SetHPMAX(Convert.ToInt16(input[40]));
+                
             }//end of try
-            catch 
-            { 
+            catch
+            {
                 //throw error 
-            }
+            }        
+            return PC;
         }//end of set values
 
     }//end of Load class
