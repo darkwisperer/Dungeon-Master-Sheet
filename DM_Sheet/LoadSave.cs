@@ -29,9 +29,9 @@ namespace DM_Sheet
                 for (int i = 0; i< input.Count && i < Group.Count ;i++)
                 {
                     Group[i] = setCharacter(input[i].ToString().Split('/'), (Character)Group[i]);
-                    i++;
+                    
                 }
-                //add it to the character
+                
 
             }//end of try
 
@@ -111,7 +111,7 @@ namespace DM_Sheet
             using (StreamWriter outfile = new StreamWriter(PathFile))
             {
                 foreach(Character PC in Group)
-                    outfile.Write(PC.ToString());
+                    outfile.Write(PC.ToString() + Environment.NewLine);
             }//end of using
         }//end of Save method
 

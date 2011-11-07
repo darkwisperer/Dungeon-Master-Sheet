@@ -36,6 +36,20 @@
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Char2MaxHP = new System.Windows.Forms.TextBox();
+            this.Char2HP = new System.Windows.Forms.TextBox();
+            this.Char2AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char2Touch = new System.Windows.Forms.TextBox();
+            this.Char2FlatFoot = new System.Windows.Forms.TextBox();
+            this.Char2AC = new System.Windows.Forms.TextBox();
+            this.Char2SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char2WILL = new System.Windows.Forms.TextBox();
+            this.Char2REF = new System.Windows.Forms.TextBox();
+            this.Char2Fort = new System.Windows.Forms.TextBox();
+            this.Char2PD = new System.Windows.Forms.TextBox();
+            this.Char2OG = new System.Windows.Forms.TextBox();
+            this.Char2OH = new System.Windows.Forms.TextBox();
+            this.Char2SPEED = new System.Windows.Forms.TextBox();
             this.Char2CHA_MOD = new System.Windows.Forms.TextBox();
             this.Char2WIS_MOD = new System.Windows.Forms.TextBox();
             this.Char2INT_MOD = new System.Windows.Forms.TextBox();
@@ -105,20 +119,6 @@
             this.char1Name = new System.Windows.Forms.TextBox();
             this.Char1Gender = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Char2PD = new System.Windows.Forms.TextBox();
-            this.Char2OG = new System.Windows.Forms.TextBox();
-            this.Char2OH = new System.Windows.Forms.TextBox();
-            this.Char2SPEED = new System.Windows.Forms.TextBox();
-            this.Char2WILL = new System.Windows.Forms.TextBox();
-            this.Char2REF = new System.Windows.Forms.TextBox();
-            this.Char2Fort = new System.Windows.Forms.TextBox();
-            this.Char2SavingThrowMods = new System.Windows.Forms.TextBox();
-            this.Char2Touch = new System.Windows.Forms.TextBox();
-            this.Char2FlatFoot = new System.Windows.Forms.TextBox();
-            this.Char2AC = new System.Windows.Forms.TextBox();
-            this.Char2AC_MOD = new System.Windows.Forms.TextBox();
-            this.Char2MaxHP = new System.Windows.Forms.TextBox();
-            this.Char2HP = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -279,6 +279,148 @@
             this.tabPage1.Text = "New sheet";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // Char2MaxHP
+            // 
+            this.Char2MaxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2MaxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2MaxHP.Location = new System.Drawing.Point(365, 712);
+            this.Char2MaxHP.Name = "Char2MaxHP";
+            this.Char2MaxHP.Size = new System.Drawing.Size(38, 20);
+            this.Char2MaxHP.TabIndex = 88;
+            this.Char2MaxHP.TextChanged += new System.EventHandler(this.Char2MaxHP_TextChanged);
+            // 
+            // Char2HP
+            // 
+            this.Char2HP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2HP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2HP.Location = new System.Drawing.Point(307, 712);
+            this.Char2HP.Name = "Char2HP";
+            this.Char2HP.Size = new System.Drawing.Size(38, 20);
+            this.Char2HP.TabIndex = 87;
+            this.Char2HP.TextChanged += new System.EventHandler(this.Char2HP_TextChanged);
+            // 
+            // Char2AC_MOD
+            // 
+            this.Char2AC_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2AC_MOD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2AC_MOD.Location = new System.Drawing.Point(237, 650);
+            this.Char2AC_MOD.Multiline = true;
+            this.Char2AC_MOD.Name = "Char2AC_MOD";
+            this.Char2AC_MOD.Size = new System.Drawing.Size(204, 32);
+            this.Char2AC_MOD.TabIndex = 86;
+            this.Char2AC_MOD.TextChanged += new System.EventHandler(this.Char2AC_MOD_TextChanged);
+            // 
+            // Char2Touch
+            // 
+            this.Char2Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2Touch.Location = new System.Drawing.Point(413, 626);
+            this.Char2Touch.Name = "Char2Touch";
+            this.Char2Touch.Size = new System.Drawing.Size(29, 20);
+            this.Char2Touch.TabIndex = 85;
+            this.Char2Touch.TextChanged += new System.EventHandler(this.Char2Touch_TextChanged);
+            // 
+            // Char2FlatFoot
+            // 
+            this.Char2FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2FlatFoot.Location = new System.Drawing.Point(374, 626);
+            this.Char2FlatFoot.Name = "Char2FlatFoot";
+            this.Char2FlatFoot.Size = new System.Drawing.Size(29, 20);
+            this.Char2FlatFoot.TabIndex = 84;
+            this.Char2FlatFoot.TextChanged += new System.EventHandler(this.Char2FlatFoot_TextChanged);
+            // 
+            // Char2AC
+            // 
+            this.Char2AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2AC.Location = new System.Drawing.Point(326, 626);
+            this.Char2AC.Name = "Char2AC";
+            this.Char2AC.Size = new System.Drawing.Size(38, 20);
+            this.Char2AC.TabIndex = 83;
+            this.Char2AC.TextChanged += new System.EventHandler(this.Char2AC_TextChanged);
+            // 
+            // Char2SavingThrowMods
+            // 
+            this.Char2SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2SavingThrowMods.Location = new System.Drawing.Point(238, 562);
+            this.Char2SavingThrowMods.Multiline = true;
+            this.Char2SavingThrowMods.Name = "Char2SavingThrowMods";
+            this.Char2SavingThrowMods.Size = new System.Drawing.Size(204, 32);
+            this.Char2SavingThrowMods.TabIndex = 82;
+            this.Char2SavingThrowMods.TextChanged += new System.EventHandler(this.Char2SavingThrowMods_TextChanged);
+            // 
+            // Char2WILL
+            // 
+            this.Char2WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2WILL.Location = new System.Drawing.Point(412, 537);
+            this.Char2WILL.Name = "Char2WILL";
+            this.Char2WILL.Size = new System.Drawing.Size(30, 20);
+            this.Char2WILL.TabIndex = 81;
+            this.Char2WILL.TextChanged += new System.EventHandler(this.Char2WILL_TextChanged);
+            // 
+            // Char2REF
+            // 
+            this.Char2REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2REF.Location = new System.Drawing.Point(340, 537);
+            this.Char2REF.Name = "Char2REF";
+            this.Char2REF.Size = new System.Drawing.Size(30, 20);
+            this.Char2REF.TabIndex = 80;
+            this.Char2REF.TextChanged += new System.EventHandler(this.Char2REF_TextChanged);
+            // 
+            // Char2Fort
+            // 
+            this.Char2Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2Fort.Location = new System.Drawing.Point(269, 537);
+            this.Char2Fort.Name = "Char2Fort";
+            this.Char2Fort.Size = new System.Drawing.Size(30, 20);
+            this.Char2Fort.TabIndex = 79;
+            this.Char2Fort.TextChanged += new System.EventHandler(this.Char2Fort_TextChanged);
+            // 
+            // Char2PD
+            // 
+            this.Char2PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2PD.Location = new System.Drawing.Point(401, 486);
+            this.Char2PD.Name = "Char2PD";
+            this.Char2PD.Size = new System.Drawing.Size(41, 20);
+            this.Char2PD.TabIndex = 78;
+            this.Char2PD.TextChanged += new System.EventHandler(this.Char2PD_TextChanged);
+            // 
+            // Char2OG
+            // 
+            this.Char2OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2OG.Location = new System.Drawing.Point(350, 486);
+            this.Char2OG.Name = "Char2OG";
+            this.Char2OG.Size = new System.Drawing.Size(41, 20);
+            this.Char2OG.TabIndex = 77;
+            this.Char2OG.TextChanged += new System.EventHandler(this.Char2OG_TextChanged);
+            // 
+            // Char2OH
+            // 
+            this.Char2OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2OH.Location = new System.Drawing.Point(299, 486);
+            this.Char2OH.Name = "Char2OH";
+            this.Char2OH.Size = new System.Drawing.Size(41, 20);
+            this.Char2OH.TabIndex = 76;
+            this.Char2OH.TextChanged += new System.EventHandler(this.Char2OH_TextChanged);
+            // 
+            // Char2SPEED
+            // 
+            this.Char2SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char2SPEED.Location = new System.Drawing.Point(238, 486);
+            this.Char2SPEED.Name = "Char2SPEED";
+            this.Char2SPEED.Size = new System.Drawing.Size(41, 20);
+            this.Char2SPEED.TabIndex = 75;
+            this.Char2SPEED.TextChanged += new System.EventHandler(this.Char2SPEED_TextChanged);
+            // 
             // Char2CHA_MOD
             // 
             this.Char2CHA_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -321,6 +463,7 @@
             this.Char2WIS.Name = "Char2WIS";
             this.Char2WIS.Size = new System.Drawing.Size(38, 20);
             this.Char2WIS.TabIndex = 71;
+            this.Char2WIS.TextChanged += new System.EventHandler(this.Char2WIS_TextChanged);
             // 
             // Char2CHA
             // 
@@ -331,6 +474,7 @@
             this.Char2CHA.Name = "Char2CHA";
             this.Char2CHA.Size = new System.Drawing.Size(38, 20);
             this.Char2CHA.TabIndex = 70;
+            this.Char2CHA.TextChanged += new System.EventHandler(this.Char2CHA_TextChanged);
             // 
             // Char2INT
             // 
@@ -341,6 +485,7 @@
             this.Char2INT.Name = "Char2INT";
             this.Char2INT.Size = new System.Drawing.Size(38, 20);
             this.Char2INT.TabIndex = 69;
+            this.Char2INT.TextChanged += new System.EventHandler(this.Char2INT_TextChanged);
             // 
             // Char2CON_MOD
             // 
@@ -384,6 +529,7 @@
             this.Char2CON.Name = "Char2CON";
             this.Char2CON.Size = new System.Drawing.Size(38, 20);
             this.Char2CON.TabIndex = 65;
+            this.Char2CON.TextChanged += new System.EventHandler(this.Char2CON_TextChanged);
             // 
             // Char2Dex
             // 
@@ -394,6 +540,7 @@
             this.Char2Dex.Name = "Char2Dex";
             this.Char2Dex.Size = new System.Drawing.Size(38, 20);
             this.Char2Dex.TabIndex = 64;
+            this.Char2Dex.TextChanged += new System.EventHandler(this.Char2Dex_TextChanged);
             // 
             // Char2STR
             // 
@@ -404,7 +551,7 @@
             this.Char2STR.Name = "Char2STR";
             this.Char2STR.Size = new System.Drawing.Size(38, 20);
             this.Char2STR.TabIndex = 63;
-           
+            this.Char2STR.TextChanged += new System.EventHandler(this.Char2STR_TextChanged);
             // 
             // Char2Items
             // 
@@ -415,6 +562,7 @@
             this.Char2Items.Name = "Char2Items";
             this.Char2Items.Size = new System.Drawing.Size(204, 32);
             this.Char2Items.TabIndex = 62;
+            this.Char2Items.TextChanged += new System.EventHandler(this.Char2Items_TextChanged);
             // 
             // Char2Weapon
             // 
@@ -424,6 +572,7 @@
             this.Char2Weapon.Name = "Char2Weapon";
             this.Char2Weapon.Size = new System.Drawing.Size(204, 13);
             this.Char2Weapon.TabIndex = 61;
+            this.Char2Weapon.TextChanged += new System.EventHandler(this.Char2Weapon_TextChanged);
             // 
             // Char2Armor
             // 
@@ -433,6 +582,7 @@
             this.Char2Armor.Name = "Char2Armor";
             this.Char2Armor.Size = new System.Drawing.Size(204, 13);
             this.Char2Armor.TabIndex = 60;
+            this.Char2Armor.TextChanged += new System.EventHandler(this.Char2Armor_TextChanged);
             // 
             // Char2Language
             // 
@@ -443,6 +593,7 @@
             this.Char2Language.Name = "Char2Language";
             this.Char2Language.Size = new System.Drawing.Size(205, 20);
             this.Char2Language.TabIndex = 59;
+            this.Char2Language.TextChanged += new System.EventHandler(this.Char2Language_TextChanged);
             // 
             // Char2Align
             // 
@@ -456,6 +607,7 @@
             this.Char2Align.Name = "Char2Align";
             this.Char2Align.Size = new System.Drawing.Size(55, 21);
             this.Char2Align.TabIndex = 58;
+            this.Char2Align.SelectedIndexChanged += new System.EventHandler(this.Char2Align_SelectedIndexChanged);
             // 
             // Char2Deity
             // 
@@ -465,6 +617,7 @@
             this.Char2Deity.Name = "Char2Deity";
             this.Char2Deity.Size = new System.Drawing.Size(145, 13);
             this.Char2Deity.TabIndex = 57;
+            this.Char2Deity.TextChanged += new System.EventHandler(this.Char2Deity_TextChanged);
             // 
             // Char2Weight
             // 
@@ -474,6 +627,7 @@
             this.Char2Weight.Name = "Char2Weight";
             this.Char2Weight.Size = new System.Drawing.Size(42, 13);
             this.Char2Weight.TabIndex = 56;
+            this.Char2Weight.TextChanged += new System.EventHandler(this.Char2Weight_TextChanged);
             // 
             // Char2Height
             // 
@@ -483,6 +637,7 @@
             this.Char2Height.Name = "Char2Height";
             this.Char2Height.Size = new System.Drawing.Size(42, 13);
             this.Char2Height.TabIndex = 55;
+            this.Char2Height.TextChanged += new System.EventHandler(this.Char2Height_TextChanged);
             // 
             // Char2Age
             // 
@@ -492,6 +647,7 @@
             this.Char2Age.Name = "Char2Age";
             this.Char2Age.Size = new System.Drawing.Size(42, 13);
             this.Char2Age.TabIndex = 54;
+            this.Char2Age.TextChanged += new System.EventHandler(this.Char2Age_TextChanged);
             // 
             // Char2Gender
             // 
@@ -505,6 +661,7 @@
             this.Char2Gender.Name = "Char2Gender";
             this.Char2Gender.Size = new System.Drawing.Size(55, 21);
             this.Char2Gender.TabIndex = 53;
+            this.Char2Gender.SelectedIndexChanged += new System.EventHandler(this.Char2Gender_SelectedIndexChanged);
             // 
             // Char2Level
             // 
@@ -514,6 +671,7 @@
             this.Char2Level.Name = "Char2Level";
             this.Char2Level.Size = new System.Drawing.Size(42, 13);
             this.Char2Level.TabIndex = 52;
+            this.Char2Level.TextChanged += new System.EventHandler(this.Char2Level_TextChanged);
             // 
             // Char2Class
             // 
@@ -523,6 +681,7 @@
             this.Char2Class.Name = "Char2Class";
             this.Char2Class.Size = new System.Drawing.Size(155, 13);
             this.Char2Class.TabIndex = 51;
+            this.Char2Class.TextChanged += new System.EventHandler(this.Char2Class_TextChanged);
             // 
             // Char2Size
             // 
@@ -536,6 +695,7 @@
             this.Char2Size.Name = "Char2Size";
             this.Char2Size.Size = new System.Drawing.Size(41, 21);
             this.Char2Size.TabIndex = 50;
+            this.Char2Size.SelectedIndexChanged += new System.EventHandler(this.Char2Size_SelectedIndexChanged);
             // 
             // Char2Race
             // 
@@ -545,6 +705,7 @@
             this.Char2Race.Name = "Char2Race";
             this.Char2Race.Size = new System.Drawing.Size(155, 13);
             this.Char2Race.TabIndex = 49;
+            this.Char2Race.TextChanged += new System.EventHandler(this.Char2Race_TextChanged);
             // 
             // char2Name
             // 
@@ -554,6 +715,7 @@
             this.char2Name.Name = "char2Name";
             this.char2Name.Size = new System.Drawing.Size(204, 13);
             this.char2Name.TabIndex = 48;
+            this.char2Name.TextChanged += new System.EventHandler(this.char2Name_TextChanged);
             // 
             // Char1MaxHP
             // 
@@ -1001,134 +1163,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1134, 778);
             this.tabControl1.TabIndex = 1;
-            // 
-            // Char2PD
-            // 
-            this.Char2PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2PD.Location = new System.Drawing.Point(401, 486);
-            this.Char2PD.Name = "Char2PD";
-            this.Char2PD.Size = new System.Drawing.Size(41, 20);
-            this.Char2PD.TabIndex = 78;
-            // 
-            // Char2OG
-            // 
-            this.Char2OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2OG.Location = new System.Drawing.Point(350, 486);
-            this.Char2OG.Name = "Char2OG";
-            this.Char2OG.Size = new System.Drawing.Size(41, 20);
-            this.Char2OG.TabIndex = 77;
-            // 
-            // Char2OH
-            // 
-            this.Char2OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2OH.Location = new System.Drawing.Point(299, 486);
-            this.Char2OH.Name = "Char2OH";
-            this.Char2OH.Size = new System.Drawing.Size(41, 20);
-            this.Char2OH.TabIndex = 76;
-            // 
-            // Char2SPEED
-            // 
-            this.Char2SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2SPEED.Location = new System.Drawing.Point(238, 486);
-            this.Char2SPEED.Name = "Char2SPEED";
-            this.Char2SPEED.Size = new System.Drawing.Size(41, 20);
-            this.Char2SPEED.TabIndex = 75;
-            // 
-            // Char2WILL
-            // 
-            this.Char2WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2WILL.Location = new System.Drawing.Point(412, 537);
-            this.Char2WILL.Name = "Char2WILL";
-            this.Char2WILL.Size = new System.Drawing.Size(30, 20);
-            this.Char2WILL.TabIndex = 81;
-            // 
-            // Char2REF
-            // 
-            this.Char2REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2REF.Location = new System.Drawing.Point(340, 537);
-            this.Char2REF.Name = "Char2REF";
-            this.Char2REF.Size = new System.Drawing.Size(30, 20);
-            this.Char2REF.TabIndex = 80;
-            // 
-            // Char2Fort
-            // 
-            this.Char2Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2Fort.Location = new System.Drawing.Point(269, 537);
-            this.Char2Fort.Name = "Char2Fort";
-            this.Char2Fort.Size = new System.Drawing.Size(30, 20);
-            this.Char2Fort.TabIndex = 79;
-            // 
-            // Char2SavingThrowMods
-            // 
-            this.Char2SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2SavingThrowMods.Location = new System.Drawing.Point(238, 562);
-            this.Char2SavingThrowMods.Multiline = true;
-            this.Char2SavingThrowMods.Name = "Char2SavingThrowMods";
-            this.Char2SavingThrowMods.Size = new System.Drawing.Size(204, 32);
-            this.Char2SavingThrowMods.TabIndex = 82;
-            // 
-            // Char2Touch
-            // 
-            this.Char2Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2Touch.Location = new System.Drawing.Point(413, 626);
-            this.Char2Touch.Name = "Char2Touch";
-            this.Char2Touch.Size = new System.Drawing.Size(29, 20);
-            this.Char2Touch.TabIndex = 85;
-            // 
-            // Char2FlatFoot
-            // 
-            this.Char2FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2FlatFoot.Location = new System.Drawing.Point(374, 626);
-            this.Char2FlatFoot.Name = "Char2FlatFoot";
-            this.Char2FlatFoot.Size = new System.Drawing.Size(29, 20);
-            this.Char2FlatFoot.TabIndex = 84;
-            // 
-            // Char2AC
-            // 
-            this.Char2AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2AC.Location = new System.Drawing.Point(326, 626);
-            this.Char2AC.Name = "Char2AC";
-            this.Char2AC.Size = new System.Drawing.Size(38, 20);
-            this.Char2AC.TabIndex = 83;
-            // 
-            // Char2AC_MOD
-            // 
-            this.Char2AC_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2AC_MOD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2AC_MOD.Location = new System.Drawing.Point(237, 650);
-            this.Char2AC_MOD.Multiline = true;
-            this.Char2AC_MOD.Name = "Char2AC_MOD";
-            this.Char2AC_MOD.Size = new System.Drawing.Size(204, 32);
-            this.Char2AC_MOD.TabIndex = 86;
-            // 
-            // Char2MaxHP
-            // 
-            this.Char2MaxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2MaxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2MaxHP.Location = new System.Drawing.Point(365, 712);
-            this.Char2MaxHP.Name = "Char2MaxHP";
-            this.Char2MaxHP.Size = new System.Drawing.Size(38, 20);
-            this.Char2MaxHP.TabIndex = 88;
-            // 
-            // Char2HP
-            // 
-            this.Char2HP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2HP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2HP.Location = new System.Drawing.Point(307, 712);
-            this.Char2HP.Name = "Char2HP";
-            this.Char2HP.Size = new System.Drawing.Size(38, 20);
-            this.Char2HP.TabIndex = 87;
             // 
             // Main
             // 

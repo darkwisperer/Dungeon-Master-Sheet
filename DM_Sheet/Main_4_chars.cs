@@ -43,6 +43,20 @@ namespace DM_Sheet
             {
                 Save sf = new Save(PATH, Group);//call save routine and pass in a File name
             }
+            else
+            {
+                // Displays a SaveFileDialog so the user can save
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Filter = "DM Sheet|*.DM";
+                saveFileDialog1.Title = "Save an DM Sheet";
+                saveFileDialog1.ShowDialog();
+
+                if (saveFileDialog1.FileName != "")
+                {
+                    Save sf = new Save(saveFileDialog1.FileName, Group);//call save routine and pass in a File name
+                    PATH = saveFileDialog1.FileName;
+                }//end if
+            }
                 
         }//end of save
 
@@ -81,6 +95,7 @@ namespace DM_Sheet
                 PATH = openFileDialog1.FileName;
 
                 populateFields1(Group[0]);
+                populateFields2(Group[1]);
             }//end if
         }//end of loadToolStripMenuItem_clicked
 
@@ -384,15 +399,16 @@ namespace DM_Sheet
 //Char 2================================================================================================================================================
 //------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
         private void char2Name_TextChanged(object sender, EventArgs e)
         {
             Group[1].SetName(char2Name.Text);
-        }//end of char1Name_TextChanged
+        }
 
         private void Char2Race_TextChanged(object sender, EventArgs e)
         {
             Group[1].SetRace(Char2Race.Text);
-        }//end of Char1Race_TextChanged
+        }
 
         private void Char2Size_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -459,7 +475,7 @@ namespace DM_Sheet
 
         private void Char2Items_TextChanged(object sender, EventArgs e)
         {
-            Group[1].SetItems(Char1Items.Text.Replace(Environment.NewLine, ","));
+            Group[1].SetItems(Char2Items.Text.Replace(Environment.NewLine, ","));
         }
 
         private void Char2STR_TextChanged(object sender, EventArgs e)

@@ -145,9 +145,9 @@ namespace DM_Sheet
             this.Languages = iLanguages;
             this.Armor = iArmor;
             this.Weapons = iWeapons;
-            this.Items = iItems;
-            this.Saving_Throw_Mod = iSaving_Throw_Mod;
-            this.AC_Mod = iAC_Mod;
+            this.Items = iItems.Replace(Environment.NewLine, ",");
+            this.Saving_Throw_Mod = iSaving_Throw_Mod.Replace(Environment.NewLine, ",");
+            this.AC_Mod = iAC_Mod.Replace(Environment.NewLine, ",");
 
             //set chars
             this.Size = iSize;
