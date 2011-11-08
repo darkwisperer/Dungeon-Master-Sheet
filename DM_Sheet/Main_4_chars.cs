@@ -35,6 +35,8 @@ namespace DM_Sheet
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
          //File->print
+
+
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,7 +50,7 @@ namespace DM_Sheet
                 // Displays a SaveFileDialog so the user can save
                 SaveFileDialog saveFileDialog1 = new SaveFileDialog();
                 saveFileDialog1.Filter = "DM Sheet|*.DM";
-                saveFileDialog1.Title = "Save an DM Sheet";
+                saveFileDialog1.Title = "Save your character groupt";
                 saveFileDialog1.ShowDialog();
 
                 if (saveFileDialog1.FileName != "")
@@ -70,7 +72,7 @@ namespace DM_Sheet
             // Displays a SaveFileDialog so the user can save
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.Filter = "DM Sheet|*.DM";
-            saveFileDialog1.Title = "Save an DM Sheet";
+            saveFileDialog1.Title = "Save your character group";
             saveFileDialog1.ShowDialog();
 
             if (saveFileDialog1.FileName != "")
@@ -96,6 +98,8 @@ namespace DM_Sheet
 
                 populateFields1(Group[0]);
                 populateFields2(Group[1]);
+                populateFields3(Group[2]);
+                populateFields4(Group[3]);
             }//end if
         }//end of loadToolStripMenuItem_clicked
 
@@ -205,7 +209,115 @@ namespace DM_Sheet
             Char2AC_MOD.Text = PC.GetAC_Mod();
             Char2HP.Text = PC.GetHP().ToString();
             Char2MaxHP.Text = PC.GetHPMAX().ToString();
-        }//end of populateFields1
+        }//end of populateFields2
+
+        private void populateFields3(Character PC)
+        {
+            char3Name.Text = PC.GetName();
+            Char3Race.Text = PC.GetRace();
+            switch (PC.GetSize())
+            {
+                case 'S': Char3Size.SelectedIndex = 0; break;
+                case 'M': Char3Size.SelectedIndex = 1; break;
+                case 'L': Char3Size.SelectedIndex = 2; break;
+            }//end of case
+            Char3Class.Text = PC.GetClass();
+            Char3Level.Text = PC.Getlvl().ToString();
+            switch (PC.GetGender())
+            {
+                case 'M': Char3Gender.SelectedIndex = 0; break;
+                case 'F': Char3Gender.SelectedIndex = 1; break;
+                case 'N': Char3Gender.SelectedIndex = 2; break;
+            }//end of case
+            Char3Age.Text = PC.GetAge().ToString();
+            Char3Height.Text = PC.Gethieght();
+            Char3Weight.Text = PC.GetWeight();
+            Char3Deity.Text = PC.GetDeity();
+            switch (PC.GetAlignment())
+            {
+                case "L": Char3Align.SelectedIndex = 0; break;
+                case "N": Char3Align.SelectedIndex = 1; break;
+                case "E": Char3Align.SelectedIndex = 2; break;
+            }//end of case
+            Char3Language.Text = PC.GetLanguages();
+            Char3Armor.Text = PC.GetArmor();
+            Char3Weapon.Text = PC.GetWeapons();
+            Char3Items.Text = PC.GetItems();
+            Char3STR.Text = PC.GetSTR().ToString();
+            Char3Dex.Text = PC.GetDEX().ToString();
+            Char3CON.Text = PC.GetCON().ToString();
+            Char3INT.Text = PC.GetINT().ToString();
+            Char3WIS.Text = PC.GetWIS().ToString();
+            Char3CHA.Text = PC.GetCHA().ToString();
+            Char3SPEED.Text = PC.GetSpeed().ToString();
+            Char3OH.Text = PC.GetOH().ToString();
+            Char3OG.Text = PC.GetOG().ToString();
+            Char3PD.Text = PC.GetPD().ToString();
+            Char3Fort.Text = PC.GetFort().ToString();
+            Char3REF.Text = PC.GetRef().ToString();
+            Char3WILL.Text = PC.GetWill().ToString();
+            Char3SavingThrowMods.Text = PC.GetSaving_Throw_Mod();
+            Char3AC.Text = PC.GetAC().ToString();
+            Char3FlatFoot.Text = PC.GetFlatFoot().ToString();
+            Char3Touch.Text = PC.GetTouch().ToString();
+            Char3AC_MOD.Text = PC.GetAC_Mod();
+            Char3HP.Text = PC.GetHP().ToString();
+            Char3MaxHP.Text = PC.GetHPMAX().ToString();
+        }//end of populateFields3
+
+        private void populateFields4(Character PC)
+        {
+            char4Name.Text = PC.GetName();
+            Char4Race.Text = PC.GetRace();
+            switch (PC.GetSize())
+            {
+                case 'S': Char4Size.SelectedIndex = 0; break;
+                case 'M': Char4Size.SelectedIndex = 1; break;
+                case 'L': Char4Size.SelectedIndex = 2; break;
+            }//end of case
+            Char4Class.Text = PC.GetClass();
+            Char4Level.Text = PC.Getlvl().ToString();
+            switch (PC.GetGender())
+            {
+                case 'M': Char4Gender.SelectedIndex = 0; break;
+                case 'F': Char4Gender.SelectedIndex = 1; break;
+                case 'N': Char4Gender.SelectedIndex = 2; break;
+            }//end of case
+            Char4Age.Text = PC.GetAge().ToString();
+            Char4Height.Text = PC.Gethieght();
+            Char4Weight.Text = PC.GetWeight();
+            Char4Deity.Text = PC.GetDeity();
+            switch (PC.GetAlignment())
+            {
+                case "L": Char4Align.SelectedIndex = 0; break;
+                case "N": Char4Align.SelectedIndex = 1; break;
+                case "E": Char4Align.SelectedIndex = 2; break;
+            }//end of case
+            Char4Language.Text = PC.GetLanguages();
+            Char4Armor.Text = PC.GetArmor();
+            Char4Weapon.Text = PC.GetWeapons();
+            Char4Items.Text = PC.GetItems();
+            Char4STR.Text = PC.GetSTR().ToString();
+            Char4Dex.Text = PC.GetDEX().ToString();
+            Char4CON.Text = PC.GetCON().ToString();
+            Char4INT.Text = PC.GetINT().ToString();
+            Char4WIS.Text = PC.GetWIS().ToString();
+            Char4CHA.Text = PC.GetCHA().ToString();
+            Char4SPEED.Text = PC.GetSpeed().ToString();
+            Char4OH.Text = PC.GetOH().ToString();
+            Char4OG.Text = PC.GetOG().ToString();
+            Char4PD.Text = PC.GetPD().ToString();
+            Char4Fort.Text = PC.GetFort().ToString();
+            Char4REF.Text = PC.GetRef().ToString();
+            Char4WILL.Text = PC.GetWill().ToString();
+            Char4SavingThrowMods.Text = PC.GetSaving_Throw_Mod();
+            Char4AC.Text = PC.GetAC().ToString();
+            Char4FlatFoot.Text = PC.GetFlatFoot().ToString();
+            Char4Touch.Text = PC.GetTouch().ToString();
+            Char4AC_MOD.Text = PC.GetAC_Mod();
+            Char4HP.Text = PC.GetHP().ToString();
+            Char4MaxHP.Text = PC.GetHPMAX().ToString();
+        }//end of populateFields4
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 //Char1=============================================================================================================================================
@@ -423,7 +535,7 @@ namespace DM_Sheet
 
         private void Char2Level_TextChanged(object sender, EventArgs e)
         {
-            Group[1].Setlvl(Convert.ToInt32(Char1Level.Text));
+            Group[1].Setlvl(Convert.ToInt32(Char2Level.Text));
         }
 
         private void Char2Gender_SelectedIndexChanged(object sender, EventArgs e)
@@ -582,6 +694,384 @@ namespace DM_Sheet
         private void Char2MaxHP_TextChanged(object sender, EventArgs e)
         {
             Group[1].SetHPMAX(Convert.ToInt32(Char2MaxHP.Text));
+        }
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//Char 3================================================================================================================================================
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        private void char3Name_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetName(char3Name.Text);
+        }
+
+        private void Char3Race_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetRace(Char3Race.Text);
+        }
+
+        private void Char3Size_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char3Size.SelectedItem != null)
+                Group[2].SetSize(Convert.ToChar(Char3Size.SelectedItem));
+        }
+
+        private void Char3Class_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetClass(Char3Class.Text);
+        }
+
+        private void Char3Level_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].Setlvl(Convert.ToInt32(Char3Level.Text));
+        }
+
+        private void Char3Gender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char3Gender.SelectedItem != null)
+                Group[2].SetGender(Convert.ToChar(Char3Gender.SelectedItem));
+        }
+
+        private void Char3Age_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetAge(Convert.ToInt32(Char3Age.Text));
+        }
+
+        private void Char3Height_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].Sethieght(Char3Height.Text);
+        }
+
+        private void Char3Weight_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetWeight(Char3Weight.Text);
+        }
+
+        private void Char3Deity_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetDeity(Char3Deity.Text);
+        }
+
+        private void Char3Align_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char3Align.SelectedItem != null)
+                Group[2].SetAlignment((String)Char3Align.SelectedItem);
+        }
+
+        private void Char3Language_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetLanguages(Char3Language.Text);
+        }
+
+        private void Char3Armor_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetArmor(Char3Armor.Text);
+        }
+
+        private void Char3Weapon_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetWeapons(Char3Weapon.Text);
+        }
+
+        private void Char3Items_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetItems(Char3Items.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char3STR_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetSTR(Convert.ToInt32(Char3STR.Text));
+            Char3STR_MOD.Text = Group[2].GetSTR_Mod().ToString();
+        }
+
+        private void Char3Dex_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetDEX(Convert.ToInt32(Char3Dex.Text));
+            Char3DEX_MOD.Text = Group[2].GetDEX_Mod().ToString();
+        }
+
+        private void Char3CON_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetCON(Convert.ToInt32(Char3CON.Text));
+            Char3CON_MOD.Text = Group[2].GetCON_Mod().ToString();
+        }
+
+        private void Char3INT_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetINT(Convert.ToInt32(Char3INT.Text));
+            Char3INT_MOD.Text = Group[2].GetINT_Mod().ToString();
+        }
+
+        private void Char3WIS_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetWIS(Convert.ToInt32(Char3WIS.Text));
+            Char3WIS_MOD.Text = Group[2].GetWIS_Mod().ToString();
+        }
+
+        private void Char3CHA_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetCHA(Convert.ToInt32(Char3CHA.Text));
+            Char3CHA_MOD.Text = Group[2].GetCHA_Mod().ToString();
+        }
+
+        private void Char3SPEED_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetSpeed(Convert.ToInt32(Char3SPEED.Text));
+        }
+
+        private void Char3OH_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetOH(Convert.ToInt32(Char3OH.Text));
+        }
+
+        private void Char3OG_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetOG(Convert.ToInt32(Char3OG.Text));
+        }
+
+        private void Char3PD_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetPD(Convert.ToInt32(Char3PD.Text));
+        }
+
+        private void Char3Fort_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetFort(Convert.ToInt32(Char3Fort.Text));
+        }
+
+        private void Char3REF_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetRef(Convert.ToInt32(Char3REF.Text));
+        }
+
+        private void Char3WILL_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetWill(Convert.ToInt32(Char3WILL.Text));
+        }
+
+        private void Char3SavingThrowMods_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetSaving_Throw_Mod(Char3SavingThrowMods.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char3AC_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetAC(Convert.ToInt32(Char3AC.Text));
+        }
+
+        private void Char3FlatFoot_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetFlatFoot(Convert.ToInt32(Char3FlatFoot.Text));
+        }
+
+        private void Char3Touch_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetTouch(Convert.ToInt32(Char3Touch.Text));
+        }
+
+        private void Char3AC_MOD_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetAC_Mod(Char3AC_MOD.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char3HP_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetHP(Convert.ToInt32(Char3HP.Text));
+        }
+
+        private void Char3MaxHP_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetHPMAX(Convert.ToInt32(Char3MaxHP.Text));
+        }
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+//Char 4================================================================================================================================================
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+     
+        
+        private void char4Name_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetName(char4Name.Text);
+        }
+
+        private void Char4Race_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetRace(Char4Race.Text);
+        }
+
+        private void Char4Size_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char4Size.SelectedItem != null)
+                Group[3].SetSize(Convert.ToChar(Char4Size.SelectedItem));
+        }
+
+        private void Char4Class_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetClass(Char4Class.Text);
+        }
+
+        private void Char4Level_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].Setlvl(Convert.ToInt32(Char4Level.Text));
+        }
+
+        private void Char4Gender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char4Gender.SelectedItem != null)
+                Group[3].SetGender(Convert.ToChar(Char4Gender.SelectedItem));
+        }
+
+        private void Char4Age_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetAge(Convert.ToInt32(Char4Age.Text));
+        }
+
+        private void Char4Height_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].Sethieght(Char4Height.Text);
+        }
+
+        private void Char4Weight_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetWeight(Char4Weight.Text);
+        }
+
+        private void Char4Deity_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetDeity(Char4Deity.Text);
+        }
+
+        private void Char4Align_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Char4Align.SelectedItem != null)
+                Group[3].SetAlignment((String)Char4Align.SelectedItem);
+        }
+
+        private void Char4Language_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetLanguages(Char4Language.Text);
+        }
+
+        private void Char4Items_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetItems(Char4Items.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char4Weapon_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetWeapons(Char4Weapon.Text);
+        }
+
+        private void Char4Armor_TextChanged(object sender, EventArgs e)
+        {
+          Group[3].SetArmor(Char4Armor.Text);
+        }
+
+        private void Char4STR_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetSTR(Convert.ToInt32(Char4STR.Text));
+            Char4STR_MOD.Text = Group[3].GetSTR_Mod().ToString();
+        }
+
+        private void Char4Dex_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetDEX(Convert.ToInt32(Char4Dex.Text));
+            Char4DEX_MOD.Text = Group[3].GetDEX_Mod().ToString();
+        }
+
+        private void Char4CON_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetCON(Convert.ToInt32(Char4CON.Text));
+            Char4CON_MOD.Text = Group[3].GetCON_Mod().ToString();
+        }
+
+        private void Char4INT_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetINT(Convert.ToInt32(Char4INT.Text));
+            Char4INT_MOD.Text = Group[3].GetINT_Mod().ToString();
+        }
+
+        private void Char4WIS_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetWIS(Convert.ToInt32(Char4WIS.Text));
+            Char4WIS_MOD.Text = Group[3].GetWIS_Mod().ToString();
+        }
+
+        private void Char4CHA_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetCHA(Convert.ToInt32(Char4CHA.Text));
+            Char4CHA_MOD.Text = Group[3].GetCHA_Mod().ToString();
+        }
+
+        private void Char4SPEED_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetSpeed(Convert.ToInt32(Char4SPEED.Text));
+        }
+
+        private void Char4OH_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetOH(Convert.ToInt32(Char4OH.Text));
+        }
+
+        private void Char4OG_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetOG(Convert.ToInt32(Char4OG.Text));
+        }
+
+        private void Char4PD_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetPD(Convert.ToInt32(Char4PD.Text));
+        }
+
+        private void Char4Fort_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetFort(Convert.ToInt32(Char4Fort.Text));
+        }
+
+        private void Char4REF_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetRef(Convert.ToInt32(Char4REF.Text));
+        }
+
+        private void Char4WILL_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetWill(Convert.ToInt32(Char4WILL.Text));
+        }
+
+        private void Char4SavingThrowMods_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetSaving_Throw_Mod(Char4SavingThrowMods.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char4AC_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetAC(Convert.ToInt32(Char4AC.Text));
+        }
+
+        private void Char4FlatFoot_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetFlatFoot(Convert.ToInt32(Char4FlatFoot.Text));
+        }
+
+        private void Char4Touch_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetTouch(Convert.ToInt32(Char4Touch.Text));
+        }
+
+        private void Char4AC_MOD_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetAC_Mod(Char4AC_MOD.Text.Replace(Environment.NewLine, ","));
+        }
+
+        private void Char4HP_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetHP(Convert.ToInt32(Char4HP.Text));
+        }
+
+        private void Char4MaxHP_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetHPMAX(Convert.ToInt32(Char4MaxHP.Text));
         }
 
     }//end of class
