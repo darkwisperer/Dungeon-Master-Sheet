@@ -11,7 +11,8 @@ namespace DM_Sheet
         private char Size, Gender;
         private int lvl, Age, STR, STR_Mod, DEX, DEX_Mod, CON, CON_Mod, INT, INT_Mod, WIS, WIS_Mod, CHA, CHA_Mod;
         private int Speed, OH, OG, PD;
-        private int Fort, Ref, Will, AC, FlatFoot, Touch, HP, HPMAX;
+        private int Fort, Ref, Will, AC, FlatFoot, Touch, HP, HPMAX, ACCheck;
+        public Skill skill;
 
         public Character()
         {
@@ -63,6 +64,8 @@ namespace DM_Sheet
             this.Touch = 0;
             this.HP = 0;
             this.HPMAX = 0;
+            this.ACCheck = 0;
+            skill = new Skill();
         }//end of Character
 
         public int modifier(int ability)
@@ -124,15 +127,15 @@ namespace DM_Sheet
             String ToString = Name + "/" + Race + "/" + Class + "/" + hieght + "/" + Weight + "/" + Deity + "/" + Alignment + "/" + Languages + "/" + 
                 Armor + "/" + Weapons + "/" + Items + "/" + Saving_Throw_Mod + "/" + AC_Mod + "/" + Size + "/" + Gender + "/" + lvl + "/" + Age + "/" + 
                 STR + "/" + STR_Mod + "/" + DEX + "/" + DEX_Mod + "/" + CON + "/" + CON_Mod + "/" + INT + "/" + INT_Mod + "/" + WIS + "/" + WIS_Mod + "/" + 
-                CHA + "/" + CHA_Mod + "/" + Speed + "/" + OH + "/" + OG + "/" + PD + "/" + Fort + "/" + Ref + "/" + Will + "/" + AC + "/" + FlatFoot + "/" + 
-                Touch + "/" + HP + "/" + HPMAX;
+                CHA + "/" + CHA_Mod + "/" + Speed + "/" + OH + "/" + OG + "/" + PD + "/" + Fort + "/" + Ref + "/" + Will + "/" + AC + "/" + FlatFoot + "/" +
+                Touch + "/" + HP + "/" + HPMAX + "/" + ACCheck;
             return ToString;
         }//end of ToString
 
         public void SetALL(String iName,String iRace,String iClass,String ihieght,String iWeight,String iDeity,String iAlignment,String iLanguages,String iArmor,
             String iWeapons, String iItems, String iSaving_Throw_Mod, String iAC_Mod, char iSize, char iGender,int ilvl,int iAge,int iSTR, int iSTR_Mod,int iDEX,
             int iDEX_Mod, int iCON, int iCON_Mod, int iINT, int iINT_Mod, int iWIS, int iWIS_Mod, int iCHA, int iCHA_Mod, int iSpeed, int iOH, int iOG, int iPD,
-            int iFort, int iRef, int iWill, int iAC, int iFlatFoot, int iTouch, int iHP, int iHPMAX)
+            int iFort, int iRef, int iWill, int iAC, int iFlatFoot, int iTouch, int iHP, int iHPMAX, int iACCheck)
         {
             //set Strings
             this.Name = iName;
@@ -180,6 +183,7 @@ namespace DM_Sheet
             this.Touch = iTouch;
             this.HP = iHP;
             this.HPMAX = iHPMAX;
+            this.ACCheck = iACCheck;
         }//end of SetALL
 
         //setters=================================================================================================================================================
@@ -394,7 +398,11 @@ namespace DM_Sheet
             this.HPMAX = iHPMAX;
         }//end of SetHPMAX
         //41
-
+        public void SetACCheck(int iACCheck)
+        {
+            this.ACCheck = iACCheck;
+        }//end of SetHPMAX
+        //42
         //-----------------------------------------------------------------------------------------------------------------------------
         //getters======================================================================================================================
         //-----------------------------------------------------------------------------------------------------------------------------
@@ -604,5 +612,390 @@ namespace DM_Sheet
             return this.HPMAX;
         }//end of SetHPMAX
         //41
-    }//end of class
+        public int GetACCheck()
+        {
+            return this.ACCheck;
+        }//end of SetHPMAX
+        //42
+    }//end of class Character
+
+    class Skill
+    {
+        private int Appraise, Balance, Bluff, Climb, Concentration, Craft1, Craft2, DeciferScript, Diplomacy, DisableDevice, Disguise, EscapeArtist, Forgery, 
+            GatherInfo, HandleAnimal, Heal, Hide, Intimidate, Jump, KnowledgeArcana, KnowledgeReligion, KnowledgeNature, Knowledge1, Knowledge2, Listen,
+            MoveSilently, OpenLock, Perform, Profession, Ride, Search, SenseMotive, SlightOfHand, Spellcraft, Spot, Survival, Swim, Tumble, UseMagicDevice, UseRope;
+      
+        public Skill()
+        {
+            this.Appraise = 0;
+            this.Balance= 0;
+            this.Bluff= 0;
+            this.Climb = 0;
+            this.Concentration = 0;
+            this.Craft1 = 0;
+            this.Craft2 = 0;
+            this.DeciferScript = 0;
+            this.Diplomacy = 0;
+            this.DisableDevice = 0;
+            this.Disguise = 0;
+            this.EscapeArtist = 0;
+            this.Forgery = 0;
+            this.GatherInfo = 0;
+            this.HandleAnimal = 0;
+            this.Heal = 0;
+            this.Hide = 0;
+            this.Intimidate = 0;
+            this.Jump = 0;
+            this.KnowledgeArcana = 0;
+            this.KnowledgeReligion = 0;
+            this.KnowledgeNature = 0;
+            this.Knowledge1 = 0;
+            this.Knowledge2 = 0;
+            this.Listen = 0;
+            this.MoveSilently = 0;
+            this.OpenLock = 0;
+            this.Perform = 0;
+            this.Profession = 0;
+            this.Ride = 0;
+            this.Search = 0;
+            this.SenseMotive = 0;
+            this.SlightOfHand = 0;
+            this.Spellcraft = 0;
+            this.Spot = 0;
+            this.Survival = 0;
+            this.Swim = 0;
+            this.Tumble = 0;
+            this.UseMagicDevice = 0;
+            this.UseRope = 0;
+        }//end of Skill
+
+//==============================================================================================================================================================
+//Getters----------------------------------------------------------------------------------------------------------------------------------------------
+//==============================================================================================================================================================
+        public int GetAppraise()
+        {
+            return this.Appraise;
+        }//1
+        public int GetBalance()
+        {
+            return this.Balance;
+        }//2
+        public int GetBluff()
+        {
+            return this.Bluff;
+        }//3
+        public int GetClimb()
+        {
+            return this.Climb;
+        }//4
+        public int GetConcentration()
+        {
+            return this.Concentration;
+        }//5
+        public int GetCraft1()
+        {
+            return this.Craft1;
+        } //6
+        public int GetCraft2()
+        {
+            return this.Craft2;
+        }//7
+        public int GetDeciferScript()
+        {
+            return this.DeciferScript;
+        }//8
+        public int GetDiplomacy()
+        {
+            return this.Diplomacy;
+        } //9
+        public int GetDisableDevice()
+        {
+            return this.DisableDevice;
+        }//10
+        public int GetDisguise()
+        {
+            return this.Disguise;
+        }//11
+        public int GetEscapeArtist()
+        {
+            return this.EscapeArtist;
+        }//12
+        public int GetForgery()
+        {
+            return this.Forgery;
+        } //13
+        public int GetGatherInfo()
+        {
+            return this.GatherInfo;
+        } //14
+        public int GetHandleAnimal()
+        {
+            return this.HandleAnimal;
+        }//15
+        public int GetHeal()
+        {
+            return this.Heal;
+        }//16 
+        public int GetHide()
+        {
+            return this.Hide;
+        }//17 
+        public int GetIntimidate()
+        {
+            return this.Intimidate;
+        }//18
+        public int GetJump()
+        {
+            return this.Jump;
+        }//19
+        public int GetKnowledgeArcana()
+        {
+            return this.KnowledgeArcana;
+        }//20
+        public int GetKnowledgeReligion()
+        {
+            return this.KnowledgeReligion;
+        }//21 
+        public int GetKnowledgeNature()
+        {
+            return this.KnowledgeNature;
+        }//22
+        public int GetKnowledge1()
+        {
+            return this.Knowledge1;
+        }//23 
+        public int GetKnowledge2()
+        {
+            return this.Knowledge2;
+        }//24
+        public int GetListen()
+        {
+            return this.Listen;
+        }//25
+        public int GetMoveSilently()
+        {
+            return this.MoveSilently;
+        }//26
+        public int GetOpenLock()
+        {
+            return this.OpenLock;
+        }//27
+        public int GetPerform()
+        {
+            return this.Perform;
+        }//28 
+        public int GetProfession()
+        {
+            return this.Profession;
+        }//29 
+        public int GetRide()
+        {
+            return this.Ride;
+        }//30 
+        public int GetSearch()
+        {
+            return this.Search;
+        }//31 
+        public int GetSenseMotive()
+        {
+            return this.SenseMotive;
+        }//32 
+        public int GetSlightOfHand()
+        {
+            return this.SlightOfHand;
+        }//33 
+        public int GetSpellcraft()
+        {
+            return this.Spellcraft;
+        }//34 
+        public int GetSpot()
+        {
+            return this.Spot;
+        }//35 
+        public int GetSurvival()
+        {
+            return this.Survival;
+        }//36 
+        public int GetSwim()
+        {
+            return this.Swim;
+        }//37 
+        public int GetTumble()
+        {
+            return this.Tumble;
+        }//38 
+        public int GetUseMagicDevice()
+        {
+            return this.UseMagicDevice;
+        }//39 
+        public int GetUseRope()
+        {
+            return this.UseRope;
+        }//40
+
+//==============================================================================================================================================================
+//Setters-------------------------------------------------------------------------------------------------------------------------------------------------------
+//==============================================================================================================================================================
+
+        public void SetAppraise(int iAppraise)
+        {
+            this.Appraise = iAppraise;
+        }
+        public void SetBalance(int iBalance)
+        {
+            this.Balance = iBalance;
+        }
+        public void SetBluff(int iBluff)
+        {
+            this.Bluff = iBluff;
+        }
+        public void SetClimb(int iClimb)
+        {
+            this.Climb = iClimb;
+        }
+        public void SetConcentration(int iConcentration)
+        {
+            this.Concentration = iConcentration;
+        }
+        public void SetCraft1(int iCraft)
+        {
+            this.Craft1 = iCraft;
+        }
+        public void SetCraft2(int iCraft)
+        {
+            this.Craft2 = iCraft;
+        }
+        public void SetDeciferScript(int iDeciferScript)
+        {
+            this.DeciferScript = iDeciferScript;
+        }
+        public void SetDiplomacy(int iDiplomacy)
+        {
+            this.Diplomacy = iDiplomacy;
+        }
+        public void SetDisableDevice(int iDisableDevice)
+        {
+            this.DisableDevice = iDisableDevice;
+        }
+        public void SetDisguise(int iDisguise)
+        {
+            this.Disguise = iDisguise;
+        }
+        public void SetEscapeArtist(int iEscapeArtist)
+        {
+            this.EscapeArtist = iEscapeArtist;
+        }
+        public void SetForgery(int iForgery)
+        {
+            this.Forgery = iForgery;
+        }
+        public void SetGatherInfo(int iGatherInfo)
+        {
+            this.GatherInfo = iGatherInfo;
+        }
+        public void SetHandleAnimal(int iHandleAnimal)
+        {
+            this.HandleAnimal = iHandleAnimal;
+        }
+        public void SetHeal(int iHeal)
+        {
+            this.Heal = iHeal;
+        }
+        public void SetHide(int iHide)
+        {
+            this.Hide = iHide;
+        }
+        public void SetIntimidate(int iIntimidate)
+        {
+            this.Intimidate = iIntimidate;
+        }
+        public void SetJump(int iJump)
+        {
+            this.Jump = iJump;
+        }
+        public void SetKnowledgeArcana(int iKnowledgeArcana)
+        {
+            this.KnowledgeArcana = iKnowledgeArcana;
+        }
+        public void SetKnowledgeReligion(int iKnowledgeReligion)
+        {
+            this.KnowledgeReligion = iKnowledgeReligion;
+        }
+        public void SetKnowledgeNature(int iKnowledgeNature)
+        {
+            this.KnowledgeNature = iKnowledgeNature;
+        }
+        public void SetKnowledge1(int iKnowledge1)
+        {
+            this.Knowledge1 = iKnowledge1;
+        }
+        public void SetKnowledge2(int iKnowledge2)
+        {
+            this.Knowledge2 = iKnowledge2;
+        }
+        public void SetListen(int iListen)
+        {
+            this.Listen = iListen;
+        }
+        public void SetMoveSilently(int iMoveSilently)
+        {
+            this.MoveSilently = iMoveSilently;
+        }
+        public void SetOpenLock(int iOpenLock)
+        {
+            this.OpenLock = iOpenLock;
+        }
+        public void SetPerform(int iPerform)
+        {
+            this.Perform = iPerform;
+        }
+        public void SetProfession(int iProfession)
+        {
+            this.Profession = iProfession;
+        }
+        public void SetRide(int iRide)
+        {
+            this.Ride = iRide;
+        }
+        public void SetSearch(int iSearch)
+        {
+            this.Search = iSearch;
+        }
+        public void SetSenseMotive(int iSenseMotive)
+        {
+            this.SenseMotive = iSenseMotive;
+        }
+        public void SetSlightOfHand(int iSlightOfHand)
+        {
+            this.SlightOfHand = iSlightOfHand;
+        }
+        public void SetSpellcraft(int iSpellcraft)
+        {
+            this.Spellcraft = iSpellcraft;
+        }
+        public void SetSpot(int iSpot)
+        {
+            this.Spot = iSpot;
+        }
+        public void SetSurvival(int iSurvival)
+        {
+            this.Survival = iSurvival;
+        }
+        public void SetSwim(int iSwim)
+        {
+            this.Swim = iSwim;
+        }
+        public void SetTumble(int iTumble)
+        {
+            this.Tumble = iTumble;
+        }
+        public void SetUseMagicDevice(int iUseMagicDevice)
+        {
+            this.UseMagicDevice = iUseMagicDevice;
+        }
+        public void SetUseRope(int iUseRope)
+        {
+            this.UseRope = iUseRope;
+        }
+    }//end of class skill
 }//end of namespace

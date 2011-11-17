@@ -21,7 +21,7 @@ namespace DM_Sheet
                     //load items from file
                     tmp = reader.ReadLine();
                     input.Add(tmp);
-               }
+                }//end of dowhile
                while (reader.Peek() != -1);
 
                 //assuming that there are only one line of strings per character. (max 4)
@@ -30,7 +30,7 @@ namespace DM_Sheet
                 {
                     Group[i] = setCharacter(input[i].ToString().Split('/'), (Character)Group[i]);
                     
-                }
+                }//end of for
                 
 
             }//end of try
@@ -38,13 +38,12 @@ namespace DM_Sheet
             catch
             {
                 //throw error
-            }
+            }//end of catch
 
             finally
             {
-                reader.Close();
-
-            }
+                reader.Close();               
+            }//end of finally
         }//end of Load
 
         private Character setCharacter(String[] input, Character PC)
@@ -93,7 +92,7 @@ namespace DM_Sheet
                 PC.SetTouch(Convert.ToInt32(input[38]));
                 PC.SetHP(Convert.ToInt32(input[39]));
                 PC.SetHPMAX(Convert.ToInt32(input[40]));
-                
+                PC.SetACCheck(Convert.ToInt32(input[41]));
             }//end of try
             catch
             {

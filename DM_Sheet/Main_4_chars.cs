@@ -155,6 +155,14 @@ namespace DM_Sheet
             Char1AC_MOD.Text = PC.GetAC_Mod();
             Char1HP.Text = PC.GetHP().ToString();
             Char1MaxHP.Text = PC.GetHPMAX().ToString();
+            ACCheckPenalty1.Text = PC.GetACCheck().ToString();
+            Char1Appraise.Text = PC.skill.GetAppraise().ToString();
+            Char1Balance.Text = PC.skill.GetBalance().ToString();
+            Char1Bluff.Text = PC.skill.GetBluff().ToString();
+            Char1Climb.Text = PC.skill.GetClimb().ToString();
+            Char1Concentration.Text = PC.skill.GetConcentration().ToString();
+            Char1Craft1.Text = PC.skill.GetCraft1().ToString();
+            Char1Craft2.Text = PC.skill.GetCraft2().ToString();
         }//end of populateFields1
 
         private void populateFields2(Character PC)
@@ -209,6 +217,14 @@ namespace DM_Sheet
             Char2AC_MOD.Text = PC.GetAC_Mod();
             Char2HP.Text = PC.GetHP().ToString();
             Char2MaxHP.Text = PC.GetHPMAX().ToString();
+            ACCheckPenalty2.Text = PC.GetACCheck().ToString();
+            Char2Appraise.Text = PC.skill.GetAppraise().ToString();
+            Char2Balance.Text = PC.skill.GetBalance().ToString();
+            Char2Bluff.Text = PC.skill.GetBluff().ToString();
+            Char2Climb.Text = PC.skill.GetClimb().ToString();
+            Char2Concentration.Text = PC.skill.GetClimb().ToString();
+            Char2Craft1.Text = PC.skill.GetCraft1().ToString();
+            Char2Craft2.Text = PC.skill.GetCraft2().ToString();
         }//end of populateFields2
 
         private void populateFields3(Character PC)
@@ -263,6 +279,14 @@ namespace DM_Sheet
             Char3AC_MOD.Text = PC.GetAC_Mod();
             Char3HP.Text = PC.GetHP().ToString();
             Char3MaxHP.Text = PC.GetHPMAX().ToString();
+            ACCheckPenalty3.Text = PC.GetACCheck().ToString();
+            Char3Appraise.Text = PC.skill.GetAppraise().ToString();
+            Char3Balance.Text = PC.skill.GetBalance().ToString();
+            Char3Bluff.Text = PC.skill.GetBluff().ToString();
+            Char3Climb.Text = PC.skill.GetClimb().ToString();
+            Char3Concentration.Text = PC.skill.GetClimb().ToString();
+            Char3Craft1.Text = PC.skill.GetCraft1().ToString();
+            Char3Craft2.Text = PC.skill.GetCraft2().ToString();
         }//end of populateFields3
 
         private void populateFields4(Character PC)
@@ -317,6 +341,14 @@ namespace DM_Sheet
             Char4AC_MOD.Text = PC.GetAC_Mod();
             Char4HP.Text = PC.GetHP().ToString();
             Char4MaxHP.Text = PC.GetHPMAX().ToString();
+            ACCheckPenalty4.Text = PC.GetACCheck().ToString();
+            Char4Appraise.Text = PC.skill.GetAppraise().ToString();
+            Char4Balance.Text = PC.skill.GetBalance().ToString();
+            Char4Bluff.Text = PC.skill.GetBluff().ToString();
+            Char4Climb.Text = PC.skill.GetClimb().ToString();
+            Char4Concentration.Text = PC.skill.GetClimb().ToString();
+            Char4Craft1.Text = PC.skill.GetCraft1().ToString();
+            Char4Craft2.Text = PC.skill.GetCraft2().ToString();
         }//end of populateFields4
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1072,6 +1104,170 @@ namespace DM_Sheet
         private void Char4MaxHP_TextChanged(object sender, EventArgs e)
         {
             Group[3].SetHPMAX(Convert.ToInt32(Char4MaxHP.Text));
+        }
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+//skills=============================================================================================================================================
+//--------------------------------------------------------------------------------------------------------------------------------------------------
+
+        private void ACCheckPenalty1_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].SetACCheck(Convert.ToInt32(ACCheckPenalty1.Text));
+        }
+
+        private void ACCheckPenalty2_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].SetACCheck(Convert.ToInt32(ACCheckPenalty2.Text));
+        }
+
+        private void ACCheckPenalty3_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].SetACCheck(Convert.ToInt32(ACCheckPenalty3.Text));
+        }
+
+        private void ACCheckPenalty4_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].SetACCheck(Convert.ToInt32(ACCheckPenalty4.Text));
+        }
+
+        private void Char1Appraise_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetAppraise(Convert.ToInt32(Char1Appraise.Text));
+        }
+
+        private void Char2Appraise_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetAppraise(Convert.ToInt32(Char2Appraise.Text));
+        }
+
+        private void Char3Appraise_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetAppraise(Convert.ToInt32(Char3Appraise.Text));
+        }
+
+        private void Char4Appraise_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetAppraise(Convert.ToInt32(Char4Appraise.Text));
+        }
+
+        private void Char1Balance_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetBalance(Convert.ToInt32(Char1Balance.Text));
+        }
+
+        private void Char2Balance_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetBalance(Convert.ToInt32(Char2Balance.Text));
+        }
+
+        private void Char3Balance_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetBalance(Convert.ToInt32(Char3Balance.Text));
+        }
+
+        private void Char4Balance_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetBalance(Convert.ToInt32(Char4Balance.Text));
+        }
+
+        private void Char1Bluff_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetBluff(Convert.ToInt32(Char1Bluff.Text));
+        }
+
+        private void Char2Bluff_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetBluff(Convert.ToInt32(Char2Bluff.Text));
+        }
+
+        private void Char3Bluff_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetBluff(Convert.ToInt32(Char3Bluff.Text));
+        }
+
+        private void Char4Bluff_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetBluff(Convert.ToInt32(Char4Bluff.Text));
+        }
+
+        private void Char1Climb_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetClimb(Convert.ToInt32(Char1Climb.Text));
+        }
+
+        private void Char2Climb_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetClimb(Convert.ToInt32(Char2Climb.Text));
+        }
+
+        private void Char3Climb_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetClimb(Convert.ToInt32(Char3Climb.Text));
+        }
+
+        private void Char4Climb_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetClimb(Convert.ToInt32(Char4Climb.Text));
+        }
+
+        private void Char1Concentration_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetConcentration(Convert.ToInt32(Char1Concentration.Text));
+        }
+
+        private void Char2Concentration_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetConcentration(Convert.ToInt32(Char2Concentration.Text));
+        }
+
+        private void Char3Concentration_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetConcentration(Convert.ToInt32(Char3Concentration.Text));
+        }
+
+        private void Char4Concentration_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetConcentration(Convert.ToInt32(Char4Concentration.Text));
+        }
+
+        private void Char1Craft1_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetConcentration(Convert.ToInt32(Char1Craft1.Text));
+        }
+
+        private void Char2Craft1_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetConcentration(Convert.ToInt32(Char2Craft1.Text));
+        }
+
+        private void Char3Craft1_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetConcentration(Convert.ToInt32(Char3Craft1.Text));
+        }
+
+        private void Char4Craft1_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetConcentration(Convert.ToInt32(Char4Craft1.Text));
+        }
+
+        private void Char1Craft2_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetConcentration(Convert.ToInt32(Char1Craft2.Text));
+        }
+
+        private void Char2Craft2_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetConcentration(Convert.ToInt32(Char2Craft2.Text));
+        }
+
+        private void Char3Craft2_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetConcentration(Convert.ToInt32(Char3Craft2.Text));
+        }
+
+        private void Char4Craft2_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetConcentration(Convert.ToInt32(Char4Craft2.Text));
         }
 
     }//end of class
