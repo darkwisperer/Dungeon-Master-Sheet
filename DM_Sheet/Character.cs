@@ -128,7 +128,7 @@ namespace DM_Sheet
                 Armor + "/" + Weapons + "/" + Items + "/" + Saving_Throw_Mod + "/" + AC_Mod + "/" + Size + "/" + Gender + "/" + lvl + "/" + Age + "/" + 
                 STR + "/" + STR_Mod + "/" + DEX + "/" + DEX_Mod + "/" + CON + "/" + CON_Mod + "/" + INT + "/" + INT_Mod + "/" + WIS + "/" + WIS_Mod + "/" + 
                 CHA + "/" + CHA_Mod + "/" + Speed + "/" + OH + "/" + OG + "/" + PD + "/" + Fort + "/" + Ref + "/" + Will + "/" + AC + "/" + FlatFoot + "/" +
-                Touch + "/" + HP + "/" + HPMAX + "/" + ACCheck;
+                Touch + "/" + HP + "/" + HPMAX + "/" + ACCheck + "/" + skill.ToString(); ;
             return ToString;
         }//end of ToString
 
@@ -669,6 +669,17 @@ namespace DM_Sheet
             this.UseRope = 0;
         }//end of Skill
 
+        public override String ToString()
+        {
+            String ToString = Appraise + "/" + Balance + "/" + Bluff + "/" + Climb + "/" + Concentration + "/" + Craft1 + "/" + Craft2 
+             + "/" + DeciferScript + "/" + Diplomacy + "/" + DisableDevice + "/" + Disguise + "/" + EscapeArtist + "/" + Forgery 
+             + "/" + GatherInfo + "/" + HandleAnimal + "/" + Heal + "/" + Hide + "/" + Intimidate + "/" + Jump + "/" + KnowledgeArcana
+             + "/" + KnowledgeReligion + "/" + KnowledgeNature + "/" + Knowledge1 + "/" + Knowledge2 + "/" + Listen
+             + "/" + MoveSilently + "/" + OpenLock + "/" + Perform + "/" + Profession + "/" + Ride + "/" + Search + "/" + SenseMotive 
+             + "/" + SlightOfHand + "/" + Spellcraft + "/" + Spot + "/" + Survival + "/" + Swim + "/" + Tumble + "/" + UseMagicDevice 
+             + "/" + UseRope;
+            return ToString;
+        }
 //==============================================================================================================================================================
 //Getters----------------------------------------------------------------------------------------------------------------------------------------------
 //==============================================================================================================================================================

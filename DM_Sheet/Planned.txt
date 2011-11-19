@@ -1,0 +1,6 @@
+﻿Whats planned next:  (in priority order)
+  -NEw tabbed sheets
+  -Battle grid (in new tab)
+  -Dice roller (in new tab)  
+  -Ability to clode a single tab
+  -Ability to close all but this tab

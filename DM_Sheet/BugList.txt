@@ -1,0 +1,3 @@
+﻿error message for
+   -string in int
+   - backspace on blank for number strings

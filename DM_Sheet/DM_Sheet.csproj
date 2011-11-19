@@ -39,6 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Character.cs" />
     <Compile Include="Main_4_chars.cs">
       <SubType>Form</SubType>
@@ -49,6 +55,9 @@
     <Compile Include="LoadSave.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_4_chars.resx">
       <DependentUpon>Main_4_chars.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -76,6 +85,8 @@
   <ItemGroup>
     <Content Include="BugList.txt" />
     <Content Include="DM_Sheet_4char.bmp" />
+    <Content Include="Planned.txt" />
+    <Content Include="README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

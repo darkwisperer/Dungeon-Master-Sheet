@@ -93,6 +93,47 @@ namespace DM_Sheet
                 PC.SetHP(Convert.ToInt32(input[39]));
                 PC.SetHPMAX(Convert.ToInt32(input[40]));
                 PC.SetACCheck(Convert.ToInt32(input[41]));
+                //skills
+                PC.skill.SetAppraise(Convert.ToInt32(input[42]));
+                PC.skill.SetBalance(Convert.ToInt32(input[43]));
+                PC.skill.SetBluff(Convert.ToInt32(input[44]));
+                PC.skill.SetClimb(Convert.ToInt32(input[45]));
+                PC.skill.SetConcentration(Convert.ToInt32(input[46]));
+                PC.skill.SetCraft1(Convert.ToInt32(input[47]));
+                PC.skill.SetCraft2(Convert.ToInt32(input[48]));
+                PC.skill.SetDeciferScript(Convert.ToInt32(input[49]));
+                PC.skill.SetDiplomacy(Convert.ToInt32(input[50]));
+                PC.skill.SetDisableDevice(Convert.ToInt32(input[51]));
+                PC.skill.SetDisguise(Convert.ToInt32(input[52]));
+                PC.skill.SetEscapeArtist(Convert.ToInt32(input[53]));
+                PC.skill.SetForgery(Convert.ToInt32(input[54]));
+                PC.skill.SetGatherInfo(Convert.ToInt32(input[55]));
+                PC.skill.SetHandleAnimal(Convert.ToInt32(input[56]));
+                PC.skill.SetHeal(Convert.ToInt32(input[57]));
+                PC.skill.SetHide(Convert.ToInt32(input[58]));
+                PC.skill.SetIntimidate(Convert.ToInt32(input[59]));
+                PC.skill.SetJump(Convert.ToInt32(input[60]));
+                PC.skill.SetKnowledge1(Convert.ToInt32(input[61]));
+                PC.skill.SetKnowledge2(Convert.ToInt32(input[62]));
+                PC.skill.SetKnowledgeArcana(Convert.ToInt32(input[63]));
+                PC.skill.SetKnowledgeNature(Convert.ToInt32(input[64]));
+                PC.skill.SetKnowledgeReligion(Convert.ToInt32(input[65]));
+                PC.skill.SetListen(Convert.ToInt32(input[66]));
+                PC.skill.SetMoveSilently(Convert.ToInt32(input[67]));
+                PC.skill.SetOpenLock(Convert.ToInt32(input[68]));
+                PC.skill.SetPerform(Convert.ToInt32(input[69]));
+                PC.skill.SetProfession(Convert.ToInt32(input[70]));
+                PC.skill.SetRide(Convert.ToInt32(input[71]));
+                PC.skill.SetSearch(Convert.ToInt32(input[72]));
+                PC.skill.SetSenseMotive(Convert.ToInt32(input[73]));
+                PC.skill.SetSlightOfHand(Convert.ToInt32(input[74]));
+                PC.skill.SetSpellcraft(Convert.ToInt32(input[75]));
+                PC.skill.SetSpot(Convert.ToInt32(input[76]));
+                PC.skill.SetSurvival(Convert.ToInt32(input[77]));
+                PC.skill.SetSwim(Convert.ToInt32(input[78]));
+                PC.skill.SetTumble(Convert.ToInt32(input[79]));
+                PC.skill.SetUseMagicDevice(Convert.ToInt32(input[80]));
+                PC.skill.SetUseRope(Convert.ToInt32(input[81]));
             }//end of try
             catch
             {

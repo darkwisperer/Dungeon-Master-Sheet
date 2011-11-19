@@ -163,6 +163,16 @@ namespace DM_Sheet
             Char1Concentration.Text = PC.skill.GetConcentration().ToString();
             Char1Craft1.Text = PC.skill.GetCraft1().ToString();
             Char1Craft2.Text = PC.skill.GetCraft2().ToString();
+            Char1DS.Text = PC.skill.GetDeciferScript().ToString();
+            Char1Diplomacy.Text = PC.skill.GetDiplomacy().ToString();
+            Char1DD.Text = PC.skill.GetDisableDevice().ToString();
+            Char1Disguise.Text = PC.skill.GetDisguise().ToString();
+            Char1EA.Text = PC.skill.GetEscapeArtist().ToString();
+            Char1Forgery.Text = PC.skill.GetForgery().ToString();
+            Char1GI.Text = PC.skill.GetGatherInfo().ToString();
+            Char1HA.Text = PC.skill.GetHandleAnimal().ToString();
+            Char1Heal.Text = PC.skill.GetHeal().ToString();
+            Char1Hide.Text = PC.skill.GetHide().ToString();
         }//end of populateFields1
 
         private void populateFields2(Character PC)
@@ -225,6 +235,16 @@ namespace DM_Sheet
             Char2Concentration.Text = PC.skill.GetClimb().ToString();
             Char2Craft1.Text = PC.skill.GetCraft1().ToString();
             Char2Craft2.Text = PC.skill.GetCraft2().ToString();
+            Char2DS.Text = PC.skill.GetDeciferScript().ToString();
+            Char2Diplomacy.Text = PC.skill.GetDiplomacy().ToString();
+            Char2DD.Text = PC.skill.GetDisableDevice().ToString();
+            Char2Disguise.Text = PC.skill.GetDisguise().ToString();
+            Char2EA.Text = PC.skill.GetEscapeArtist().ToString();
+            Char2Forgery.Text = PC.skill.GetForgery().ToString();
+            Char2GI.Text = PC.skill.GetGatherInfo().ToString();
+            Char2HA.Text = PC.skill.GetHandleAnimal().ToString();
+            Char2Heal.Text = PC.skill.GetHeal().ToString();
+            Char2Hide.Text = PC.skill.GetHide().ToString();
         }//end of populateFields2
 
         private void populateFields3(Character PC)
@@ -287,6 +307,16 @@ namespace DM_Sheet
             Char3Concentration.Text = PC.skill.GetClimb().ToString();
             Char3Craft1.Text = PC.skill.GetCraft1().ToString();
             Char3Craft2.Text = PC.skill.GetCraft2().ToString();
+            Char3DS.Text = PC.skill.GetDeciferScript().ToString();
+            Char3Diplomacy.Text = PC.skill.GetDiplomacy().ToString();
+            Char3DD.Text = PC.skill.GetDisableDevice().ToString();
+            Char3Disguise.Text = PC.skill.GetDisguise().ToString();
+            Char3EA.Text = PC.skill.GetEscapeArtist().ToString();
+            Char3Forgery.Text = PC.skill.GetForgery().ToString();
+            Char3GI.Text = PC.skill.GetGatherInfo().ToString();
+            Char3HA.Text = PC.skill.GetHandleAnimal().ToString();
+            Char3Heal.Text = PC.skill.GetHeal().ToString();
+            Char3Hide.Text = PC.skill.GetHide().ToString();
         }//end of populateFields3
 
         private void populateFields4(Character PC)
@@ -349,6 +379,16 @@ namespace DM_Sheet
             Char4Concentration.Text = PC.skill.GetClimb().ToString();
             Char4Craft1.Text = PC.skill.GetCraft1().ToString();
             Char4Craft2.Text = PC.skill.GetCraft2().ToString();
+            Char4DS.Text = PC.skill.GetDeciferScript().ToString();
+            Char4Diplomacy.Text = PC.skill.GetDiplomacy().ToString();
+            Char4DD.Text = PC.skill.GetDisableDevice().ToString();
+            Char4Disguise.Text = PC.skill.GetDisguise().ToString();
+            Char4EA.Text = PC.skill.GetEscapeArtist().ToString();
+            Char4Forgery.Text = PC.skill.GetForgery().ToString();
+            Char4GI.Text = PC.skill.GetGatherInfo().ToString();
+            Char4HA.Text = PC.skill.GetHandleAnimal().ToString();
+            Char4Heal.Text = PC.skill.GetHeal().ToString();
+            Char4Hide.Text = PC.skill.GetHide().ToString();
         }//end of populateFields4
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1232,42 +1272,242 @@ namespace DM_Sheet
 
         private void Char1Craft1_TextChanged(object sender, EventArgs e)
         {
-            Group[0].skill.SetConcentration(Convert.ToInt32(Char1Craft1.Text));
+            Group[0].skill.SetCraft1(Convert.ToInt32(Char1Craft1.Text));
         }
 
         private void Char2Craft1_TextChanged(object sender, EventArgs e)
         {
-            Group[1].skill.SetConcentration(Convert.ToInt32(Char2Craft1.Text));
+            Group[1].skill.SetCraft1(Convert.ToInt32(Char2Craft1.Text));
         }
 
         private void Char3Craft1_TextChanged(object sender, EventArgs e)
         {
-            Group[2].skill.SetConcentration(Convert.ToInt32(Char3Craft1.Text));
+            Group[2].skill.SetCraft1(Convert.ToInt32(Char3Craft1.Text));
         }
 
         private void Char4Craft1_TextChanged(object sender, EventArgs e)
         {
-            Group[3].skill.SetConcentration(Convert.ToInt32(Char4Craft1.Text));
+            Group[3].skill.SetCraft1(Convert.ToInt32(Char4Craft1.Text));
         }
 
         private void Char1Craft2_TextChanged(object sender, EventArgs e)
         {
-            Group[0].skill.SetConcentration(Convert.ToInt32(Char1Craft2.Text));
+            Group[0].skill.SetCraft2(Convert.ToInt32(Char1Craft2.Text));
         }
 
         private void Char2Craft2_TextChanged(object sender, EventArgs e)
         {
-            Group[1].skill.SetConcentration(Convert.ToInt32(Char2Craft2.Text));
+            Group[1].skill.SetCraft2(Convert.ToInt32(Char2Craft2.Text));
         }
 
         private void Char3Craft2_TextChanged(object sender, EventArgs e)
         {
-            Group[2].skill.SetConcentration(Convert.ToInt32(Char3Craft2.Text));
+            Group[2].skill.SetCraft2(Convert.ToInt32(Char3Craft2.Text));
         }
 
         private void Char4Craft2_TextChanged(object sender, EventArgs e)
         {
-            Group[3].skill.SetConcentration(Convert.ToInt32(Char4Craft2.Text));
+            Group[3].skill.SetCraft2(Convert.ToInt32(Char4Craft2.Text));
+        }
+
+        private void Char1DS_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetDeciferScript(Convert.ToInt32(Char1DS.Text));
+        }
+
+        private void Char2DS_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetDeciferScript(Convert.ToInt32(Char2DS.Text));
+        }
+
+        private void Char3DS_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetDeciferScript(Convert.ToInt32(Char3DS.Text));
+        }
+
+        private void Char4DS_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetDeciferScript(Convert.ToInt32(Char4DS.Text));
+        }
+
+        private void Char1Diplomacy_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetDiplomacy(Convert.ToInt32(Char1Diplomacy.Text));
+        }
+
+        private void Char2Diplomacy_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetDiplomacy(Convert.ToInt32(Char2Diplomacy.Text));
+        }
+
+        private void Char3Diplomacy_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetDiplomacy(Convert.ToInt32(Char3Diplomacy.Text));
+        }
+
+        private void Char4Diplomacy_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetDiplomacy(Convert.ToInt32(Char4Diplomacy.Text));
+        }
+
+        private void Char1DD_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetDisableDevice(Convert.ToInt32(Char1DD.Text));
+        }
+
+        private void Char2DD_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetDisableDevice(Convert.ToInt32(Char2DD.Text));
+        }
+
+        private void Char3DD_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetDisableDevice(Convert.ToInt32(Char3DD.Text));
+        }
+
+        private void Char4DD_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetDisableDevice(Convert.ToInt32(Char4DD.Text));
+        }
+
+        private void Char1Disguise_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetDisguise(Convert.ToInt32(Char1Disguise.Text));
+        }
+
+        private void Char2Disguise_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetDisguise(Convert.ToInt32(Char2Disguise.Text));
+        }
+
+        private void Char3Disguise_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetDisguise(Convert.ToInt32(Char3Disguise.Text));
+        }
+
+        private void Char4Disguise_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetDisguise(Convert.ToInt32(Char4Disguise.Text));
+        }
+
+        private void Char1EA_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetEscapeArtist(Convert.ToInt32(Char1EA.Text));
+        }
+
+        private void Char2EA_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetEscapeArtist(Convert.ToInt32(Char2EA.Text));
+        }
+
+        private void Char3EA_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetEscapeArtist(Convert.ToInt32(Char3EA.Text));
+        }
+
+        private void Char4EA_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetEscapeArtist(Convert.ToInt32(Char4EA.Text));
+        }
+
+        private void Char1Forgery_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetForgery(Convert.ToInt32(Char1Forgery.Text));
+        }
+
+        private void Char2Forgery_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetForgery(Convert.ToInt32(Char2Forgery.Text));
+        }
+
+        private void Char3Forgery_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetForgery(Convert.ToInt32(Char3Forgery.Text));
+        }
+
+        private void Char4Forgery_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetForgery(Convert.ToInt32(Char4Forgery.Text));
+        }
+
+        private void Char1GI_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetGatherInfo(Convert.ToInt32(Char1GI.Text));
+        }
+
+        private void Char2GI_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetGatherInfo(Convert.ToInt32(Char2GI.Text));
+        }
+
+        private void Char3GI_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetGatherInfo(Convert.ToInt32(Char3GI.Text));
+        }
+
+        private void Char4GI_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetGatherInfo(Convert.ToInt32(Char4GI.Text));
+        }
+
+        private void Char1HA_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetHandleAnimal(Convert.ToInt32(Char1HA.Text));
+        }
+
+        private void Char2HA_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetHandleAnimal(Convert.ToInt32(Char2HA.Text));
+        }
+
+        private void Char3HA_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetHandleAnimal(Convert.ToInt32(Char3HA.Text));
+        }
+
+        private void Char4HA_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetHandleAnimal(Convert.ToInt32(Char4HA.Text));
+        }
+
+        private void Char1Heal_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetHeal(Convert.ToInt32(Char1Heal.Text));
+        }
+
+        private void Char2Heal_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetHeal(Convert.ToInt32(Char2Heal.Text));
+        }
+
+        private void Char3Heal_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetHeal(Convert.ToInt32(Char3Heal.Text));
+        }
+
+        private void Char4Heal_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetHeal(Convert.ToInt32(Char4Heal.Text));
+        }
+
+        private void Char1Hide_TextChanged(object sender, EventArgs e)
+        {
+            Group[0].skill.SetHide(Convert.ToInt32(Char1Hide.Text));
+        }
+
+        private void Char2Hide_TextChanged(object sender, EventArgs e)
+        {
+            Group[1].skill.SetHide(Convert.ToInt32(Char2Hide.Text));
+        }
+
+        private void Char3Hide_TextChanged(object sender, EventArgs e)
+        {
+            Group[2].skill.SetHide(Convert.ToInt32(Char3Hide.Text));
+        }
+
+        private void Char4Hide_TextChanged(object sender, EventArgs e)
+        {
+            Group[3].skill.SetHide(Convert.ToInt32(Char4Hide.Text));
         }
 
     }//end of class
