@@ -39,12 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="About.Designer.cs">
-      <DependentUpon>About.cs</DependentUpon>
-    </Compile>
     <Compile Include="Character.cs" />
     <Compile Include="Main_4_chars.cs">
       <SubType>Form</SubType>
@@ -55,9 +49,6 @@
     <Compile Include="LoadSave.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="About.resx">
-      <DependentUpon>About.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main_4_chars.resx">
       <DependentUpon>Main_4_chars.cs</DependentUpon>
       <SubType>Designer</SubType>
