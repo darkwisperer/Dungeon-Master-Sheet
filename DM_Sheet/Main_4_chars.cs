@@ -11,7 +11,7 @@ namespace DM_Sheet
 {
     public partial class Main : Form
     {
-        
+        private bool isError = true;
         private Character PC1;
         private Character PC2;
         private Character PC3;
@@ -1502,12 +1502,45 @@ namespace DM_Sheet
 
         private void Char3Hide_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].skill.SetHide(Convert.ToInt32(Char3Hide.Text));
+            }
+            catch 
+            {
+                ErrorMSG error = new ErrorMSG();
+                //set error message
+                error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                error.Show();
+                Char3Hide.Text = "";
+            }
         }
 
         private void Char4Hide_TextChanged(object sender, EventArgs e)
+        {            
+            try
+            {                
+                Group[3].skill.SetHide(Convert.ToInt32(Char4Hide.Text));
+            }
+            catch 
+            {
+                if (isError)
+                {
+                ErrorMSG error = new ErrorMSG();
+                //set error message
+                error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                error.Show();
+                isError = false;
+                Char4Hide.Text = "";
+                isError = true;
+                }
+            }
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Group[3].skill.SetHide(Convert.ToInt32(Char4Hide.Text));
+            AboutBox1 a = new AboutBox1();
+            a.Show();
         }
 
     }//end of class

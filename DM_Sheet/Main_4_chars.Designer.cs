@@ -35,7 +35,32 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Char4Hide = new System.Windows.Forms.TextBox();
+            this.Char3Hide = new System.Windows.Forms.TextBox();
+            this.Char2Hide = new System.Windows.Forms.TextBox();
+            this.Char1Hide = new System.Windows.Forms.TextBox();
+            this.Char4Heal = new System.Windows.Forms.TextBox();
+            this.Char3Heal = new System.Windows.Forms.TextBox();
+            this.Char2Heal = new System.Windows.Forms.TextBox();
+            this.Char1Heal = new System.Windows.Forms.TextBox();
+            this.Char4HA = new System.Windows.Forms.TextBox();
+            this.Char3HA = new System.Windows.Forms.TextBox();
+            this.Char2HA = new System.Windows.Forms.TextBox();
+            this.Char1HA = new System.Windows.Forms.TextBox();
+            this.Char4GI = new System.Windows.Forms.TextBox();
+            this.Char3GI = new System.Windows.Forms.TextBox();
+            this.Char2GI = new System.Windows.Forms.TextBox();
+            this.Char1GI = new System.Windows.Forms.TextBox();
+            this.Char4Forgery = new System.Windows.Forms.TextBox();
+            this.Char3Forgery = new System.Windows.Forms.TextBox();
+            this.Char2Forgery = new System.Windows.Forms.TextBox();
+            this.Char1Forgery = new System.Windows.Forms.TextBox();
+            this.Char4EA = new System.Windows.Forms.TextBox();
+            this.Char3EA = new System.Windows.Forms.TextBox();
+            this.Char2EA = new System.Windows.Forms.TextBox();
+            this.Char1EA = new System.Windows.Forms.TextBox();
             this.Char4Disguise = new System.Windows.Forms.TextBox();
             this.Char3Disguise = new System.Windows.Forms.TextBox();
             this.Char2Disguise = new System.Windows.Forms.TextBox();
@@ -249,34 +274,11 @@
             this.Char1Age = new System.Windows.Forms.TextBox();
             this.char1Name = new System.Windows.Forms.TextBox();
             this.Char1Gender = new System.Windows.Forms.ComboBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.Char4EA = new System.Windows.Forms.TextBox();
-            this.Char3EA = new System.Windows.Forms.TextBox();
-            this.Char2EA = new System.Windows.Forms.TextBox();
-            this.Char1EA = new System.Windows.Forms.TextBox();
-            this.Char4Forgery = new System.Windows.Forms.TextBox();
-            this.Char3Forgery = new System.Windows.Forms.TextBox();
-            this.Char2Forgery = new System.Windows.Forms.TextBox();
-            this.Char1Forgery = new System.Windows.Forms.TextBox();
-            this.Char4GI = new System.Windows.Forms.TextBox();
-            this.Char3GI = new System.Windows.Forms.TextBox();
-            this.Char2GI = new System.Windows.Forms.TextBox();
-            this.Char1GI = new System.Windows.Forms.TextBox();
-            this.Char4HA = new System.Windows.Forms.TextBox();
-            this.Char3HA = new System.Windows.Forms.TextBox();
-            this.Char2HA = new System.Windows.Forms.TextBox();
-            this.Char1HA = new System.Windows.Forms.TextBox();
-            this.Char4Heal = new System.Windows.Forms.TextBox();
-            this.Char3Heal = new System.Windows.Forms.TextBox();
-            this.Char2Heal = new System.Windows.Forms.TextBox();
-            this.Char1Heal = new System.Windows.Forms.TextBox();
-            this.Char4Hide = new System.Windows.Forms.TextBox();
-            this.Char3Hide = new System.Windows.Forms.TextBox();
-            this.Char2Hide = new System.Windows.Forms.TextBox();
-            this.Char1Hide = new System.Windows.Forms.TextBox();
+            this.helpHhedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -284,7 +286,8 @@
             this.menuStrip1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.menuStrip1.AllowMerge = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.helpHhedToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -340,6 +343,15 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Location = new System.Drawing.Point(1, 27);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1134, 778);
+            this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
             // 
@@ -588,6 +600,246 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "New sheet";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // Char4Hide
+            // 
+            this.Char4Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4Hide.Location = new System.Drawing.Point(1091, 319);
+            this.Char4Hide.Name = "Char4Hide";
+            this.Char4Hide.Size = new System.Drawing.Size(24, 13);
+            this.Char4Hide.TabIndex = 243;
+            this.Char4Hide.TextChanged += new System.EventHandler(this.Char4Hide_TextChanged);
+            // 
+            // Char3Hide
+            // 
+            this.Char3Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3Hide.Location = new System.Drawing.Point(1062, 319);
+            this.Char3Hide.Name = "Char3Hide";
+            this.Char3Hide.Size = new System.Drawing.Size(24, 13);
+            this.Char3Hide.TabIndex = 242;
+            this.Char3Hide.TextChanged += new System.EventHandler(this.Char3Hide_TextChanged);
+            // 
+            // Char2Hide
+            // 
+            this.Char2Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2Hide.Location = new System.Drawing.Point(1033, 319);
+            this.Char2Hide.Name = "Char2Hide";
+            this.Char2Hide.Size = new System.Drawing.Size(24, 13);
+            this.Char2Hide.TabIndex = 241;
+            this.Char2Hide.TextChanged += new System.EventHandler(this.Char2Hide_TextChanged);
+            // 
+            // Char1Hide
+            // 
+            this.Char1Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Hide.Location = new System.Drawing.Point(1004, 319);
+            this.Char1Hide.Name = "Char1Hide";
+            this.Char1Hide.Size = new System.Drawing.Size(24, 13);
+            this.Char1Hide.TabIndex = 240;
+            this.Char1Hide.TextChanged += new System.EventHandler(this.Char1Hide_TextChanged);
+            // 
+            // Char4Heal
+            // 
+            this.Char4Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4Heal.Location = new System.Drawing.Point(1091, 303);
+            this.Char4Heal.Name = "Char4Heal";
+            this.Char4Heal.Size = new System.Drawing.Size(24, 13);
+            this.Char4Heal.TabIndex = 239;
+            this.Char4Heal.TextChanged += new System.EventHandler(this.Char4Heal_TextChanged);
+            // 
+            // Char3Heal
+            // 
+            this.Char3Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3Heal.Location = new System.Drawing.Point(1062, 303);
+            this.Char3Heal.Name = "Char3Heal";
+            this.Char3Heal.Size = new System.Drawing.Size(24, 13);
+            this.Char3Heal.TabIndex = 238;
+            this.Char3Heal.TextChanged += new System.EventHandler(this.Char3Heal_TextChanged);
+            // 
+            // Char2Heal
+            // 
+            this.Char2Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2Heal.Location = new System.Drawing.Point(1033, 303);
+            this.Char2Heal.Name = "Char2Heal";
+            this.Char2Heal.Size = new System.Drawing.Size(24, 13);
+            this.Char2Heal.TabIndex = 237;
+            this.Char2Heal.TextChanged += new System.EventHandler(this.Char2Heal_TextChanged);
+            // 
+            // Char1Heal
+            // 
+            this.Char1Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Heal.Location = new System.Drawing.Point(1004, 303);
+            this.Char1Heal.Name = "Char1Heal";
+            this.Char1Heal.Size = new System.Drawing.Size(24, 13);
+            this.Char1Heal.TabIndex = 236;
+            this.Char1Heal.TextChanged += new System.EventHandler(this.Char1Heal_TextChanged);
+            // 
+            // Char4HA
+            // 
+            this.Char4HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4HA.Location = new System.Drawing.Point(1091, 286);
+            this.Char4HA.Name = "Char4HA";
+            this.Char4HA.Size = new System.Drawing.Size(24, 13);
+            this.Char4HA.TabIndex = 235;
+            this.Char4HA.TextChanged += new System.EventHandler(this.Char4HA_TextChanged);
+            // 
+            // Char3HA
+            // 
+            this.Char3HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3HA.Location = new System.Drawing.Point(1062, 286);
+            this.Char3HA.Name = "Char3HA";
+            this.Char3HA.Size = new System.Drawing.Size(24, 13);
+            this.Char3HA.TabIndex = 234;
+            this.Char3HA.TextChanged += new System.EventHandler(this.Char3HA_TextChanged);
+            // 
+            // Char2HA
+            // 
+            this.Char2HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2HA.Location = new System.Drawing.Point(1033, 286);
+            this.Char2HA.Name = "Char2HA";
+            this.Char2HA.Size = new System.Drawing.Size(24, 13);
+            this.Char2HA.TabIndex = 233;
+            this.Char2HA.TextChanged += new System.EventHandler(this.Char2HA_TextChanged);
+            // 
+            // Char1HA
+            // 
+            this.Char1HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1HA.Location = new System.Drawing.Point(1004, 286);
+            this.Char1HA.Name = "Char1HA";
+            this.Char1HA.Size = new System.Drawing.Size(24, 13);
+            this.Char1HA.TabIndex = 232;
+            this.Char1HA.TextChanged += new System.EventHandler(this.Char1HA_TextChanged);
+            // 
+            // Char4GI
+            // 
+            this.Char4GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4GI.Location = new System.Drawing.Point(1091, 270);
+            this.Char4GI.Name = "Char4GI";
+            this.Char4GI.Size = new System.Drawing.Size(24, 13);
+            this.Char4GI.TabIndex = 231;
+            this.Char4GI.TextChanged += new System.EventHandler(this.Char4GI_TextChanged);
+            // 
+            // Char3GI
+            // 
+            this.Char3GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3GI.Location = new System.Drawing.Point(1062, 270);
+            this.Char3GI.Name = "Char3GI";
+            this.Char3GI.Size = new System.Drawing.Size(24, 13);
+            this.Char3GI.TabIndex = 230;
+            this.Char3GI.TextChanged += new System.EventHandler(this.Char3GI_TextChanged);
+            // 
+            // Char2GI
+            // 
+            this.Char2GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2GI.Location = new System.Drawing.Point(1033, 270);
+            this.Char2GI.Name = "Char2GI";
+            this.Char2GI.Size = new System.Drawing.Size(24, 13);
+            this.Char2GI.TabIndex = 229;
+            this.Char2GI.TextChanged += new System.EventHandler(this.Char2GI_TextChanged);
+            // 
+            // Char1GI
+            // 
+            this.Char1GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1GI.Location = new System.Drawing.Point(1004, 270);
+            this.Char1GI.Name = "Char1GI";
+            this.Char1GI.Size = new System.Drawing.Size(24, 13);
+            this.Char1GI.TabIndex = 228;
+            this.Char1GI.TextChanged += new System.EventHandler(this.Char1GI_TextChanged);
+            // 
+            // Char4Forgery
+            // 
+            this.Char4Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4Forgery.Location = new System.Drawing.Point(1091, 254);
+            this.Char4Forgery.Name = "Char4Forgery";
+            this.Char4Forgery.Size = new System.Drawing.Size(24, 13);
+            this.Char4Forgery.TabIndex = 227;
+            this.Char4Forgery.TextChanged += new System.EventHandler(this.Char4Forgery_TextChanged);
+            // 
+            // Char3Forgery
+            // 
+            this.Char3Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3Forgery.Location = new System.Drawing.Point(1062, 254);
+            this.Char3Forgery.Name = "Char3Forgery";
+            this.Char3Forgery.Size = new System.Drawing.Size(24, 13);
+            this.Char3Forgery.TabIndex = 226;
+            this.Char3Forgery.TextChanged += new System.EventHandler(this.Char3Forgery_TextChanged);
+            // 
+            // Char2Forgery
+            // 
+            this.Char2Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2Forgery.Location = new System.Drawing.Point(1033, 254);
+            this.Char2Forgery.Name = "Char2Forgery";
+            this.Char2Forgery.Size = new System.Drawing.Size(24, 13);
+            this.Char2Forgery.TabIndex = 225;
+            this.Char2Forgery.TextChanged += new System.EventHandler(this.Char2Forgery_TextChanged);
+            // 
+            // Char1Forgery
+            // 
+            this.Char1Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Forgery.Location = new System.Drawing.Point(1004, 254);
+            this.Char1Forgery.Name = "Char1Forgery";
+            this.Char1Forgery.Size = new System.Drawing.Size(24, 13);
+            this.Char1Forgery.TabIndex = 224;
+            this.Char1Forgery.TextChanged += new System.EventHandler(this.Char1Forgery_TextChanged);
+            // 
+            // Char4EA
+            // 
+            this.Char4EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4EA.Location = new System.Drawing.Point(1091, 238);
+            this.Char4EA.Name = "Char4EA";
+            this.Char4EA.Size = new System.Drawing.Size(24, 13);
+            this.Char4EA.TabIndex = 223;
+            this.Char4EA.TextChanged += new System.EventHandler(this.Char4EA_TextChanged);
+            // 
+            // Char3EA
+            // 
+            this.Char3EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3EA.Location = new System.Drawing.Point(1062, 238);
+            this.Char3EA.Name = "Char3EA";
+            this.Char3EA.Size = new System.Drawing.Size(24, 13);
+            this.Char3EA.TabIndex = 222;
+            this.Char3EA.TextChanged += new System.EventHandler(this.Char3EA_TextChanged);
+            // 
+            // Char2EA
+            // 
+            this.Char2EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2EA.Location = new System.Drawing.Point(1033, 238);
+            this.Char2EA.Name = "Char2EA";
+            this.Char2EA.Size = new System.Drawing.Size(24, 13);
+            this.Char2EA.TabIndex = 221;
+            this.Char2EA.TextChanged += new System.EventHandler(this.Char2EA_TextChanged);
+            // 
+            // Char1EA
+            // 
+            this.Char1EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1EA.Location = new System.Drawing.Point(1004, 238);
+            this.Char1EA.Name = "Char1EA";
+            this.Char1EA.Size = new System.Drawing.Size(24, 13);
+            this.Char1EA.TabIndex = 220;
+            this.Char1EA.TextChanged += new System.EventHandler(this.Char1EA_TextChanged);
             // 
             // Char4Disguise
             // 
@@ -2830,254 +3082,20 @@
             this.Char1Gender.TabIndex = 11;
             this.Char1Gender.SelectedIndexChanged += new System.EventHandler(this.Char1Gender_SelectedIndexChanged);
             // 
-            // tabControl1
+            // helpHhedToolStripMenuItem
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Location = new System.Drawing.Point(1, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1134, 778);
-            this.tabControl1.TabIndex = 1;
+            this.helpHhedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpHhedToolStripMenuItem.Name = "helpHhedToolStripMenuItem";
+            this.helpHhedToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpHhedToolStripMenuItem.Text = "Help";
             // 
-            // Char4EA
+            // aboutToolStripMenuItem
             // 
-            this.Char4EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4EA.Location = new System.Drawing.Point(1091, 238);
-            this.Char4EA.Name = "Char4EA";
-            this.Char4EA.Size = new System.Drawing.Size(24, 13);
-            this.Char4EA.TabIndex = 223;
-            this.Char4EA.TextChanged += new System.EventHandler(this.Char4EA_TextChanged);
-            // 
-            // Char3EA
-            // 
-            this.Char3EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3EA.Location = new System.Drawing.Point(1062, 238);
-            this.Char3EA.Name = "Char3EA";
-            this.Char3EA.Size = new System.Drawing.Size(24, 13);
-            this.Char3EA.TabIndex = 222;
-            this.Char3EA.TextChanged += new System.EventHandler(this.Char3EA_TextChanged);
-            // 
-            // Char2EA
-            // 
-            this.Char2EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2EA.Location = new System.Drawing.Point(1033, 238);
-            this.Char2EA.Name = "Char2EA";
-            this.Char2EA.Size = new System.Drawing.Size(24, 13);
-            this.Char2EA.TabIndex = 221;
-            this.Char2EA.TextChanged += new System.EventHandler(this.Char2EA_TextChanged);
-            // 
-            // Char1EA
-            // 
-            this.Char1EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1EA.Location = new System.Drawing.Point(1004, 238);
-            this.Char1EA.Name = "Char1EA";
-            this.Char1EA.Size = new System.Drawing.Size(24, 13);
-            this.Char1EA.TabIndex = 220;
-            this.Char1EA.TextChanged += new System.EventHandler(this.Char1EA_TextChanged);
-            // 
-            // Char4Forgery
-            // 
-            this.Char4Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Forgery.Location = new System.Drawing.Point(1091, 254);
-            this.Char4Forgery.Name = "Char4Forgery";
-            this.Char4Forgery.Size = new System.Drawing.Size(24, 13);
-            this.Char4Forgery.TabIndex = 227;
-            this.Char4Forgery.TextChanged += new System.EventHandler(this.Char4Forgery_TextChanged);
-            // 
-            // Char3Forgery
-            // 
-            this.Char3Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Forgery.Location = new System.Drawing.Point(1062, 254);
-            this.Char3Forgery.Name = "Char3Forgery";
-            this.Char3Forgery.Size = new System.Drawing.Size(24, 13);
-            this.Char3Forgery.TabIndex = 226;
-            this.Char3Forgery.TextChanged += new System.EventHandler(this.Char3Forgery_TextChanged);
-            // 
-            // Char2Forgery
-            // 
-            this.Char2Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Forgery.Location = new System.Drawing.Point(1033, 254);
-            this.Char2Forgery.Name = "Char2Forgery";
-            this.Char2Forgery.Size = new System.Drawing.Size(24, 13);
-            this.Char2Forgery.TabIndex = 225;
-            this.Char2Forgery.TextChanged += new System.EventHandler(this.Char2Forgery_TextChanged);
-            // 
-            // Char1Forgery
-            // 
-            this.Char1Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Forgery.Location = new System.Drawing.Point(1004, 254);
-            this.Char1Forgery.Name = "Char1Forgery";
-            this.Char1Forgery.Size = new System.Drawing.Size(24, 13);
-            this.Char1Forgery.TabIndex = 224;
-            this.Char1Forgery.TextChanged += new System.EventHandler(this.Char1Forgery_TextChanged);
-            // 
-            // Char4GI
-            // 
-            this.Char4GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4GI.Location = new System.Drawing.Point(1091, 270);
-            this.Char4GI.Name = "Char4GI";
-            this.Char4GI.Size = new System.Drawing.Size(24, 13);
-            this.Char4GI.TabIndex = 231;
-            this.Char4GI.TextChanged += new System.EventHandler(this.Char4GI_TextChanged);
-            // 
-            // Char3GI
-            // 
-            this.Char3GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3GI.Location = new System.Drawing.Point(1062, 270);
-            this.Char3GI.Name = "Char3GI";
-            this.Char3GI.Size = new System.Drawing.Size(24, 13);
-            this.Char3GI.TabIndex = 230;
-            this.Char3GI.TextChanged += new System.EventHandler(this.Char3GI_TextChanged);
-            // 
-            // Char2GI
-            // 
-            this.Char2GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2GI.Location = new System.Drawing.Point(1033, 270);
-            this.Char2GI.Name = "Char2GI";
-            this.Char2GI.Size = new System.Drawing.Size(24, 13);
-            this.Char2GI.TabIndex = 229;
-            this.Char2GI.TextChanged += new System.EventHandler(this.Char2GI_TextChanged);
-            // 
-            // Char1GI
-            // 
-            this.Char1GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1GI.Location = new System.Drawing.Point(1004, 270);
-            this.Char1GI.Name = "Char1GI";
-            this.Char1GI.Size = new System.Drawing.Size(24, 13);
-            this.Char1GI.TabIndex = 228;
-            this.Char1GI.TextChanged += new System.EventHandler(this.Char1GI_TextChanged);
-            // 
-            // Char4HA
-            // 
-            this.Char4HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4HA.Location = new System.Drawing.Point(1091, 286);
-            this.Char4HA.Name = "Char4HA";
-            this.Char4HA.Size = new System.Drawing.Size(24, 13);
-            this.Char4HA.TabIndex = 235;
-            this.Char4HA.TextChanged += new System.EventHandler(this.Char4HA_TextChanged);
-            // 
-            // Char3HA
-            // 
-            this.Char3HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3HA.Location = new System.Drawing.Point(1062, 286);
-            this.Char3HA.Name = "Char3HA";
-            this.Char3HA.Size = new System.Drawing.Size(24, 13);
-            this.Char3HA.TabIndex = 234;
-            this.Char3HA.TextChanged += new System.EventHandler(this.Char3HA_TextChanged);
-            // 
-            // Char2HA
-            // 
-            this.Char2HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2HA.Location = new System.Drawing.Point(1033, 286);
-            this.Char2HA.Name = "Char2HA";
-            this.Char2HA.Size = new System.Drawing.Size(24, 13);
-            this.Char2HA.TabIndex = 233;
-            this.Char2HA.TextChanged += new System.EventHandler(this.Char2HA_TextChanged);
-            // 
-            // Char1HA
-            // 
-            this.Char1HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1HA.Location = new System.Drawing.Point(1004, 286);
-            this.Char1HA.Name = "Char1HA";
-            this.Char1HA.Size = new System.Drawing.Size(24, 13);
-            this.Char1HA.TabIndex = 232;
-            this.Char1HA.TextChanged += new System.EventHandler(this.Char1HA_TextChanged);
-            // 
-            // Char4Heal
-            // 
-            this.Char4Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Heal.Location = new System.Drawing.Point(1091, 303);
-            this.Char4Heal.Name = "Char4Heal";
-            this.Char4Heal.Size = new System.Drawing.Size(24, 13);
-            this.Char4Heal.TabIndex = 239;
-            this.Char4Heal.TextChanged += new System.EventHandler(this.Char4Heal_TextChanged);
-            // 
-            // Char3Heal
-            // 
-            this.Char3Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Heal.Location = new System.Drawing.Point(1062, 303);
-            this.Char3Heal.Name = "Char3Heal";
-            this.Char3Heal.Size = new System.Drawing.Size(24, 13);
-            this.Char3Heal.TabIndex = 238;
-            this.Char3Heal.TextChanged += new System.EventHandler(this.Char3Heal_TextChanged);
-            // 
-            // Char2Heal
-            // 
-            this.Char2Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Heal.Location = new System.Drawing.Point(1033, 303);
-            this.Char2Heal.Name = "Char2Heal";
-            this.Char2Heal.Size = new System.Drawing.Size(24, 13);
-            this.Char2Heal.TabIndex = 237;
-            this.Char2Heal.TextChanged += new System.EventHandler(this.Char2Heal_TextChanged);
-            // 
-            // Char1Heal
-            // 
-            this.Char1Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Heal.Location = new System.Drawing.Point(1004, 303);
-            this.Char1Heal.Name = "Char1Heal";
-            this.Char1Heal.Size = new System.Drawing.Size(24, 13);
-            this.Char1Heal.TabIndex = 236;
-            this.Char1Heal.TextChanged += new System.EventHandler(this.Char1Heal_TextChanged);
-            // 
-            // Char4Hide
-            // 
-            this.Char4Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char4Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Hide.Location = new System.Drawing.Point(1091, 319);
-            this.Char4Hide.Name = "Char4Hide";
-            this.Char4Hide.Size = new System.Drawing.Size(24, 13);
-            this.Char4Hide.TabIndex = 243;
-            this.Char4Hide.TextChanged += new System.EventHandler(this.Char4Hide_TextChanged);
-            // 
-            // Char3Hide
-            // 
-            this.Char3Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char3Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Hide.Location = new System.Drawing.Point(1062, 319);
-            this.Char3Hide.Name = "Char3Hide";
-            this.Char3Hide.Size = new System.Drawing.Size(24, 13);
-            this.Char3Hide.TabIndex = 242;
-            this.Char3Hide.TextChanged += new System.EventHandler(this.Char3Hide_TextChanged);
-            // 
-            // Char2Hide
-            // 
-            this.Char2Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char2Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Hide.Location = new System.Drawing.Point(1033, 319);
-            this.Char2Hide.Name = "Char2Hide";
-            this.Char2Hide.Size = new System.Drawing.Size(24, 13);
-            this.Char2Hide.TabIndex = 241;
-            this.Char2Hide.TextChanged += new System.EventHandler(this.Char2Hide_TextChanged);
-            // 
-            // Char1Hide
-            // 
-            this.Char1Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Char1Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Hide.Location = new System.Drawing.Point(1004, 319);
-            this.Char1Hide.Name = "Char1Hide";
-            this.Char1Hide.Size = new System.Drawing.Size(24, 13);
-            this.Char1Hide.TabIndex = 240;
-            this.Char1Hide.TextChanged += new System.EventHandler(this.Char1Hide_TextChanged);
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -3096,9 +3114,9 @@
             this.Text = "DM_Sheet";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3352,6 +3370,8 @@
         private System.Windows.Forms.TextBox Char3Hide;
         private System.Windows.Forms.TextBox Char2Hide;
         private System.Windows.Forms.TextBox Char1Hide;
+        private System.Windows.Forms.ToolStripMenuItem helpHhedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
     }
 }
 

@@ -14,3 +14,9 @@ C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.Main.resources
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.AboutBox1.resources
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\bin\Debug\DM_Sheet.exe.manifest
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\bin\Debug\DM_Sheet.application
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
