@@ -35,6 +35,8 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpHhedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Char4Hide = new System.Windows.Forms.TextBox();
@@ -274,8 +276,22 @@
             this.Char1Age = new System.Windows.Forms.TextBox();
             this.char1Name = new System.Windows.Forms.TextBox();
             this.Char1Gender = new System.Windows.Forms.ComboBox();
-            this.helpHhedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Char4Intimidate = new System.Windows.Forms.TextBox();
+            this.Char3Intimidate = new System.Windows.Forms.TextBox();
+            this.Char2Intimidate = new System.Windows.Forms.TextBox();
+            this.Char1Intimidate = new System.Windows.Forms.TextBox();
+            this.Char4Jump = new System.Windows.Forms.TextBox();
+            this.Char3Jump = new System.Windows.Forms.TextBox();
+            this.Char2Jump = new System.Windows.Forms.TextBox();
+            this.Char1Jump = new System.Windows.Forms.TextBox();
+            this.Char4KA = new System.Windows.Forms.TextBox();
+            this.Char3KA = new System.Windows.Forms.TextBox();
+            this.Char2KA = new System.Windows.Forms.TextBox();
+            this.Char1KA = new System.Windows.Forms.TextBox();
+            this.Char4KR = new System.Windows.Forms.TextBox();
+            this.Char3KR = new System.Windows.Forms.TextBox();
+            this.Char2KR = new System.Windows.Forms.TextBox();
+            this.Char1KR = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -344,6 +360,21 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // helpHhedToolStripMenuItem
+            // 
+            this.helpHhedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpHhedToolStripMenuItem.Name = "helpHhedToolStripMenuItem";
+            this.helpHhedToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpHhedToolStripMenuItem.Text = "Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
@@ -356,6 +387,22 @@
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = global::DM_Sheet.Properties.Resources.DM_Sheet;
+            this.tabPage1.Controls.Add(this.Char4KR);
+            this.tabPage1.Controls.Add(this.Char3KR);
+            this.tabPage1.Controls.Add(this.Char2KR);
+            this.tabPage1.Controls.Add(this.Char1KR);
+            this.tabPage1.Controls.Add(this.Char4KA);
+            this.tabPage1.Controls.Add(this.Char3KA);
+            this.tabPage1.Controls.Add(this.Char2KA);
+            this.tabPage1.Controls.Add(this.Char1KA);
+            this.tabPage1.Controls.Add(this.Char4Jump);
+            this.tabPage1.Controls.Add(this.Char3Jump);
+            this.tabPage1.Controls.Add(this.Char2Jump);
+            this.tabPage1.Controls.Add(this.Char1Jump);
+            this.tabPage1.Controls.Add(this.Char4Intimidate);
+            this.tabPage1.Controls.Add(this.Char3Intimidate);
+            this.tabPage1.Controls.Add(this.Char2Intimidate);
+            this.tabPage1.Controls.Add(this.Char1Intimidate);
             this.tabPage1.Controls.Add(this.Char4Hide);
             this.tabPage1.Controls.Add(this.Char3Hide);
             this.tabPage1.Controls.Add(this.Char2Hide);
@@ -3082,20 +3129,165 @@
             this.Char1Gender.TabIndex = 11;
             this.Char1Gender.SelectedIndexChanged += new System.EventHandler(this.Char1Gender_SelectedIndexChanged);
             // 
-            // helpHhedToolStripMenuItem
+            // Char4Intimidate
             // 
-            this.helpHhedToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpHhedToolStripMenuItem.Name = "helpHhedToolStripMenuItem";
-            this.helpHhedToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpHhedToolStripMenuItem.Text = "Help";
+            this.Char4Intimidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4Intimidate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4Intimidate.Location = new System.Drawing.Point(1091, 335);
+            this.Char4Intimidate.Name = "Char4Intimidate";
+            this.Char4Intimidate.Size = new System.Drawing.Size(24, 13);
+            this.Char4Intimidate.TabIndex = 247;
+            this.Char4Intimidate.TextChanged += new System.EventHandler(this.Char4Intimidate_TextChanged);
             // 
-            // aboutToolStripMenuItem
+            // Char3Intimidate
             // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            this.Char3Intimidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3Intimidate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3Intimidate.Location = new System.Drawing.Point(1062, 335);
+            this.Char3Intimidate.Name = "Char3Intimidate";
+            this.Char3Intimidate.Size = new System.Drawing.Size(24, 13);
+            this.Char3Intimidate.TabIndex = 246;
+            this.Char3Intimidate.TextChanged += new System.EventHandler(this.Char3Intimidate_TextChanged);
+            // 
+            // Char2Intimidate
+            // 
+            this.Char2Intimidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Intimidate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2Intimidate.Location = new System.Drawing.Point(1033, 335);
+            this.Char2Intimidate.Name = "Char2Intimidate";
+            this.Char2Intimidate.Size = new System.Drawing.Size(24, 13);
+            this.Char2Intimidate.TabIndex = 245;
+            this.Char2Intimidate.TextChanged += new System.EventHandler(this.Char2Intimidate_TextChanged);
+            // 
+            // Char1Intimidate
+            // 
+            this.Char1Intimidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Intimidate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Intimidate.Location = new System.Drawing.Point(1004, 335);
+            this.Char1Intimidate.Name = "Char1Intimidate";
+            this.Char1Intimidate.Size = new System.Drawing.Size(24, 13);
+            this.Char1Intimidate.TabIndex = 244;
+            this.Char1Intimidate.TextChanged += new System.EventHandler(this.Char1Intimidate_TextChanged);
+            // 
+            // Char4Jump
+            // 
+            this.Char4Jump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4Jump.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4Jump.Location = new System.Drawing.Point(1091, 352);
+            this.Char4Jump.Name = "Char4Jump";
+            this.Char4Jump.Size = new System.Drawing.Size(24, 13);
+            this.Char4Jump.TabIndex = 251;
+            this.Char4Jump.TextChanged += new System.EventHandler(this.Char4Jump_TextChanged);
+            // 
+            // Char3Jump
+            // 
+            this.Char3Jump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3Jump.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3Jump.Location = new System.Drawing.Point(1062, 352);
+            this.Char3Jump.Name = "Char3Jump";
+            this.Char3Jump.Size = new System.Drawing.Size(24, 13);
+            this.Char3Jump.TabIndex = 250;
+            this.Char3Jump.TextChanged += new System.EventHandler(this.Char3Jump_TextChanged);
+            // 
+            // Char2Jump
+            // 
+            this.Char2Jump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2Jump.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2Jump.Location = new System.Drawing.Point(1033, 352);
+            this.Char2Jump.Name = "Char2Jump";
+            this.Char2Jump.Size = new System.Drawing.Size(24, 13);
+            this.Char2Jump.TabIndex = 249;
+            this.Char2Jump.TextChanged += new System.EventHandler(this.Char2Jump_TextChanged);
+            // 
+            // Char1Jump
+            // 
+            this.Char1Jump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Jump.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Jump.Location = new System.Drawing.Point(1004, 352);
+            this.Char1Jump.Name = "Char1Jump";
+            this.Char1Jump.Size = new System.Drawing.Size(24, 13);
+            this.Char1Jump.TabIndex = 248;
+            this.Char1Jump.TextChanged += new System.EventHandler(this.Char1Jump_TextChanged);
+            // 
+            // Char4KA
+            // 
+            this.Char4KA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4KA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4KA.Location = new System.Drawing.Point(1091, 367);
+            this.Char4KA.Name = "Char4KA";
+            this.Char4KA.Size = new System.Drawing.Size(24, 13);
+            this.Char4KA.TabIndex = 255;
+            this.Char4KA.TextChanged += new System.EventHandler(this.Char4KA_TextChanged);
+            // 
+            // Char3KA
+            // 
+            this.Char3KA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3KA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3KA.Location = new System.Drawing.Point(1062, 367);
+            this.Char3KA.Name = "Char3KA";
+            this.Char3KA.Size = new System.Drawing.Size(24, 13);
+            this.Char3KA.TabIndex = 254;
+            this.Char3KA.TextChanged += new System.EventHandler(this.Char3KA_TextChanged);
+            // 
+            // Char2KA
+            // 
+            this.Char2KA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2KA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2KA.Location = new System.Drawing.Point(1033, 367);
+            this.Char2KA.Name = "Char2KA";
+            this.Char2KA.Size = new System.Drawing.Size(24, 13);
+            this.Char2KA.TabIndex = 253;
+            this.Char2KA.TextChanged += new System.EventHandler(this.Char2KA_TextChanged);
+            // 
+            // Char1KA
+            // 
+            this.Char1KA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1KA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1KA.Location = new System.Drawing.Point(1004, 367);
+            this.Char1KA.Name = "Char1KA";
+            this.Char1KA.Size = new System.Drawing.Size(24, 13);
+            this.Char1KA.TabIndex = 252;
+            this.Char1KA.TextChanged += new System.EventHandler(this.Char1KA_TextChanged);
+            // 
+            // Char4KR
+            // 
+            this.Char4KR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char4KR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char4KR.Location = new System.Drawing.Point(1091, 384);
+            this.Char4KR.Name = "Char4KR";
+            this.Char4KR.Size = new System.Drawing.Size(24, 13);
+            this.Char4KR.TabIndex = 259;
+            this.Char4KR.TextChanged += new System.EventHandler(this.Char4KR_TextChanged);
+            // 
+            // Char3KR
+            // 
+            this.Char3KR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char3KR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char3KR.Location = new System.Drawing.Point(1062, 384);
+            this.Char3KR.Name = "Char3KR";
+            this.Char3KR.Size = new System.Drawing.Size(24, 13);
+            this.Char3KR.TabIndex = 258;
+            this.Char3KR.TextChanged += new System.EventHandler(this.Char3KR_TextChanged);
+            // 
+            // Char2KR
+            // 
+            this.Char2KR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char2KR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char2KR.Location = new System.Drawing.Point(1033, 384);
+            this.Char2KR.Name = "Char2KR";
+            this.Char2KR.Size = new System.Drawing.Size(24, 13);
+            this.Char2KR.TabIndex = 257;
+            this.Char2KR.TextChanged += new System.EventHandler(this.Char2KR_TextChanged);
+            // 
+            // Char1KR
+            // 
+            this.Char1KR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1KR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1KR.Location = new System.Drawing.Point(1004, 384);
+            this.Char1KR.Name = "Char1KR";
+            this.Char1KR.Size = new System.Drawing.Size(24, 13);
+            this.Char1KR.TabIndex = 256;
+            this.Char1KR.TextChanged += new System.EventHandler(this.Char1KR_TextChanged);
             // 
             // Main
             // 
@@ -3372,6 +3564,22 @@
         private System.Windows.Forms.TextBox Char1Hide;
         private System.Windows.Forms.ToolStripMenuItem helpHhedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.TextBox Char4Intimidate;
+        private System.Windows.Forms.TextBox Char3Intimidate;
+        private System.Windows.Forms.TextBox Char2Intimidate;
+        private System.Windows.Forms.TextBox Char1Intimidate;
+        private System.Windows.Forms.TextBox Char4Jump;
+        private System.Windows.Forms.TextBox Char3Jump;
+        private System.Windows.Forms.TextBox Char2Jump;
+        private System.Windows.Forms.TextBox Char1Jump;
+        private System.Windows.Forms.TextBox Char4KA;
+        private System.Windows.Forms.TextBox Char3KA;
+        private System.Windows.Forms.TextBox Char2KA;
+        private System.Windows.Forms.TextBox Char1KA;
+        private System.Windows.Forms.TextBox Char4KR;
+        private System.Windows.Forms.TextBox Char3KR;
+        private System.Windows.Forms.TextBox Char2KR;
+        private System.Windows.Forms.TextBox Char1KR;
     }
 }
 

@@ -35,11 +35,12 @@
             // ErrorLabel
             // 
             this.ErrorLabel.AutoSize = true;
-            this.ErrorLabel.Location = new System.Drawing.Point(107, 31);
+            this.ErrorLabel.Location = new System.Drawing.Point(75, 31);
             this.ErrorLabel.Name = "ErrorLabel";
             this.ErrorLabel.Size = new System.Drawing.Size(83, 13);
             this.ErrorLabel.TabIndex = 0;
             this.ErrorLabel.Text = "Error: something";
+            this.ErrorLabel.TextChanged += new System.EventHandler(this.ErrorLabel_TextChanged);
             // 
             // button1
             // 
