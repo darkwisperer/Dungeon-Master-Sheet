@@ -674,7 +674,7 @@ namespace DM_Sheet
             String ToString = Appraise + "/" + Balance + "/" + Bluff + "/" + Climb + "/" + Concentration + "/" + Craft1 + "/" + Craft2 
              + "/" + DeciferScript + "/" + Diplomacy + "/" + DisableDevice + "/" + Disguise + "/" + EscapeArtist + "/" + Forgery 
              + "/" + GatherInfo + "/" + HandleAnimal + "/" + Heal + "/" + Hide + "/" + Intimidate + "/" + Jump + "/" + KnowledgeArcana
-             + "/" + KnowledgeReligion + "/" + KnowledgeNature + "/" + Knowledge1 + "/" + Knowledge2 + "/" + Listen
+             + "/" + KnowledgeNature + "/" + KnowledgeReligion + "/" + Knowledge1 + "/" + Knowledge2 + "/" + Listen
              + "/" + MoveSilently + "/" + OpenLock + "/" + Perform + "/" + Profession + "/" + Ride + "/" + Search + "/" + SenseMotive 
              + "/" + SlightOfHand + "/" + Spellcraft + "/" + Spot + "/" + Survival + "/" + Swim + "/" + Tumble + "/" + UseMagicDevice 
              + "/" + UseRope;

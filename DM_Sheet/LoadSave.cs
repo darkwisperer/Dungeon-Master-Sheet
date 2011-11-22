@@ -113,11 +113,11 @@ namespace DM_Sheet
                 PC.skill.SetHide(Convert.ToInt32(input[58]));
                 PC.skill.SetIntimidate(Convert.ToInt32(input[59]));
                 PC.skill.SetJump(Convert.ToInt32(input[60]));
-                PC.skill.SetKnowledge1(Convert.ToInt32(input[61]));
-                PC.skill.SetKnowledge2(Convert.ToInt32(input[62]));
-                PC.skill.SetKnowledgeArcana(Convert.ToInt32(input[63]));
-                PC.skill.SetKnowledgeNature(Convert.ToInt32(input[64]));
-                PC.skill.SetKnowledgeReligion(Convert.ToInt32(input[65]));
+                PC.skill.SetKnowledgeArcana(Convert.ToInt32(input[61]));
+                PC.skill.SetKnowledgeNature(Convert.ToInt32(input[62]));
+                PC.skill.SetKnowledgeReligion(Convert.ToInt32(input[63]));
+                PC.skill.SetKnowledge1(Convert.ToInt32(input[64]));
+                PC.skill.SetKnowledge2(Convert.ToInt32(input[65]));
                 PC.skill.SetListen(Convert.ToInt32(input[66]));
                 PC.skill.SetMoveSilently(Convert.ToInt32(input[67]));
                 PC.skill.SetOpenLock(Convert.ToInt32(input[68]));
