@@ -1,6 +1,7 @@
 ﻿Whats planned next:  (in priority order)
   -New tabbed sheets
+    -Ability to clode a single tab
+    -Ability to close all but this tab  
   -Battle grid (in new tab)
+    -Pull character stats from oppen sheets
   -Dice roller (in new tab)  
-  -Ability to clode a single tab
-  -Ability to close all but this tab
