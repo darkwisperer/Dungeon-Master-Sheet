@@ -623,7 +623,8 @@ namespace DM_Sheet
     {
         private int Appraise, Balance, Bluff, Climb, Concentration, Craft1, Craft2, DeciferScript, Diplomacy, DisableDevice, Disguise, EscapeArtist, Forgery, 
             GatherInfo, HandleAnimal, Heal, Hide, Intimidate, Jump, KnowledgeArcana, KnowledgeReligion, KnowledgeNature, Knowledge1, Knowledge2, Listen,
-            MoveSilently, OpenLock, Perform, Profession, Ride, Search, SenseMotive, SlightOfHand, Spellcraft, Spot, Survival, Swim, Tumble, UseMagicDevice, UseRope;
+            MoveSilently, OpenLock, Perform, Profession, Ride, Search, SenseMotive, SlightOfHand, Spellcraft, Spot, Survival, Swim, Tumble, UseMagicDevice, 
+            UseRope, Other;
       
         public Skill()
         {
@@ -667,6 +668,7 @@ namespace DM_Sheet
             this.Tumble = 0;
             this.UseMagicDevice = 0;
             this.UseRope = 0;
+            this.Other = 0;
         }//end of Skill
 
         public override String ToString()
@@ -676,8 +678,8 @@ namespace DM_Sheet
              + "/" + GatherInfo + "/" + HandleAnimal + "/" + Heal + "/" + Hide + "/" + Intimidate + "/" + Jump + "/" + KnowledgeArcana
              + "/" + KnowledgeNature + "/" + KnowledgeReligion + "/" + Knowledge1 + "/" + Knowledge2 + "/" + Listen
              + "/" + MoveSilently + "/" + OpenLock + "/" + Perform + "/" + Profession + "/" + Ride + "/" + Search + "/" + SenseMotive 
-             + "/" + SlightOfHand + "/" + Spellcraft + "/" + Spot + "/" + Survival + "/" + Swim + "/" + Tumble + "/" + UseMagicDevice 
-             + "/" + UseRope;
+             + "/" + SlightOfHand + "/" + Spellcraft + "/" + Spot + "/" + Survival + "/" + Swim + "/" + Tumble + "/" + UseMagicDevice
+             + "/" + UseRope + "/" + Other;
             return ToString;
         }
 //==============================================================================================================================================================
@@ -843,6 +845,10 @@ namespace DM_Sheet
         {
             return this.UseRope;
         }//40
+        public int GetOther()
+        {
+            return this.Other;
+        }//40
 
 //==============================================================================================================================================================
 //Setters-------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1007,6 +1013,10 @@ namespace DM_Sheet
         public void SetUseRope(int iUseRope)
         {
             this.UseRope = iUseRope;
+        }
+        public void SetOther(int iOther)
+        {
+            this.Other = iOther;
         }
     }//end of class skill
 }//end of namespace

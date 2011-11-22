@@ -187,6 +187,16 @@ namespace DM_Sheet
             Char1Profession.Text = PC.skill.GetProfession().ToString();
             Char1Ride.Text = PC.skill.GetRide().ToString();
             Char1Search.Text = PC.skill.GetSearch().ToString();
+            Char1SM.Text = PC.skill.GetSenseMotive().ToString();
+            Char1SH.Text = PC.skill.GetSlightOfHand().ToString();
+            Char1SpellCraft.Text = PC.skill.GetSpellcraft().ToString();
+            Char1Spot.Text = PC.skill.GetSpot().ToString();
+            Char1Survival.Text = PC.skill.GetSurvival().ToString();
+            Char1Swim.Text = PC.skill.GetSwim().ToString();
+            Char1Tumble.Text = PC.skill.GetTumble().ToString();
+            Char1UMD.Text = PC.skill.GetUseMagicDevice().ToString();
+            Char1UR.Text = PC.skill.GetUseRope().ToString();
+            Char1Other.Text = PC.skill.GetOther().ToString();
         }//end of populateFields1
 
         private void populateFields2(Character PC)
@@ -273,6 +283,16 @@ namespace DM_Sheet
             Char2Profession.Text = PC.skill.GetProfession().ToString();
             Char2Ride.Text = PC.skill.GetRide().ToString();
             Char2Search.Text = PC.skill.GetSearch().ToString();
+            Char2SM.Text = PC.skill.GetSenseMotive().ToString();
+            Char2SH.Text = PC.skill.GetSlightOfHand().ToString();
+            Char2SpellCraft.Text = PC.skill.GetSpellcraft().ToString();
+            Char2Spot.Text = PC.skill.GetSpot().ToString();
+            Char2Survival.Text = PC.skill.GetSurvival().ToString();
+            Char2Swim.Text = PC.skill.GetSwim().ToString();
+            Char2Tumble.Text = PC.skill.GetTumble().ToString();
+            Char2UMD.Text = PC.skill.GetUseMagicDevice().ToString();
+            Char2UR.Text = PC.skill.GetUseRope().ToString();
+            Char2Other.Text = PC.skill.GetOther().ToString();
         }//end of populateFields2
 
         private void populateFields3(Character PC)
@@ -359,6 +379,16 @@ namespace DM_Sheet
             Char3Profession.Text = PC.skill.GetProfession().ToString();
             Char3Ride.Text = PC.skill.GetRide().ToString();
             Char3Search.Text = PC.skill.GetSearch().ToString();
+            Char3SM.Text = PC.skill.GetSenseMotive().ToString();
+            Char3SH.Text = PC.skill.GetSlightOfHand().ToString();
+            Char3SpellCraft.Text = PC.skill.GetSpellcraft().ToString();
+            Char3Spot.Text = PC.skill.GetSpot().ToString();
+            Char3Survival.Text = PC.skill.GetSurvival().ToString();
+            Char3Swim.Text = PC.skill.GetSwim().ToString();
+            Char3Tumble.Text = PC.skill.GetTumble().ToString();
+            Char3UMD.Text = PC.skill.GetUseMagicDevice().ToString();
+            Char3UR.Text = PC.skill.GetUseRope().ToString();
+            Char3Other.Text = PC.skill.GetOther().ToString();
         }//end of populateFields3
 
         private void populateFields4(Character PC)
@@ -445,6 +475,16 @@ namespace DM_Sheet
             Char4Profession.Text = PC.skill.GetProfession().ToString();
             Char4Ride.Text = PC.skill.GetRide().ToString();
             Char4Search.Text = PC.skill.GetSearch().ToString();
+            Char4SM.Text = PC.skill.GetSenseMotive().ToString();
+            Char4SH.Text = PC.skill.GetSlightOfHand().ToString();
+            Char4SpellCraft.Text = PC.skill.GetSpellcraft().ToString();
+            Char4Spot.Text = PC.skill.GetSpot().ToString();
+            Char4Survival.Text = PC.skill.GetSurvival().ToString();
+            Char4Swim.Text = PC.skill.GetSwim().ToString();
+            Char4Tumble.Text = PC.skill.GetTumble().ToString();
+            Char4UMD.Text = PC.skill.GetUseMagicDevice().ToString();
+            Char4UR.Text = PC.skill.GetUseRope().ToString();
+            Char4Other.Text = PC.skill.GetOther().ToString();
         }//end of populateFields4
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5123,7 +5163,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[0].skill.SetPerform(Convert.ToInt32(Char1Profession.Text));
+                Group[0].skill.SetProfession(Convert.ToInt32(Char1Profession.Text));
             }//end try
             catch
             {
@@ -5146,7 +5186,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[1].skill.SetPerform(Convert.ToInt32(Char2Profession.Text));
+                Group[1].skill.SetProfession(Convert.ToInt32(Char2Profession.Text));
             }//end try
             catch
             {
@@ -5169,7 +5209,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[2].skill.SetPerform(Convert.ToInt32(Char3Profession.Text));
+                Group[2].skill.SetProfession(Convert.ToInt32(Char3Profession.Text));
             }//end try
             catch
             {
@@ -5192,7 +5232,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[3].skill.SetPerform(Convert.ToInt32(Char4Profession.Text));
+                Group[3].skill.SetProfession(Convert.ToInt32(Char4Profession.Text));
             }//end try
             catch
             {
@@ -5215,7 +5255,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[0].skill.SetPerform(Convert.ToInt32(Char1Ride.Text));
+                Group[0].skill.SetRide(Convert.ToInt32(Char1Ride.Text));
             }//end try
             catch
             {
@@ -5238,7 +5278,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[1].skill.SetPerform(Convert.ToInt32(Char2Ride.Text));
+                Group[1].skill.SetRide(Convert.ToInt32(Char2Ride.Text));
             }//end try
             catch
             {
@@ -5261,7 +5301,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[2].skill.SetPerform(Convert.ToInt32(Char3Ride.Text));
+                Group[2].skill.SetRide(Convert.ToInt32(Char3Ride.Text));
             }//end try
             catch
             {
@@ -5284,7 +5324,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[3].skill.SetPerform(Convert.ToInt32(Char4Ride.Text));
+                Group[3].skill.SetRide(Convert.ToInt32(Char4Ride.Text));
             }//end try
             catch
             {
@@ -5307,7 +5347,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[0].skill.SetPerform(Convert.ToInt32(Char1Search.Text));
+                Group[0].skill.SetSearch(Convert.ToInt32(Char1Search.Text));
             }//end try
             catch
             {
@@ -5330,7 +5370,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[1].skill.SetPerform(Convert.ToInt32(Char2Search.Text));
+                Group[1].skill.SetSearch(Convert.ToInt32(Char2Search.Text));
             }//end try
             catch
             {
@@ -5353,7 +5393,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[2].skill.SetPerform(Convert.ToInt32(Char3Search.Text));
+                Group[2].skill.SetSearch(Convert.ToInt32(Char3Search.Text));
             }//end try
             catch
             {
@@ -5376,7 +5416,7 @@ namespace DM_Sheet
         {
             try
             {
-                Group[3].skill.SetPerform(Convert.ToInt32(Char4Search.Text));
+                Group[3].skill.SetSearch(Convert.ToInt32(Char4Search.Text));
             }//end try
             catch
             {
@@ -5389,6 +5429,926 @@ namespace DM_Sheet
                     isError = false;
                     ///
                     Char4Search.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1SM_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSenseMotive(Convert.ToInt32(Char1SM.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1SM.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2SM_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSenseMotive(Convert.ToInt32(Char2SM.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2SM.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3SM_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSenseMotive(Convert.ToInt32(Char3SM.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3SM.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4SM_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSenseMotive(Convert.ToInt32(Char4SM.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4SM.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1SH_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSlightOfHand(Convert.ToInt32(Char1SH.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1SH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2SH_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSlightOfHand(Convert.ToInt32(Char2SH.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2SH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3SH_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSlightOfHand(Convert.ToInt32(Char3SH.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3SH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4SH_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSlightOfHand(Convert.ToInt32(Char4SH.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4SH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1SpellCraft_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSpellcraft(Convert.ToInt32(Char1SpellCraft.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1SpellCraft.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2SpellCraft_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSpellcraft(Convert.ToInt32(Char2SpellCraft.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2SpellCraft.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3SpellCraft_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSpellcraft(Convert.ToInt32(Char3SpellCraft.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3SpellCraft.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4SpellCraft_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSpellcraft(Convert.ToInt32(Char4SpellCraft.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4SpellCraft.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1Spot_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSpot(Convert.ToInt32(Char1Spot.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Spot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2Spot_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSpot(Convert.ToInt32(Char2Spot.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Spot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3Spot_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSpot(Convert.ToInt32(Char3Spot.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Spot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4Spot_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSpot(Convert.ToInt32(Char4Spot.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Spot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1Survival_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSurvival(Convert.ToInt32(Char1Survival.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Survival.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2Survival_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSurvival(Convert.ToInt32(Char2Survival.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Survival.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3Survival_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSurvival(Convert.ToInt32(Char3Survival.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Survival.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4Survival_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSurvival(Convert.ToInt32(Char4Survival.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Survival.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1Swim_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetSwim(Convert.ToInt32(Char1Swim.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Swim.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2Swim_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetSwim(Convert.ToInt32(Char2Swim.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Swim.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3Swim_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetSwim(Convert.ToInt32(Char3Swim.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Swim.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4Swim_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetSwim(Convert.ToInt32(Char4Swim.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Swim.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1Tumble_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetTumble(Convert.ToInt32(Char1Tumble.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Tumble.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2Tumble_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetTumble(Convert.ToInt32(Char2Tumble.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Tumble.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3Tumble_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetTumble(Convert.ToInt32(Char3Tumble.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Tumble.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4Tumble_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetTumble(Convert.ToInt32(Char4Tumble.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Tumble.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1UMD_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetUseMagicDevice(Convert.ToInt32(Char1UMD.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1UMD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2UMD_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetUseMagicDevice(Convert.ToInt32(Char2UMD.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2UMD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3UMD_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetUseMagicDevice(Convert.ToInt32(Char3UMD.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3UMD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4UMD_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetUseMagicDevice(Convert.ToInt32(Char4UMD.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4UMD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1UR_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetUseRope(Convert.ToInt32(Char1UR.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1UR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2UR_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetUseRope(Convert.ToInt32(Char2UR.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2UR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3UR_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetUseRope(Convert.ToInt32(Char3UR.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3UR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4UR_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetUseRope(Convert.ToInt32(Char4UR.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4UR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char1Other_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[0].skill.SetOther(Convert.ToInt32(Char1Other.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Other.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char2Other_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[1].skill.SetOther(Convert.ToInt32(Char2Other.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Other.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char3Other_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[2].skill.SetOther(Convert.ToInt32(Char3Other.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Other.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
+
+        private void Char4Other_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Group[3].skill.SetOther(Convert.ToInt32(Char4Other.Text));
+            }//end try
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Other.Text = "";
                     ////
                     isError = true;
                 }//end if
