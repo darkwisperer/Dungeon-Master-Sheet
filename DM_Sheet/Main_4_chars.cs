@@ -434,9 +434,26 @@ namespace DM_Sheet
 
         private void Char1Level_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
            Group[0].Setlvl(Convert.ToInt32(Char1Level.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Level.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Gender_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Char1Gender.SelectedItem != null)
@@ -445,9 +462,26 @@ namespace DM_Sheet
 
         private void Char1Age_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetAge(Convert.ToInt32(Char1Age.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Age.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Height_TextChanged(object sender, EventArgs e)
         {
             Group[0].Sethieght(Char1Height.Text);
@@ -491,75 +525,296 @@ namespace DM_Sheet
 
         private void Char1STR_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetSTR(Convert.ToInt32(Char1STR.Text));
             Char1STR_MOD.Text = Group[0].GetSTR_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1STR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Dex_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetDEX(Convert.ToInt32(Char1Dex.Text));
             Char1DEX_MOD.Text = Group[0].GetDEX_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Dex.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1CON_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetCON(Convert.ToInt32(Char1CON.Text));
             Char1CON_MOD.Text = Group[0].GetCON_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1CON.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1INT_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetINT(Convert.ToInt32(Char1INT.Text));
             Char1INT_MOD.Text = Group[0].GetINT_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1INT.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1WIS_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetWIS(Convert.ToInt32(Char1WIS.Text));
             Char1WIS_MOD.Text = Group[0].GetWIS_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1WIS.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1CHA_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetCHA(Convert.ToInt32(Char1CHA.Text));
             Char1CHA_MOD.Text = Group[0].GetCHA_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1CHA.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1SPEED_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetSpeed(Convert.ToInt32(Char1SPEED.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1SPEED.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1OH_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetOH(Convert.ToInt32(Char1OH.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1OH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1OG_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetOG(Convert.ToInt32(Char1OG.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1OG.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1PD_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetPD(Convert.ToInt32(Char1PD.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1PD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Fort_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetFort(Convert.ToInt32(Char1Fort.Text));        
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Fort.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1REF_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetRef(Convert.ToInt32(Char1REF.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1REF.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1WILL_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetWill(Convert.ToInt32(Char1WILL.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1WILL.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1SavingThrowMods_TextChanged(object sender, EventArgs e)
         {
             Group[0].SetSaving_Throw_Mod(Char1SavingThrowMods.Text.Replace(Environment.NewLine, ","));
@@ -567,19 +822,70 @@ namespace DM_Sheet
 
         private void Char1AC_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetAC(Convert.ToInt32(Char1AC.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1AC.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1FlatFoot_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetFlatFoot(Convert.ToInt32(Char1FlatFoot.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1FlatFoot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Touch_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetTouch(Convert.ToInt32(Char1Touch.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1Touch.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1AC_MOD_TextChanged(object sender, EventArgs e)
         {
             Group[0].SetAC_Mod(Char1AC_MOD.Text.Replace(Environment.NewLine, ","));
@@ -587,14 +893,48 @@ namespace DM_Sheet
 
         private void Char1HP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetHP(Convert.ToInt32(Char1HP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1HP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1MaxHP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetHPMAX(Convert.ToInt32(Char1MaxHP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char1MaxHP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
 //------------------------------------------------------------------------------------------------------------------------------------------------------
 //Char 2================================================================================================================================================
 //------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -623,9 +963,26 @@ namespace DM_Sheet
 
         private void Char2Level_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].Setlvl(Convert.ToInt32(Char2Level.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Level.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2Gender_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Char2Gender.SelectedItem != null)
@@ -634,9 +991,26 @@ namespace DM_Sheet
 
         private void Char2Age_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetAge(Convert.ToInt32(Char2Age.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Age.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2Height_TextChanged(object sender, EventArgs e)
         {
             Group[1].Sethieght(Char2Height.Text);
@@ -680,75 +1054,296 @@ namespace DM_Sheet
 
         private void Char2STR_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetSTR(Convert.ToInt32(Char2STR.Text));
             Char2STR_MOD.Text = Group[1].GetSTR_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2STR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2Dex_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetDEX(Convert.ToInt32(Char2Dex.Text));
             Char2DEX_MOD.Text = Group[1].GetDEX_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Dex.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2CON_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetCON(Convert.ToInt32(Char2CON.Text));
             Char2CON_MOD.Text = Group[1].GetCON_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2CON.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2INT_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetINT(Convert.ToInt32(Char2INT.Text));
             Char2INT_MOD.Text = Group[1].GetINT_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2INT.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2WIS_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetWIS(Convert.ToInt32(Char2WIS.Text));
             Char2WIS_MOD.Text = Group[1].GetWIS_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2WIS.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2CHA_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetCHA(Convert.ToInt32(Char2CHA.Text));
             Char2CHA_MOD.Text = Group[1].GetCHA_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2CHA.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2SPEED_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetSpeed(Convert.ToInt32(Char2SPEED.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2SPEED.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2OH_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetOH(Convert.ToInt32(Char2OH.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2OH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2OG_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetOG(Convert.ToInt32(Char2OG.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2OG.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2PD_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetPD(Convert.ToInt32(Char2PD.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2PD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2Fort_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetFort(Convert.ToInt32(Char2Fort.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Fort.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2REF_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetRef(Convert.ToInt32(Char2REF.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2REF.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2WILL_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetWill(Convert.ToInt32(Char2WILL.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2WILL.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2SavingThrowMods_TextChanged(object sender, EventArgs e)
         {
             Group[1].SetSaving_Throw_Mod(Char2SavingThrowMods.Text.Replace(Environment.NewLine, ","));
@@ -756,19 +1351,70 @@ namespace DM_Sheet
 
         private void Char2AC_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetAC(Convert.ToInt32(Char2AC.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2AC.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2FlatFoot_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetFlatFoot(Convert.ToInt32(Char2FlatFoot.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2FlatFoot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2Touch_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetTouch(Convert.ToInt32(Char2Touch.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2Touch.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2AC_MOD_TextChanged(object sender, EventArgs e)
         {
             Group[1].SetAC_Mod(Char2AC_MOD.Text.Replace(Environment.NewLine, ","));
@@ -776,14 +1422,48 @@ namespace DM_Sheet
 
         private void Char2HP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetHP(Convert.ToInt32(Char2HP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2HP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char2MaxHP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetHPMAX(Convert.ToInt32(Char2MaxHP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char2MaxHP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
 //------------------------------------------------------------------------------------------------------------------------------------------------------
 //Char 3================================================================================================================================================
 //------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -811,9 +1491,26 @@ namespace DM_Sheet
 
         private void Char3Level_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].Setlvl(Convert.ToInt32(Char3Level.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Level.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3Gender_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Char3Gender.SelectedItem != null)
@@ -868,75 +1565,296 @@ namespace DM_Sheet
 
         private void Char3STR_TextChanged(object sender, EventArgs e)
         {
+            try{
             Group[2].SetSTR(Convert.ToInt32(Char3STR.Text));
             Char3STR_MOD.Text = Group[2].GetSTR_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3STR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3Dex_TextChanged(object sender, EventArgs e)
         {
+
+            try
+            {
             Group[2].SetDEX(Convert.ToInt32(Char3Dex.Text));
             Char3DEX_MOD.Text = Group[2].GetDEX_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Dex.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3CON_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetCON(Convert.ToInt32(Char3CON.Text));
             Char3CON_MOD.Text = Group[2].GetCON_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3CON.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3INT_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetINT(Convert.ToInt32(Char3INT.Text));
             Char3INT_MOD.Text = Group[2].GetINT_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3INT.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3WIS_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetWIS(Convert.ToInt32(Char3WIS.Text));
             Char3WIS_MOD.Text = Group[2].GetWIS_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3WIS.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3CHA_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetCHA(Convert.ToInt32(Char3CHA.Text));
             Char3CHA_MOD.Text = Group[2].GetCHA_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3CHA.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3SPEED_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetSpeed(Convert.ToInt32(Char3SPEED.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3SPEED.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3OH_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetOH(Convert.ToInt32(Char3OH.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3OH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3OG_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetOG(Convert.ToInt32(Char3OG.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3OG.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3PD_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetPD(Convert.ToInt32(Char3PD.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3PD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3Fort_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetFort(Convert.ToInt32(Char3Fort.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Fort.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3REF_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetRef(Convert.ToInt32(Char3REF.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3REF.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3WILL_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetWill(Convert.ToInt32(Char3WILL.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3WILL.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3SavingThrowMods_TextChanged(object sender, EventArgs e)
         {
             Group[2].SetSaving_Throw_Mod(Char3SavingThrowMods.Text.Replace(Environment.NewLine, ","));
@@ -944,19 +1862,70 @@ namespace DM_Sheet
 
         private void Char3AC_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetAC(Convert.ToInt32(Char3AC.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3AC.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3FlatFoot_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetFlatFoot(Convert.ToInt32(Char3FlatFoot.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3FlatFoot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3Touch_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetTouch(Convert.ToInt32(Char3Touch.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3Touch.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3AC_MOD_TextChanged(object sender, EventArgs e)
         {
             Group[2].SetAC_Mod(Char3AC_MOD.Text.Replace(Environment.NewLine, ","));
@@ -964,14 +1933,48 @@ namespace DM_Sheet
 
         private void Char3HP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetHP(Convert.ToInt32(Char3HP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3HP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char3MaxHP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetHPMAX(Convert.ToInt32(Char3MaxHP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char3MaxHP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------------
 //Char 4================================================================================================================================================
@@ -1001,9 +2004,26 @@ namespace DM_Sheet
 
         private void Char4Level_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].Setlvl(Convert.ToInt32(Char4Level.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Level.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4Gender_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (Char4Gender.SelectedItem != null)
@@ -1012,9 +2032,26 @@ namespace DM_Sheet
 
         private void Char4Age_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetAge(Convert.ToInt32(Char4Age.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Age.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4Height_TextChanged(object sender, EventArgs e)
         {
             Group[3].Sethieght(Char4Height.Text);
@@ -1058,75 +2095,296 @@ namespace DM_Sheet
 
         private void Char4STR_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetSTR(Convert.ToInt32(Char4STR.Text));
             Char4STR_MOD.Text = Group[3].GetSTR_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4STR.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4Dex_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetDEX(Convert.ToInt32(Char4Dex.Text));
             Char4DEX_MOD.Text = Group[3].GetDEX_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Dex.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4CON_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetCON(Convert.ToInt32(Char4CON.Text));
             Char4CON_MOD.Text = Group[3].GetCON_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4CON.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4INT_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetINT(Convert.ToInt32(Char4INT.Text));
             Char4INT_MOD.Text = Group[3].GetINT_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4INT.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4WIS_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetWIS(Convert.ToInt32(Char4WIS.Text));
             Char4WIS_MOD.Text = Group[3].GetWIS_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4WIS.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4CHA_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetCHA(Convert.ToInt32(Char4CHA.Text));
             Char4CHA_MOD.Text = Group[3].GetCHA_Mod().ToString();
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4CHA.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4SPEED_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetSpeed(Convert.ToInt32(Char4SPEED.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4SPEED.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4OH_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetOH(Convert.ToInt32(Char4OH.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4OH.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4OG_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetOG(Convert.ToInt32(Char4OG.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4OG.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4PD_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetPD(Convert.ToInt32(Char4PD.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4PD.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4Fort_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetFort(Convert.ToInt32(Char4Fort.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Fort.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4REF_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetRef(Convert.ToInt32(Char4REF.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4REF.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4WILL_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetWill(Convert.ToInt32(Char4WILL.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4WILL.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4SavingThrowMods_TextChanged(object sender, EventArgs e)
         {
             Group[3].SetSaving_Throw_Mod(Char4SavingThrowMods.Text.Replace(Environment.NewLine, ","));
@@ -1134,19 +2392,70 @@ namespace DM_Sheet
 
         private void Char4AC_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetAC(Convert.ToInt32(Char4AC.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4AC.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4FlatFoot_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetFlatFoot(Convert.ToInt32(Char4FlatFoot.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4FlatFoot.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4Touch_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetTouch(Convert.ToInt32(Char4Touch.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4Touch.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4AC_MOD_TextChanged(object sender, EventArgs e)
         {
             Group[3].SetAC_Mod(Char4AC_MOD.Text.Replace(Environment.NewLine, ","));
@@ -1154,38 +2463,140 @@ namespace DM_Sheet
 
         private void Char4HP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetHP(Convert.ToInt32(Char4HP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4HP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char4MaxHP_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetHPMAX(Convert.ToInt32(Char4MaxHP.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    Char4MaxHP.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 //skills=============================================================================================================================================
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 
         private void ACCheckPenalty1_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[0].SetACCheck(Convert.ToInt32(ACCheckPenalty1.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    ACCheckPenalty1.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void ACCheckPenalty2_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[1].SetACCheck(Convert.ToInt32(ACCheckPenalty2.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    ACCheckPenalty2.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void ACCheckPenalty3_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[2].SetACCheck(Convert.ToInt32(ACCheckPenalty3.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    ACCheckPenalty3.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void ACCheckPenalty4_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             Group[3].SetACCheck(Convert.ToInt32(ACCheckPenalty4.Text));
         }
-
+            catch
+            {
+                if (isError)
+                {
+                    ErrorMSG error = new ErrorMSG();
+                    //set error message
+                    error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
+                    error.Show();
+                    isError = false;
+                    ///
+                    ACCheckPenalty4.Text = "";
+                    ////
+                    isError = true;
+                }//end if
+            }
+        }
         private void Char1Appraise_TextChanged(object sender, EventArgs e)
         {
             try
