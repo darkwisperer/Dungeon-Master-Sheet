@@ -20,3 +20,5 @@ C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\bin\Debug\DM_Sheet.application
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.exe
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.pdb
