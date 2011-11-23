@@ -18,6 +18,7 @@ namespace DM_Sheet
         private Character PC4;
         private List<Character> Group = new List<Character>();
         private String PATH = null;
+        private String Group_Name = "New Group";
 
         public Main()
         {
@@ -28,16 +29,18 @@ namespace DM_Sheet
             Group.Add(PC1);
             Group.Add(PC2);
             Group.Add(PC3);
-            Group.Add(PC4);
+            Group.Add(PC4);            
             InitializeComponent();
+            tabPage1.Text = Group_Name;
         }
 
-        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+/*        private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
          //File->print
-
+            printDialog1.ShowDialog();
 
         }
+ */
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -50,7 +53,7 @@ namespace DM_Sheet
                 // Displays a SaveFileDialog so the user can save
                 SaveFileDialog saveFileDialog1 = new SaveFileDialog();
                 saveFileDialog1.Filter = "DM Sheet|*.DM";
-                saveFileDialog1.Title = "Save your character groupt";
+                saveFileDialog1.Title = "Save your character group";
                 saveFileDialog1.ShowDialog();
 
                 if (saveFileDialog1.FileName != "")
@@ -95,6 +98,11 @@ namespace DM_Sheet
             {
                 Load Lf = new Load(openFileDialog1.FileName, Group);//call save routine and pass in a File name
                 PATH = openFileDialog1.FileName;
+
+                String[] GroupName = PATH.Split('\\');
+                GroupName = GroupName[GroupName.Length - 1].Split('.');
+                Group_Name = GroupName[0];
+                tabPage1.Text = Group_Name;
 
                 populateFields1(Group[0]);
                 populateFields2(Group[1]);
@@ -6354,6 +6362,7 @@ namespace DM_Sheet
                 }//end if
             }
         }
+
 
     }//end of class
 }//end of namespace

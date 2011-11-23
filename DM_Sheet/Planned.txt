@@ -1,4 +1,5 @@
 ﻿Whats planned next:  (in priority order)
+  -Print
   -New tabbed sheets
     -Ability to clode a single tab
     -Ability to close all but this tab  
