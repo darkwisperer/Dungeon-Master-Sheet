@@ -134,6 +134,7 @@ namespace DM_Sheet
                 PC.skill.SetTumble(Convert.ToInt32(input[79]));
                 PC.skill.SetUseMagicDevice(Convert.ToInt32(input[80]));
                 PC.skill.SetUseRope(Convert.ToInt32(input[81]));
+                PC.skill.SetOther(Convert.ToInt32(input[82]));
             }//end of try
             catch
             {
