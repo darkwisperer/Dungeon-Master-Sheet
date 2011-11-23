@@ -6,6 +6,7 @@
        -http://msdn.microsoft.com/en-au/library/system.windows.forms.tabpage.aspx
     -Ability to clode a single tab
     -Ability to close all but this tab  
+  -Ability to load a character from (Dungeons and Dragons v3.5 Digital Character Sheet) into the next available character slot.
   -Battle grid (in new tab)
     -Pull character stats from oppen sheets
   -Dice roller (in new tab)  
