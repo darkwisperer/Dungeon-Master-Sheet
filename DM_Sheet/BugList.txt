@@ -1,1 +1,2 @@
 ﻿Bugs:
+  -error msg on backspace. Ints only
