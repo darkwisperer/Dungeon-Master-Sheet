@@ -25,6 +25,8 @@ Planned for next :
   -Battle grid (in new window)
   -Dice roller
 
+Original DM_sheet can be found:
+http://www.militaryfocus.com/dnd/index.htm
 
 
 Below is the legal stuff.
