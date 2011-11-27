@@ -16,7 +16,7 @@
     <ManifestCertificateThumbprint>6E476784C7E07FAC220ECB1A9D3A7653482CC679</ManifestCertificateThumbprint>
     <ManifestKeyFile>DM_Sheet_TemporaryKey.pfx</ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>false</SignManifests>
+    <SignManifests>true</SignManifests>
     <NoWin32Manifest>true</NoWin32Manifest>
     <PublishUrl>C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\publish\</PublishUrl>
     <Install>true</Install>
@@ -36,7 +36,7 @@
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>0.0.9.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>

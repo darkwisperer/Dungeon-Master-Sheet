@@ -4270,7 +4270,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
             this.ShowIcon = false;
-            this.Text = "DM Sheet v0.9";
+            this.Text = "DM Sheet v1.0";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
