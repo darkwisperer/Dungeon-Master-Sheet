@@ -1,2 +1,3 @@
 ﻿Bugs:
   -error msg on backspace. Ints only
+  -ability modifiers stay the number they were before the ability score was deleted.

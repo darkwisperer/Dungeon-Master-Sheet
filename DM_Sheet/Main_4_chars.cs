@@ -528,9 +528,10 @@ namespace DM_Sheet
         }
             catch
             {
-                
-                if (isError)
+
+                if (isError && !Char1Level.Text.Equals(""))
                 {
+                    
                     ErrorMSG error = new ErrorMSG();
                     //set error message
                     error.ErrorLabel.Text = "Error: This box takes integers only (0-9)";
@@ -557,7 +558,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Age.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -621,7 +622,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1STR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -633,6 +634,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1STR.Text.Equals(""))
+                    Char1STR_MOD.Text = "0";
             }
         }
         private void Char1Dex_TextChanged(object sender, EventArgs e)
@@ -644,7 +647,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Dex.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -656,6 +659,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1Dex.Text.Equals(""))
+                    Char1DEX_MOD.Text = "0";
             }
         }
         private void Char1CON_TextChanged(object sender, EventArgs e)
@@ -667,7 +672,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1CON.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -679,6 +684,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1CON.Text.Equals(""))
+                    Char1CON_MOD.Text = "0";
             }
         }
         private void Char1INT_TextChanged(object sender, EventArgs e)
@@ -690,7 +697,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1INT.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -702,6 +709,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1INT.Text.Equals(""))
+                    Char1INT_MOD.Text = "0";
             }
         }
         private void Char1WIS_TextChanged(object sender, EventArgs e)
@@ -713,7 +722,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1WIS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -725,6 +734,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1WIS.Text.Equals(""))
+                    Char1WIS_MOD.Text = "0";
             }
         }
         private void Char1CHA_TextChanged(object sender, EventArgs e)
@@ -736,7 +747,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1CHA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -748,6 +759,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char1CHA.Text.Equals(""))
+                    Char1CHA_MOD.Text = "0";
             }
         }
         private void Char1SPEED_TextChanged(object sender, EventArgs e)
@@ -758,7 +771,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1SPEED.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -780,7 +793,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1OH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -802,7 +815,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1OG.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -824,7 +837,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1PD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -846,7 +859,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Fort.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -868,7 +881,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1REF.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -890,7 +903,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1WILL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -917,7 +930,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1AC.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -939,7 +952,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1FlatFoot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -961,7 +974,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Touch.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -988,7 +1001,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1HP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1010,7 +1023,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1MaxHP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1058,7 +1071,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Level.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1086,7 +1099,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Age.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1150,7 +1163,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2STR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1162,6 +1175,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2STR.Text.Equals(""))
+                    Char2STR_MOD.Text = "0";
             }
         }
         private void Char2Dex_TextChanged(object sender, EventArgs e)
@@ -1173,7 +1188,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Dex.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1185,6 +1200,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2Dex.Text.Equals(""))
+                    Char2DEX_MOD.Text = "0";
             }
         }
         private void Char2CON_TextChanged(object sender, EventArgs e)
@@ -1196,7 +1213,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2CON.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1208,6 +1225,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2CON.Text.Equals(""))
+                    Char2CON_MOD.Text = "0";
             }
         }
         private void Char2INT_TextChanged(object sender, EventArgs e)
@@ -1219,7 +1238,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2INT.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1231,6 +1250,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2INT.Text.Equals(""))
+                    Char2INT_MOD.Text = "0";
             }
         }
         private void Char2WIS_TextChanged(object sender, EventArgs e)
@@ -1242,7 +1263,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2WIS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1254,6 +1275,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2WIS.Text.Equals(""))
+                    Char2WIS_MOD.Text = "0";
             }
         }
         private void Char2CHA_TextChanged(object sender, EventArgs e)
@@ -1265,7 +1288,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2CHA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1277,6 +1300,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char2CHA.Text.Equals(""))
+                    Char2CHA_MOD.Text = "0";
             }
         }
         private void Char2SPEED_TextChanged(object sender, EventArgs e)
@@ -1287,7 +1312,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2SPEED.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1309,7 +1334,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2OH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1331,7 +1356,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2OG.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1353,7 +1378,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2PD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1375,7 +1400,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Fort.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1397,7 +1422,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2REF.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1419,7 +1444,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2WILL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1446,7 +1471,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2AC.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1468,7 +1493,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2FlatFoot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1490,7 +1515,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Touch.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1517,7 +1542,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2HP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1539,7 +1564,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2MaxHP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1586,7 +1611,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Level.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1660,7 +1685,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3STR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1672,6 +1697,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3STR.Text.Equals(""))
+                    Char3STR_MOD.Text = "0";
             }
         }
         private void Char3Dex_TextChanged(object sender, EventArgs e)
@@ -1684,7 +1711,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Dex.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1696,6 +1723,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3Dex.Text.Equals(""))
+                    Char3DEX_MOD.Text = "0";
             }
         }
         private void Char3CON_TextChanged(object sender, EventArgs e)
@@ -1707,7 +1736,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3CON.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1719,6 +1748,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3CON.Text.Equals(""))
+                    Char3CON_MOD.Text = "0";
             }
         }
         private void Char3INT_TextChanged(object sender, EventArgs e)
@@ -1730,7 +1761,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3INT.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1742,6 +1773,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3INT.Text.Equals(""))
+                    Char3INT_MOD.Text = "0";
             }
         }
         private void Char3WIS_TextChanged(object sender, EventArgs e)
@@ -1753,7 +1786,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3WIS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1765,6 +1798,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3WIS.Text.Equals(""))
+                    Char3WIS_MOD.Text = "0";
             }
         }
         private void Char3CHA_TextChanged(object sender, EventArgs e)
@@ -1776,7 +1811,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3CHA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1788,6 +1823,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char3CHA.Text.Equals(""))
+                    Char3CHA_MOD.Text = "0";
             }
         }
         private void Char3SPEED_TextChanged(object sender, EventArgs e)
@@ -1798,7 +1835,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3SPEED.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1820,7 +1857,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3OH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1842,7 +1879,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3OG.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1864,7 +1901,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3PD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1886,7 +1923,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Fort.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1908,7 +1945,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3REF.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1930,7 +1967,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3WILL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1957,7 +1994,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3AC.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -1979,7 +2016,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3FlatFoot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2001,7 +2038,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Touch.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2028,7 +2065,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3HP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2050,7 +2087,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3MaxHP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2099,7 +2136,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Level.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2127,7 +2164,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Age.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2191,7 +2228,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4STR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2203,6 +2240,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4STR.Text.Equals(""))
+                    Char4STR_MOD.Text = "0";
             }
         }
         private void Char4Dex_TextChanged(object sender, EventArgs e)
@@ -2214,7 +2253,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Dex.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2226,6 +2265,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4Dex.Text.Equals(""))
+                    Char4DEX_MOD.Text = "0";
             }
         }
         private void Char4CON_TextChanged(object sender, EventArgs e)
@@ -2237,7 +2278,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4CON.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2249,6 +2290,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4CON.Text.Equals(""))
+                    Char4CON_MOD.Text = "0";
             }
         }
         private void Char4INT_TextChanged(object sender, EventArgs e)
@@ -2260,7 +2303,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4INT.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2272,6 +2315,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4INT.Text.Equals(""))
+                    Char4INT_MOD.Text = "0";
             }
         }
         private void Char4WIS_TextChanged(object sender, EventArgs e)
@@ -2283,7 +2328,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4WIS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2295,6 +2340,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4WIS.Text.Equals(""))
+                    Char4WIS_MOD.Text = "0";
             }
         }
         private void Char4CHA_TextChanged(object sender, EventArgs e)
@@ -2306,7 +2353,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4CHA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2318,6 +2365,8 @@ namespace DM_Sheet
                     ////
                     isError = true;
                 }//end if
+                if (Char4CHA.Text.Equals(""))
+                    Char4CHA_MOD.Text = "0";
             }
         }
         private void Char4SPEED_TextChanged(object sender, EventArgs e)
@@ -2328,7 +2377,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4SPEED.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2350,7 +2399,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4OH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2372,7 +2421,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4OG.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2394,7 +2443,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4PD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2416,7 +2465,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Fort.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2438,7 +2487,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4REF.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2460,7 +2509,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4WILL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2487,7 +2536,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4AC.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2509,7 +2558,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4FlatFoot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2531,7 +2580,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Touch.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2558,7 +2607,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4HP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2580,7 +2629,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4MaxHP.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2606,7 +2655,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !ACCheckPenalty1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2628,7 +2677,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !ACCheckPenalty2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2650,7 +2699,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !ACCheckPenalty3.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2672,7 +2721,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !ACCheckPenalty4.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2694,7 +2743,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Appraise.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2716,7 +2765,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Appraise.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2738,7 +2787,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Appraise.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2760,7 +2809,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Appraise.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2782,7 +2831,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Balance.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2804,7 +2853,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Balance.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2826,7 +2875,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Balance.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2848,7 +2897,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Balance.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2870,7 +2919,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Bluff.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2892,7 +2941,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Bluff.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2914,7 +2963,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Bluff.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2936,7 +2985,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Bluff.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2958,7 +3007,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Climb.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -2980,7 +3029,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Climb.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3002,7 +3051,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Climb.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3024,7 +3073,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Climb.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3046,7 +3095,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Concentration.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3068,7 +3117,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Concentration.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3090,7 +3139,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Concentration.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3112,7 +3161,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Concentration.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3134,7 +3183,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Craft1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3156,7 +3205,7 @@ namespace DM_Sheet
         }
          catch
             {
-                if (isError)
+                if (isError && !Char2Craft1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3178,7 +3227,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Craft1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3200,7 +3249,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Craft1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3222,7 +3271,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char1Craft2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3244,7 +3293,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char2Craft2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3266,7 +3315,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char3Craft2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3288,7 +3337,7 @@ namespace DM_Sheet
         }
             catch
             {
-                if (isError)
+                if (isError && !Char4Craft2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3310,7 +3359,7 @@ namespace DM_Sheet
         }
              catch
          {
-              if (isError)
+             if (isError && !Char1DS.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3332,7 +3381,7 @@ namespace DM_Sheet
         }
          catch
          {
-              if (isError)
+             if (isError && !Char2DS.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3354,7 +3403,7 @@ namespace DM_Sheet
         }
              catch
          {
-              if (isError)
+             if (isError && !Char3DS.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3376,7 +3425,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char4DS.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3398,7 +3447,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char1Diplomacy.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3420,7 +3469,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char2Diplomacy.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3442,7 +3491,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char3Diplomacy.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3464,7 +3513,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char4Diplomacy.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3486,7 +3535,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char1DD.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3508,7 +3557,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char2DD.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3530,7 +3579,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char3DD.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3552,7 +3601,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char4DD.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3574,7 +3623,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char1Disguise.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3596,7 +3645,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char2Disguise.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3618,7 +3667,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char3Disguise.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3640,7 +3689,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char4Disguise.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3662,7 +3711,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char1EA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3684,7 +3733,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char2EA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3706,7 +3755,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char3EA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3728,7 +3777,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char4EA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3750,7 +3799,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char1Forgery.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3772,7 +3821,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char2Forgery.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3794,7 +3843,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char3Forgery.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3816,7 +3865,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char4Forgery.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3838,7 +3887,7 @@ namespace DM_Sheet
         }
         catch
          {
-              if (isError)
+             if (isError && !Char1GI.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3860,7 +3909,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char2GI.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3882,7 +3931,7 @@ namespace DM_Sheet
         }
             catch
          {
-              if (isError)
+             if (isError && !Char3GI.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3904,7 +3953,7 @@ namespace DM_Sheet
         }
            catch
          {
-              if (isError)
+             if (isError && !Char4GI.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3926,7 +3975,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char1HA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3948,7 +3997,7 @@ namespace DM_Sheet
         }
                catch
          {
-              if (isError)
+             if (isError && !Char2HA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3970,7 +4019,7 @@ namespace DM_Sheet
         }
                 catch
          {
-              if (isError)
+             if (isError && !Char3HA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -3992,7 +4041,7 @@ namespace DM_Sheet
         }
                 catch
          {
-              if (isError)
+             if (isError && !Char4HA.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4014,7 +4063,7 @@ namespace DM_Sheet
         }
               catch
          {
-              if (isError)
+             if (isError && !Char1Heal.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4036,7 +4085,7 @@ namespace DM_Sheet
             }
             catch
             {
-                if (isError)
+                if (isError && !Char2Heal.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4058,7 +4107,7 @@ namespace DM_Sheet
          }
              catch
          {
-              if (isError)
+             if (isError && !Char3Heal.Text.Equals(""))
               {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4081,7 +4130,7 @@ namespace DM_Sheet
             }
             catch
             {
-                if (isError)
+                if (isError && !Char4Heal.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4104,7 +4153,7 @@ namespace DM_Sheet
             }
             catch
             {
-                if (isError)
+                if (isError && !Char1Hide.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4125,7 +4174,7 @@ namespace DM_Sheet
             }//end of try
             catch
             {
-                if (isError)
+                if (isError && !Char2Hide.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4146,7 +4195,7 @@ namespace DM_Sheet
             }
             catch 
             {
-                if (isError)
+                if (isError && !Char3Hide.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4167,7 +4216,7 @@ namespace DM_Sheet
             }//end try
             catch 
             {
-                if (isError)
+                if (isError && !Char4Hide.Text.Equals(""))
                 {
                 ErrorMSG error = new ErrorMSG();
                 //set error message
@@ -4194,7 +4243,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Intimidate.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4215,7 +4264,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Intimidate.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4236,7 +4285,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Intimidate.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4257,7 +4306,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Intimidate.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4278,7 +4327,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Jump.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4299,7 +4348,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Jump.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4320,7 +4369,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Jump.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4341,7 +4390,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Jump.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4362,7 +4411,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1KA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4383,7 +4432,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2KA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4404,7 +4453,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3KA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4425,7 +4474,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4KA.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4446,7 +4495,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1KR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4467,7 +4516,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2KR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4488,7 +4537,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3KR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4509,7 +4558,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4KR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4532,7 +4581,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1KN.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4555,7 +4604,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2KN.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4578,7 +4627,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3KN.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4601,7 +4650,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4KN.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4624,7 +4673,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1K1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4647,7 +4696,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2K1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4670,7 +4719,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3K1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4693,7 +4742,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4K1.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4716,7 +4765,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1K2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4739,7 +4788,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2K2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4762,7 +4811,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3K2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4785,7 +4834,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4K2.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4808,7 +4857,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Listen.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4831,7 +4880,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Listen.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4854,7 +4903,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Listen.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4877,7 +4926,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Listen.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4900,7 +4949,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1MS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4923,7 +4972,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2MS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4946,7 +4995,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3MS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4969,7 +5018,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4MS.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -4992,7 +5041,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1OL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5015,7 +5064,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2OL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5038,7 +5087,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3OL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5061,7 +5110,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4OL.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5084,7 +5133,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Perform.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5107,7 +5156,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Perform.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5130,7 +5179,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Perform.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5153,7 +5202,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Perform.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5176,7 +5225,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Profession.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5199,7 +5248,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Profession.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5222,7 +5271,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Profession.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5245,7 +5294,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Profession.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5268,7 +5317,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Ride.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5291,7 +5340,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Ride.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5314,7 +5363,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Ride.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5337,7 +5386,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Ride.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5360,7 +5409,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Search.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5383,7 +5432,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Search.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5406,7 +5455,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Search.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5429,7 +5478,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Search.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5452,7 +5501,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1SM.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5475,7 +5524,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2SM.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5498,7 +5547,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3SM.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5521,7 +5570,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4SM.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5544,7 +5593,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1SH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5567,7 +5616,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2SH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5590,7 +5639,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3SH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5613,7 +5662,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4SH.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5636,7 +5685,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1SpellCraft.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5659,7 +5708,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2SpellCraft.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5682,7 +5731,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3SpellCraft.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5705,7 +5754,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4SpellCraft.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5728,7 +5777,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Spot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5751,7 +5800,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Spot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5774,7 +5823,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Spot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5797,7 +5846,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Spot.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5820,7 +5869,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Survival.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5843,7 +5892,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Survival.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5866,7 +5915,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Survival.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5889,7 +5938,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Survival.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5912,7 +5961,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Swim.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5935,7 +5984,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Swim.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5958,7 +6007,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Swim.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -5981,7 +6030,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Swim.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6004,7 +6053,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Tumble.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6027,7 +6076,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Tumble.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6050,7 +6099,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Tumble.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6073,7 +6122,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4Tumble.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6096,7 +6145,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1UMD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6119,7 +6168,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2UMD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6142,7 +6191,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3UMD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6165,7 +6214,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4UMD.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6188,7 +6237,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1UR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6211,7 +6260,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2UR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6234,7 +6283,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3UR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6257,7 +6306,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char4UR.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6280,7 +6329,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char1Other.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6303,7 +6352,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char2Other.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6326,7 +6375,7 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                if (isError)
+                if (isError && !Char3Other.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
@@ -6349,8 +6398,8 @@ namespace DM_Sheet
             }//end try
             catch
             {
-                
-                if (isError)
+
+                if (isError && !Char4Other.Text.Equals(""))
                 {
                     ErrorMSG error = new ErrorMSG();
                     //set error message
