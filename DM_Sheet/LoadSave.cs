@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Collections;
- 
-namespace DM_Sheet
+
+namespace MyControlLibrary
 {
     class Load
     {
+        private int Numchars = 4;
         public Load(String PathFile, List<Character> Group)
         {
             //read in file
@@ -15,7 +16,9 @@ namespace DM_Sheet
             String tmp;
             ArrayList  input  = new ArrayList();
             try
-            {                
+            {   
+                //read first line to see what kind of sheet it is
+                Numchars = Convert.ToInt32(reader.ReadLine());
                 do
                 {
                     //load items from file
@@ -143,6 +146,10 @@ namespace DM_Sheet
             return PC;
         }//end of set values
 
+        public int getNumchars()
+        {
+            return Numchars;
+        }
     }//end of Load class
 
     class Save
