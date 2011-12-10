@@ -7,6 +7,7 @@
     -Ability to clode a single tab
     -Ability to close all but this tab  
   -Ability to load a character from (Dungeons and Dragons v3.5 Digital Character Sheet) into the next available character slot.
+    -http://frozen-solid.net/misc/apps.shtml
   -Battle grid (in new tab)
     -Pull character stats from oppen sheets
   -Dice roller (in new tab)  

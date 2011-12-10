@@ -22,3 +22,17 @@ C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
 C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
 C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.exe
 C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.pdb
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\DM_Sheet.exe.manifest
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\DM_Sheet.exe
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\DM_Sheet.pdb
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.AboutBox1.resources
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.Form1.resources
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\TabCtrl.dll
+C:\Users\Shafire\Desktop\DM_Sheet_src\DM_Sheet\bin\Debug\TabCtrl.pdb
