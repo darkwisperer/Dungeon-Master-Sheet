@@ -8,7 +8,7 @@ namespace MyControlLibrary
 {
     class Load
     {
-        private int Numchars = 4;
+        //private int Numchars = 4;
         public Load(String PathFile, List<Character> Group)
         {
             //read in file

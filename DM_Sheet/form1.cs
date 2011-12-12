@@ -86,7 +86,7 @@ namespace DM_Sheet
             this.closeTabToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.userControl11 = new MyControlLibrary.TabCtlEx();
-            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
+            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components,1);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -180,15 +180,13 @@ namespace DM_Sheet
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Menu = this.contextMenuStrip1;
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1052, 738);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "New Group                                                 ";
+            this.tabPage1.Text = "New Group";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1

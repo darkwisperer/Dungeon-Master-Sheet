@@ -121,9 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BugList.txt" />
-    <Content Include="DM_Sheet_4char.bmp" />
     <Content Include="Planned.txt" />
     <Content Include="README.txt" />
+    <None Include="Resources\DM_Sheet_4char.bmp" />
+    <None Include="Resources\DM_Sheet_3char.bmp" />
+    <None Include="Resources\DM_Sheet_2char.bmp" />
+    <None Include="Resources\DM_Sheet_1char.bmp" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
