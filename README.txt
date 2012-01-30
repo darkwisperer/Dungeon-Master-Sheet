@@ -23,6 +23,10 @@ Planned for next :
   -tabbed sheets to allow multiple sheets
   -Ability to load a character from (Dungeons and Dragons v3.5 Digital Character Sheet) into the next available character slot.
 
+Sources Cited
+------------------------------------------------------------------------------------------------------------------------
+The sited below helped tremendously in the creation of this tool.
+
 Original DM_sheet can be found in pdf and word doc:
 http://www.militaryfocus.com/dnd/index.htm
 
