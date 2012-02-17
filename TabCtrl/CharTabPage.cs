@@ -91,13 +91,18 @@ namespace MyControlLibrary
         /// Set up the character sheet ====================================================================================================
         /// </summary>
 
+        #region Character 1 initialization
         private void character1()
         {
         }
+        #endregion
 
+        #region Character 2 initialization
         private void character2()
         {
         }
+        #endregion
+
         #region Character 3 initialization
         private void character3()
         {
@@ -1976,9 +1981,9 @@ namespace MyControlLibrary
             this.Char1Balance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Balance.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Char1Balance.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.Char1Balance.Location = new System.Drawing.Point(944, 66);
+            this.Char1Balance.Location = new System.Drawing.Point(745, 67);
             this.Char1Balance.Name = "Char1Balance";
-            this.Char1Balance.Size = new System.Drawing.Size(26, 10);
+            this.Char1Balance.Size = new System.Drawing.Size(29, 10);
             this.Char1Balance.TabIndex = 179;
             this.Char1Balance.TextChanged += new System.EventHandler(this.Char1Balance_TextChanged);
             
@@ -1988,9 +1993,9 @@ namespace MyControlLibrary
             this.Char3Appraise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Appraise.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Char3Appraise.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.Char3Appraise.Location = new System.Drawing.Point(998, 51);
+            this.Char3Appraise.Location = new System.Drawing.Point(807, 52);
             this.Char3Appraise.Name = "Char3Appraise";
-            this.Char3Appraise.Size = new System.Drawing.Size(26, 10);
+            this.Char3Appraise.Size = new System.Drawing.Size(30, 10);
             this.Char3Appraise.TabIndex = 177;
             this.Char3Appraise.TextChanged += new System.EventHandler(this.Char3Appraise_TextChanged);
             // 
@@ -1999,9 +2004,9 @@ namespace MyControlLibrary
             this.Char2Appraise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Appraise.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Char2Appraise.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.Char2Appraise.Location = new System.Drawing.Point(971, 51);
+            this.Char2Appraise.Location = new System.Drawing.Point(776, 52);
             this.Char2Appraise.Name = "Char2Appraise";
-            this.Char2Appraise.Size = new System.Drawing.Size(26, 10);
+            this.Char2Appraise.Size = new System.Drawing.Size(29, 10);
             this.Char2Appraise.TabIndex = 176;
             this.Char2Appraise.TextChanged += new System.EventHandler(this.Char2Appraise_TextChanged);
             // 
@@ -2010,9 +2015,9 @@ namespace MyControlLibrary
             this.Char1Appraise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Appraise.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Char1Appraise.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.Char1Appraise.Location = new System.Drawing.Point(944, 51);
+            this.Char1Appraise.Location = new System.Drawing.Point(745, 52);
             this.Char1Appraise.Name = "Char1Appraise";
-            this.Char1Appraise.Size = new System.Drawing.Size(26, 10);
+            this.Char1Appraise.Size = new System.Drawing.Size(29, 10);
             this.Char1Appraise.TabIndex = 175;
             this.Char1Appraise.TextChanged += new System.EventHandler(this.Char1Appraise_TextChanged);
             
@@ -2022,9 +2027,9 @@ namespace MyControlLibrary
             this.ACCheckPenalty3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ACCheckPenalty3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ACCheckPenalty3.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.ACCheckPenalty3.Location = new System.Drawing.Point(990, 20);
+            this.ACCheckPenalty3.Location = new System.Drawing.Point(774, 22);
             this.ACCheckPenalty3.Name = "ACCheckPenalty3";
-            this.ACCheckPenalty3.Size = new System.Drawing.Size(26, 13);
+            this.ACCheckPenalty3.Size = new System.Drawing.Size(31, 22);
             this.ACCheckPenalty3.TabIndex = 173;
             this.ACCheckPenalty3.TextChanged += new System.EventHandler(this.ACCheckPenalty3_TextChanged);
             // 
@@ -2033,7 +2038,7 @@ namespace MyControlLibrary
             this.ACCheckPenalty2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ACCheckPenalty2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ACCheckPenalty2.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.ACCheckPenalty2.Location = new System.Drawing.Point(963, 20);
+            this.ACCheckPenalty2.Location = new System.Drawing.Point(746, 22);
             this.ACCheckPenalty2.Name = "ACCheckPenalty2";
             this.ACCheckPenalty2.Size = new System.Drawing.Size(26, 13);
             this.ACCheckPenalty2.TabIndex = 172;
@@ -2044,9 +2049,9 @@ namespace MyControlLibrary
             this.ACCheckPenalty1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ACCheckPenalty1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ACCheckPenalty1.Font = new Font("Arial", 8, FontStyle.Bold);
-            this.ACCheckPenalty1.Location = new System.Drawing.Point(936, 20);
+            this.ACCheckPenalty1.Location = new System.Drawing.Point(719, 22);
             this.ACCheckPenalty1.Name = "ACCheckPenalty1";
-            this.ACCheckPenalty1.Size = new System.Drawing.Size(26, 13);
+            this.ACCheckPenalty1.Size = new System.Drawing.Size(26, 18);
             this.ACCheckPenalty1.TabIndex = 171;
             this.ACCheckPenalty1.TextChanged += new System.EventHandler(this.ACCheckPenalty1_TextChanged);
        
@@ -2055,7 +2060,7 @@ namespace MyControlLibrary
             // 
             this.Char3MaxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3MaxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char3MaxHP.Location = new System.Drawing.Point(545, 660);
+            this.Char3MaxHP.Location = new System.Drawing.Point(540, 660);
             this.Char3MaxHP.Name = "Char3MaxHP";
             this.Char3MaxHP.Size = new System.Drawing.Size(38, 20);
             this.Char3MaxHP.TabIndex = 129;
@@ -2065,7 +2070,7 @@ namespace MyControlLibrary
             // 
             this.Char3HP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3HP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char3HP.Location = new System.Drawing.Point(490, 660);
+            this.Char3HP.Location = new System.Drawing.Point(493, 660);
             this.Char3HP.Name = "Char3HP";
             this.Char3HP.Size = new System.Drawing.Size(38, 20);
             this.Char3HP.TabIndex = 128;
@@ -2087,7 +2092,7 @@ namespace MyControlLibrary
             this.Char3Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3Touch.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3Touch.Location = new System.Drawing.Point(591, 580);
+            this.Char3Touch.Location = new System.Drawing.Point(590, 581);
             this.Char3Touch.Name = "Char3Touch";
             this.Char3Touch.Size = new System.Drawing.Size(26, 18);
             this.Char3Touch.TabIndex = 126;
@@ -2098,7 +2103,7 @@ namespace MyControlLibrary
             this.Char3FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3FlatFoot.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3FlatFoot.Location = new System.Drawing.Point(555, 580);
+            this.Char3FlatFoot.Location = new System.Drawing.Point(554, 581);
             this.Char3FlatFoot.Name = "Char3FlatFoot";
             this.Char3FlatFoot.Size = new System.Drawing.Size(26, 18);
             this.Char3FlatFoot.TabIndex = 125;
@@ -2109,7 +2114,7 @@ namespace MyControlLibrary
             this.Char3AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3AC.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3AC.Location = new System.Drawing.Point(510, 580);
+            this.Char3AC.Location = new System.Drawing.Point(509, 581);
             this.Char3AC.Name = "Char3AC";
             this.Char3AC.Size = new System.Drawing.Size(35, 20);
             this.Char3AC.TabIndex = 124;
@@ -2119,7 +2124,7 @@ namespace MyControlLibrary
             // 
             this.Char3SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3SavingThrowMods.Location = new System.Drawing.Point(428, 522);
+            this.Char3SavingThrowMods.Location = new System.Drawing.Point(427, 524);
             this.Char3SavingThrowMods.Multiline = true;
             this.Char3SavingThrowMods.Name = "Char3SavingThrowMods";
             this.Char3SavingThrowMods.Size = new System.Drawing.Size(190, 25);
@@ -2131,7 +2136,7 @@ namespace MyControlLibrary
             this.Char3WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3WILL.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3WILL.Location = new System.Drawing.Point(590, 496);
+            this.Char3WILL.Location = new System.Drawing.Point(589, 497);
             this.Char3WILL.Name = "Char3WILL";
             this.Char3WILL.Size = new System.Drawing.Size(27, 20);
             this.Char3WILL.TabIndex = 122;
@@ -2142,7 +2147,7 @@ namespace MyControlLibrary
             this.Char3REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3REF.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3REF.Location = new System.Drawing.Point(524, 496);
+            this.Char3REF.Location = new System.Drawing.Point(523, 497);
             this.Char3REF.Name = "Char3REF";
             this.Char3REF.Size = new System.Drawing.Size(26, 20);
             this.Char3REF.TabIndex = 121;
@@ -2153,7 +2158,7 @@ namespace MyControlLibrary
             this.Char3Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3Fort.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3Fort.Location = new System.Drawing.Point(458, 496);
+            this.Char3Fort.Location = new System.Drawing.Point(457, 497);
             this.Char3Fort.Name = "Char3Fort";
             this.Char3Fort.Size = new System.Drawing.Size(26, 20);
             this.Char3Fort.TabIndex = 120;
@@ -2164,7 +2169,7 @@ namespace MyControlLibrary
             this.Char3PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3PD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3PD.Location = new System.Drawing.Point(580, 449);
+            this.Char3PD.Location = new System.Drawing.Point(579, 450);
             this.Char3PD.Name = "Char3PD";
             this.Char3PD.Size = new System.Drawing.Size(37, 15);
             this.Char3PD.TabIndex = 119;
@@ -2175,7 +2180,7 @@ namespace MyControlLibrary
             this.Char3OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3OG.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3OG.Location = new System.Drawing.Point(533, 449);
+            this.Char3OG.Location = new System.Drawing.Point(532, 450);
             this.Char3OG.Name = "Char3OG";
             this.Char3OG.Size = new System.Drawing.Size(36, 15);
             this.Char3OG.TabIndex = 118;
@@ -2186,7 +2191,7 @@ namespace MyControlLibrary
             this.Char3OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3OH.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3OH.Location = new System.Drawing.Point(486, 449);
+            this.Char3OH.Location = new System.Drawing.Point(485, 450);
             this.Char3OH.Name = "Char3OH";
             this.Char3OH.Size = new System.Drawing.Size(36, 15);
             this.Char3OH.TabIndex = 117;
@@ -2197,7 +2202,7 @@ namespace MyControlLibrary
             this.Char3SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3SPEED.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3SPEED.Location = new System.Drawing.Point(429, 449);
+            this.Char3SPEED.Location = new System.Drawing.Point(428, 450);
             this.Char3SPEED.Name = "Char3SPEED";
             this.Char3SPEED.Size = new System.Drawing.Size(36, 15);
             this.Char3SPEED.TabIndex = 116;
@@ -2208,7 +2213,7 @@ namespace MyControlLibrary
             this.Char3CHA_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3CHA_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3CHA_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3CHA_MOD.Location = new System.Drawing.Point(591, 383);
+            this.Char3CHA_MOD.Location = new System.Drawing.Point(590, 384);
             this.Char3CHA_MOD.MaxLength = 2;
             this.Char3CHA_MOD.Name = "Char3CHA_MOD";
             this.Char3CHA_MOD.ReadOnly = true;
@@ -2220,7 +2225,7 @@ namespace MyControlLibrary
             this.Char3WIS_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3WIS_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3WIS_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3WIS_MOD.Location = new System.Drawing.Point(591, 363);
+            this.Char3WIS_MOD.Location = new System.Drawing.Point(590, 364);
             this.Char3WIS_MOD.MaxLength = 2;
             this.Char3WIS_MOD.Name = "Char3WIS_MOD";
             this.Char3WIS_MOD.ReadOnly = true;
@@ -2232,7 +2237,7 @@ namespace MyControlLibrary
             this.Char3INT_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3INT_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3INT_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3INT_MOD.Location = new System.Drawing.Point(591, 343);
+            this.Char3INT_MOD.Location = new System.Drawing.Point(590, 345);
             this.Char3INT_MOD.MaxLength = 2;
             this.Char3INT_MOD.Name = "Char3INT_MOD";
             this.Char3INT_MOD.ReadOnly = true;
@@ -2244,7 +2249,7 @@ namespace MyControlLibrary
             this.Char3CHA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3CHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3CHA.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3CHA.Location = new System.Drawing.Point(555, 383);
+            this.Char3CHA.Location = new System.Drawing.Point(554, 384);
             this.Char3CHA.MaxLength = 3;
             this.Char3CHA.Name = "Char3CHA";
             this.Char3CHA.Size = new System.Drawing.Size(35, 8);
@@ -2256,7 +2261,7 @@ namespace MyControlLibrary
             this.Char3WIS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3WIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3WIS.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3WIS.Location = new System.Drawing.Point(555, 363);
+            this.Char3WIS.Location = new System.Drawing.Point(554, 364);
             this.Char3WIS.MaxLength = 3;
             this.Char3WIS.Name = "Char3WIS";
             this.Char3WIS.Size = new System.Drawing.Size(35, 8);
@@ -2268,7 +2273,7 @@ namespace MyControlLibrary
             this.Char3INT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3INT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3INT.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3INT.Location = new System.Drawing.Point(555, 343);
+            this.Char3INT.Location = new System.Drawing.Point(554, 345);
             this.Char3INT.MaxLength = 3;
             this.Char3INT.Name = "Char3INT";
             this.Char3INT.Size = new System.Drawing.Size(35, 8);
@@ -2280,7 +2285,7 @@ namespace MyControlLibrary
             this.Char3CON_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3CON_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3CON_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3CON_MOD.Location = new System.Drawing.Point(492, 383);
+            this.Char3CON_MOD.Location = new System.Drawing.Point(491, 384);
             this.Char3CON_MOD.MaxLength = 2;
             this.Char3CON_MOD.Name = "Char3CON_MOD";
             this.Char3CON_MOD.ReadOnly = true;
@@ -2292,7 +2297,7 @@ namespace MyControlLibrary
             this.Char3DEX_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3DEX_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3DEX_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3DEX_MOD.Location = new System.Drawing.Point(492, 363);
+            this.Char3DEX_MOD.Location = new System.Drawing.Point(491, 364);
             this.Char3DEX_MOD.MaxLength = 2;
             this.Char3DEX_MOD.Name = "Char3DEX_MOD";
             this.Char3DEX_MOD.ReadOnly = true;
@@ -2304,7 +2309,7 @@ namespace MyControlLibrary
             this.Char3STR_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3STR_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3STR_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3STR_MOD.Location = new System.Drawing.Point(492, 343);
+            this.Char3STR_MOD.Location = new System.Drawing.Point(491, 345);
             this.Char3STR_MOD.MaxLength = 2;
             this.Char3STR_MOD.Name = "Char3STR_MOD";
             this.Char3STR_MOD.ReadOnly = true;
@@ -2316,7 +2321,7 @@ namespace MyControlLibrary
             this.Char3CON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3CON.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3CON.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3CON.Location = new System.Drawing.Point(456, 383);
+            this.Char3CON.Location = new System.Drawing.Point(455, 384);
             this.Char3CON.MaxLength = 3;
             this.Char3CON.Name = "Char3CON";
             this.Char3CON.Size = new System.Drawing.Size(35, 8);
@@ -2328,7 +2333,7 @@ namespace MyControlLibrary
             this.Char3Dex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Dex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3Dex.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3Dex.Location = new System.Drawing.Point(456, 363);
+            this.Char3Dex.Location = new System.Drawing.Point(455, 364);
             this.Char3Dex.MaxLength = 3;
             this.Char3Dex.Name = "Char3Dex";
             this.Char3Dex.Size = new System.Drawing.Size(35, 8);
@@ -2340,7 +2345,7 @@ namespace MyControlLibrary
             this.Char3STR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3STR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char3STR.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char3STR.Location = new System.Drawing.Point(456, 343);
+            this.Char3STR.Location = new System.Drawing.Point(455, 345);
             this.Char3STR.MaxLength = 3;
             this.Char3STR.Name = "Char3STR";
             this.Char3STR.Size = new System.Drawing.Size(35, 8);
@@ -2351,7 +2356,7 @@ namespace MyControlLibrary
             // 
             this.Char3Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Items.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Items.Location = new System.Drawing.Point(428, 276);
+            this.Char3Items.Location = new System.Drawing.Point(427, 278);
             this.Char3Items.Multiline = true;
             this.Char3Items.Name = "Char3Items";
             this.Char3Items.Size = new System.Drawing.Size(190, 32);
@@ -2362,7 +2367,7 @@ namespace MyControlLibrary
             // 
             this.Char3Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Weapon.Location = new System.Drawing.Point(428, 248);
+            this.Char3Weapon.Location = new System.Drawing.Point(427, 250);
             this.Char3Weapon.Name = "Char3Weapon";
             this.Char3Weapon.Size = new System.Drawing.Size(190, 13);
             this.Char3Weapon.TabIndex = 102;
@@ -2372,7 +2377,7 @@ namespace MyControlLibrary
             // 
             this.Char3Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Armor.Location = new System.Drawing.Point(428, 220);
+            this.Char3Armor.Location = new System.Drawing.Point(427, 221);
             this.Char3Armor.Name = "Char3Armor";
             this.Char3Armor.Size = new System.Drawing.Size(190, 13);
             this.Char3Armor.TabIndex = 101;
@@ -2382,7 +2387,7 @@ namespace MyControlLibrary
             // 
             this.Char3Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Language.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Language.Location = new System.Drawing.Point(428, 173);
+            this.Char3Language.Location = new System.Drawing.Point(427, 174);
             this.Char3Language.Multiline = true;
             this.Char3Language.Name = "Char3Language";
             this.Char3Language.Size = new System.Drawing.Size(190, 20);
@@ -2408,7 +2413,7 @@ namespace MyControlLibrary
             // 
             this.Char3Deity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Deity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Deity.Location = new System.Drawing.Point(428, 132);
+            this.Char3Deity.Location = new System.Drawing.Point(427, 134);
             this.Char3Deity.Name = "Char3Deity";
             this.Char3Deity.Size = new System.Drawing.Size(133, 13);
             this.Char3Deity.TabIndex = 98;
@@ -2418,7 +2423,7 @@ namespace MyControlLibrary
             // 
             this.Char3Weight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Weight.Location = new System.Drawing.Point(579, 104);
+            this.Char3Weight.Location = new System.Drawing.Point(578, 106);
             this.Char3Weight.Name = "Char3Weight";
             this.Char3Weight.Size = new System.Drawing.Size(40, 13);
             this.Char3Weight.TabIndex = 97;
@@ -2428,7 +2433,7 @@ namespace MyControlLibrary
             // 
             this.Char3Height.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Height.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Height.Location = new System.Drawing.Point(532, 104);
+            this.Char3Height.Location = new System.Drawing.Point(531, 106);
             this.Char3Height.Name = "Char3Height";
             this.Char3Height.Size = new System.Drawing.Size(40, 13);
             this.Char3Height.TabIndex = 96;
@@ -2438,7 +2443,7 @@ namespace MyControlLibrary
             // 
             this.Char3Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Age.Location = new System.Drawing.Point(485, 104);
+            this.Char3Age.Location = new System.Drawing.Point(484, 106);
             this.Char3Age.Name = "Char3Age";
             this.Char3Age.Size = new System.Drawing.Size(38, 13);
             this.Char3Age.TabIndex = 95;
@@ -2453,7 +2458,7 @@ namespace MyControlLibrary
             "M",
             "F",
             "N"});
-            this.Char3Gender.Location = new System.Drawing.Point(428, 101);
+            this.Char3Gender.Location = new System.Drawing.Point(427, 102);
             this.Char3Gender.Name = "Char3Gender";
             this.Char3Gender.Size = new System.Drawing.Size(50, 18);
             this.Char3Gender.TabIndex = 94;
@@ -2463,7 +2468,7 @@ namespace MyControlLibrary
             // 
             this.Char3Level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Level.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Level.Location = new System.Drawing.Point(579, 77);
+            this.Char3Level.Location = new System.Drawing.Point(578, 79);
             this.Char3Level.Name = "Char3Level";
             this.Char3Level.Size = new System.Drawing.Size(39, 13);
             this.Char3Level.TabIndex = 93;
@@ -2473,7 +2478,7 @@ namespace MyControlLibrary
             // 
             this.Char3Class.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Class.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Class.Location = new System.Drawing.Point(428, 77);
+            this.Char3Class.Location = new System.Drawing.Point(427, 79);
             this.Char3Class.Name = "Char3Class";
             this.Char3Class.Size = new System.Drawing.Size(144, 13);
             this.Char3Class.TabIndex = 92;
@@ -2487,7 +2492,7 @@ namespace MyControlLibrary
             "S",
             "M",
             "L"});
-            this.Char3Size.Location = new System.Drawing.Point(579, 40);
+            this.Char3Size.Location = new System.Drawing.Point(578, 40);
             this.Char3Size.Name = "Char3Size";
             this.Char3Size.Size = new System.Drawing.Size(41, 21);
             this.Char3Size.TabIndex = 91;
@@ -2497,7 +2502,7 @@ namespace MyControlLibrary
             // 
             this.Char3Race.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Race.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Race.Location = new System.Drawing.Point(428, 48);
+            this.Char3Race.Location = new System.Drawing.Point(427, 50);
             this.Char3Race.Name = "Char3Race";
             this.Char3Race.Size = new System.Drawing.Size(144, 13);
             this.Char3Race.TabIndex = 90;
@@ -2507,7 +2512,7 @@ namespace MyControlLibrary
             // 
             this.char3Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.char3Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.char3Name.Location = new System.Drawing.Point(428, 20);
+            this.char3Name.Location = new System.Drawing.Point(427, 22);
             this.char3Name.Name = "char3Name";
             this.char3Name.Size = new System.Drawing.Size(190, 13);
             this.char3Name.TabIndex = 89;
@@ -2517,7 +2522,7 @@ namespace MyControlLibrary
             // 
             this.Char2MaxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2MaxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2MaxHP.Location = new System.Drawing.Point(332, 660);
+            this.Char2MaxHP.Location = new System.Drawing.Point(330, 660);
             this.Char2MaxHP.Name = "Char2MaxHP";
             this.Char2MaxHP.Size = new System.Drawing.Size(38, 20);
             this.Char2MaxHP.TabIndex = 88;
@@ -2537,7 +2542,7 @@ namespace MyControlLibrary
             // 
             this.Char2AC_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2AC_MOD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2AC_MOD.Location = new System.Drawing.Point(218, 602);
+            this.Char2AC_MOD.Location = new System.Drawing.Point(217, 604);
             this.Char2AC_MOD.Multiline = true;
             this.Char2AC_MOD.Name = "Char2AC_MOD";
             this.Char2AC_MOD.Size = new System.Drawing.Size(190, 28);
@@ -2549,7 +2554,7 @@ namespace MyControlLibrary
             this.Char2Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2Touch.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2Touch.Location = new System.Drawing.Point(381, 580);
+            this.Char2Touch.Location = new System.Drawing.Point(380, 581);
             this.Char2Touch.Name = "Char2Touch";
             this.Char2Touch.Size = new System.Drawing.Size(26, 18);
             this.Char2Touch.TabIndex = 85;
@@ -2560,7 +2565,7 @@ namespace MyControlLibrary
             this.Char2FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2FlatFoot.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2FlatFoot.Location = new System.Drawing.Point(345, 580);
+            this.Char2FlatFoot.Location = new System.Drawing.Point(344, 581);
             this.Char2FlatFoot.Name = "Char2FlatFoot";
             this.Char2FlatFoot.Size = new System.Drawing.Size(26, 18);
             this.Char2FlatFoot.TabIndex = 84;
@@ -2571,7 +2576,7 @@ namespace MyControlLibrary
             this.Char2AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2AC.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2AC.Location = new System.Drawing.Point(300, 580);
+            this.Char2AC.Location = new System.Drawing.Point(299, 581);
             this.Char2AC.Name = "Char2AC";
             this.Char2AC.Size = new System.Drawing.Size(35, 20);
             this.Char2AC.TabIndex = 83;
@@ -2581,7 +2586,7 @@ namespace MyControlLibrary
             // 
             this.Char2SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2SavingThrowMods.Location = new System.Drawing.Point(218, 522);
+            this.Char2SavingThrowMods.Location = new System.Drawing.Point(217, 524);
             this.Char2SavingThrowMods.Multiline = true;
             this.Char2SavingThrowMods.Name = "Char2SavingThrowMods";
             this.Char2SavingThrowMods.Size = new System.Drawing.Size(190, 25);
@@ -2593,7 +2598,7 @@ namespace MyControlLibrary
             this.Char2WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2WILL.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2WILL.Location = new System.Drawing.Point(380, 496);
+            this.Char2WILL.Location = new System.Drawing.Point(379, 497);
             this.Char2WILL.Name = "Char2WILL";
             this.Char2WILL.Size = new System.Drawing.Size(27, 20);
             this.Char2WILL.TabIndex = 81;
@@ -2604,7 +2609,7 @@ namespace MyControlLibrary
             this.Char2REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2REF.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2REF.Location = new System.Drawing.Point(314, 496);
+            this.Char2REF.Location = new System.Drawing.Point(313, 497);
             this.Char2REF.Name = "Char2REF";
             this.Char2REF.Size = new System.Drawing.Size(26, 20);
             this.Char2REF.TabIndex = 80;
@@ -2615,7 +2620,7 @@ namespace MyControlLibrary
             this.Char2Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2Fort.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2Fort.Location = new System.Drawing.Point(248, 496);
+            this.Char2Fort.Location = new System.Drawing.Point(247, 497);
             this.Char2Fort.Name = "Char2Fort";
             this.Char2Fort.Size = new System.Drawing.Size(26, 20);
             this.Char2Fort.TabIndex = 79;
@@ -2626,7 +2631,7 @@ namespace MyControlLibrary
             this.Char2PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2PD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2PD.Location = new System.Drawing.Point(370, 449);
+            this.Char2PD.Location = new System.Drawing.Point(369, 450);
             this.Char2PD.Name = "Char2PD";
             this.Char2PD.Size = new System.Drawing.Size(37, 15);
             this.Char2PD.TabIndex = 78;
@@ -2637,7 +2642,7 @@ namespace MyControlLibrary
             this.Char2OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2OG.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2OG.Location = new System.Drawing.Point(323, 449);
+            this.Char2OG.Location = new System.Drawing.Point(322, 450);
             this.Char2OG.Name = "Char2OG";
             this.Char2OG.Size = new System.Drawing.Size(36, 15);
             this.Char2OG.TabIndex = 77;
@@ -2648,7 +2653,7 @@ namespace MyControlLibrary
             this.Char2OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2OH.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2OH.Location = new System.Drawing.Point(276, 449);
+            this.Char2OH.Location = new System.Drawing.Point(275, 450);
             this.Char2OH.Name = "Char2OH";
             this.Char2OH.Size = new System.Drawing.Size(36, 15);
             this.Char2OH.TabIndex = 76;
@@ -2659,7 +2664,7 @@ namespace MyControlLibrary
             this.Char2SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2SPEED.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2SPEED.Location = new System.Drawing.Point(219, 449);
+            this.Char2SPEED.Location = new System.Drawing.Point(218, 450);
             this.Char2SPEED.Name = "Char2SPEED";
             this.Char2SPEED.Size = new System.Drawing.Size(36, 15);
             this.Char2SPEED.TabIndex = 75;
@@ -2669,7 +2674,7 @@ namespace MyControlLibrary
             // 
             this.Char2CHA_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2CHA_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Char2CHA_MOD.Location = new System.Drawing.Point(381, 363);
+            this.Char2CHA_MOD.Location = new System.Drawing.Point(380, 364);
             this.Char2CHA_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
             this.Char2CHA_MOD.MaxLength = 2;
             this.Char2CHA_MOD.Name = "Char2CHA_MOD";
@@ -2682,7 +2687,7 @@ namespace MyControlLibrary
             this.Char2WIS_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2WIS_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2WIS_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2WIS_MOD.Location = new System.Drawing.Point(381, 383);
+            this.Char2WIS_MOD.Location = new System.Drawing.Point(380, 384);
             this.Char2WIS_MOD.MaxLength = 2;
             this.Char2WIS_MOD.Name = "Char2WIS_MOD";
             this.Char2WIS_MOD.ReadOnly = true;
@@ -2694,7 +2699,7 @@ namespace MyControlLibrary
             this.Char2INT_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2INT_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2INT_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2INT_MOD.Location = new System.Drawing.Point(381, 343);
+            this.Char2INT_MOD.Location = new System.Drawing.Point(380, 345);
             this.Char2INT_MOD.MaxLength = 2;
             this.Char2INT_MOD.Name = "Char2INT_MOD";
             this.Char2INT_MOD.ReadOnly = true;
@@ -2706,7 +2711,7 @@ namespace MyControlLibrary
             this.Char2WIS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2WIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2WIS.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2WIS.Location = new System.Drawing.Point(345, 363);
+            this.Char2WIS.Location = new System.Drawing.Point(344, 364);
             this.Char2WIS.MaxLength = 3;
             this.Char2WIS.Name = "Char2WIS";
             this.Char2WIS.Size = new System.Drawing.Size(35, 8);
@@ -2718,7 +2723,7 @@ namespace MyControlLibrary
             this.Char2CHA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2CHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2CHA.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2CHA.Location = new System.Drawing.Point(345, 383);
+            this.Char2CHA.Location = new System.Drawing.Point(344, 384);
             this.Char2CHA.MaxLength = 3;
             this.Char2CHA.Name = "Char2CHA";
             this.Char2CHA.Size = new System.Drawing.Size(35, 8);
@@ -2730,7 +2735,7 @@ namespace MyControlLibrary
             this.Char2INT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2INT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2INT.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2INT.Location = new System.Drawing.Point(345, 343);
+            this.Char2INT.Location = new System.Drawing.Point(344, 345);
             this.Char2INT.MaxLength = 3;
             this.Char2INT.Name = "Char2INT";
             this.Char2INT.Size = new System.Drawing.Size(35, 8);
@@ -2742,7 +2747,7 @@ namespace MyControlLibrary
             this.Char2CON_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2CON_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2CON_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2CON_MOD.Location = new System.Drawing.Point(282, 383);
+            this.Char2CON_MOD.Location = new System.Drawing.Point(281, 384);
             this.Char2CON_MOD.MaxLength = 2;
             this.Char2CON_MOD.Name = "Char2CON_MOD";
             this.Char2CON_MOD.ReadOnly = true;
@@ -2754,7 +2759,7 @@ namespace MyControlLibrary
             this.Char2DEX_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2DEX_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2DEX_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2DEX_MOD.Location = new System.Drawing.Point(282, 363);
+            this.Char2DEX_MOD.Location = new System.Drawing.Point(281, 364);
             this.Char2DEX_MOD.MaxLength = 2;
             this.Char2DEX_MOD.Name = "Char2DEX_MOD";
             this.Char2DEX_MOD.ReadOnly = true;
@@ -2766,7 +2771,7 @@ namespace MyControlLibrary
             this.Char2STR_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2STR_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2STR_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2STR_MOD.Location = new System.Drawing.Point(282, 343);
+            this.Char2STR_MOD.Location = new System.Drawing.Point(281, 345);
             this.Char2STR_MOD.MaxLength = 2;
             this.Char2STR_MOD.Name = "Char2STR_MOD";
             this.Char2STR_MOD.ReadOnly = true;
@@ -2778,7 +2783,7 @@ namespace MyControlLibrary
             this.Char2CON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2CON.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2CON.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2CON.Location = new System.Drawing.Point(246, 383);
+            this.Char2CON.Location = new System.Drawing.Point(245, 384);
             this.Char2CON.MaxLength = 3;
             this.Char2CON.Name = "Char2CON";
             this.Char2CON.Size = new System.Drawing.Size(35, 8);
@@ -2790,7 +2795,7 @@ namespace MyControlLibrary
             this.Char2Dex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Dex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2Dex.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2Dex.Location = new System.Drawing.Point(246, 363);
+            this.Char2Dex.Location = new System.Drawing.Point(245, 364);
             this.Char2Dex.MaxLength = 3;
             this.Char2Dex.Name = "Char2Dex";
             this.Char2Dex.Size = new System.Drawing.Size(35, 8);
@@ -2802,7 +2807,7 @@ namespace MyControlLibrary
             this.Char2STR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2STR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char2STR.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char2STR.Location = new System.Drawing.Point(246, 343);
+            this.Char2STR.Location = new System.Drawing.Point(245, 345);
             this.Char2STR.MaxLength = 3;
             this.Char2STR.Name = "Char2STR";
             this.Char2STR.Size = new System.Drawing.Size(35, 8);
@@ -2813,7 +2818,7 @@ namespace MyControlLibrary
             // 
             this.Char2Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Items.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Items.Location = new System.Drawing.Point(218, 276);
+            this.Char2Items.Location = new System.Drawing.Point(217, 278);
             this.Char2Items.Multiline = true;
             this.Char2Items.Name = "Char2Items";
             this.Char2Items.Size = new System.Drawing.Size(190, 32);
@@ -2824,7 +2829,7 @@ namespace MyControlLibrary
             // 
             this.Char2Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Weapon.Location = new System.Drawing.Point(218, 248);
+            this.Char2Weapon.Location = new System.Drawing.Point(217, 250);
             this.Char2Weapon.Name = "Char2Weapon";
             this.Char2Weapon.Size = new System.Drawing.Size(190, 13);
             this.Char2Weapon.TabIndex = 61;
@@ -2834,7 +2839,7 @@ namespace MyControlLibrary
             // 
             this.Char2Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Armor.Location = new System.Drawing.Point(218, 220);
+            this.Char2Armor.Location = new System.Drawing.Point(217, 221);
             this.Char2Armor.Name = "Char2Armor";
             this.Char2Armor.Size = new System.Drawing.Size(190, 13);
             this.Char2Armor.TabIndex = 60;
@@ -2844,7 +2849,7 @@ namespace MyControlLibrary
             // 
             this.Char2Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Language.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Language.Location = new System.Drawing.Point(218, 173);
+            this.Char2Language.Location = new System.Drawing.Point(217, 173);
             this.Char2Language.Multiline = true;
             this.Char2Language.Name = "Char2Language";
             this.Char2Language.Size = new System.Drawing.Size(190, 20);
@@ -2870,7 +2875,7 @@ namespace MyControlLibrary
             // 
             this.Char2Deity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Deity.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Deity.Location = new System.Drawing.Point(218, 132);
+            this.Char2Deity.Location = new System.Drawing.Point(217, 134);
             this.Char2Deity.Name = "Char2Deity";
             this.Char2Deity.Size = new System.Drawing.Size(133, 13);
             this.Char2Deity.TabIndex = 57;
@@ -2880,7 +2885,7 @@ namespace MyControlLibrary
             // 
             this.Char2Weight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Weight.Location = new System.Drawing.Point(369, 104);
+            this.Char2Weight.Location = new System.Drawing.Point(368, 106);
             this.Char2Weight.Name = "Char2Weight";
             this.Char2Weight.Size = new System.Drawing.Size(40, 13);
             this.Char2Weight.TabIndex = 56;
@@ -2890,7 +2895,7 @@ namespace MyControlLibrary
             // 
             this.Char2Height.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Height.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Height.Location = new System.Drawing.Point(322, 104);
+            this.Char2Height.Location = new System.Drawing.Point(321, 106);
             this.Char2Height.Name = "Char2Height";
             this.Char2Height.Size = new System.Drawing.Size(40, 13);
             this.Char2Height.TabIndex = 55;
@@ -2900,7 +2905,7 @@ namespace MyControlLibrary
             // 
             this.Char2Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Age.Location = new System.Drawing.Point(275, 104);
+            this.Char2Age.Location = new System.Drawing.Point(274, 106);
             this.Char2Age.Name = "Char2Age";
             this.Char2Age.Size = new System.Drawing.Size(38, 13);
             this.Char2Age.TabIndex = 54;
@@ -2925,7 +2930,7 @@ namespace MyControlLibrary
             // 
             this.Char2Level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Level.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Level.Location = new System.Drawing.Point(369, 77);
+            this.Char2Level.Location = new System.Drawing.Point(368, 78);
             this.Char2Level.Name = "Char2Level";
             this.Char2Level.Size = new System.Drawing.Size(39, 13);
             this.Char2Level.TabIndex = 52;
@@ -2935,7 +2940,7 @@ namespace MyControlLibrary
             // 
             this.Char2Class.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Class.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Class.Location = new System.Drawing.Point(218, 77);
+            this.Char2Class.Location = new System.Drawing.Point(217, 78);
             this.Char2Class.Name = "Char2Class";
             this.Char2Class.Size = new System.Drawing.Size(144, 13);
             this.Char2Class.TabIndex = 51;
@@ -2949,7 +2954,7 @@ namespace MyControlLibrary
             "S",
             "M",
             "L"});
-            this.Char2Size.Location = new System.Drawing.Point(369, 40);
+            this.Char2Size.Location = new System.Drawing.Point(368, 40);
             this.Char2Size.Name = "Char2Size";
             this.Char2Size.Size = new System.Drawing.Size(41, 21);
             this.Char2Size.TabIndex = 50;
@@ -2959,7 +2964,7 @@ namespace MyControlLibrary
             // 
             this.Char2Race.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Race.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Race.Location = new System.Drawing.Point(218, 48);
+            this.Char2Race.Location = new System.Drawing.Point(217, 50);
             this.Char2Race.Name = "Char2Race";
             this.Char2Race.Size = new System.Drawing.Size(144, 13);
             this.Char2Race.TabIndex = 49;
@@ -2969,7 +2974,7 @@ namespace MyControlLibrary
             // 
             this.char2Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.char2Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.char2Name.Location = new System.Drawing.Point(218, 20);
+            this.char2Name.Location = new System.Drawing.Point(217, 22);
             this.char2Name.Name = "char2Name";
             this.char2Name.Size = new System.Drawing.Size(190, 13);
             this.char2Name.TabIndex = 48;
@@ -2999,7 +3004,7 @@ namespace MyControlLibrary
             // 
             this.Char1AC_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1AC_MOD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1AC_MOD.Location = new System.Drawing.Point(8, 602);
+            this.Char1AC_MOD.Location = new System.Drawing.Point(7, 604);
             this.Char1AC_MOD.Multiline = true;
             this.Char1AC_MOD.Name = "Char1AC_MOD";
             this.Char1AC_MOD.Size = new System.Drawing.Size(190, 28);
@@ -3011,7 +3016,7 @@ namespace MyControlLibrary
             this.Char1Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1Touch.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1Touch.Location = new System.Drawing.Point(171, 580);
+            this.Char1Touch.Location = new System.Drawing.Point(170, 581);
             this.Char1Touch.Name = "Char1Touch";
             this.Char1Touch.Size = new System.Drawing.Size(26, 18);
             this.Char1Touch.TabIndex = 44;
@@ -3022,7 +3027,7 @@ namespace MyControlLibrary
             this.Char1FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1FlatFoot.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1FlatFoot.Location = new System.Drawing.Point(135, 580);
+            this.Char1FlatFoot.Location = new System.Drawing.Point(134, 581);
             this.Char1FlatFoot.Name = "Char1FlatFoot";
             this.Char1FlatFoot.Size = new System.Drawing.Size(26, 18);
             this.Char1FlatFoot.TabIndex = 43;
@@ -3033,7 +3038,7 @@ namespace MyControlLibrary
             this.Char1AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1AC.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1AC.Location = new System.Drawing.Point(90, 580);
+            this.Char1AC.Location = new System.Drawing.Point(89, 581);
             this.Char1AC.Name = "Char1AC";
             this.Char1AC.Size = new System.Drawing.Size(35, 20);
             this.Char1AC.TabIndex = 42;
@@ -3043,7 +3048,7 @@ namespace MyControlLibrary
             // 
             this.Char1SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1SavingThrowMods.Location = new System.Drawing.Point(8, 522);
+            this.Char1SavingThrowMods.Location = new System.Drawing.Point(7, 524);
             this.Char1SavingThrowMods.Multiline = true;
             this.Char1SavingThrowMods.Name = "Char1SavingThrowMods";
             this.Char1SavingThrowMods.Size = new System.Drawing.Size(190, 25);
@@ -3055,7 +3060,7 @@ namespace MyControlLibrary
             this.Char1WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1WILL.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1WILL.Location = new System.Drawing.Point(170, 496);
+            this.Char1WILL.Location = new System.Drawing.Point(169, 497);
             this.Char1WILL.Name = "Char1WILL";
             this.Char1WILL.Size = new System.Drawing.Size(27, 20);
             this.Char1WILL.TabIndex = 40;
@@ -3066,7 +3071,7 @@ namespace MyControlLibrary
             this.Char1REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1REF.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1REF.Location = new System.Drawing.Point(104, 496);
+            this.Char1REF.Location = new System.Drawing.Point(103, 497);
             this.Char1REF.Name = "Char1REF";
             this.Char1REF.Size = new System.Drawing.Size(26, 20);
             this.Char1REF.TabIndex = 39;
@@ -3077,7 +3082,7 @@ namespace MyControlLibrary
             this.Char1Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1Fort.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1Fort.Location = new System.Drawing.Point(38, 496);
+            this.Char1Fort.Location = new System.Drawing.Point(37, 497);
             this.Char1Fort.Name = "Char1Fort";
             this.Char1Fort.Size = new System.Drawing.Size(26, 20);
             this.Char1Fort.TabIndex = 38;
@@ -3088,7 +3093,7 @@ namespace MyControlLibrary
             this.Char1PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1PD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1PD.Location = new System.Drawing.Point(160, 449);
+            this.Char1PD.Location = new System.Drawing.Point(159, 450);
             this.Char1PD.Name = "Char1PD";
             this.Char1PD.Size = new System.Drawing.Size(37, 15);
             this.Char1PD.TabIndex = 37;
@@ -3099,7 +3104,7 @@ namespace MyControlLibrary
             this.Char1OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1OG.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1OG.Location = new System.Drawing.Point(113, 449);
+            this.Char1OG.Location = new System.Drawing.Point(112, 450);
             this.Char1OG.Name = "Char1OG";
             this.Char1OG.Size = new System.Drawing.Size(36, 15);
             this.Char1OG.TabIndex = 36;
@@ -3110,7 +3115,7 @@ namespace MyControlLibrary
             this.Char1OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1OH.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1OH.Location = new System.Drawing.Point(66, 449);
+            this.Char1OH.Location = new System.Drawing.Point(65, 450);
             this.Char1OH.Name = "Char1OH";
             this.Char1OH.Size = new System.Drawing.Size(36, 15);
             this.Char1OH.TabIndex = 35;
@@ -3121,7 +3126,7 @@ namespace MyControlLibrary
             this.Char1SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1SPEED.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1SPEED.Location = new System.Drawing.Point(9, 449);
+            this.Char1SPEED.Location = new System.Drawing.Point(8, 450);
             this.Char1SPEED.Name = "Char1SPEED";
             this.Char1SPEED.Size = new System.Drawing.Size(36, 15);
             this.Char1SPEED.TabIndex = 34;
@@ -3132,7 +3137,7 @@ namespace MyControlLibrary
             this.Char1CHA_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1CHA_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1CHA_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1CHA_MOD.Location = new System.Drawing.Point(171, 383);
+            this.Char1CHA_MOD.Location = new System.Drawing.Point(170, 384);
             this.Char1CHA_MOD.MaxLength = 2;
             this.Char1CHA_MOD.Name = "Char1CHA_MOD";
             this.Char1CHA_MOD.ReadOnly = true;
@@ -3144,7 +3149,7 @@ namespace MyControlLibrary
             this.Char1WIS_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1WIS_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1WIS_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1WIS_MOD.Location = new System.Drawing.Point(171, 363);
+            this.Char1WIS_MOD.Location = new System.Drawing.Point(170, 364);
             this.Char1WIS_MOD.MaxLength = 2;
             this.Char1WIS_MOD.Name = "Char1WIS_MOD";
             this.Char1WIS_MOD.ReadOnly = true;
@@ -3156,7 +3161,7 @@ namespace MyControlLibrary
             this.Char1INT_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1INT_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1INT_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1INT_MOD.Location = new System.Drawing.Point(171, 343);
+            this.Char1INT_MOD.Location = new System.Drawing.Point(170, 345);
             this.Char1INT_MOD.MaxLength = 2;
             this.Char1INT_MOD.Name = "Char1INT_MOD";
             this.Char1INT_MOD.ReadOnly = true;
@@ -3168,7 +3173,7 @@ namespace MyControlLibrary
             this.Char1WIS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1WIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1WIS.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1WIS.Location = new System.Drawing.Point(135, 363);
+            this.Char1WIS.Location = new System.Drawing.Point(134, 364);
             this.Char1WIS.MaxLength = 3;
             this.Char1WIS.Name = "Char1WIS";
             this.Char1WIS.Size = new System.Drawing.Size(35, 8);
@@ -3180,7 +3185,7 @@ namespace MyControlLibrary
             this.Char1CHA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1CHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1CHA.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1CHA.Location = new System.Drawing.Point(135, 383);
+            this.Char1CHA.Location = new System.Drawing.Point(134, 384);
             this.Char1CHA.MaxLength = 3;
             this.Char1CHA.Name = "Char1CHA";
             this.Char1CHA.Size = new System.Drawing.Size(35, 8);
@@ -3192,7 +3197,7 @@ namespace MyControlLibrary
             this.Char1INT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1INT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1INT.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1INT.Location = new System.Drawing.Point(135, 343);
+            this.Char1INT.Location = new System.Drawing.Point(134, 345);
             this.Char1INT.MaxLength = 3;
             this.Char1INT.Name = "Char1INT";
             this.Char1INT.Size = new System.Drawing.Size(35, 8);
@@ -3204,7 +3209,7 @@ namespace MyControlLibrary
             this.Char1CON_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1CON_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1CON_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1CON_MOD.Location = new System.Drawing.Point(72, 383);
+            this.Char1CON_MOD.Location = new System.Drawing.Point(71, 384);
             this.Char1CON_MOD.MaxLength = 2;
             this.Char1CON_MOD.Name = "Char1CON_MOD";
             this.Char1CON_MOD.ReadOnly = true;
@@ -3216,7 +3221,7 @@ namespace MyControlLibrary
             this.Char1DEX_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1DEX_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1DEX_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1DEX_MOD.Location = new System.Drawing.Point(72, 363);
+            this.Char1DEX_MOD.Location = new System.Drawing.Point(71, 364);
             this.Char1DEX_MOD.MaxLength = 2;
             this.Char1DEX_MOD.Name = "Char1DEX_MOD";
             this.Char1DEX_MOD.ReadOnly = true;
@@ -3228,7 +3233,7 @@ namespace MyControlLibrary
             this.Char1STR_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1STR_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1STR_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1STR_MOD.Location = new System.Drawing.Point(72, 343);
+            this.Char1STR_MOD.Location = new System.Drawing.Point(71, 345);
             this.Char1STR_MOD.MaxLength = 2;
             this.Char1STR_MOD.Name = "Char1STR_MOD";
             this.Char1STR_MOD.ReadOnly = true;
@@ -3240,7 +3245,7 @@ namespace MyControlLibrary
             this.Char1CON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1CON.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1CON.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1CON.Location = new System.Drawing.Point(36, 383);
+            this.Char1CON.Location = new System.Drawing.Point(35, 384);
             this.Char1CON.MaxLength = 3;
             this.Char1CON.Name = "Char1CON";
             this.Char1CON.Size = new System.Drawing.Size(35, 8);
@@ -3252,7 +3257,7 @@ namespace MyControlLibrary
             this.Char1Dex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Dex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1Dex.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1Dex.Location = new System.Drawing.Point(36, 363);
+            this.Char1Dex.Location = new System.Drawing.Point(35, 364);
             this.Char1Dex.MaxLength = 3;
             this.Char1Dex.Name = "Char1Dex";
             this.Char1Dex.Size = new System.Drawing.Size(35, 8);
@@ -3264,7 +3269,7 @@ namespace MyControlLibrary
             this.Char1STR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1STR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Char1STR.Font = new Font("Arial", 7, FontStyle.Bold);
-            this.Char1STR.Location = new System.Drawing.Point(36, 343);
+            this.Char1STR.Location = new System.Drawing.Point(35, 345);
             this.Char1STR.MaxLength = 3;
             this.Char1STR.Name = "Char1STR";
             this.Char1STR.Size = new System.Drawing.Size(35, 8);
@@ -3275,7 +3280,7 @@ namespace MyControlLibrary
             // 
             this.Char1Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Items.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Items.Location = new System.Drawing.Point(8, 276);
+            this.Char1Items.Location = new System.Drawing.Point(7, 278);
             this.Char1Items.Multiline = true;
             this.Char1Items.Name = "Char1Items";
             this.Char1Items.Size = new System.Drawing.Size(190, 32);
@@ -3317,7 +3322,7 @@ namespace MyControlLibrary
             this.Char1Level.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Char1Level.Location = new System.Drawing.Point(159, 77);
             this.Char1Level.Name = "Char1Level";
-            this.Char1Level.Size = new System.Drawing.Size(39, 13);
+            this.Char1Level.Size = new System.Drawing.Size(38, 14);
             this.Char1Level.TabIndex = 18;
             this.Char1Level.TextChanged += new System.EventHandler(this.Char1Level_TextChanged);
             // 
@@ -3325,7 +3330,7 @@ namespace MyControlLibrary
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Weapon.Location = new System.Drawing.Point(8, 248);
+            this.Char1Weapon.Location = new System.Drawing.Point(7, 250);
             this.Char1Weapon.Name = "Char1Weapon";
             this.Char1Weapon.Size = new System.Drawing.Size(190, 13);
             this.Char1Weapon.TabIndex = 17;
@@ -3335,7 +3340,7 @@ namespace MyControlLibrary
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Armor.Location = new System.Drawing.Point(8, 220);
+            this.Char1Armor.Location = new System.Drawing.Point(7, 221);
             this.Char1Armor.Name = "Char1Armor";
             this.Char1Armor.Size = new System.Drawing.Size(190, 13);
             this.Char1Armor.TabIndex = 16;

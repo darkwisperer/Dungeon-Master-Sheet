@@ -14,3 +14,11 @@ C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Release\TabCtrl.Properties.Res
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Release\MyControlLibrary.TabCtlEx.resources
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Release\TabCtrl.csproj.GenerateResource.Cache
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Release\TabCtrl.dll
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\bin\Release\TabCtrl.dll
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\MyControlLibrary.CharTabPage.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\MyControlLibrary.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\TabCtrl.Properties.Resources.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\MyControlLibrary.TabCtlEx.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\TabCtrl.csproj.GenerateResource.Cache
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Release\TabCtrl.dll

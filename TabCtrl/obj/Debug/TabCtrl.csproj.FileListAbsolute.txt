@@ -18,3 +18,13 @@ C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Debug\MyControlLibrary.TabCtlE
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Debug\TabCtrl.csproj.GenerateResource.Cache
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Debug\TabCtrl.dll
 C:\Users\Shafire\Desktop\DM_Sheet_src\TabCtrl\obj\Debug\TabCtrl.pdb
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\bin\Debug\TabCtrl.dll
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\bin\Debug\TabCtrl.pdb
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\MyControlLibrary.CharTabPage.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\MyControlLibrary.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\TabCtrl.Properties.Resources.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\TabCtrl.csproj.GenerateResource.Cache
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\TabCtrl.dll
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\TabCtrl\obj\Debug\TabCtrl.pdb

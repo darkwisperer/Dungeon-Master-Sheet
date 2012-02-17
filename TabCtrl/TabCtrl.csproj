@@ -130,16 +130,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DM_Sheet_1char.bmp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DM_Sheet_2char.bmp" />
+    <None Include="Resources\DM_Sheet_4char.bmp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DM_Sheet_3char.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DM_Sheet_4char.bmp" />
+    <None Include="Resources\DM_Sheet_1char.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DM_Sheet_2char.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

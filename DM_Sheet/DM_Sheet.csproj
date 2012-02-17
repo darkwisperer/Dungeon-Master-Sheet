@@ -12,11 +12,8 @@
     <AssemblyName>DM_Sheet</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <IsWebBootstrapper>true</IsWebBootstrapper>
-    <ManifestCertificateThumbprint>6E476784C7E07FAC220ECB1A9D3A7653482CC679</ManifestCertificateThumbprint>
-    <ManifestKeyFile>DM_Sheet_TemporaryKey.pfx</ManifestKeyFile>
-    <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>    
+    <SignManifests>false</SignManifests>
     <NoWin32Manifest>true</NoWin32Manifest>
     <PublishUrl>C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\publish\</PublishUrl>
     <Install>true</Install>
