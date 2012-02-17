@@ -1,4 +1,4 @@
-DM Toolz 
+DM Toolz/DM-Sheet 
 By Darkwisperer
 
 contact:
@@ -13,7 +13,7 @@ I wrote it for the Weekly Dnd group.I originally carried multiples of this sheet
 
 Feel free to contact me if you have any questions, comments, thoughts, opinions, suggestions, or bug reports.  I always welcome feedback from users, be it good, bad, or ugly.
 
-Please submit issues to https://github.com/darkwisperer/DM-toolz/ if possible, if not then email me.
+Please submit issues to https://github.com/darkwisperer/Dungeon-Master-Sheet if possible, if not then email me.
 
 Features:
   able to keep tabs on upto 4 characters.
@@ -22,11 +22,17 @@ Features:
 Planned for next :
   -tabbed sheets to allow multiple sheets
   -Ability to load a character from (Dungeons and Dragons v3.5 Digital Character Sheet) into the next available character slot.
-  -Battle grid (in new window)
-  -Dice roller
 
-Original DM_sheet can be found:
+Sources Cited
+------------------------------------------------------------------------------------------------------------------------
+The sited below helped tremendously in the creation of this tool.
+
+Original DM_sheet can be found in pdf and word doc:
 http://www.militaryfocus.com/dnd/index.htm
+
+Firefox like tab code was modified from the following site and is under The Code Project Open License (CPOL):
+http://www.codeproject.com/Articles/20050/FireFox-like-Tab-Control  (Tutorial and code)
+http://www.codeproject.com/info/cpol10.aspx  (The Code Project Open License (CPOL))
 
 
 Below is the legal stuff.
