@@ -32,11 +32,15 @@ namespace DM_Sheet
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem newToolStripMenuItem;
         private ToolStripMenuItem fourCharacterSheetToolStripMenuItem;
+        private ToolStripMenuItem ThreeCharacterSheetToolStripMenuItem;
+        private ToolStripMenuItem TwoCharacterSheetToolStripMenuItem;
         private ToolStripMenuItem loadToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem1;
         private ToolStripMenuItem exitToolStripMenuItem;
         private int tabs = 1;
+        private ToolStripMenuItem ThreeCharcterSheet;
+        private ToolStripMenuItem toolStripMenuItem3;
 
         private String PATH = null;  
 
@@ -86,7 +90,7 @@ namespace DM_Sheet
             this.closeTabToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.userControl11 = new MyControlLibrary.TabCtlEx();
-            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components,1);
+            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -97,6 +101,8 @@ namespace DM_Sheet
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ThreeCharcterSheet = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -128,13 +134,13 @@ namespace DM_Sheet
             // New3charTab
             // 
             this.New3charTab.Index = 1;
-            this.New3charTab.Text = "3 character sheet (not implimented)";
+            this.New3charTab.Text = "3 character sheet";
             this.New3charTab.Click += new System.EventHandler(this.New3charTab_Click);
             // 
             // New2charTab
             // 
             this.New2charTab.Index = 2;
-            this.New2charTab.Text = "2 character sheet(not implimented)";
+            this.New2charTab.Text = "2 character sheet";
             this.New2charTab.Click += new System.EventHandler(this.New2charTab_Click);
             // 
             // New1charTab
@@ -146,7 +152,7 @@ namespace DM_Sheet
             // closeAllButThisToolStripMenuItem
             // 
             this.closeAllButThisToolStripMenuItem.Index = 1;
-            this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs";
+            this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs (not implimented)";
             // 
             // closeTabToolStripMenuItem
             // 
@@ -180,13 +186,15 @@ namespace DM_Sheet
             // 
             // tabPage1
             // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage1.Location = new System.Drawing.Point(4, 28);
             this.tabPage1.Menu = this.contextMenuStrip1;
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1052, 738);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "New Group";
+            this.tabPage1.Text = "New Group                                                 ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
@@ -215,10 +223,12 @@ namespace DM_Sheet
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fourCharacterSheetToolStripMenuItem});
+            this.fourCharacterSheetToolStripMenuItem,
+            this.ThreeCharcterSheet,
+            this.toolStripMenuItem3});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Text = "New..";
             // 
             // fourCharacterSheetToolStripMenuItem
             // 
@@ -276,6 +286,22 @@ namespace DM_Sheet
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // ThreeCharcterSheet
+            // 
+            this.ThreeCharcterSheet.Name = "ThreeCharcterSheet";
+            this.ThreeCharcterSheet.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D2)));
+            this.ThreeCharcterSheet.Size = new System.Drawing.Size(226, 22);
+            this.ThreeCharcterSheet.Text = "Three Character Sheet";
+            this.ThreeCharcterSheet.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(226, 22);
+            this.toolStripMenuItem3.Text = "Two Character Sheet";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // Form1
             // 
@@ -455,6 +481,36 @@ namespace DM_Sheet
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //new tab
+            CharTabPage tabPage;
+            tabs++;
+            tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+            tabPage.Location = new System.Drawing.Point(4, 28);
+            tabPage.Menu = this.contextMenuStrip1;
+            tabPage.Name = "New Group " + tabs;
+            tabPage.Size = new System.Drawing.Size(816, 288);
+            tabPage.TabIndex = tabs;
+            tabPage.Text = "New Group " + tabs;
+            this.userControl11.Controls.Add(tabPage);
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            //new tab
+            CharTabPage tabPage;
+            tabs++;
+            tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+            tabPage.Location = new System.Drawing.Point(4, 28);
+            tabPage.Menu = this.contextMenuStrip1;
+            tabPage.Name = "New Group " + tabs;
+            tabPage.Size = new System.Drawing.Size(816, 288);
+            tabPage.TabIndex = tabs;
+            tabPage.Text = "New Group " + tabs;
+            this.userControl11.Controls.Add(tabPage);
         }//end of exit
 
 
