@@ -94,6 +94,1178 @@ namespace MyControlLibrary
         #region Character 1 initialization
         private void character1()
         {
+            this.Char1Other = new System.Windows.Forms.TextBox();
+            this.Char1UR = new System.Windows.Forms.TextBox();
+            this.Char1UMD = new System.Windows.Forms.TextBox();
+            this.Char1Tumble = new System.Windows.Forms.TextBox();
+            this.Char1Swim = new System.Windows.Forms.TextBox();
+            this.Char1Survival = new System.Windows.Forms.TextBox();
+            this.Char1Spot = new System.Windows.Forms.TextBox();
+            this.Char1SpellCraft = new System.Windows.Forms.TextBox();
+            this.Char1SH = new System.Windows.Forms.TextBox();
+            this.Char1SM = new System.Windows.Forms.TextBox();
+            this.Char1Ride = new System.Windows.Forms.TextBox();
+            this.Char1Profession = new System.Windows.Forms.TextBox();
+            this.Char1Perform = new System.Windows.Forms.TextBox();
+            this.Char1OL = new System.Windows.Forms.TextBox();
+            this.Char1MS = new System.Windows.Forms.TextBox();
+            this.Char1Search = new System.Windows.Forms.TextBox();
+            this.Char1Listen = new System.Windows.Forms.TextBox();
+            this.Char1K2 = new System.Windows.Forms.TextBox();
+            this.Char1K1 = new System.Windows.Forms.TextBox();
+            this.Char1KN = new System.Windows.Forms.TextBox();
+            this.Char1KR = new System.Windows.Forms.TextBox();
+            this.Char1KA = new System.Windows.Forms.TextBox();
+            this.Char1Jump = new System.Windows.Forms.TextBox();
+            this.Char1Intimidate = new System.Windows.Forms.TextBox();
+            this.Char1Hide = new System.Windows.Forms.TextBox();
+            this.Char1Heal = new System.Windows.Forms.TextBox();
+            this.Char1HA = new System.Windows.Forms.TextBox();
+            this.Char1GI = new System.Windows.Forms.TextBox();
+            this.Char1Forgery = new System.Windows.Forms.TextBox();
+            this.Char1EA = new System.Windows.Forms.TextBox();
+            this.Char1Disguise = new System.Windows.Forms.TextBox();
+            this.Char1DD = new System.Windows.Forms.TextBox();
+            this.Char1Diplomacy = new System.Windows.Forms.TextBox();
+            this.Other = new System.Windows.Forms.Label();
+            this.Char1DS = new System.Windows.Forms.TextBox();
+            this.Char1Craft2 = new System.Windows.Forms.TextBox();
+            this.Char1Craft1 = new System.Windows.Forms.TextBox();
+            this.Char1Concentration = new System.Windows.Forms.TextBox();
+            this.Char1Climb = new System.Windows.Forms.TextBox();
+            this.Char1Bluff = new System.Windows.Forms.TextBox();
+            this.Char1Balance = new System.Windows.Forms.TextBox();
+            this.Char1Appraise = new System.Windows.Forms.TextBox();
+            this.ACCheckPenalty1 = new System.Windows.Forms.TextBox();
+
+            this.Char1MaxHP = new System.Windows.Forms.TextBox();
+            this.Char1HP = new System.Windows.Forms.TextBox();
+            this.Char1AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char1Touch = new System.Windows.Forms.TextBox();
+            this.Char1FlatFoot = new System.Windows.Forms.TextBox();
+            this.Char1AC = new System.Windows.Forms.TextBox();
+            this.Char1SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char1WILL = new System.Windows.Forms.TextBox();
+            this.Char1REF = new System.Windows.Forms.TextBox();
+            this.Char1Fort = new System.Windows.Forms.TextBox();
+            this.Char1PD = new System.Windows.Forms.TextBox();
+            this.Char1OG = new System.Windows.Forms.TextBox();
+            this.Char1OH = new System.Windows.Forms.TextBox();
+            this.Char1SPEED = new System.Windows.Forms.TextBox();
+            this.Char1CHA_MOD = new System.Windows.Forms.TextBox();
+            this.Char1WIS_MOD = new System.Windows.Forms.TextBox();
+            this.Char1INT_MOD = new System.Windows.Forms.TextBox();
+            this.Char1WIS = new System.Windows.Forms.TextBox();
+            this.Char1CHA = new System.Windows.Forms.TextBox();
+            this.Char1INT = new System.Windows.Forms.TextBox();
+            this.Char1CON_MOD = new System.Windows.Forms.TextBox();
+            this.Char1DEX_MOD = new System.Windows.Forms.TextBox();
+            this.Char1STR_MOD = new System.Windows.Forms.TextBox();
+            this.Char1CON = new System.Windows.Forms.TextBox();
+            this.Char1Dex = new System.Windows.Forms.TextBox();
+            this.Char1STR = new System.Windows.Forms.TextBox();
+            this.Char1Items = new System.Windows.Forms.TextBox();
+            this.Char1Align = new System.Windows.Forms.ComboBox();
+            this.Char1Size = new System.Windows.Forms.ComboBox();
+            this.Char1Level = new System.Windows.Forms.TextBox();
+            this.Char1Weapon = new System.Windows.Forms.TextBox();
+            this.Char1Armor = new System.Windows.Forms.TextBox();
+            this.Char1Language = new System.Windows.Forms.TextBox();
+            this.Char1Deity = new System.Windows.Forms.TextBox();
+            this.Char1Weight = new System.Windows.Forms.TextBox();
+            this.Char1Class = new System.Windows.Forms.TextBox();
+            this.Char1Race = new System.Windows.Forms.TextBox();
+            this.Char1Height = new System.Windows.Forms.TextBox();
+            this.Char1Age = new System.Windows.Forms.TextBox();
+            this.char1Name = new System.Windows.Forms.TextBox();
+            this.Char1Gender = new System.Windows.Forms.ComboBox();
+
+            // 
+            // tabPage1
+            // 
+            this.Controls.Add(this.Char1Other);
+            this.Controls.Add(this.Char1UR);
+            this.Controls.Add(this.Char1UMD);
+            this.Controls.Add(this.Char1Tumble);
+            this.Controls.Add(this.Char1Swim);
+            this.Controls.Add(this.Char1Survival);
+            this.Controls.Add(this.Char1Spot);
+            this.Controls.Add(this.Char1SpellCraft);
+            this.Controls.Add(this.Char1SH);
+            this.Controls.Add(this.Char1SM);
+            this.Controls.Add(this.Char1Ride);
+            this.Controls.Add(this.Char1Profession);
+            this.Controls.Add(this.Char1Perform);
+            this.Controls.Add(this.Char1OL);
+            this.Controls.Add(this.Char1MS);
+            this.Controls.Add(this.Char1Search);
+            this.Controls.Add(this.Char1Listen);
+            this.Controls.Add(this.Char1K2);
+            this.Controls.Add(this.Char1K1);
+            this.Controls.Add(this.Char1KN);
+            this.Controls.Add(this.Char1KR);
+            this.Controls.Add(this.Char1KA);
+            this.Controls.Add(this.Char1Jump);
+            this.Controls.Add(this.Char1Intimidate);
+            this.Controls.Add(this.Char1Hide);
+            this.Controls.Add(this.Char1Heal);
+            this.Controls.Add(this.Char1HA);
+            this.Controls.Add(this.Char1GI);
+            this.Controls.Add(this.Char1Forgery);
+            this.Controls.Add(this.Char1EA);
+            this.Controls.Add(this.Char1Disguise);
+            this.Controls.Add(this.Char1DD);
+            this.Controls.Add(this.Char1Diplomacy);
+            this.Controls.Add(this.Other);
+            this.Controls.Add(this.Char1DS);
+            this.Controls.Add(this.Char1Craft2);
+            this.Controls.Add(this.Char1Craft1);
+            this.Controls.Add(this.Char1Concentration);
+            this.Controls.Add(this.Char1Climb);
+            this.Controls.Add(this.Char1Bluff);
+            this.Controls.Add(this.Char1Balance);
+            this.Controls.Add(this.Char1Appraise);
+            this.Controls.Add(this.ACCheckPenalty1);
+            this.Controls.Add(this.Char1MaxHP);
+            this.Controls.Add(this.Char1HP);
+            this.Controls.Add(this.Char1AC_MOD);
+            this.Controls.Add(this.Char1Touch);
+            this.Controls.Add(this.Char1FlatFoot);
+            this.Controls.Add(this.Char1AC);
+            this.Controls.Add(this.Char1SavingThrowMods);
+            this.Controls.Add(this.Char1WILL);
+            this.Controls.Add(this.Char1REF);
+            this.Controls.Add(this.Char1Fort);
+            this.Controls.Add(this.Char1PD);
+            this.Controls.Add(this.Char1OG);
+            this.Controls.Add(this.Char1OH);
+            this.Controls.Add(this.Char1SPEED);
+            this.Controls.Add(this.Char1CHA_MOD);
+            this.Controls.Add(this.Char1WIS_MOD);
+            this.Controls.Add(this.Char1INT_MOD);
+            this.Controls.Add(this.Char1WIS);
+            this.Controls.Add(this.Char1CHA);
+            this.Controls.Add(this.Char1INT);
+            this.Controls.Add(this.Char1CON_MOD);
+            this.Controls.Add(this.Char1DEX_MOD);
+            this.Controls.Add(this.Char1STR_MOD);
+            this.Controls.Add(this.Char1CON);
+            this.Controls.Add(this.Char1Dex);
+            this.Controls.Add(this.Char1STR);
+            this.Controls.Add(this.Char1Items);
+            this.Controls.Add(this.Char1Align);
+            this.Controls.Add(this.Char1Size);
+            this.Controls.Add(this.Char1Level);
+            this.Controls.Add(this.Char1Weapon);
+            this.Controls.Add(this.Char1Armor);
+            this.Controls.Add(this.Char1Language);
+            this.Controls.Add(this.Char1Deity);
+            this.Controls.Add(this.Char1Weight);
+            this.Controls.Add(this.Char1Class);
+            this.Controls.Add(this.Char1Race);
+            this.Controls.Add(this.Char1Height);
+            this.Controls.Add(this.Char1Age);
+            this.Controls.Add(this.char1Name);
+            this.Controls.Add(this.Char1Gender);
+            this.Location = new System.Drawing.Point(4, 22);
+            this.Name = "tabPage1";
+            this.Padding = new System.Windows.Forms.Padding(3);
+            this.Size = new System.Drawing.Size(816, 288);
+            this.TabIndex = 0;
+            this.Text = "New Group";
+            this.UseVisualStyleBackColor = true;
+
+            // 
+            // Char1Other
+            // 
+            this.Char1Other.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Other.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Other.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Other.Location = new System.Drawing.Point(532, 661);
+            this.Char1Other.Name = "Char1Other";
+            this.Char1Other.Size = new System.Drawing.Size(29, 10);
+            this.Char1Other.TabIndex = 336;
+            this.Char1Other.TextChanged += new System.EventHandler(this.Char1Other_TextChanged);
+
+            // 
+            // Char1UR
+            // 
+            this.Char1UR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1UR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1UR.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1UR.Location = new System.Drawing.Point(532, 645);
+            this.Char1UR.Name = "Char1UR";
+            this.Char1UR.Size = new System.Drawing.Size(29, 10);
+            this.Char1UR.TabIndex = 332;
+            this.Char1UR.TextChanged += new System.EventHandler(this.Char1UR_TextChanged);
+
+            // 
+            // Char1UMD
+            // 
+            this.Char1UMD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1UMD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1UMD.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1UMD.Location = new System.Drawing.Point(532, 630);
+            this.Char1UMD.Name = "Char1UMD";
+            this.Char1UMD.Size = new System.Drawing.Size(29, 10);
+            this.Char1UMD.TabIndex = 328;
+            this.Char1UMD.TextChanged += new System.EventHandler(this.Char1UMD_TextChanged);
+
+            // 
+            // Char1Tumble
+            // 
+            this.Char1Tumble.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Tumble.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Tumble.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Tumble.Location = new System.Drawing.Point(532, 615);
+            this.Char1Tumble.Name = "Char1Tumble";
+            this.Char1Tumble.Size = new System.Drawing.Size(29, 10);
+            this.Char1Tumble.TabIndex = 324;
+            this.Char1Tumble.TextChanged += new System.EventHandler(this.Char1Tumble_TextChanged);
+
+            // 
+            // Char1Swim
+            // 
+            this.Char1Swim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Swim.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Swim.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Swim.Location = new System.Drawing.Point(532, 600);
+            this.Char1Swim.Name = "Char1Swim";
+            this.Char1Swim.Size = new System.Drawing.Size(29, 10);
+            this.Char1Swim.TabIndex = 320;
+            this.Char1Swim.TextChanged += new System.EventHandler(this.Char1Swim_TextChanged);
+
+            // 
+            // Char1Survival
+            // 
+            this.Char1Survival.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Survival.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Survival.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Survival.Location = new System.Drawing.Point(532, 584);
+            this.Char1Survival.Name = "Char1Survival";
+            this.Char1Survival.Size = new System.Drawing.Size(29, 10);
+            this.Char1Survival.TabIndex = 316;
+            this.Char1Survival.TextChanged += new System.EventHandler(this.Char1Survival_TextChanged);
+
+            // 
+            // Char1Spot
+            // 
+            this.Char1Spot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Spot.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Spot.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Spot.Location = new System.Drawing.Point(532, 569);
+            this.Char1Spot.Name = "Char1Spot";
+            this.Char1Spot.Size = new System.Drawing.Size(29, 10);
+            this.Char1Spot.TabIndex = 312;
+            this.Char1Spot.TextChanged += new System.EventHandler(this.Char1Spot_TextChanged);
+
+            // 
+            // Char1SpellCraft
+            // 
+            this.Char1SpellCraft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1SpellCraft.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1SpellCraft.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1SpellCraft.Location = new System.Drawing.Point(532, 554);
+            this.Char1SpellCraft.Name = "Char1SpellCraft";
+            this.Char1SpellCraft.Size = new System.Drawing.Size(29, 10);
+            this.Char1SpellCraft.TabIndex = 308;
+            this.Char1SpellCraft.TextChanged += new System.EventHandler(this.Char1SpellCraft_TextChanged);
+
+            // 
+            // Char1SH
+            // 
+            this.Char1SH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1SH.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1SH.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1SH.Location = new System.Drawing.Point(532, 538);
+            this.Char1SH.Name = "Char1SH";
+            this.Char1SH.Size = new System.Drawing.Size(29, 10);
+            this.Char1SH.TabIndex = 304;
+            this.Char1SH.TextChanged += new System.EventHandler(this.Char1SH_TextChanged);
+
+            // 
+            // Char1SM
+            // 
+            this.Char1SM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1SM.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1SM.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1SM.Location = new System.Drawing.Point(532, 524);
+            this.Char1SM.Name = "Char1SM";
+            this.Char1SM.Size = new System.Drawing.Size(29, 10);
+            this.Char1SM.TabIndex = 300;
+            this.Char1SM.TextChanged += new System.EventHandler(this.Char1SM_TextChanged);
+
+            // 
+            // Char1Ride
+            // 
+            this.Char1Ride.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Ride.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Ride.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Ride.Location = new System.Drawing.Point(532, 493);
+            this.Char1Ride.Name = "Char1Ride";
+            this.Char1Ride.Size = new System.Drawing.Size(29, 10);
+            this.Char1Ride.TabIndex = 296;
+            this.Char1Ride.TextChanged += new System.EventHandler(this.Char1Ride_TextChanged);
+
+            // 
+            // Char1Profession
+            // 
+            this.Char1Profession.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Profession.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Profession.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Profession.Location = new System.Drawing.Point(532, 478);
+            this.Char1Profession.Name = "Char1Profession";
+            this.Char1Profession.Size = new System.Drawing.Size(29, 10);
+            this.Char1Profession.TabIndex = 292;
+            this.Char1Profession.TextChanged += new System.EventHandler(this.Char1Profession_TextChanged);
+
+            // 
+            // Char1Perform
+            // 
+            this.Char1Perform.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Perform.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Perform.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Perform.Location = new System.Drawing.Point(532, 462);
+            this.Char1Perform.Name = "Char1Perform";
+            this.Char1Perform.Size = new System.Drawing.Size(29, 10);
+            this.Char1Perform.TabIndex = 288;
+            this.Char1Perform.TextChanged += new System.EventHandler(this.Char1Perform_TextChanged);
+
+
+            // 
+            // Char1OL
+            // 
+            this.Char1OL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1OL.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1OL.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1OL.Location = new System.Drawing.Point(532, 447);
+            this.Char1OL.Name = "Char1OL";
+            this.Char1OL.Size = new System.Drawing.Size(29, 10);
+            this.Char1OL.TabIndex = 284;
+            this.Char1OL.TextChanged += new System.EventHandler(this.Char1OL_TextChanged);
+
+            // 
+            // Char1MS
+            // 
+            this.Char1MS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1MS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1MS.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1MS.Location = new System.Drawing.Point(532, 432);
+            this.Char1MS.Name = "Char1MS";
+            this.Char1MS.Size = new System.Drawing.Size(29, 10);
+            this.Char1MS.TabIndex = 280;
+            this.Char1MS.TextChanged += new System.EventHandler(this.Char1MS_TextChanged);
+
+
+            // 
+            // Char1Search
+            // 
+            this.Char1Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Search.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Search.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Search.Location = new System.Drawing.Point(532, 507);
+            this.Char1Search.Name = "Char1Search";
+            this.Char1Search.Size = new System.Drawing.Size(29, 10);
+            this.Char1Search.TabIndex = 276;
+            this.Char1Search.TextChanged += new System.EventHandler(this.Char1Search_TextChanged);
+
+            // 
+            // Char1Listen
+            // 
+            this.Char1Listen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Listen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Listen.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Listen.Location = new System.Drawing.Point(532, 416);
+            this.Char1Listen.Name = "Char1Listen";
+            this.Char1Listen.Size = new System.Drawing.Size(29, 10);
+            this.Char1Listen.TabIndex = 272;
+            this.Char1Listen.TextChanged += new System.EventHandler(this.Char1Listen_TextChanged);
+
+            // 
+            // Char1K2
+            // 
+            this.Char1K2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1K2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1K2.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1K2.Location = new System.Drawing.Point(532, 401);
+            this.Char1K2.Name = "Char1K2";
+            this.Char1K2.Size = new System.Drawing.Size(29, 10);
+            this.Char1K2.TabIndex = 268;
+            this.Char1K2.TextChanged += new System.EventHandler(this.Char1K2_TextChanged);
+
+            // 
+            // Char1K1
+            // 
+            this.Char1K1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1K1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1K1.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1K1.Location = new System.Drawing.Point(532, 387);
+            this.Char1K1.Name = "Char1K1";
+            this.Char1K1.Size = new System.Drawing.Size(29, 10);
+            this.Char1K1.TabIndex = 264;
+            this.Char1K1.TextChanged += new System.EventHandler(this.Char1K1_TextChanged);
+
+            // 
+            // Char1KN
+            // 
+            this.Char1KN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1KN.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1KN.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1KN.Location = new System.Drawing.Point(532, 371);
+            this.Char1KN.Name = "Char1KN";
+            this.Char1KN.Size = new System.Drawing.Size(29, 10);
+            this.Char1KN.TabIndex = 260;
+            this.Char1KN.TextChanged += new System.EventHandler(this.Char1KN_TextChanged);
+
+            // 
+            // Char1KR
+            // 
+            this.Char1KR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1KR.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1KR.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1KR.Location = new System.Drawing.Point(532, 356);
+            this.Char1KR.Name = "Char1KR";
+            this.Char1KR.Size = new System.Drawing.Size(29, 10);
+            this.Char1KR.TabIndex = 256;
+            this.Char1KR.TextChanged += new System.EventHandler(this.Char1KR_TextChanged);
+
+            // 
+            // Char1KA
+            // 
+            this.Char1KA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1KA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1KA.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1KA.Location = new System.Drawing.Point(532, 341);
+            this.Char1KA.Name = "Char1KA";
+            this.Char1KA.Size = new System.Drawing.Size(29, 10);
+            this.Char1KA.TabIndex = 252;
+            this.Char1KA.TextChanged += new System.EventHandler(this.Char1KA_TextChanged);
+
+            // 
+            // Char1Jump
+            // 
+            this.Char1Jump.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Jump.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Jump.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Jump.Location = new System.Drawing.Point(532, 326);
+            this.Char1Jump.Name = "Char1Jump";
+            this.Char1Jump.Size = new System.Drawing.Size(29, 10);
+            this.Char1Jump.TabIndex = 248;
+            this.Char1Jump.TextChanged += new System.EventHandler(this.Char1Jump_TextChanged);
+
+            // 
+            // Char1Intimidate
+            // 
+            this.Char1Intimidate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Intimidate.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Intimidate.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Intimidate.Location = new System.Drawing.Point(532, 310);
+            this.Char1Intimidate.Name = "Char1Intimidate";
+            this.Char1Intimidate.Size = new System.Drawing.Size(29, 10);
+            this.Char1Intimidate.TabIndex = 244;
+            this.Char1Intimidate.TextChanged += new System.EventHandler(this.Char1Intimidate_TextChanged);
+
+            // 
+            // Char1Hide
+            // 
+            this.Char1Hide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Hide.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Hide.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Hide.Location = new System.Drawing.Point(532, 295);
+            this.Char1Hide.Name = "Char1Hide";
+            this.Char1Hide.Size = new System.Drawing.Size(29, 10);
+            this.Char1Hide.TabIndex = 240;
+            this.Char1Hide.TextChanged += new System.EventHandler(this.Char1Hide_TextChanged);
+
+
+            // 
+            // Char1Heal
+            // 
+            this.Char1Heal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Heal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Heal.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Heal.Location = new System.Drawing.Point(532, 280);
+            this.Char1Heal.Name = "Char1Heal";
+            this.Char1Heal.Size = new System.Drawing.Size(29, 10);
+            this.Char1Heal.TabIndex = 236;
+            this.Char1Heal.TextChanged += new System.EventHandler(this.Char1Heal_TextChanged);
+
+            // 
+            // Char1HA
+            // 
+            this.Char1HA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1HA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1HA.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1HA.Location = new System.Drawing.Point(532, 264);
+            this.Char1HA.Name = "Char1HA";
+            this.Char1HA.Size = new System.Drawing.Size(29, 10);
+            this.Char1HA.TabIndex = 232;
+            this.Char1HA.TextChanged += new System.EventHandler(this.Char1HA_TextChanged);
+
+            // 
+            // Char1GI
+            // 
+            this.Char1GI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1GI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1GI.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1GI.Location = new System.Drawing.Point(532, 249);
+            this.Char1GI.Name = "Char1GI";
+            this.Char1GI.Size = new System.Drawing.Size(29, 10);
+            this.Char1GI.TabIndex = 228;
+            this.Char1GI.TextChanged += new System.EventHandler(this.Char1GI_TextChanged);
+
+            // 
+            // Char1Forgery
+            // 
+            this.Char1Forgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Forgery.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Forgery.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Forgery.Location = new System.Drawing.Point(532, 234);
+            this.Char1Forgery.Name = "Char1Forgery";
+            this.Char1Forgery.Size = new System.Drawing.Size(29, 10);
+            this.Char1Forgery.TabIndex = 224;
+            this.Char1Forgery.TextChanged += new System.EventHandler(this.Char1Forgery_TextChanged);
+
+            // 
+            // Char1EA
+            // 
+            this.Char1EA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1EA.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1EA.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1EA.Location = new System.Drawing.Point(532, 218);
+            this.Char1EA.Name = "Char1EA";
+            this.Char1EA.Size = new System.Drawing.Size(29, 10);
+            this.Char1EA.TabIndex = 220;
+            this.Char1EA.TextChanged += new System.EventHandler(this.Char1EA_TextChanged);
+
+            // 
+            // Char1Disguise
+            // 
+            this.Char1Disguise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Disguise.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Disguise.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Disguise.Location = new System.Drawing.Point(532, 203);
+            this.Char1Disguise.Name = "Char1Disguise";
+            this.Char1Disguise.Size = new System.Drawing.Size(29, 10);
+            this.Char1Disguise.TabIndex = 216;
+            this.Char1Disguise.TextChanged += new System.EventHandler(this.Char1Disguise_TextChanged);
+
+            // 
+            // Char1DD
+            // 
+            this.Char1DD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1DD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1DD.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1DD.Location = new System.Drawing.Point(532, 188);
+            this.Char1DD.Name = "Char1DD";
+            this.Char1DD.Size = new System.Drawing.Size(29, 10);
+            this.Char1DD.TabIndex = 212;
+            this.Char1DD.TextChanged += new System.EventHandler(this.Char1DD_TextChanged);
+
+            // 
+            // Char1Diplomacy
+            // 
+            this.Char1Diplomacy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Diplomacy.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Diplomacy.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Diplomacy.Location = new System.Drawing.Point(532, 173);
+            this.Char1Diplomacy.Name = "Char1Diplomacy";
+            this.Char1Diplomacy.Size = new System.Drawing.Size(29, 10);
+            this.Char1Diplomacy.TabIndex = 208;
+            this.Char1Diplomacy.TextChanged += new System.EventHandler(this.Char1Diplomacy_TextChanged);
+            // 
+            // Other
+            // 
+            this.Other.AutoSize = true;
+            this.Other.Location = new System.Drawing.Point(422, 660);
+            this.Other.Name = "Other";
+            this.Other.Size = new System.Drawing.Size(33, 13);
+            this.Other.TabIndex = 207;
+            this.Other.Text = "Other";
+
+            // 
+            // Char1DS
+            // 
+            this.Char1DS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1DS.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1DS.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1DS.Location = new System.Drawing.Point(532, 157);
+            this.Char1DS.Name = "Char1DS";
+            this.Char1DS.Size = new System.Drawing.Size(29, 10);
+            this.Char1DS.TabIndex = 203;
+            this.Char1DS.TextChanged += new System.EventHandler(this.Char1DS_TextChanged);
+
+            // 
+            // Char1Craft2
+            // 
+            this.Char1Craft2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Craft2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Craft2.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Craft2.Location = new System.Drawing.Point(532, 142);
+            this.Char1Craft2.Name = "Char1Craft2";
+            this.Char1Craft2.Size = new System.Drawing.Size(29, 10);
+            this.Char1Craft2.TabIndex = 199;
+            this.Char1Craft2.TextChanged += new System.EventHandler(this.Char1Craft2_TextChanged);
+
+            // 
+            // Char1Craft1
+            // 
+            this.Char1Craft1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Craft1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Craft1.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Craft1.Location = new System.Drawing.Point(532, 127);
+            this.Char1Craft1.Name = "Char1Craft1";
+            this.Char1Craft1.Size = new System.Drawing.Size(29, 10);
+            this.Char1Craft1.TabIndex = 195;
+            this.Char1Craft1.TextChanged += new System.EventHandler(this.Char1Craft1_TextChanged);
+
+            // 
+            // Char1Concentration
+            // 
+            this.Char1Concentration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Concentration.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Concentration.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Concentration.Location = new System.Drawing.Point(532, 112);
+            this.Char1Concentration.Name = "Char1Concentration";
+            this.Char1Concentration.Size = new System.Drawing.Size(29, 10);
+            this.Char1Concentration.TabIndex = 191;
+            this.Char1Concentration.TextChanged += new System.EventHandler(this.Char1Concentration_TextChanged);
+
+            // 
+            // Char1Climb
+            // 
+            this.Char1Climb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Climb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Climb.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Climb.Location = new System.Drawing.Point(532, 96);
+            this.Char1Climb.Name = "Char1Climb";
+            this.Char1Climb.Size = new System.Drawing.Size(29, 10);
+            this.Char1Climb.TabIndex = 187;
+            this.Char1Climb.TextChanged += new System.EventHandler(this.Char1Climb_TextChanged);
+
+            // 
+            // Char1Bluff
+            // 
+            this.Char1Bluff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Bluff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Bluff.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Bluff.Location = new System.Drawing.Point(532, 81);
+            this.Char1Bluff.Name = "Char1Bluff";
+            this.Char1Bluff.Size = new System.Drawing.Size(29, 10);
+            this.Char1Bluff.TabIndex = 183;
+            this.Char1Bluff.TextChanged += new System.EventHandler(this.Char1Bluff_TextChanged);
+
+            // 
+            // Char1Balance
+            // 
+            this.Char1Balance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Balance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Balance.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Balance.Location = new System.Drawing.Point(532, 66);
+            this.Char1Balance.Name = "Char1Balance";
+            this.Char1Balance.Size = new System.Drawing.Size(30, 10);
+            this.Char1Balance.TabIndex = 179;
+            this.Char1Balance.TextChanged += new System.EventHandler(this.Char1Balance_TextChanged);
+
+            // 
+            // Char1Appraise
+            // 
+            this.Char1Appraise.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Appraise.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Appraise.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Appraise.Location = new System.Drawing.Point(532, 51);
+            this.Char1Appraise.Name = "Char1Appraise";
+            this.Char1Appraise.Size = new System.Drawing.Size(30, 10);
+            this.Char1Appraise.TabIndex = 175;
+            this.Char1Appraise.TextChanged += new System.EventHandler(this.Char1Appraise_TextChanged);
+
+   
+            // 
+            // ACCheckPenalty1
+            // 
+            this.ACCheckPenalty1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ACCheckPenalty1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ACCheckPenalty1.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.ACCheckPenalty1.Location = new System.Drawing.Point(507, 21);
+            this.ACCheckPenalty1.Name = "ACCheckPenalty1";
+            this.ACCheckPenalty1.Size = new System.Drawing.Size(26, 18);
+            this.ACCheckPenalty1.TabIndex = 171;
+            this.ACCheckPenalty1.TextChanged += new System.EventHandler(this.ACCheckPenalty1_TextChanged);
+
+            // 
+            // Char1MaxHP
+            // 
+            this.Char1MaxHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1MaxHP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1MaxHP.Location = new System.Drawing.Point(118, 660);
+            this.Char1MaxHP.Name = "Char1MaxHP";
+            this.Char1MaxHP.Size = new System.Drawing.Size(38, 20);
+            this.Char1MaxHP.TabIndex = 47;
+            this.Char1MaxHP.TextChanged += new System.EventHandler(this.Char1MaxHP_TextChanged);
+            // 
+            // Char1HP
+            // 
+            this.Char1HP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1HP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1HP.Location = new System.Drawing.Point(72, 660);
+            this.Char1HP.Name = "Char1HP";
+            this.Char1HP.Size = new System.Drawing.Size(38, 20);
+            this.Char1HP.TabIndex = 46;
+            this.Char1HP.TextChanged += new System.EventHandler(this.Char1HP_TextChanged);
+            // 
+            // Char1AC_MOD
+            // 
+            this.Char1AC_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1AC_MOD.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1AC_MOD.Location = new System.Drawing.Point(6, 602);
+            this.Char1AC_MOD.Multiline = true;
+            this.Char1AC_MOD.Name = "Char1AC_MOD";
+            this.Char1AC_MOD.Size = new System.Drawing.Size(190, 28);
+            this.Char1AC_MOD.TabIndex = 45;
+            this.Char1AC_MOD.TextChanged += new System.EventHandler(this.Char1AC_MOD_TextChanged);
+            // 
+            // Char1Touch
+            // 
+            this.Char1Touch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Touch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1Touch.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1Touch.Location = new System.Drawing.Point(169, 578);
+            this.Char1Touch.Name = "Char1Touch";
+            this.Char1Touch.Size = new System.Drawing.Size(26, 20);
+            this.Char1Touch.TabIndex = 44;
+            this.Char1Touch.TextChanged += new System.EventHandler(this.Char1Touch_TextChanged);
+            // 
+            // Char1FlatFoot
+            // 
+            this.Char1FlatFoot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1FlatFoot.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1FlatFoot.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1FlatFoot.Location = new System.Drawing.Point(133, 578);
+            this.Char1FlatFoot.Name = "Char1FlatFoot";
+            this.Char1FlatFoot.Size = new System.Drawing.Size(26, 20);
+            this.Char1FlatFoot.TabIndex = 43;
+            this.Char1FlatFoot.TextChanged += new System.EventHandler(this.Char1FlatFoot_TextChanged);
+            // 
+            // Char1AC
+            // 
+            this.Char1AC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1AC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1AC.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1AC.Location = new System.Drawing.Point(88, 578);
+            this.Char1AC.Name = "Char1AC";
+            this.Char1AC.Size = new System.Drawing.Size(35, 20);
+            this.Char1AC.TabIndex = 42;
+            this.Char1AC.TextChanged += new System.EventHandler(this.Char1AC_TextChanged);
+            // 
+            // Char1SavingThrowMods
+            // 
+            this.Char1SavingThrowMods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1SavingThrowMods.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1SavingThrowMods.Location = new System.Drawing.Point(6, 522);
+            this.Char1SavingThrowMods.Multiline = true;
+            this.Char1SavingThrowMods.Name = "Char1SavingThrowMods";
+            this.Char1SavingThrowMods.Size = new System.Drawing.Size(190, 25);
+            this.Char1SavingThrowMods.TabIndex = 41;
+            this.Char1SavingThrowMods.TextChanged += new System.EventHandler(this.Char1SavingThrowMods_TextChanged);
+            // 
+            // Char1WILL
+            // 
+            this.Char1WILL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1WILL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1WILL.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1WILL.Location = new System.Drawing.Point(168, 495);
+            this.Char1WILL.Name = "Char1WILL";
+            this.Char1WILL.Size = new System.Drawing.Size(27, 20);
+            this.Char1WILL.TabIndex = 40;
+            this.Char1WILL.TextChanged += new System.EventHandler(this.Char1WILL_TextChanged);
+            // 
+            // Char1REF
+            // 
+            this.Char1REF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1REF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1REF.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1REF.Location = new System.Drawing.Point(101, 495);
+            this.Char1REF.Name = "Char1REF";
+            this.Char1REF.Size = new System.Drawing.Size(27, 20);
+            this.Char1REF.TabIndex = 39;
+            this.Char1REF.TextChanged += new System.EventHandler(this.Char1REF_TextChanged);
+            // 
+            // Char1Fort
+            // 
+            this.Char1Fort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Fort.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1Fort.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1Fort.Location = new System.Drawing.Point(35, 495);
+            this.Char1Fort.Name = "Char1Fort";
+            this.Char1Fort.Size = new System.Drawing.Size(28, 20);
+            this.Char1Fort.TabIndex = 38;
+            this.Char1Fort.TextChanged += new System.EventHandler(this.Char1Fort_TextChanged);
+            // 
+            // Char1PD
+            // 
+            this.Char1PD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1PD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1PD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1PD.Location = new System.Drawing.Point(158, 448);
+            this.Char1PD.Name = "Char1PD";
+            this.Char1PD.Size = new System.Drawing.Size(37, 15);
+            this.Char1PD.TabIndex = 37;
+            this.Char1PD.TextChanged += new System.EventHandler(this.Char1PD_TextChanged);
+            // 
+            // Char1OG
+            // 
+            this.Char1OG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1OG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1OG.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1OG.Location = new System.Drawing.Point(111, 448);
+            this.Char1OG.Name = "Char1OG";
+            this.Char1OG.Size = new System.Drawing.Size(36, 15);
+            this.Char1OG.TabIndex = 36;
+            this.Char1OG.TextChanged += new System.EventHandler(this.Char1OG_TextChanged);
+            // 
+            // Char1OH
+            // 
+            this.Char1OH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1OH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1OH.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1OH.Location = new System.Drawing.Point(64, 448);
+            this.Char1OH.Name = "Char1OH";
+            this.Char1OH.Size = new System.Drawing.Size(36, 15);
+            this.Char1OH.TabIndex = 35;
+            this.Char1OH.TextChanged += new System.EventHandler(this.Char1OH_TextChanged);
+            // 
+            // Char1SPEED
+            // 
+            this.Char1SPEED.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1SPEED.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1SPEED.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1SPEED.Location = new System.Drawing.Point(7, 448);
+            this.Char1SPEED.Name = "Char1SPEED";
+            this.Char1SPEED.Size = new System.Drawing.Size(36, 15);
+            this.Char1SPEED.TabIndex = 34;
+            this.Char1SPEED.TextChanged += new System.EventHandler(this.Char1SPEED_TextChanged);
+            // 
+            // Char1CHA_MOD
+            // 
+            this.Char1CHA_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1CHA_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1CHA_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1CHA_MOD.Location = new System.Drawing.Point(169, 382);
+            this.Char1CHA_MOD.MaxLength = 2;
+            this.Char1CHA_MOD.Name = "Char1CHA_MOD";
+            this.Char1CHA_MOD.ReadOnly = true;
+            this.Char1CHA_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1CHA_MOD.TabIndex = 33;
+            // 
+            // Char1WIS_MOD
+            // 
+            this.Char1WIS_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1WIS_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1WIS_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1WIS_MOD.Location = new System.Drawing.Point(169, 362);
+            this.Char1WIS_MOD.MaxLength = 2;
+            this.Char1WIS_MOD.Name = "Char1WIS_MOD";
+            this.Char1WIS_MOD.ReadOnly = true;
+            this.Char1WIS_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1WIS_MOD.TabIndex = 32;
+            // 
+            // Char1INT_MOD
+            // 
+            this.Char1INT_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1INT_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1INT_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1INT_MOD.Location = new System.Drawing.Point(169, 342);
+            this.Char1INT_MOD.MaxLength = 2;
+            this.Char1INT_MOD.Name = "Char1INT_MOD";
+            this.Char1INT_MOD.ReadOnly = true;
+            this.Char1INT_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1INT_MOD.TabIndex = 31;
+            // 
+            // Char1WIS
+            // 
+            this.Char1WIS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1WIS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1WIS.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1WIS.Location = new System.Drawing.Point(133, 362);
+            this.Char1WIS.MaxLength = 3;
+            this.Char1WIS.Name = "Char1WIS";
+            this.Char1WIS.Size = new System.Drawing.Size(35, 8);
+            this.Char1WIS.TabIndex = 30;
+            this.Char1WIS.TextChanged += new System.EventHandler(this.Char1WIS_TextChanged);
+            // 
+            // Char1CHA
+            // 
+            this.Char1CHA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1CHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1CHA.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1CHA.Location = new System.Drawing.Point(133, 382);
+            this.Char1CHA.MaxLength = 3;
+            this.Char1CHA.Name = "Char1CHA";
+            this.Char1CHA.Size = new System.Drawing.Size(35, 8);
+            this.Char1CHA.TabIndex = 29;
+            this.Char1CHA.TextChanged += new System.EventHandler(this.Char1CHA_TextChanged);
+            // 
+            // Char1INT
+            // 
+            this.Char1INT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1INT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1INT.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1INT.Location = new System.Drawing.Point(133, 342);
+            this.Char1INT.MaxLength = 3;
+            this.Char1INT.Name = "Char1INT";
+            this.Char1INT.Size = new System.Drawing.Size(35, 8);
+            this.Char1INT.TabIndex = 28;
+            this.Char1INT.TextChanged += new System.EventHandler(this.Char1INT_TextChanged);
+            // 
+            // Char1CON_MOD
+            // 
+            this.Char1CON_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1CON_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1CON_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1CON_MOD.Location = new System.Drawing.Point(70, 382);
+            this.Char1CON_MOD.MaxLength = 2;
+            this.Char1CON_MOD.Name = "Char1CON_MOD";
+            this.Char1CON_MOD.ReadOnly = true;
+            this.Char1CON_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1CON_MOD.TabIndex = 27;
+            // 
+            // Char1DEX_MOD
+            // 
+            this.Char1DEX_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1DEX_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1DEX_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1DEX_MOD.Location = new System.Drawing.Point(70, 362);
+            this.Char1DEX_MOD.MaxLength = 2;
+            this.Char1DEX_MOD.Name = "Char1DEX_MOD";
+            this.Char1DEX_MOD.ReadOnly = true;
+            this.Char1DEX_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1DEX_MOD.TabIndex = 26;
+            // 
+            // Char1STR_MOD
+            // 
+            this.Char1STR_MOD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1STR_MOD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1STR_MOD.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1STR_MOD.Location = new System.Drawing.Point(70, 342);
+            this.Char1STR_MOD.MaxLength = 2;
+            this.Char1STR_MOD.Name = "Char1STR_MOD";
+            this.Char1STR_MOD.ReadOnly = true;
+            this.Char1STR_MOD.Size = new System.Drawing.Size(26, 8);
+            this.Char1STR_MOD.TabIndex = 25;
+            // 
+            // Char1CON
+            // 
+            this.Char1CON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1CON.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1CON.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1CON.Location = new System.Drawing.Point(34, 382);
+            this.Char1CON.MaxLength = 3;
+            this.Char1CON.Name = "Char1CON";
+            this.Char1CON.Size = new System.Drawing.Size(35, 8);
+            this.Char1CON.TabIndex = 24;
+            this.Char1CON.TextChanged += new System.EventHandler(this.Char1CON_TextChanged);
+            // 
+            // Char1Dex
+            // 
+            this.Char1Dex.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Dex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1Dex.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1Dex.Location = new System.Drawing.Point(34, 362);
+            this.Char1Dex.MaxLength = 3;
+            this.Char1Dex.Name = "Char1Dex";
+            this.Char1Dex.Size = new System.Drawing.Size(35, 8);
+            this.Char1Dex.TabIndex = 23;
+            this.Char1Dex.TextChanged += new System.EventHandler(this.Char1Dex_TextChanged);
+            // 
+            // Char1STR
+            // 
+            this.Char1STR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1STR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Char1STR.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1STR.Location = new System.Drawing.Point(34, 342);
+            this.Char1STR.MaxLength = 3;
+            this.Char1STR.Name = "Char1STR";
+            this.Char1STR.Size = new System.Drawing.Size(35, 8);
+            this.Char1STR.TabIndex = 22;
+            this.Char1STR.TextChanged += new System.EventHandler(this.Char1STR_TextChanged);
+            // 
+            // Char1Items
+            // 
+            this.Char1Items.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Items.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Items.Location = new System.Drawing.Point(6, 276);
+            this.Char1Items.Multiline = true;
+            this.Char1Items.Name = "Char1Items";
+            this.Char1Items.Size = new System.Drawing.Size(190, 32);
+            this.Char1Items.TabIndex = 21;
+            this.Char1Items.TextChanged += new System.EventHandler(this.Char1Items_TextChanged);
+            // 
+            // Char1Align
+            // 
+            this.Char1Align.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Align.FormattingEnabled = true;
+            this.Char1Align.Font = new Font("Arial", 7, FontStyle.Bold);
+            this.Char1Align.Items.AddRange(new object[] {
+            "LG",
+            "NG",
+            "CG",
+            "LN",
+            "N",
+            "CN",
+            "LE",
+            "NE",
+            "CE"});
+            this.Char1Align.Location = new System.Drawing.Point(147, 130);
+            this.Char1Align.Name = "Char1Align";
+            this.Char1Align.Size = new System.Drawing.Size(55, 21);
+            this.Char1Align.TabIndex = 20;
+            this.Char1Align.SelectedIndexChanged += new System.EventHandler(this.Char1Align_SelectedIndexChanged);
+            // 
+            // Char1Size
+            // 
+            this.Char1Size.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Size.FormattingEnabled = true;
+            this.Char1Size.Items.AddRange(new object[] {
+            "S",
+            "M",
+            "L"});
+            this.Char1Size.Location = new System.Drawing.Point(157, 40);
+            this.Char1Size.Name = "Char1Size";
+            this.Char1Size.Size = new System.Drawing.Size(41, 21);
+            this.Char1Size.TabIndex = 19;
+            this.Char1Size.SelectedIndexChanged += new System.EventHandler(this.Char1Size_SelectedIndexChanged);
+            // 
+            // Char1Level
+            // 
+            this.Char1Level.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Level.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Level.Location = new System.Drawing.Point(158, 76);
+            this.Char1Level.Name = "Char1Level";
+            this.Char1Level.Size = new System.Drawing.Size(38, 14);
+            this.Char1Level.TabIndex = 18;
+            this.Char1Level.TextChanged += new System.EventHandler(this.Char1Level_TextChanged);
+            // 
+            // Char1Weapon
+            // 
+            this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Weapon.Location = new System.Drawing.Point(6, 248);
+            this.Char1Weapon.Name = "Char1Weapon";
+            this.Char1Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char1Weapon.TabIndex = 17;
+            this.Char1Weapon.TextChanged += new System.EventHandler(this.Char1Weapon_TextChanged);
+            // 
+            // Char1Armor
+            // 
+            this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Armor.Location = new System.Drawing.Point(6, 219);
+            this.Char1Armor.Name = "Char1Armor";
+            this.Char1Armor.Size = new System.Drawing.Size(190, 14);
+            this.Char1Armor.TabIndex = 16;
+            this.Char1Armor.TextChanged += new System.EventHandler(this.Char1Armor_TextChanged);
+            // 
+            // Char1Language
+            // 
+            this.Char1Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Language.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Language.Location = new System.Drawing.Point(6, 172);
+            this.Char1Language.Multiline = true;
+            this.Char1Language.Name = "Char1Language";
+            this.Char1Language.Size = new System.Drawing.Size(190, 20);
+            this.Char1Language.TabIndex = 15;
+            this.Char1Language.TextChanged += new System.EventHandler(this.Char1Language_TextChanged);
+            // 
+            // Char1Deity
+            // 
+            this.Char1Deity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Deity.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Deity.Location = new System.Drawing.Point(6, 132);
+            this.Char1Deity.Name = "Char1Deity";
+            this.Char1Deity.Size = new System.Drawing.Size(133, 13);
+            this.Char1Deity.TabIndex = 13;
+            this.Char1Deity.TextChanged += new System.EventHandler(this.Char1Deity_TextChanged);
+            // 
+            // Char1Weight
+            // 
+            this.Char1Weight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Weight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Weight.Location = new System.Drawing.Point(157, 105);
+            this.Char1Weight.Name = "Char1Weight";
+            this.Char1Weight.Size = new System.Drawing.Size(40, 13);
+            this.Char1Weight.TabIndex = 12;
+            this.Char1Weight.TextChanged += new System.EventHandler(this.Char1Weight_TextChanged);
+            // 
+            // Char1Class
+            // 
+            this.Char1Class.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Class.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Class.Location = new System.Drawing.Point(6, 77);
+            this.Char1Class.Name = "Char1Class";
+            this.Char1Class.Size = new System.Drawing.Size(144, 13);
+            this.Char1Class.TabIndex = 10;
+            this.Char1Class.TextChanged += new System.EventHandler(this.Char1Class_TextChanged);
+            // 
+            // Char1Race
+            // 
+            this.Char1Race.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Race.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Race.Location = new System.Drawing.Point(6, 49);
+            this.Char1Race.Name = "Char1Race";
+            this.Char1Race.Size = new System.Drawing.Size(144, 13);
+            this.Char1Race.TabIndex = 7;
+            this.Char1Race.TextChanged += new System.EventHandler(this.Char1Race_TextChanged);
+            // 
+            // Char1Height
+            // 
+            this.Char1Height.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Height.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Height.Location = new System.Drawing.Point(110, 105);
+            this.Char1Height.Name = "Char1Height";
+            this.Char1Height.Size = new System.Drawing.Size(39, 13);
+            this.Char1Height.TabIndex = 6;
+            this.Char1Height.TextChanged += new System.EventHandler(this.Char1Height_TextChanged);
+            // 
+            // Char1Age
+            // 
+            this.Char1Age.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Age.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Char1Age.Location = new System.Drawing.Point(63, 105);
+            this.Char1Age.Name = "Char1Age";
+            this.Char1Age.Size = new System.Drawing.Size(38, 13);
+            this.Char1Age.TabIndex = 4;
+            this.Char1Age.TextChanged += new System.EventHandler(this.Char1Age_TextChanged);
+            // 
+            // char1Name
+            // 
+            this.char1Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.char1Name.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.char1Name.Location = new System.Drawing.Point(6, 21);
+            this.char1Name.Name = "char1Name";
+            this.char1Name.Size = new System.Drawing.Size(190, 13);
+            this.char1Name.TabIndex = 0;
+            this.char1Name.TextChanged += new System.EventHandler(this.char1Name_TextChanged);
+            // 
+            // Char1Gender
+            // 
+            this.Char1Gender.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Char1Gender.FormattingEnabled = true;
+            this.Char1Gender.Font = new Font("Arial", 8, FontStyle.Bold);
+            this.Char1Gender.Items.AddRange(new object[] {
+            "M",
+            "F",
+            "N"});
+            this.Char1Gender.Location = new System.Drawing.Point(5, 101);
+            this.Char1Gender.Name = "Char1Gender";
+            this.Char1Gender.Size = new System.Drawing.Size(50, 18);
+            this.Char1Gender.TabIndex = 11;
+            this.Char1Gender.SelectedIndexChanged += new System.EventHandler(this.Char1Gender_SelectedIndexChanged);
+
+            //
+            //Main
+            //
+            PC1 = new Character();
+            this.Group.Add(PC1);
         }
         #endregion
 

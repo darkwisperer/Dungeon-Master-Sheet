@@ -95,14 +95,14 @@ namespace DM_Sheet
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fourCharacterSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ThreeCharcterSheet = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ThreeCharcterSheet = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -234,9 +234,25 @@ namespace DM_Sheet
             // 
             this.fourCharacterSheetToolStripMenuItem.Name = "fourCharacterSheetToolStripMenuItem";
             this.fourCharacterSheetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D1)));
-            this.fourCharacterSheetToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.fourCharacterSheetToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
             this.fourCharacterSheetToolStripMenuItem.Text = "Four Character Sheet";
             this.fourCharacterSheetToolStripMenuItem.Click += new System.EventHandler(this.fourCharacterSheetToolStripMenuItem_Click);
+            // 
+            // ThreeCharcterSheet
+            // 
+            this.ThreeCharcterSheet.Name = "ThreeCharcterSheet";
+            this.ThreeCharcterSheet.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D2)));
+            this.ThreeCharcterSheet.Size = new System.Drawing.Size(226, 22);
+            this.ThreeCharcterSheet.Text = "Three Character Sheet";
+            this.ThreeCharcterSheet.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(226, 22);
+            this.toolStripMenuItem3.Text = "Two Character Sheet";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // loadToolStripMenuItem
             // 
@@ -286,22 +302,6 @@ namespace DM_Sheet
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // ThreeCharcterSheet
-            // 
-            this.ThreeCharcterSheet.Name = "ThreeCharcterSheet";
-            this.ThreeCharcterSheet.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D2)));
-            this.ThreeCharcterSheet.Size = new System.Drawing.Size(226, 22);
-            this.ThreeCharcterSheet.Text = "Three Character Sheet";
-            this.ThreeCharcterSheet.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(226, 22);
-            this.toolStripMenuItem3.Text = "Two Character Sheet";
-            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // Form1
             // 

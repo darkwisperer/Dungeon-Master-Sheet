@@ -136,10 +136,10 @@
     <None Include="Resources\DM_Sheet_3char.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DM_Sheet_1char.bmp" />
+    <None Include="Resources\DM_Sheet_2char.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\DM_Sheet_2char.bmp" />
+    <Content Include="Resources\DM_Sheet_1char.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

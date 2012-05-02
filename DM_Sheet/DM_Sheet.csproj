@@ -12,9 +12,10 @@
     <AssemblyName>DM_Sheet</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <IsWebBootstrapper>true</IsWebBootstrapper>    
+    <IsWebBootstrapper>true</IsWebBootstrapper>
     <SignManifests>false</SignManifests>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <GenerateManifests>true</GenerateManifests>
     <PublishUrl>C:\Users\Codi\Desktop\DM_Sheet\DM_Sheet\publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
