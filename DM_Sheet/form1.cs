@@ -98,13 +98,13 @@ namespace DM_Sheet
             this.fourCharacterSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ThreeCharcterSheet = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.oneCharacterSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.oneCharacterSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -175,6 +175,7 @@ namespace DM_Sheet
             // 
             this.userControl11.ConfirmOnClose = true;
             this.userControl11.Controls.Add(this.tabPage1);
+            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
             this.userControl11.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userControl11.ItemSize = new System.Drawing.Size(330, 24);
@@ -257,6 +258,14 @@ namespace DM_Sheet
             this.toolStripMenuItem3.Text = "Two Character Sheet";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
+            // oneCharacterSheetToolStripMenuItem
+            // 
+            this.oneCharacterSheetToolStripMenuItem.Name = "oneCharacterSheetToolStripMenuItem";
+            this.oneCharacterSheetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D4)));
+            this.oneCharacterSheetToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.oneCharacterSheetToolStripMenuItem.Text = "One Character Sheet";
+            this.oneCharacterSheetToolStripMenuItem.Click += new System.EventHandler(this.oneCharacterSheetToolStripMenuItem_Click);
+            // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
@@ -306,14 +315,6 @@ namespace DM_Sheet
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // oneCharacterSheetToolStripMenuItem
-            // 
-            this.oneCharacterSheetToolStripMenuItem.Name = "oneCharacterSheetToolStripMenuItem";
-            this.oneCharacterSheetToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D4)));
-            this.oneCharacterSheetToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.oneCharacterSheetToolStripMenuItem.Text = "One Character Sheet";
-            this.oneCharacterSheetToolStripMenuItem.Click += new System.EventHandler(this.oneCharacterSheetToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -340,6 +341,20 @@ namespace DM_Sheet
          
 			this.userControl11.Controls.Remove(this.userControl11.TabPages[e.TabIndex ]);
             tabs--;
+            if (tabs == 0)
+            {
+                //new tab
+                CharTabPage tabPage;
+                tabs++;
+                tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+                tabPage.Location = new System.Drawing.Point(4, 28);
+                tabPage.Menu = this.contextMenuStrip1;
+                tabPage.Name = "New Group " + tabs;
+                tabPage.Size = new System.Drawing.Size(816, 288);
+                tabPage.TabIndex = tabs;
+                tabPage.Text = "New Group " + tabs;
+                this.userControl11.Controls.Add(tabPage);
+            }
 		}
 
 		private void New4charTab_Click(object sender, EventArgs e)
@@ -492,7 +507,7 @@ namespace DM_Sheet
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
-        }
+        }//end of exit
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -537,8 +552,7 @@ namespace DM_Sheet
             tabPage.TabIndex = tabs;
             tabPage.Text = "New Group " + tabs;
             this.userControl11.Controls.Add(tabPage);
-        }//end of exit
-
+        }
 
 	}//end of class
 }//end of namespace
