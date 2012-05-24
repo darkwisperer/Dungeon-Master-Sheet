@@ -159,17 +159,18 @@ namespace MyControlLibrary
         }//end of Save method
 
         //
-        //Save Group of sheets (i.e Save ALL)
+        //Save Group of sheets (i.e Save ALL sheets as one file)
         //
-        public Save(String PathFile, List<List<Character>> Groups)
+        public Save(String PathFile, List<CharTabPage> Groups)
         {
             using (StreamWriter outfile = new StreamWriter(PathFile))
             {
-                foreach (List<Character> Group in Groups)
-                {                  
-                    foreach (Character PC in Group)
+                foreach (CharTabPage Group in Groups)
+                {
+                    List<Character> G = Group.getGroup();
+                    foreach (Character PC in G)
                         outfile.Write(PC.ToString() + Environment.NewLine);
-                    outfile.Write("&" + Environment.NewLine);
+                    outfile.Write("*" + Environment.NewLine);
                 }//end of outter foreach
             }//end of using
         }//end of Save method

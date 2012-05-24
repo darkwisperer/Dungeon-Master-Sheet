@@ -18066,6 +18066,16 @@ namespace MyControlLibrary
         }
         #endregion
 
+        public String getCharacterName()
+        {
+            return this.char1Name.Text;
+        }//end of getCharacterName
+
+        public List<Character> getGroup()
+        {
+            return Group;
+        }//end of getCharacterName
+
         public void Loadsheet(String path)
         {
             Load l = new Load(path,Group);
@@ -18076,8 +18086,14 @@ namespace MyControlLibrary
         }//end of Load
 
         public void SaveSheet(String path)
-        {            
+        {   //saves a single page         
             Save sf = new Save(path, Group);
-        }
+        }//end of SaveSheet
+
+        public void SaveAll(String path, List<CharTabPage> Group)
+        {   //saves all open sheets
+            Save sf = new Save(path, Group);
+        }//end of SaveGroup
+
     }
 }

@@ -10,23 +10,23 @@ using System.Collections.Generic;
 namespace DM_Sheet
 {
 
-    
-	/// <summary>
-	/// Summary description for Form1.
-	/// </summary>
-	public class Form1 : System.Windows.Forms.Form
+
+    /// <summary>
+    /// Summary description for Form1.
+    /// </summary>
+    public class Form1 : System.Windows.Forms.Form
     {
-		private ContextMenu contextMenuStrip1;
-		private MenuItem NewTab;
-		private MenuItem closeAllButThisToolStripMenuItem;
-		private MenuItem closeTabToolStripMenuItem;
+        private ContextMenu contextMenuStrip1;
+        private MenuItem NewTab;
+        private MenuItem closeAllButThisToolStripMenuItem;
+        private MenuItem closeTabToolStripMenuItem;
         private MenuItem New4charTab;
         private MenuItem New3charTab;
         private MenuItem New2charTab;
         private MenuItem New1charTab;
         private CharTabPage tabPage1;
         private TabCtlEx userControl11;
-		private System.ComponentModel.IContainer components;
+        private System.ComponentModel.IContainer components;
         private Panel panel1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
@@ -44,44 +44,46 @@ namespace DM_Sheet
         private ToolStripMenuItem ThreeCharcterSheet;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem oneCharacterSheetToolStripMenuItem;
-        private CharTabPage LastTabPage;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be supstatuted to prevent visable loading of the page.
+        private CharTabPage LastTabPage;
+        private ToolStripMenuItem saveAsGroupToolStripMenuItem;
+        private ToolStripMenuItem saveAllToolStripMenuItem;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be supstatuted to prevent visable loading of the page.
 
-        private String PATH = null;  
+        private String PATH = null;
 
-		public Form1()
-		{
-			//
-			// Required for Windows Form Designer support
-			//
-			InitializeComponent();
-         
-			//
-			// TODO: Add any constructor code after InitializeComponent call
-			//
-		}
+        public Form1()
+        {
+            //
+            // Required for Windows Form Designer support
+            //
+            InitializeComponent();
 
-		/// <summary>
-		/// Clean up any resources being used.
-		/// </summary>
-		protected override void Dispose( bool disposing )
-		{
-			if( disposing )
-			{
-				if (components != null) 
-				{
-					components.Dispose();
-				}
-			}
-			base.Dispose( disposing );
-		}
+            //
+            // TODO: Add any constructor code after InitializeComponent call
+            //
+        }
 
-		#region Windows Form Designer generated code
-		/// <summary>
-		/// Required method for Designer support - do not modify
-		/// the contents of this method with the code editor.
-		/// </summary>
-		private void InitializeComponent()
-		{
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (components != null)
+                {
+                    components.Dispose();
+                }
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenu();
@@ -108,6 +110,8 @@ namespace DM_Sheet
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -158,7 +162,6 @@ namespace DM_Sheet
             // 
             this.closeAllButThisToolStripMenuItem.Index = 1;
             this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs (not implimented)";
-            //this.closeAllButThisToolStripMenuItem.Click += new System.EventHandler(this.closeAllButThisToolStripMenuItem_Click);
             // 
             // closeTabToolStripMenuItem
             // 
@@ -223,7 +226,9 @@ namespace DM_Sheet
             this.newToolStripMenuItem,
             this.loadToolStripMenuItem,
             this.saveToolStripMenuItem,
+            this.saveAllToolStripMenuItem,
             this.saveToolStripMenuItem1,
+            this.saveAsGroupToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -291,9 +296,7 @@ namespace DM_Sheet
             // saveToolStripMenuItem1
             // 
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(193, 22);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
             this.saveToolStripMenuItem1.Text = "Save as...";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
@@ -321,6 +324,23 @@ namespace DM_Sheet
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // saveAsGroupToolStripMenuItem
+            // 
+            this.saveAsGroupToolStripMenuItem.Name = "saveAsGroupToolStripMenuItem";
+            this.saveAsGroupToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
+            this.saveAsGroupToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.saveAsGroupToolStripMenuItem.Text = "Save as Group";
+            this.saveAsGroupToolStripMenuItem.Click += new System.EventHandler(this.saveAsGroupToolStripMenuItem_Click);
+            // 
+            // saveAllToolStripMenuItem
+            // 
+            this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
+            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+                        | System.Windows.Forms.Keys.S)));
+            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.saveAllToolStripMenuItem.Text = "Save All";
+            this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -337,14 +357,14 @@ namespace DM_Sheet
             this.ResumeLayout(false);
             this.PerformLayout();
 
-		}
-		#endregion
+        }
+        #endregion
 
 
 
-		private void userControl11_OnClose(object sender, CloseEventArgs e)
-		{         
-			this.userControl11.Controls.Remove(this.userControl11.TabPages[e.TabIndex ]);
+        private void userControl11_OnClose(object sender, CloseEventArgs e)
+        {
+            this.userControl11.Controls.Remove(this.userControl11.TabPages[e.TabIndex]);
             tabs--;
             if (tabs == 0)
             {
@@ -353,14 +373,14 @@ namespace DM_Sheet
                 tabPage = this.LastTabPage;
                 this.userControl11.Controls.Add(tabPage);
             }
-		}
+        }
 
-		private void New4charTab_Click(object sender, EventArgs e)
-		{
+        private void New4charTab_Click(object sender, EventArgs e)
+        {
             //new tab
             CharTabPage tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components,0);
+            tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -443,8 +463,8 @@ namespace DM_Sheet
             openFileDialog1.Filter = "DM Sheet|*.DM";
             openFileDialog1.Title = "Select a DM Sheet to load";
             openFileDialog1.ShowDialog();
-            
-            List<Character> Group =new  List<Character>();
+
+            List<Character> Group = new List<Character>();
             if (openFileDialog1.FileName != "")
             {
                 CharTabPage t = (CharTabPage)this.userControl11.TabPages[0];
@@ -453,13 +473,13 @@ namespace DM_Sheet
 
                 String[] GroupName = PATH.Split('\\');
                 GroupName = GroupName[GroupName.Length - 1].Split('.');
-                          
+
             }//end if
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
             if (PATH != null)
             {
                 CharTabPage t = (CharTabPage)this.userControl11.TabPages[0];
@@ -490,14 +510,13 @@ namespace DM_Sheet
             saveFileDialog1.Title = "Save your character group";
             saveFileDialog1.ShowDialog();
 
-                        
+
             if (saveFileDialog1.FileName != "")
             {
                 CharTabPage t = (CharTabPage)this.userControl11.TabPages[0];
                 t.SaveSheet(saveFileDialog1.FileName);
                 PATH = saveFileDialog1.FileName;
-            }//end if
-             
+            }//end if            
 
         }//end of New1charTab_Click
 
@@ -553,17 +572,62 @@ namespace DM_Sheet
         }
         private void closeTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-         this.userControl11.Controls.Remove(this.userControl11.TabPages[this.userControl11.TabIndex ]);
-         tabs--;
-         if (tabs == 0)
-         {
-          //Copy and add LastTabPage
-          CharTabPage tabPage;
-          tabPage = this.LastTabPage;
-          this.userControl11.Controls.Add(tabPage);
-          }
+            this.userControl11.Controls.Remove(this.userControl11.TabPages[this.userControl11.TabIndex]);
+            tabs--;
+            if (tabs == 0)
+            {
+                //Copy and add LastTabPage
+                CharTabPage tabPage;
+                tabPage = this.LastTabPage;
+                this.userControl11.Controls.Add(tabPage);
+            }
         }
-	}//end of class
+
+        private void saveAsGroupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //save all pages in one GS file.
+            // Displays a SaveFileDialog so the user can save
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "DM Group|*.DG";
+            saveFileDialog1.Title = "Save Group";
+            saveFileDialog1.ShowDialog();
+
+            List<CharTabPage> Group = new List<CharTabPage>();
+            for (int i = 0; i < this.userControl11.TabPages.Count; i++)
+            {
+                Group.Add((CharTabPage)this.userControl11.TabPages[i]);
+            }//end for
+
+            if (saveFileDialog1.FileName != "")
+            {
+                Group[0].SaveAll(saveFileDialog1.FileName, Group);//call save routine and pass in a File name
+                PATH = saveFileDialog1.FileName;
+            }//end if
+        }//end of saveAsGroupToolStripMenuItem_Click
+
+        private void saveAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //save each page individualy
+            for (int i = 0; i < this.userControl11.TabPages.Count; i++)
+            {
+                CharTabPage t = (CharTabPage)this.userControl11.TabPages[i];
+
+                // Displays a SaveFileDialog so the user can save
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Filter = "DM Sheet|*.DM";
+                saveFileDialog1.Title = "Save All Pages";
+                saveFileDialog1.FileName = t.getCharacterName();
+                saveFileDialog1.ShowDialog();
+
+                if (saveFileDialog1.FileName != "")
+                {                    
+                    t.SaveSheet(saveFileDialog1.FileName);//call save routine and pass in a File name
+                    PATH = saveFileDialog1.FileName;
+                }//end if
+            }
+
+        }
+    }//end of class
 }//end of namespace
 
 

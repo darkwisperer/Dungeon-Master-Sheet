@@ -84,7 +84,6 @@
     <Compile Include="form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadSave.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutBox1.resx">
