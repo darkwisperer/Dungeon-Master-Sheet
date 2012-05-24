@@ -1,1 +1,3 @@
 ﻿Bugs:
+   -Scaling
+   -Ability to save multiple sheets in a group.

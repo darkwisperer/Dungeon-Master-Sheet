@@ -1,13 +1,9 @@
 ﻿Whats planned next:  (in priority order)
   -Print
   -New tabbed sheets
-    -Create a Tabpage Object to be able to add new DM sheet tabs
-       -http://stackoverflow.com/questions/253517/how-do-i-create-a-subclass-of-tabpage-that-i-can-edit-like-a-usercontrol
-       -http://msdn.microsoft.com/en-au/library/system.windows.forms.tabpage.aspx
-    -Ability to clode a single tab
     -Ability to close all but this tab  
   -Ability to load a character from (Dungeons and Dragons v3.5 Digital Character Sheet) into the next available character slot.
     -http://frozen-solid.net/misc/apps.shtml
-  -Battle grid (in new tab)
+  -Battle grid - seperate project
     -Pull character stats from oppen sheets
-  -Dice roller (in new tab)  
+  -Dice roller (in new tab or window?)  
