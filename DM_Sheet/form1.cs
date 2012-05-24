@@ -9,6 +9,8 @@ using System.Collections.Generic;
 
 namespace DM_Sheet
 {
+
+    
 	/// <summary>
 	/// Summary description for Form1.
 	/// </summary>
@@ -32,8 +34,8 @@ namespace DM_Sheet
         private ToolStripMenuItem aboutToolStripMenuItem;
         private ToolStripMenuItem newToolStripMenuItem;
         private ToolStripMenuItem fourCharacterSheetToolStripMenuItem;
-        private ToolStripMenuItem ThreeCharacterSheetToolStripMenuItem;
-        private ToolStripMenuItem TwoCharacterSheetToolStripMenuItem;
+        //private ToolStripMenuItem ThreeCharacterSheetToolStripMenuItem;
+        //private ToolStripMenuItem TwoCharacterSheetToolStripMenuItem;
         private ToolStripMenuItem loadToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem;
         private ToolStripMenuItem saveToolStripMenuItem1;
@@ -42,6 +44,7 @@ namespace DM_Sheet
         private ToolStripMenuItem ThreeCharcterSheet;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem oneCharacterSheetToolStripMenuItem;
+        private CharTabPage LastTabPage;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be supstatuted to prevent visable loading of the page.
 
         private String PATH = null;  
 
@@ -155,11 +158,13 @@ namespace DM_Sheet
             // 
             this.closeAllButThisToolStripMenuItem.Index = 1;
             this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs (not implimented)";
+            //this.closeAllButThisToolStripMenuItem.Click += new System.EventHandler(this.closeAllButThisToolStripMenuItem_Click);
             // 
             // closeTabToolStripMenuItem
             // 
             this.closeTabToolStripMenuItem.Index = 2;
             this.closeTabToolStripMenuItem.Text = "Close tab";
+            this.closeTabToolStripMenuItem.Click += new System.EventHandler(this.closeTabToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -199,6 +204,7 @@ namespace DM_Sheet
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "New Group                                                 ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            LastTabPage = this.tabPage1;
             // 
             // menuStrip1
             // 
@@ -337,22 +343,14 @@ namespace DM_Sheet
 
 
 		private void userControl11_OnClose(object sender, CloseEventArgs e)
-		{
-         
+		{         
 			this.userControl11.Controls.Remove(this.userControl11.TabPages[e.TabIndex ]);
             tabs--;
             if (tabs == 0)
             {
-                //new tab
+                //Copy and add LastTabPage
                 CharTabPage tabPage;
-                tabs++;
-                tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
-                tabPage.Location = new System.Drawing.Point(4, 28);
-                tabPage.Menu = this.contextMenuStrip1;
-                tabPage.Name = "New Group " + tabs;
-                tabPage.Size = new System.Drawing.Size(816, 288);
-                tabPage.TabIndex = tabs;
-                tabPage.Text = "New Group " + tabs;
+                tabPage = this.LastTabPage;
                 this.userControl11.Controls.Add(tabPage);
             }
 		}
@@ -553,7 +551,18 @@ namespace DM_Sheet
             tabPage.Text = "New Group " + tabs;
             this.userControl11.Controls.Add(tabPage);
         }
-
+        private void closeTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+         this.userControl11.Controls.Remove(this.userControl11.TabPages[this.userControl11.TabIndex ]);
+         tabs--;
+         if (tabs == 0)
+         {
+          //Copy and add LastTabPage
+          CharTabPage tabPage;
+          tabPage = this.LastTabPage;
+          this.userControl11.Controls.Add(tabPage);
+          }
+        }
 	}//end of class
 }//end of namespace
 
