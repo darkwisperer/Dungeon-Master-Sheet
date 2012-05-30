@@ -100,6 +100,15 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TabCtrl\CharTabPage.resx">
+      <DependentUpon>CharTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabCtrl\ErrorMSG.resx">
+      <DependentUpon>ErrorMSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabCtrl\TabCtlEx.resx">
+      <DependentUpon>TabCtlEx.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
@@ -114,6 +123,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TabCtrl\AssemblyInfo.cs" />
+    <Compile Include="TabCtrl\Character.cs" />
+    <Compile Include="TabCtrl\CharTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TabCtrl\ErrorMSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabCtrl\ErrorMSG.Designer.cs">
+      <DependentUpon>ErrorMSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabCtrl\LoadSave.cs" />
+    <Compile Include="TabCtrl\TabCtlEx.cs">
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -151,12 +175,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TabCtrl\TabCtrl.csproj">
-      <Project>{12E470D6-9B68-4226-AE77-667636B28026}</Project>
-      <Name>TabCtrl</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

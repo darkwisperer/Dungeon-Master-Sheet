@@ -46,9 +46,27 @@ C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.Propertie
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.exe
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.pdb
-C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\TabCtrl.dll
-C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\TabCtrl.pdb
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.exe.manifest
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.application
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.exe
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.pdb
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.exe.manifest
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.exe
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\bin\Debug\DM_Sheet.pdb
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.AboutBox1.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.Form1.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.CharTabPage.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
+C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.CharTabPage.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.TabCtlEx.resources
