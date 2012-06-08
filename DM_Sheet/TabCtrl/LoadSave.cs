@@ -27,34 +27,40 @@ using System.Collections;
 namespace MyControlLibrary
 {
     class Load
-    {
-        //private int Numchars = 4;
+    {        
         public Load(String PathFile, List<Character> Group)
         {
             //read in file
             StreamReader reader = new StreamReader(PathFile);
             String tmp;
-            ArrayList  input  = new ArrayList();
+            ArrayList input = new ArrayList();
             try
-            {  
-               
+            {
+
                 do
                 {
                     //load items from file
                     tmp = reader.ReadLine();
                     input.Add(tmp);
-                }//end of dowhile
-               while (reader.Peek() != -1);
+                }while (reader.Peek() != -1);
 
-                //assuming that there are only one line of strings per character. (max 4)
-
-                for (int i = 0; i< input.Count && i < Group.Count ;i++)
+                //check to see if it is a .DM or .DG
+                //else proccess acordingly             
+                if (PathFile.Contains(".DM") || PathFile.Contains(".DG"))
                 {
-                    Group[i] = setCharacter(input[i].ToString().Split('/'), (Character)Group[i]);
-                    
-                }//end of for
-                
+                    //assuming that there are only one line of strings per character. (max 4)
+                    for (int i = 0; i < input.Count && i < Group.Count; i++)
+                    {
+                        Group[i] = setCharacter(input[i].ToString().Split('/'), (Character)Group[i]);
 
+                    }//end of for
+                }//end if
+                else if (PathFile.Contains(".dnd"))
+                { 
+                    //process the dnd char sheet.
+                    for (int i = 0; i < input.Count; i++)
+                        System.Console.WriteLine(input[i].ToString());
+                }//end of else if
             }//end of try
 
             catch
@@ -64,7 +70,7 @@ namespace MyControlLibrary
 
             finally
             {
-                reader.Close();               
+                reader.Close();
             }//end of finally
         }//end of Load
 
@@ -161,19 +167,19 @@ namespace MyControlLibrary
             catch
             {
                 //throw error 
-            }        
+            }
             return PC;
         }//end of set values
 
     }//end of Load class
 
     class Save
-    {        
+    {
         public Save(String PathFile, List<Character> Group)
         {
             using (StreamWriter outfile = new StreamWriter(PathFile))
-            {                              
-                foreach(Character PC in Group)
+            {
+                foreach (Character PC in Group)
                     outfile.Write(PC.ToString() + Environment.NewLine);
             }//end of using
         }//end of Save method
