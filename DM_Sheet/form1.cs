@@ -26,6 +26,7 @@ using System.Windows.Forms;
 using System.Data;
 using MyControlLibrary;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 
 namespace DM_Sheet
 {
@@ -66,7 +67,11 @@ namespace DM_Sheet
         private ToolStripMenuItem oneCharacterSheetToolStripMenuItem;
         private CharTabPage LastTabPage;
         private ToolStripMenuItem saveAsGroupToolStripMenuItem;
-        private ToolStripMenuItem saveAllToolStripMenuItem;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be supstatuted to prevent visable loading of the page.
+        private ToolStripMenuItem saveAllToolStripMenuItem;
+        private ToolStripMenuItem printToolStripMenuItem;
+        private PrintDocument printDocument1;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripSeparator toolStripSeparator2;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be supstatuted to prevent visable loading of the page.
 
         private String PATH = null;
 
@@ -126,12 +131,16 @@ namespace DM_Sheet
             this.oneCharacterSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveAsGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -227,7 +236,6 @@ namespace DM_Sheet
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "New Group                                                 ";
             this.tabPage1.UseVisualStyleBackColor = true;
-            LastTabPage = this.tabPage1;
             // 
             // menuStrip1
             // 
@@ -245,10 +253,13 @@ namespace DM_Sheet
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.loadToolStripMenuItem,
+            this.toolStripSeparator1,
             this.saveToolStripMenuItem,
             this.saveAllToolStripMenuItem,
             this.saveToolStripMenuItem1,
             this.saveAsGroupToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.printToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -262,7 +273,7 @@ namespace DM_Sheet
             this.toolStripMenuItem3,
             this.oneCharacterSheetToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.newToolStripMenuItem.Text = "New..";
             // 
             // fourCharacterSheetToolStripMenuItem
@@ -301,7 +312,7 @@ namespace DM_Sheet
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
             this.loadToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.loadToolStripMenuItem.Text = "Load...";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
@@ -309,9 +320,18 @@ namespace DM_Sheet
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // saveAllToolStripMenuItem
+            // 
+            this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
+            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
+                        | System.Windows.Forms.Keys.S)));
+            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.saveAllToolStripMenuItem.Text = "Save All";
+            this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem1
             // 
@@ -320,11 +340,26 @@ namespace DM_Sheet
             this.saveToolStripMenuItem1.Text = "Save as...";
             this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
+            // saveAsGroupToolStripMenuItem
+            // 
+            this.saveAsGroupToolStripMenuItem.Name = "saveAsGroupToolStripMenuItem";
+            this.saveAsGroupToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
+            this.saveAsGroupToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.saveAsGroupToolStripMenuItem.Text = "Save as Group";
+            this.saveAsGroupToolStripMenuItem.Click += new System.EventHandler(this.saveAsGroupToolStripMenuItem_Click);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
+            this.printToolStripMenuItem.Text = "Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -344,22 +379,19 @@ namespace DM_Sheet
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // saveAsGroupToolStripMenuItem
+            // printDocument1
             // 
-            this.saveAsGroupToolStripMenuItem.Name = "saveAsGroupToolStripMenuItem";
-            this.saveAsGroupToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
-            this.saveAsGroupToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.saveAsGroupToolStripMenuItem.Text = "Save as Group";
-            this.saveAsGroupToolStripMenuItem.Click += new System.EventHandler(this.saveAsGroupToolStripMenuItem_Click);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // saveAllToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.S)));
-            this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
-            this.saveAllToolStripMenuItem.Text = "Save All";
-            this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(187, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(187, 6);
             // 
             // Form1
             // 
@@ -480,7 +512,7 @@ namespace DM_Sheet
         {
             // Displays an OpenFileDialog so the user can select a Cursor.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "DM Sheet(*.DM; *.DG)|*.DM; *.DG|Char Shaeet (*.dnd)|*.dnd";
+            openFileDialog1.Filter = "DM Sheet|*.DM";
             openFileDialog1.Title = "Select a DM Sheet to load";
             openFileDialog1.ShowDialog();
 
@@ -640,14 +672,38 @@ namespace DM_Sheet
                 saveFileDialog1.ShowDialog();
 
                 if (saveFileDialog1.FileName != "")
-                {                    
+                {
                     t.SaveSheet(saveFileDialog1.FileName);//call save routine and pass in a File name
                     PATH = saveFileDialog1.FileName;
                 }//end if
             }
 
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrintDialog printDlg = new PrintDialog();
+            printDocument1.DocumentName = "Print Document";
+            printDocument1.DefaultPageSettings.Landscape = true;
+            printDlg.Document = printDocument1;
+
+            printDlg.AllowSelection = true;
+            printDlg.AllowSomePages = true;
+            printDlg.UseEXDialog = true;
+
+            //Call ShowDialog
+            if (printDlg.ShowDialog() == DialogResult.OK)
+                printDocument1.Print();
+        }
+
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Bitmap bm = new Bitmap(this.userControl11.TabPages[this.userControl11.SelectedIndex].BackgroundImage.Width + 1500, this.userControl11.TabPages[this.userControl11.SelectedIndex].Height);
+
+            this.userControl11.TabPages[this.userControl11.SelectedIndex].DrawToBitmap(bm, new Rectangle(50, 50, this.userControl11.TabPages[this.userControl11.SelectedIndex].BackgroundImage.Width + 50, this.userControl11.TabPages[this.userControl11.SelectedIndex].BackgroundImage.Height + 50));
+            e.Graphics.DrawImage(bm, -20, -20, bm.Width, bm.Height);
+        }
+
     }//end of class
 }//end of namespace
-
 
