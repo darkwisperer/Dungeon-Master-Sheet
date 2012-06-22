@@ -144,6 +144,7 @@
     <Content Include="BugList.txt" />
     <Content Include="Planned.txt" />
     <Content Include="README.txt" />
+    <None Include="Resources\gplv3-127x51.png" />
     <None Include="Resources\DM_Sheet_4char.bmp" />
     <None Include="Resources\DM_Sheet_3char.bmp" />
     <None Include="Resources\DM_Sheet_2char.bmp" />

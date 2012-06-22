@@ -130,4 +130,7 @@
   <data name="DM_Sheet_4char" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DM_Sheet_4char.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gplv3-127x51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gplv3-127x51.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
