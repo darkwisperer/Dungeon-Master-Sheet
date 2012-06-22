@@ -13,7 +13,7 @@ I wrote it for the Weekly Dnd group. I originally carried multiples of this shee
 
 Feel free to contact me if you have any questions, comments, thoughts, opinions, suggestions, or bug reports.  I always welcome feedback from users, be it good, bad, or ugly.
 
-[Please submit issues to] (https://github.com/darkwisperer/Dungeon-Master-Sheet) "here" if possible, if not then email me.
+Please submit issues to [here](https://github.com/darkwisperer/Dungeon-Master-Sheet)  if possible, if not then email me.
 
 Features:
   able to keep tabs on upto 4 characters.
