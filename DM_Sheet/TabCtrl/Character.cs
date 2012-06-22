@@ -142,6 +142,14 @@ namespace MyControlLibrary
             return mod;
         }//end of modifier.
 
+        public bool isNew()
+        {
+            String s = this.ToString();
+            String start = "abcdefghijklmnopqrstuvwxyz123456789";
+            bool match = s.IndexOfAny(start.ToCharArray()) != -1;
+            return !match;
+        }
+
         public override String ToString()
         {
             String ToString = Name + "/" + Race + "/" + Class + "/" + hieght + "/" + Weight + "/" + Deity + "/" + Alignment + "/" + Languages + "/" + 

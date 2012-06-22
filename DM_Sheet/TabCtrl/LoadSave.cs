@@ -208,8 +208,10 @@ namespace MyControlLibrary
                     dnd.Add(cache.ToString());//Other = lines 154 +  201
 
                     //need to check for next available character
+                    int slot = EmptySLotFinder(Group);
                     String[] temp = (String[])dnd.ToArray(typeof(String));
-                    Group[0] = setCharacter(temp, (Character)Group[0]);
+                    Group[slot] = setCharacter(temp, (Character)Group[slot]);
+                    
                 }//end else if
             }//end of try
 
@@ -227,6 +229,22 @@ namespace MyControlLibrary
                 reader.Close();
             }//end of finally
         }//end of Load
+
+        private int EmptySLotFinder(List<Character> Group)
+        {
+            int slot = 0;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (Group[i].isNew())
+                {
+                    slot = i;
+                    i += 3;
+                }//end if
+            }//end for
+
+            return slot;
+        }//end of EmptySLotFinder
 
         private String LanguagesFinder(ArrayList input)
         {

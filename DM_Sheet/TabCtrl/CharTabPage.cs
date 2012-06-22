@@ -18103,13 +18103,32 @@ namespace MyControlLibrary
             return Group;
         }//end of getCharacterName
 
+        public bool isNew()
+        {
+            bool b = true;
+            for (int i = 0; i < 4; i++)
+            {
+                if (!Group[i].isNew())
+                {
+                    b = false;
+                }//end if
+            }//end of for
+            return b;
+        }//end of isNew
+
         public void Loadsheet(String path)
         {
             Load l = new Load(path,Group);
-            this.populateFields1(Group[0]);
-            this.populateFields2(Group[1]);
-            this.populateFields3(Group[2]);
-            this.populateFields4(Group[3]);
+            for (int i = 0; i < Group.Count; i++)
+            {
+                switch (i)
+                {
+                    case 0: this.populateFields1(Group[0]); break;
+                    case 1: this.populateFields2(Group[1]); break;
+                    case 2: this.populateFields3(Group[2]); break;
+                    case 3: this.populateFields4(Group[3]); break;
+                }//end switch
+            }//end of for            
         }//end of Load
 
         public void SaveSheet(String path)
