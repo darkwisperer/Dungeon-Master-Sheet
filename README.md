@@ -29,7 +29,8 @@ The sited below helped tremendously in the creation of this tool.
 Original DM_sheet can be found in pdf and word doc [here](http://www.militaryfocus.com/dnd/index.htm)
 
 Firefox like tab code was modified from the following site and is under The Code Project Open License (CPOL):
-[Tutorial and code](http://www.codeproject.com/Articles/20050/FireFox-like-Tab-Control)
+
+[Tutorial and code](http://www.codeproject.com/Articles/20050/FireFox-like-Tab-Control) and
 [The Code Project Open License (CPOL)](http://www.codeproject.com/info/cpol10.aspx)
 
 
