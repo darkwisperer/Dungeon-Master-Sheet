@@ -119,6 +119,8 @@ namespace DM_Sheet
             this.closeAllButThisToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.closeTabToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.userControl11 = new MyControlLibrary.TabCtlEx();
+            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -138,11 +140,9 @@ namespace DM_Sheet
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.userControl11 = new MyControlLibrary.TabCtlEx();
-            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.userControl11.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -208,6 +208,35 @@ namespace DM_Sheet
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1078, 527);
             this.panel1.TabIndex = 1;
+            // 
+            // userControl11
+            // 
+            this.userControl11.ConfirmOnClose = true;
+            this.userControl11.Controls.Add(this.tabPage1);
+            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControl11.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl11.ItemSize = new System.Drawing.Size(330, 24);
+            this.userControl11.Location = new System.Drawing.Point(0, 0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.SelectedIndex = 0;
+            this.userControl11.Size = new System.Drawing.Size(1061, 770);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.TabStop = false;
+            this.userControl11.OnClose += new MyControlLibrary.TabCtlEx.OnHeaderCloseDelegate(this.userControl11_OnClose);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Menu = this.contextMenuStrip1;
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "New Group                                                 ";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -365,35 +394,6 @@ namespace DM_Sheet
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
-            // userControl11
-            // 
-            this.userControl11.ConfirmOnClose = true;
-            this.userControl11.Controls.Add(this.tabPage1);
-            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userControl11.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl11.ItemSize = new System.Drawing.Size(330, 24);
-            this.userControl11.Location = new System.Drawing.Point(0, 0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.SelectedIndex = 0;
-            this.userControl11.Size = new System.Drawing.Size(1061, 770);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.TabStop = false;
-            this.userControl11.OnClose += new MyControlLibrary.TabCtlEx.OnHeaderCloseDelegate(this.userControl11_OnClose);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Menu = this.contextMenuStrip1;
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "New Group                                                 ";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -402,11 +402,11 @@ namespace DM_Sheet
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "DM Sheet 1.1";
+            this.Text = "DM Sheet 1.1.2";
             this.panel1.ResumeLayout(false);
+            this.userControl11.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.userControl11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
