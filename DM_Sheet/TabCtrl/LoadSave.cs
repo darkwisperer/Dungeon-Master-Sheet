@@ -60,17 +60,21 @@ namespace MyControlLibrary
                     //process the dnd char sheet.
                     ArrayList dnd = new ArrayList();
                     int cache = 0;
+                    String[] s;
                     //this is a file written by a program in c++ not sure how to read this in a loop
                     dnd.Add(input[33]);//name
                     dnd.Add(input[36]);//race
-                    //need to seperate class and level
-                    dnd.Add("0");//Class input[35]
+
+                    //seperate class and level
+                    s = input[35].ToString().Split(' ');
+                    s = ClassSplitter(s);
+                    dnd.Add(s[0]);//Class input[35]
                     //------------------------
                     dnd.Add(input[42]);//Hieght
                     dnd.Add(input[43]);//Weight
                     dnd.Add(input[38]);//Deity
-                    dnd.Add(input[37]);//Alignment
-                    dnd.Add("0");//Languages---------------
+                    dnd.Add(input[37]);//Alignment---------
+                    dnd.Add(LanguagesFinder(input.GetRange(326, input.Count - 326)));//Languages---------------
                     dnd.Add("0");//Armor-------------------
                     dnd.Add("0");//Weapons-----------------
                     dnd.Add("0");//Items-------------------
@@ -78,7 +82,7 @@ namespace MyControlLibrary
                     dnd.Add("0");//AC_Mod------------------
                     dnd.Add(input[39]);//Size
                     dnd.Add(input[41]);//Gender
-                    dnd.Add("0");//lvl --see class---------
+                    dnd.Add(s[1]);//lvl
                     dnd.Add(input[40]);//Age
                     dnd.Add(input[24]);//STR
                     dnd.Add(Convert.ToString(Group[0].modifier(Convert.ToInt32(input[24]))));//STR_mod
@@ -96,9 +100,21 @@ namespace MyControlLibrary
                     dnd.Add("0");//OH--need to calculate--
                     dnd.Add("0");//OG--need to calculate--
                     dnd.Add("0");//PD--need to calculate--
-                    dnd.Add("0");//Fort
-                    dnd.Add("0");//ref
-                    dnd.Add("0");//will
+                    cache = Convert.ToInt32(Group[0].modifier(Convert.ToInt32(input[50])));
+                    cache += Convert.ToInt32(input[59]);
+                    cache += Convert.ToInt32(input[59]);
+                    cache += Convert.ToInt32(input[60]);
+                    dnd.Add(Convert.ToString(cache));//Fort
+                    cache = Convert.ToInt32(Group[0].modifier(Convert.ToInt32(input[49])));
+                    cache += Convert.ToInt32(input[63]);
+                    cache += Convert.ToInt32(input[62]);
+                    cache += Convert.ToInt32(input[61]);
+                    dnd.Add(Convert.ToString(cache));//ref
+                    cache = Convert.ToInt32(Group[0].modifier(Convert.ToInt32(input[54])));
+                    cache += Convert.ToInt32(input[64]);
+                    cache += Convert.ToInt32(input[65]);
+                    cache += Convert.ToInt32(input[66]);
+                    dnd.Add(Convert.ToString(cache));//will
                     dnd.Add("0");//ac
                     dnd.Add("0");//flat foot
                     dnd.Add("0");//touch
@@ -212,6 +228,58 @@ namespace MyControlLibrary
             }//end of finally
         }//end of Load
 
+        private String LanguagesFinder(ArrayList input)
+        {
+            String language = "";
+            int k = Convert.ToInt32(input[0]) + 1;
+            k += Convert.ToInt32(input[k]) + 1;            
+            k += Convert.ToInt32(input[k]) + 1;
+            int length = Convert.ToInt32(input[k]) + k+1;
+            for (int i = k+1; i < length; i++)
+            {
+                language += input[i];
+
+                //only add newline if not the last element
+                if(i < length)
+                    language +=  Environment.NewLine;
+            }
+            return language;
+        }
+
+        private String[] ClassSplitter(String[] ClassAndLvL)
+        {
+            String[] myClassAndLvl = { "", "" };
+            String c = "";//class
+            String lvl = "";
+            String tmp = "";
+            double Num;
+            bool isNum; 
+            for (int i = 0; i < ClassAndLvL.Length; i++)
+            {
+                if (ClassAndLvL[i].Length > 4)
+                {
+                    if (c.Length > 0)
+                    {
+                        c += ",";
+                        c += ClassAndLvL[i];
+                    }
+                    else
+                        c += ClassAndLvL[i];
+                }//end if                
+                else{
+                   tmp = ClassAndLvL[i].Trim();
+                   isNum = double.TryParse(tmp, out Num);
+                 if(isNum)
+                {
+                    lvl += ClassAndLvL[i];
+                }//end if
+                }//end else
+            }//end of for
+            myClassAndLvl[0] = c;
+            myClassAndLvl[1] = lvl;
+            return myClassAndLvl;
+        }//end of Class
+
         private Character setCharacter(String[] input, Character PC)
         {
             //assuming that input has 42 strings
@@ -226,7 +294,7 @@ namespace MyControlLibrary
                 PC.Sethieght(input[3]);
                 PC.SetWeight(input[4]);
                 PC.SetDeity(input[5]);
-                PC.SetAlignment(input[6]);
+                PC.SetAlignment(input[6].ToUpper());
                 PC.SetLanguages(input[7]);
                 PC.SetArmor(input[8]);
                 PC.SetWeapons(input[9]);
