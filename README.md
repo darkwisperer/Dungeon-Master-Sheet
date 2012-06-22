@@ -20,19 +20,17 @@ Features:
   ability modifiers are automaticaly set.
   tabbed sheets to allow multiple sheets
 
-For whats next see:
-https://github.com/darkwisperer/Dungeon-Master-Sheet/issues?state=open
+For whats next look [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/issues?state=open)
 
 Sources Cited
 ------------------------------------------------------------------------------------------------------------------------
 The sited below helped tremendously in the creation of this tool.
 
-Original DM_sheet can be found in pdf and word doc:
-http://www.militaryfocus.com/dnd/index.htm
+Original DM_sheet can be found in pdf and word doc [here](http://www.militaryfocus.com/dnd/index.htm)
 
 Firefox like tab code was modified from the following site and is under The Code Project Open License (CPOL):
-http://www.codeproject.com/Articles/20050/FireFox-like-Tab-Control  (Tutorial and code)
-http://www.codeproject.com/info/cpol10.aspx  (The Code Project Open License (CPOL))
+[Tutorial and code](http://www.codeproject.com/Articles/20050/FireFox-like-Tab-Control)
+[The Code Project Open License (CPOL)](http://www.codeproject.com/info/cpol10.aspx)
 
 
 Below is the legal stuff.
