@@ -31,7 +31,8 @@ namespace DM_Sheet
     public partial class ErrorMSG : Form
     {
         public ErrorMSG()
-        {            
+        {
+            
             InitializeComponent();
 
         }

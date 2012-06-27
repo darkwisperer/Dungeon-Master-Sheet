@@ -27,7 +27,30 @@ using System.Collections;
 namespace MyControlLibrary
 {
     class Load
-    {        
+    {
+        private ArrayList _DG;
+        public ArrayList DG
+        {
+            set { this._DG = value; }
+            get{return this._DG;}
+        }
+
+        public Load(String PathFile)
+        {
+            DG_sheet_sizes(PathFile);
+        }
+
+        public Load(List<Character> Group, ArrayList mypage)
+        {
+            //This method is called after Load(String PathFile) has been used to get all the data and pass it back through DG to be seperated into individual pages.
+            //assuming that there are only one line of strings per character. (max 4)
+            for (int i = 0; i < mypage.Count && i < Group.Count; i++)
+            {
+                Group[i] = setCharacter(mypage[i].ToString().Split('/'), (Character)Group[i]);
+
+            }//end of for
+        }
+
         public Load(String PathFile, List<Character> Group)
         {
             //read in file
@@ -46,7 +69,7 @@ namespace MyControlLibrary
 
                 //check to see if it is a .DM or .DG
                 //else proccess acordingly             
-                if (PathFile.Contains(".DM") || PathFile.Contains(".DG"))
+                if (PathFile.Contains(".DM"))
                 {
                     //assuming that there are only one line of strings per character. (max 4)
                     for (int i = 0; i < input.Count && i < Group.Count; i++)
@@ -229,6 +252,49 @@ namespace MyControlLibrary
                 reader.Close();
             }//end of finally
         }//end of Load
+
+        public void DG_sheet_sizes(String PathFile)
+        {
+            //read in file
+            StreamReader reader = new StreamReader(PathFile);
+            String tmp;
+            ArrayList input = new ArrayList();
+            ArrayList group = new ArrayList();
+            
+            try
+            {
+
+                do
+                {
+                    //read from file
+                    tmp = reader.ReadLine();
+                    if (tmp.Contains("*"))
+                    {
+                        group.Add(input.ToArray());
+                        input = new ArrayList();
+                    }
+                    else input.Add(tmp);
+                } while (reader.Peek() != -1);
+
+                
+            }//end of try
+
+            catch (Exception e)
+            {
+                //throw error
+                ErrorMSG error = new ErrorMSG();               
+                //set error message
+                error.ErrorLabel.Text = "Error Loading Group: " + Environment.NewLine + e.Message  + Environment.NewLine + e.StackTrace;
+                error.Width += 520;
+                error.Show();
+            }//end of catch
+
+            finally
+            {
+               reader.Close();
+               DG = group;
+            }//end of finally
+        }//end of DG_sheet_sizes
 
         private int EmptySLotFinder(List<Character> Group)
         {

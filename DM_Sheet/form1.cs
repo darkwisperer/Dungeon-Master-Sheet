@@ -257,8 +257,8 @@ namespace DM_Sheet
             this.toolStripSeparator1,
             this.saveToolStripMenuItem,
             this.saveAllToolStripMenuItem,
-            this.saveToolStripMenuItem1,
             this.saveAsGroupToolStripMenuItem,
+            this.saveToolStripMenuItem1,
             this.toolStripSeparator2,
             this.printToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -513,22 +513,120 @@ namespace DM_Sheet
         {
             // Displays an OpenFileDialog so the user can select a Cursor.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.dnd";
+            openFileDialog1.Filter = "DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.dnd | DM Group (*.DG)|*.DG";
             openFileDialog1.Title = "Select a DM Sheet to load";
             openFileDialog1.ShowDialog();
+            PATH = openFileDialog1.FileName;
 
             if (openFileDialog1.FileName != "")
             {
-                PATH = openFileDialog1.FileName;
+                if (PATH.Contains(".DG"))
+                    loadGM(PATH);
+                else
+                {
+                    String[] GroupName = PATH.Split('\\');
+                    CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+                    bool isNew = t.isNew();
+                    int lineCount = File.ReadAllLines(PATH).Length;
 
-                String[] GroupName = PATH.Split('\\');
-                CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
-                bool isNew = t.isNew();
-                int lineCount = File.ReadAllLines(PATH).Length;
+                    tabs++;
+
+                    CharTabPage tabPage = null;
+                    switch (lineCount)
+                    {
+                        case 1: tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
+                            tabPage.Location = new System.Drawing.Point(4, 28);
+                            tabPage.Menu = this.contextMenuStrip1;
+                            tabPage.Name = "New Group " + tabs;
+                            tabPage.Size = new System.Drawing.Size(816, 288);
+                            tabPage.TabIndex = tabs;
+                            tabPage.Text = "New Group " + tabs;
+                            if (isNew)
+                            {
+                                //replace with correct size page
+                                this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
+                                this.userControl11.Controls.Add(tabPage);
+                            }
+                            else this.userControl11.Controls.Add(tabPage);
+                            t = tabPage;
+                            break;
+                        case 2: tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+                            tabPage.Location = new System.Drawing.Point(4, 28);
+                            tabPage.Menu = this.contextMenuStrip1;
+                            tabPage.Name = "New Group " + tabs;
+                            tabPage.Size = new System.Drawing.Size(816, 288);
+                            tabPage.TabIndex = tabs;
+                            tabPage.Text = "New Group " + tabs;
+                            if (isNew)
+                            {
+                                //replace with correct size page
+                                this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
+                                this.userControl11.Controls.Add(tabPage);
+                            }
+                            else this.userControl11.Controls.Add(tabPage);
+                            t = tabPage;
+                            break;
+                        case 3: tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+                            tabPage.Location = new System.Drawing.Point(4, 28);
+                            tabPage.Menu = this.contextMenuStrip1;
+                            tabPage.Name = "New Group " + tabs;
+                            tabPage.Size = new System.Drawing.Size(816, 288);
+                            tabPage.TabIndex = tabs;
+                            tabPage.Text = "New Group " + tabs;
+                            if (isNew)
+                            {
+                                //replace with correct size page
+                                this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
+                                this.userControl11.Controls.Add(tabPage);
+                            }
+                            else this.userControl11.Controls.Add(tabPage);
+                            t = tabPage;
+                            break;
+                        case 4: tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+                            tabPage.Location = new System.Drawing.Point(4, 28);
+                            tabPage.Menu = this.contextMenuStrip1;
+                            tabPage.Name = "New Group " + tabs;
+                            tabPage.Size = new System.Drawing.Size(816, 288);
+                            tabPage.TabIndex = tabs;
+                            tabPage.Text = "New Group " + tabs;
+                            if (!isNew)
+                            {
+                                this.userControl11.Controls.Add(tabPage);
+                                t = tabPage;
+                            }
+                            break;
+                        default: tabPage = (CharTabPage)this.userControl11.TabPages[0]; break;
+                    }//end of switch
+
+
+                    tabs--;
+
+                    t.Loadsheet(openFileDialog1.FileName);//call load routine and pass in a File name  
+
+                    GroupName = GroupName[GroupName.Length - 1].Split('.');
+
+                }//end if
+            }//end else
+        }//end of loadToolStripMenuItem_Click
+
+        private void loadGM(String path)
+        {
+            //mygroups is an arraylist of arraylists of the input from a DG file
+            ArrayList myGruops = this.tabPage1.LoadGroup(path);
+            object[] test = (object[])myGruops[0];
+            ArrayList tmp = ArrayList.Adapter(test);
+            this.tabPage1.LoadGroup(path, tmp);
+            CharTabPage tabPage = null;
+            
+            for (int i = 1; i < myGruops.Count; i++)
+            {
+                test = (object[])myGruops[i];
+                tmp = ArrayList.Adapter(test);
+                int lineCount = tmp.Count;
 
                 tabs++;
 
-                CharTabPage tabPage = null;
+                tabPage = null;
                 switch (lineCount)
                 {
                     case 1: tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
@@ -538,14 +636,7 @@ namespace DM_Sheet
                         tabPage.Size = new System.Drawing.Size(816, 288);
                         tabPage.TabIndex = tabs;
                         tabPage.Text = "New Group " + tabs;
-                        if (isNew)
-                        {
-                            //replace with correct size page
-                            this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
-                            this.userControl11.Controls.Add(tabPage);
-                        }
-                        else this.userControl11.Controls.Add(tabPage);
-                        t = tabPage;
+                        this.userControl11.Controls.Add(tabPage);
                         break;
                     case 2: tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
                         tabPage.Location = new System.Drawing.Point(4, 28);
@@ -554,14 +645,7 @@ namespace DM_Sheet
                         tabPage.Size = new System.Drawing.Size(816, 288);
                         tabPage.TabIndex = tabs;
                         tabPage.Text = "New Group " + tabs;
-                        if (isNew)
-                        {
-                            //replace with correct size page
-                            this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
-                            this.userControl11.Controls.Add(tabPage);
-                        }
-                        else this.userControl11.Controls.Add(tabPage);
-                        t = tabPage;
+                        this.userControl11.Controls.Add(tabPage);
                         break;
                     case 3: tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
                         tabPage.Location = new System.Drawing.Point(4, 28);
@@ -570,14 +654,7 @@ namespace DM_Sheet
                         tabPage.Size = new System.Drawing.Size(816, 288);
                         tabPage.TabIndex = tabs;
                         tabPage.Text = "New Group " + tabs;
-                        if (isNew)
-                        {
-                            //replace with correct size page
-                            this.userControl11.Controls.RemoveAt(this.userControl11.SelectedIndex);
-                            this.userControl11.Controls.Add(tabPage);
-                        }
-                        else this.userControl11.Controls.Add(tabPage);
-                        t = tabPage;
+                        this.userControl11.Controls.Add(tabPage);
                         break;
                     case 4: tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
                         tabPage.Location = new System.Drawing.Point(4, 28);
@@ -586,23 +663,14 @@ namespace DM_Sheet
                         tabPage.Size = new System.Drawing.Size(816, 288);
                         tabPage.TabIndex = tabs;
                         tabPage.Text = "New Group " + tabs;
-                        if (!isNew)
-                        {
-                            this.userControl11.Controls.Add(tabPage);
-                            t = tabPage;
-                        }
+                        this.userControl11.Controls.Add(tabPage);
                         break;
                     default: tabPage = (CharTabPage)this.userControl11.TabPages[0]; break;
-                }
+                }//end of switch
 
-
-                tabs--;
-
-                t.Loadsheet(openFileDialog1.FileName);//call load routine and pass in a File name    
-                
-                GroupName = GroupName[GroupName.Length - 1].Split('.');
-
-            }//end if
+                tabPage.LoadGroup(path, tmp);
+            }//end of for
+            
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)

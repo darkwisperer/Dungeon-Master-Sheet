@@ -18116,6 +18116,27 @@ namespace MyControlLibrary
             return b;
         }//end of isNew
 
+        public ArrayList LoadGroup(String path)
+        {
+            Load l = new Load(path);
+            return l.DG;
+        }
+
+        public void LoadGroup(String path, ArrayList mypage)
+        {
+            Load l = new Load(Group, mypage);
+            for (int i = 0; i < Group.Count; i++)
+            {
+                switch (i)
+                {
+                    case 0: this.populateFields1(Group[0]); break;
+                    case 1: this.populateFields2(Group[1]); break;
+                    case 2: this.populateFields3(Group[2]); break;
+                    case 3: this.populateFields4(Group[3]); break;
+                }//end switch
+            }//end of for 
+        }
+
         public void Loadsheet(String path)
         {
             Load l = new Load(path,Group);
