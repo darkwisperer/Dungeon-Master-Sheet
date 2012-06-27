@@ -189,7 +189,8 @@ namespace DM_Sheet
             // closeAllButThisToolStripMenuItem
             // 
             this.closeAllButThisToolStripMenuItem.Index = 1;
-            this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs (not implimented)";
+            this.closeAllButThisToolStripMenuItem.Text = "Close all other tabs";
+            this.closeAllButThisToolStripMenuItem.Click += new System.EventHandler(this.closeAllButThisToolStripMenuItem_Click);
             // 
             // closeTabToolStripMenuItem
             // 
@@ -846,6 +847,27 @@ namespace DM_Sheet
 
             this.userControl11.TabPages[this.userControl11.SelectedIndex].DrawToBitmap(bm, new Rectangle(50, 50, this.userControl11.TabPages[this.userControl11.SelectedIndex].BackgroundImage.Width + 50, this.userControl11.TabPages[this.userControl11.SelectedIndex].BackgroundImage.Height + 50));
             e.Graphics.DrawImage(bm, -20, -20, bm.Width, bm.Height);
+        }
+
+        private void closeAllButThisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+
+            for (int i = 0; i < this.userControl11.TabPages.Count; i++)
+            {
+                this.userControl11.Controls.Remove(this.userControl11.TabPages[i]);
+                tabs--;
+            }
+
+            if (tabs == 0)
+            {
+                //Copy and add LastTabPage
+                CharTabPage tabPage;
+                tabPage = this.LastTabPage;
+                this.userControl11.Controls.Add(tabPage);
+                tabs = 1;
+            }
+
         }
 
     }//end of class
