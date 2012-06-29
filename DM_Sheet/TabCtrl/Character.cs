@@ -93,8 +93,8 @@ namespace MyControlLibrary
             int mod = 0;
             switch (ability)
             {
-                case 1:  mod = -5; break;
-                case 2: 
+                case 1: mod = -5; break;
+                case 2:
                 case 3: mod = -4; break;
                 case 4:
                 case 5: mod = -3; break;
@@ -142,6 +142,75 @@ namespace MyControlLibrary
             return mod;
         }//end of modifier.
 
+        public int[] carryingCapacity(int str, char mySize)
+        {
+            //calculate the carrying capacity
+            int max = 100, i, j, k;
+            //Initial progression list
+            int[] List = { 15, 15, 20, 25, 25 };
+
+
+                //Why couldn't it all be this easy?
+                if (str <= 10)
+	                max = str*10;
+                //The higher scores
+                else
+                        //Start at 100 (10*10), increase score by one
+                        //Work in groups of 5 (for progression array)
+	                for (i = 11; i <= str; i+=5)
+        	        {
+                                //Update max by progression
+	        	        for (j = 0; j < 5 && i+j <= str; j++)
+		        	        max += List[j%5];
+                                //Update progression for next set of 5
+                		for (k = 0; k < 5; k++)
+	                		List[k] = List[k] * 2;
+        	        }
+
+                //Size modifiers for carrying capacity
+
+                switch(mySize)
+                {
+                    //Fine => max = max/8;
+                    case 'f': max = max/8; break;//fall down to 'F' and take that action
+                    case 'F': max = max/8; break;
+                    //Diminutive => max = max/4
+                    case 'd': max = max/4;break;//fall down to 'F' and take that action
+                    case 'D': max = max/4; break;
+                    //Tiny => max = max/2
+                    case 't': max = max/2; break;//fall down to 'F' and take that action
+                    case 'T': max = max/2; break;
+                    //Small => max = max*0.75
+                    case 's': max = (int)((double)max * 0.75);break;//fall down to 'F' and take that action
+                    case 'S': max = (int)((double)max * 0.75); break;                   
+                    //Medium => max = max
+                    case 'm': break;//fall down to 'F' and take that action
+                    case 'M': break;
+                    //Large => max = max*2
+                    case 'l': max = max * 2;break;//fall down to 'F' and take that action
+                    case 'L': max = max * 2; break;  
+                    //Huge => max = max*4
+                    case 'h': max = max * 4;break;//fall down to 'F' and take that action
+                    case 'H': max = max * 4; break;  
+                    //Gargantuan =>max = max*8
+                    case 'g': max = max * 8;break;//fall down to 'F' and take that action
+                    case 'G': max = max * 8; break;  
+                    //Colossal => max = max*16 
+                    case 'c': max = max * 16;break;//fall down to 'F' and take that action
+                    case 'C': max = max * 16; break;  
+                    //default to 0
+                    default: max = 0; break;
+                }
+
+                //Yay, done! Just put in the captions with some basic math
+                int[] capacity = { 0,0,0};
+
+                capacity[0] = max;//OH
+                capacity[1] = max*2;;//OG
+                capacity[2] = max*5;//PD
+                return capacity;
+        }
+
         public bool isNew()
         {
             String s = this.ToString();
@@ -152,16 +221,16 @@ namespace MyControlLibrary
 
         public override String ToString()
         {
-            String ToString = Name + "/" + Race + "/" + Class + "/" + hieght + "/" + Weight + "/" + Deity + "/" + Alignment + "/" + Languages + "/" + 
-                Armor + "/" + Weapons + "/" + Items + "/" + Saving_Throw_Mod + "/" + AC_Mod + "/" + Size + "/" + Gender + "/" + lvl + "/" + Age + "/" + 
-                STR + "/" + STR_Mod + "/" + DEX + "/" + DEX_Mod + "/" + CON + "/" + CON_Mod + "/" + INT + "/" + INT_Mod + "/" + WIS + "/" + WIS_Mod + "/" + 
+            String ToString = Name + "/" + Race + "/" + Class + "/" + hieght + "/" + Weight + "/" + Deity + "/" + Alignment + "/" + Languages + "/" +
+                Armor + "/" + Weapons + "/" + Items + "/" + Saving_Throw_Mod + "/" + AC_Mod + "/" + Size + "/" + Gender + "/" + lvl + "/" + Age + "/" +
+                STR + "/" + STR_Mod + "/" + DEX + "/" + DEX_Mod + "/" + CON + "/" + CON_Mod + "/" + INT + "/" + INT_Mod + "/" + WIS + "/" + WIS_Mod + "/" +
                 CHA + "/" + CHA_Mod + "/" + Speed + "/" + OH + "/" + OG + "/" + PD + "/" + Fort + "/" + Ref + "/" + Will + "/" + AC + "/" + FlatFoot + "/" +
                 Touch + "/" + HP + "/" + HPMAX + "/" + ACCheck + "/" + skill.ToString(); ;
             return ToString;
         }//end of ToString
 
-        public void SetALL(String iName,String iRace,String iClass,String ihieght,String iWeight,String iDeity,String iAlignment,String iLanguages,String iArmor,
-            String iWeapons, String iItems, String iSaving_Throw_Mod, String iAC_Mod, char iSize, char iGender,int ilvl,int iAge,int iSTR, int iSTR_Mod,int iDEX,
+        public void SetALL(String iName, String iRace, String iClass, String ihieght, String iWeight, String iDeity, String iAlignment, String iLanguages, String iArmor,
+            String iWeapons, String iItems, String iSaving_Throw_Mod, String iAC_Mod, char iSize, char iGender, int ilvl, int iAge, int iSTR, int iSTR_Mod, int iDEX,
             int iDEX_Mod, int iCON, int iCON_Mod, int iINT, int iINT_Mod, int iWIS, int iWIS_Mod, int iCHA, int iCHA_Mod, int iSpeed, int iOH, int iOG, int iPD,
             int iFort, int iRef, int iWill, int iAC, int iFlatFoot, int iTouch, int iHP, int iHPMAX, int iACCheck)
         {
@@ -214,7 +283,9 @@ namespace MyControlLibrary
             this.ACCheck = iACCheck;
         }//end of SetALL
 
-        //setters=================================================================================================================================================
+        #region setters
+        //=================================================================================================================================================
+
         public void SetName(String iName)
         {
             this.Name = iName;
@@ -308,7 +379,7 @@ namespace MyControlLibrary
         //18
         public void SetSTR_Mod(int iSTR_Mod)
         {
-            this.STR_Mod = iSTR_Mod;            
+            this.STR_Mod = iSTR_Mod;
         }//end of SetSTR_Mod
         //19
         public void SetDEX(int iDEX)
@@ -431,9 +502,10 @@ namespace MyControlLibrary
             this.ACCheck = iACCheck;
         }//end of SetHPMAX
         //42
-        //-----------------------------------------------------------------------------------------------------------------------------
-        //getters======================================================================================================================
-        //-----------------------------------------------------------------------------------------------------------------------------
+        #endregion
+
+
+        #region getters
 
         public String GetName()
         {
@@ -447,7 +519,7 @@ namespace MyControlLibrary
         //2
         public String GetClass()
         {
-           return this.Class;
+            return this.Class;
         }//end of SetClass
         //3
         public String Gethieght()
@@ -477,7 +549,7 @@ namespace MyControlLibrary
         //8
         public String GetArmor()
         {
-           return this.Armor;
+            return this.Armor;
         }//end of SetArmor
         //9
         public String GetWeapons()
@@ -532,7 +604,7 @@ namespace MyControlLibrary
         //19
         public int GetDEX()
         {
-           return this.DEX;
+            return this.DEX;
         }//end of SetDEX
         //20
         public int GetDEX_Mod()
@@ -557,7 +629,7 @@ namespace MyControlLibrary
         //24
         public int GetINT_Mod()
         {
-           return this.INT_Mod;
+            return this.INT_Mod;
         }//end of SetINT_Mod
         //25
         public int GetWIS()
@@ -592,7 +664,7 @@ namespace MyControlLibrary
         //31
         public int GetOG()
         {
-           return this.OG;
+            return this.OG;
         }//end of SetOG
         //32
         public int GetPD()
@@ -627,7 +699,7 @@ namespace MyControlLibrary
         //38
         public int GetTouch()
         {
-           return this.Touch;
+            return this.Touch;
         }//end of SetTouch 
         //39
         public int GetHP()
@@ -645,20 +717,21 @@ namespace MyControlLibrary
             return this.ACCheck;
         }//end of SetHPMAX
         //42
+        #endregion
     }//end of class Character
 
     public class Skill
     {
-        private int Appraise, Balance, Bluff, Climb, Concentration, Craft1, Craft2, DeciferScript, Diplomacy, DisableDevice, Disguise, EscapeArtist, Forgery, 
+        private int Appraise, Balance, Bluff, Climb, Concentration, Craft1, Craft2, DeciferScript, Diplomacy, DisableDevice, Disguise, EscapeArtist, Forgery,
             GatherInfo, HandleAnimal, Heal, Hide, Intimidate, Jump, KnowledgeArcana, KnowledgeReligion, KnowledgeNature, Knowledge1, Knowledge2, Listen,
-            MoveSilently, OpenLock, Perform, Profession, Ride, Search, SenseMotive, SlightOfHand, Spellcraft, Spot, Survival, Swim, Tumble, UseMagicDevice, 
+            MoveSilently, OpenLock, Perform, Profession, Ride, Search, SenseMotive, SlightOfHand, Spellcraft, Spot, Survival, Swim, Tumble, UseMagicDevice,
             UseRope, Other;
-      
+
         public Skill()
         {
             this.Appraise = 0;
-            this.Balance= 0;
-            this.Bluff= 0;
+            this.Balance = 0;
+            this.Bluff = 0;
             this.Climb = 0;
             this.Concentration = 0;
             this.Craft1 = 0;
@@ -701,18 +774,17 @@ namespace MyControlLibrary
 
         public override String ToString()
         {
-            String ToString = Appraise + "/" + Balance + "/" + Bluff + "/" + Climb + "/" + Concentration + "/" + Craft1 + "/" + Craft2 
-             + "/" + DeciferScript + "/" + Diplomacy + "/" + DisableDevice + "/" + Disguise + "/" + EscapeArtist + "/" + Forgery 
+            String ToString = Appraise + "/" + Balance + "/" + Bluff + "/" + Climb + "/" + Concentration + "/" + Craft1 + "/" + Craft2
+             + "/" + DeciferScript + "/" + Diplomacy + "/" + DisableDevice + "/" + Disguise + "/" + EscapeArtist + "/" + Forgery
              + "/" + GatherInfo + "/" + HandleAnimal + "/" + Heal + "/" + Hide + "/" + Intimidate + "/" + Jump + "/" + KnowledgeArcana
              + "/" + KnowledgeNature + "/" + KnowledgeReligion + "/" + Knowledge1 + "/" + Knowledge2 + "/" + Listen
-             + "/" + MoveSilently + "/" + OpenLock + "/" + Perform + "/" + Profession + "/" + Ride + "/" + Search + "/" + SenseMotive 
+             + "/" + MoveSilently + "/" + OpenLock + "/" + Perform + "/" + Profession + "/" + Ride + "/" + Search + "/" + SenseMotive
              + "/" + SlightOfHand + "/" + Spellcraft + "/" + Spot + "/" + Survival + "/" + Swim + "/" + Tumble + "/" + UseMagicDevice
              + "/" + UseRope + "/" + Other;
             return ToString;
         }
-//==============================================================================================================================================================
-//Getters----------------------------------------------------------------------------------------------------------------------------------------------
-//==============================================================================================================================================================
+
+        #region Skill getters
         public int GetAppraise()
         {
             return this.Appraise;
@@ -877,10 +949,9 @@ namespace MyControlLibrary
         {
             return this.Other;
         }//40
+        #endregion
 
-//==============================================================================================================================================================
-//Setters-------------------------------------------------------------------------------------------------------------------------------------------------------
-//==============================================================================================================================================================
+        #region Skill setters
 
         public void SetAppraise(int iAppraise)
         {
@@ -1046,5 +1117,6 @@ namespace MyControlLibrary
         {
             this.Other = iOther;
         }
-    }//end of class skill
+        #endregion
+    }//end of class skill        
 }//end of namespace

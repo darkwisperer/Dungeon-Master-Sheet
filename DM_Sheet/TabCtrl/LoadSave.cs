@@ -97,12 +97,12 @@ namespace MyControlLibrary
                     dnd.Add(input[43]);//Weight
                     dnd.Add(input[38]);//Deity
                     dnd.Add(input[37]);//Alignment---------
-                    dnd.Add(LanguagesFinder(input.GetRange(326, input.Count - 326)));//Languages---------------
-                    dnd.Add("0");//Armor-------------------
-                    dnd.Add("0");//Weapons-----------------
+                    dnd.Add(MultilineParser(input.GetRange(326, input.Count - 326)));//Languages---------------
+                    dnd.Add(input[227] + "| AC bonus:" + input[225]);//Armor-------------------
+                    dnd.Add(input[70] + " | attack bonus:" + input[71] + " | damage:" + input[72]);//Weapons-----------------
                     dnd.Add("0");//Items-------------------
                     dnd.Add("0");//Saving_Throw_Mod--------
-                    dnd.Add("0");//AC_Mod------------------
+                    dnd.Add(input[227] + ": +" + input[225]);//AC_Mod------------------
                     dnd.Add(input[39]);//Size
                     dnd.Add(input[41]);//Gender
                     dnd.Add(s[1]);//lvl
@@ -120,9 +120,10 @@ namespace MyControlLibrary
                     dnd.Add(input[57]);//char
                     dnd.Add(Convert.ToString(Group[0].modifier(Convert.ToInt32(input[57]))));//char mod
                     dnd.Add(input[30]);//Speed
-                    dnd.Add("0");//OH--need to calculate--
-                    dnd.Add("0");//OG--need to calculate--
-                    dnd.Add("0");//PD--need to calculate--
+                    int[] c = Group[0].carryingCapacity(Convert.ToInt32(input[24]), input[39].ToString()[0]);
+                    dnd.Add(c[0].ToString());//OH--need to calculate--
+                    dnd.Add(c[1].ToString());//OG--need to calculate--
+                    dnd.Add(c[2].ToString());//PD--need to calculate--
                     cache = Convert.ToInt32(Group[0].modifier(Convert.ToInt32(input[50])));
                     cache += Convert.ToInt32(input[59]);
                     cache += Convert.ToInt32(input[59]);
@@ -138,13 +139,16 @@ namespace MyControlLibrary
                     cache += Convert.ToInt32(input[65]);
                     cache += Convert.ToInt32(input[66]);
                     dnd.Add(Convert.ToString(cache));//will
-                    dnd.Add("0");//ac
-                    dnd.Add("0");//flat foot
-                    dnd.Add("0");//touch
-                    dnd.Add(input[19]);//hp
-                    dnd.Add(input[19]);//hp max
                     cache = 10 + Convert.ToInt32(input[225]) + Convert.ToInt32(input[233]) + Group[0].modifier(Convert.ToInt32(input[49]));
-                    dnd.Add(cache.ToString());//ac check = AC bonus(ln225) + SheildBonus(ln233) + dex mod
+                    dnd.Add(cache.ToString());//ac  = 10 + AC bonus(ln225) + SheildBonus(ln233) + dex mod
+                    cache = 10 + Convert.ToInt32(input[225]) + Convert.ToInt32(input[233]);
+                    dnd.Add(cache.ToString());//flat foot = 10 + AC bonus(ln225) + SheildBonus(ln233)
+                    cache = 10 + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//touch = 10 + dex mod
+                    dnd.Add(input[19]);//hp
+                    dnd.Add(input[19]);//hp max    
+                    cache = Convert.ToInt32(input[223]) + Convert.ToInt32(input[235]);
+                    dnd.Add(cache.ToString());//ac check penalty
                     //skills------------------------------------------------------------------------------------------------------
                     
                     cache = Convert.ToInt32(input[110]) + Convert.ToInt32(input[157]);
@@ -312,8 +316,9 @@ namespace MyControlLibrary
             return slot;
         }//end of EmptySLotFinder
 
-        private String LanguagesFinder(ArrayList input)
+        private String MultilineParser(ArrayList input)
         {
+            //used to find 
             String language = "";
             int k = Convert.ToInt32(input[0]) + 1;
             k += Convert.ToInt32(input[k]) + 1;            
