@@ -7,7 +7,12 @@ Github: darkwisperer
 
 This program is intended to assist Dungeon master in managing NPC's stats.
 
-The program is currently only available on windows and is built in VS2008.
+The program is currently only available on windows, and compiles well with:
+VS2008
+Sharpdev
+MonoDevelop (.net compile only. Not compatable for a mono build)
+
+
 This app is pretty self explanatory but feel free to e-mail me with questions. 
 I wrote it for the Weekly Dnd group. I originally carried multiples of this sheet with me to games just to keep track of NPC and heros.
 
