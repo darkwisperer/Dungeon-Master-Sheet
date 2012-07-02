@@ -8,6 +8,7 @@ Github: darkwisperer
 This program is intended to assist Dungeon master in managing NPC's stats.
 
 The program is currently only available on windows, and compiles well with:
+VS2010
 VS2008
 Sharpdev
 MonoDevelop (.net compile only. Not compatable for a mono build)
