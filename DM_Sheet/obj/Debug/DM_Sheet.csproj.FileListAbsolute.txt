@@ -70,3 +70,15 @@ C:\Users\Shafire\Desktop\DM Toolz\dmsheet-no dll\DM-toolz\DM_Sheet\obj\Debug\DM_
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.CharTabPage.resources
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.ErrorMSG.resources
 C:\Users\Shafire\Desktop\DM Toolz\DM-toolz\DM_Sheet\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.pdb
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.AboutBox1.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.Form1.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.CharTabPage.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.ErrorMSG.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.csproj.GenerateResource.Cache
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\GenerateResource.write.1.tlog
