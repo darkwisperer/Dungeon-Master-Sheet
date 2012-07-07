@@ -28,6 +28,7 @@ namespace MyControlLibrary
 {
     class Load
     {
+        private String[] multiline = {"","" };
         private ArrayList _DG;
         public ArrayList DG
         {
@@ -97,10 +98,12 @@ namespace MyControlLibrary
                     dnd.Add(input[43]);//Weight
                     dnd.Add(input[38]);//Deity
                     dnd.Add(input[37]);//Alignment---------
-                    dnd.Add(MultilineParser(input.GetRange(326, input.Count - 326)));//Languages---------------
+                    MultilineParser(input.GetRange(326, input.Count - 326));
+                    dnd.Add(multiline[0]);//Languages---------------
                     dnd.Add(input[227] + "| AC bonus:" + input[225]);//Armor-------------------
                     dnd.Add(input[70] + " | attack bonus:" + input[71] + " | damage:" + input[72]);//Weapons-----------------
-                    dnd.Add("0");//Items-------------------
+                    dnd.Add(multiline[1]);//Items-------------------
+                    //not sure were this is saved..
                     dnd.Add("0");//Saving_Throw_Mod--------
                     dnd.Add(input[227] + ": +" + input[225]);//AC_Mod------------------
                     dnd.Add(input[39]);//Size
@@ -150,87 +153,87 @@ namespace MyControlLibrary
                     cache = Convert.ToInt32(input[223]) + Convert.ToInt32(input[235]);
                     dnd.Add(cache.ToString());//ac check penalty
                     //skills------------------------------------------------------------------------------------------------------
-                    
-                    cache = Convert.ToInt32(input[110]) + Convert.ToInt32(input[157]);
-                    dnd.Add(cache.ToString());//Appraise = lines 110 +  157
-                    cache = Convert.ToInt32(input[111]) + Convert.ToInt32(input[158]);
-                    dnd.Add(cache.ToString());//Balance  = lines 111 +  158
-                    cache = Convert.ToInt32(input[112]) + Convert.ToInt32(input[159]);
-                    dnd.Add(cache.ToString());//Bluff    = lines 112 +  159
-                    cache = Convert.ToInt32(input[113]) + Convert.ToInt32(input[160]);
-                    dnd.Add(cache.ToString());//Climb    = lines 113 +  160
-                    cache = Convert.ToInt32(input[114]) + Convert.ToInt32(input[161]);
-                    dnd.Add(cache.ToString());//Concentration = lines 114 +  161
-                    cache = Convert.ToInt32(input[115]) + Convert.ToInt32(input[162]);
-                    dnd.Add(cache.ToString());//Craft1   = lines 115 +  162
-                    cache = Convert.ToInt32(input[116]) + Convert.ToInt32(input[163]);
-                    dnd.Add(cache.ToString());//Craft2   = lines 116 +  163
-                    cache = Convert.ToInt32(input[118]) + Convert.ToInt32(input[165]);
-                    dnd.Add(cache.ToString());//DeciferScript = lines 118 +  165  
-                    cache = Convert.ToInt32(input[119]) + Convert.ToInt32(input[166]);
-                    dnd.Add(cache.ToString());//Diplomacy = lines 119 +  166
-                    cache = Convert.ToInt32(input[120]) + Convert.ToInt32(input[167]);
-                    dnd.Add(cache.ToString());//DisableDevice = lines 120 +  167
-                    cache = Convert.ToInt32(input[121]) + Convert.ToInt32(input[168]);
-                    dnd.Add(cache.ToString());//Disguise = lines 121 +  168
-                    cache = Convert.ToInt32(input[122]) + Convert.ToInt32(input[169]);
-                    dnd.Add(cache.ToString());//EscapeArtist = lines 122 +  169
-                    cache = Convert.ToInt32(input[123]) + Convert.ToInt32(input[170]);
-                    dnd.Add(cache.ToString());//Forgery = lines 123 +  170
-                    cache = Convert.ToInt32(input[124]) + Convert.ToInt32(input[171]);
-                    dnd.Add(cache.ToString());//GatherInfo = lines 124 +  171
-                    cache = Convert.ToInt32(input[125]) + Convert.ToInt32(input[172]);
-                    dnd.Add(cache.ToString());//HandleAnimal = lines 125 +  172
-                    cache = Convert.ToInt32(input[126]) + Convert.ToInt32(input[173]);
-                    dnd.Add(cache.ToString());//Heal = lines 126 +  173
-                    cache = Convert.ToInt32(input[127]) + Convert.ToInt32(input[174]);
-                    dnd.Add(cache.ToString());//Hide = lines 127 +  174
-                    cache = Convert.ToInt32(input[128]) + Convert.ToInt32(input[175]);
-                    dnd.Add(cache.ToString());//Intimidate = lines 128 +  175
-                    cache = Convert.ToInt32(input[129]) + Convert.ToInt32(input[176]);
-                    dnd.Add(cache.ToString());//Jump = lines 129 +  176
-                    cache = Convert.ToInt32(input[130]) + Convert.ToInt32(input[177]);
-                    dnd.Add(cache.ToString());//KnowledgeArcana = lines 130 +  177
-                    cache = Convert.ToInt32(input[131]) + Convert.ToInt32(input[178]);
-                    dnd.Add(cache.ToString());//KnowledgeNature = lines 131 +  178
-                    cache = Convert.ToInt32(input[132]) + Convert.ToInt32(input[179]);
-                    dnd.Add(cache.ToString());//KnowledgeReligion = lines 132 +  179
-                    cache = Convert.ToInt32(input[133]) + Convert.ToInt32(input[180]);
-                    dnd.Add(cache.ToString());//Knowledge1 = lines 133 +  180
-                    cache = Convert.ToInt32(input[134]) + Convert.ToInt32(input[181]);
-                    dnd.Add(cache.ToString());//Knowledge2 = lines 134 +  181
-                    cache = Convert.ToInt32(input[135]) + Convert.ToInt32(input[182]);
-                    dnd.Add(cache.ToString());//Listen = lines 135 +  182
-                    cache = Convert.ToInt32(input[136]) + Convert.ToInt32(input[183]);
-                    dnd.Add(cache.ToString());//MoveSilently = lines 136 +  183
-                    cache = Convert.ToInt32(input[137]) + Convert.ToInt32(input[184]);
-                    dnd.Add(cache.ToString());//OpenLock = lines 137 +  184
-                    cache = Convert.ToInt32(input[138]) + Convert.ToInt32(input[185]);
-                    dnd.Add(cache.ToString());//Perform = lines 138 +  185
-                    cache = Convert.ToInt32(input[141]) + Convert.ToInt32(input[188]);
-                    dnd.Add(cache.ToString());//Profession = lines 141 +  188
-                    cache = Convert.ToInt32(input[143]) + Convert.ToInt32(input[190]);
-                    dnd.Add(cache.ToString());//Ride = lines 139 +  186
-                    cache = Convert.ToInt32(input[144]) + Convert.ToInt32(input[191]);
-                    dnd.Add(cache.ToString());//Search = lines 144 +  191
-                    cache = Convert.ToInt32(input[145]) + Convert.ToInt32(input[192]);
-                    dnd.Add(cache.ToString());//SenseMotive = lines 145 +  192
-                    cache = Convert.ToInt32(input[146]) + Convert.ToInt32(input[193]);
-                    dnd.Add(cache.ToString());//SlightOfHand = lines 146 +  193
-                    cache = Convert.ToInt32(input[147]) + Convert.ToInt32(input[194]);
-                    dnd.Add(cache.ToString());//Spellcraft = lines 147 +  194
-                    cache = Convert.ToInt32(input[148]) + Convert.ToInt32(input[195]);
-                    dnd.Add(cache.ToString());//spot = lines 148 +  195
-                    cache = Convert.ToInt32(input[149]) + Convert.ToInt32(input[196]);
-                    dnd.Add(cache.ToString());//Survival = lines 149 +  196
-                    cache = Convert.ToInt32(input[150]) + Convert.ToInt32(input[197]);
-                    dnd.Add(cache.ToString());//Swim = lines 150+  197
-                    cache = Convert.ToInt32(input[151]) + Convert.ToInt32(input[198]);
-                    dnd.Add(cache.ToString());//Tumble = lines 151 +  198
-                    cache = Convert.ToInt32(input[152]) + Convert.ToInt32(input[199]);
-                    dnd.Add(cache.ToString());//UseMagicDevice = lines 152 +  199
-                    cache = Convert.ToInt32(input[153]) + Convert.ToInt32(input[200]);
-                    dnd.Add(cache.ToString());//UseRope = lines 153 +  200
+
+                    cache = Convert.ToInt32(input[110]) + Convert.ToInt32(input[157]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Appraise = lines 110 +  157 + int
+                    cache = Convert.ToInt32(input[111]) + Convert.ToInt32(input[158]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//Balance  = lines 111 +  158 + dex
+                    cache = Convert.ToInt32(input[112]) + Convert.ToInt32(input[159]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//Bluff    = lines 112 +  159 + char
+                    cache = Convert.ToInt32(input[113]) + Convert.ToInt32(input[160]) + Group[0].modifier(Convert.ToInt32(input[24]));
+                    dnd.Add(cache.ToString());//Climb    = lines 113 +  160 + str
+                    cache = Convert.ToInt32(input[114]) + Convert.ToInt32(input[161]) + Group[0].modifier(Convert.ToInt32(input[50]));
+                    dnd.Add(cache.ToString());//Concentration = lines 114 +  161 + con
+                    cache = Convert.ToInt32(input[115]) + Convert.ToInt32(input[162]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Craft1   = lines 115 +  162 + int
+                    cache = Convert.ToInt32(input[116]) + Convert.ToInt32(input[163]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Craft2   = lines 116 +  163 + int
+                    cache = Convert.ToInt32(input[118]) + Convert.ToInt32(input[165]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//DeciferScript = lines 118 +  165 + int 
+                    cache = Convert.ToInt32(input[119]) + Convert.ToInt32(input[166]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//Diplomacy = lines 119 +  166 + char
+                    cache = Convert.ToInt32(input[120]) + Convert.ToInt32(input[167]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//DisableDevice = lines 120 +  167 + int
+                    cache = Convert.ToInt32(input[121]) + Convert.ToInt32(input[168]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//Disguise = lines 121 +  168 + char
+                    cache = Convert.ToInt32(input[122]) + Convert.ToInt32(input[169]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//EscapeArtist = lines 122 +  169 + dex
+                    cache = Convert.ToInt32(input[123]) + Convert.ToInt32(input[170]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Forgery = lines 123 +  170 + int
+                    cache = Convert.ToInt32(input[124]) + Convert.ToInt32(input[171]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//GatherInfo = lines 124 +  171 + char 
+                    cache = Convert.ToInt32(input[125]) + Convert.ToInt32(input[172]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//HandleAnimal = lines 125 +  172 + char
+                    cache = Convert.ToInt32(input[126]) + Convert.ToInt32(input[173]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//Heal = lines 126 +  173 + wis
+                    cache = Convert.ToInt32(input[127]) + Convert.ToInt32(input[174]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//Hide = lines 127 +  174 + dex
+                    cache = Convert.ToInt32(input[128]) + Convert.ToInt32(input[175]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//Intimidate = lines 128 +  175 + char
+                    cache = Convert.ToInt32(input[129]) + Convert.ToInt32(input[176]) + Group[0].modifier(Convert.ToInt32(input[24]));
+                    dnd.Add(cache.ToString());//Jump = lines 129 +  176 + str
+                    cache = Convert.ToInt32(input[130]) + Convert.ToInt32(input[177]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//KnowledgeArcana = lines 130 +  177 + int
+                    cache = Convert.ToInt32(input[131]) + Convert.ToInt32(input[178]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//KnowledgeNature = lines 131 +  178 + int
+                    cache = Convert.ToInt32(input[132]) + Convert.ToInt32(input[179]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//KnowledgeReligion = lines 132 +  179 + int
+                    cache = Convert.ToInt32(input[133]) + Convert.ToInt32(input[180]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Knowledge1 = lines 133 +  180 + int
+                    cache = Convert.ToInt32(input[134]) + Convert.ToInt32(input[181]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Knowledge2 = lines 134 +  181 + int
+                    cache = Convert.ToInt32(input[135]) + Convert.ToInt32(input[182]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//Listen = lines 135 +  182 + wis
+                    cache = Convert.ToInt32(input[136]) + Convert.ToInt32(input[183]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//MoveSilently = lines 136 +  183 +dex
+                    cache = Convert.ToInt32(input[137]) + Convert.ToInt32(input[184]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//OpenLock = lines 137 +  184 + dex 
+                    cache = Convert.ToInt32(input[138]) + Convert.ToInt32(input[185]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//Perform = lines 138 +  185 + char
+                    cache = Convert.ToInt32(input[141]) + Convert.ToInt32(input[188]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//Profession = lines 141 +  188 + wis
+                    cache = Convert.ToInt32(input[143]) + Convert.ToInt32(input[190]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//Ride = lines 139 +  186 + dex
+                    cache = Convert.ToInt32(input[144]) + Convert.ToInt32(input[191]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Search = lines 144 +  191 + int
+                    cache = Convert.ToInt32(input[145]) + Convert.ToInt32(input[192]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//SenseMotive = lines 145 +  192 + wis
+                    cache = Convert.ToInt32(input[146]) + Convert.ToInt32(input[193]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//SlightOfHand = lines 146 +  193 + dex
+                    cache = Convert.ToInt32(input[147]) + Convert.ToInt32(input[194]) + Group[0].modifier(Convert.ToInt32(input[53]));
+                    dnd.Add(cache.ToString());//Spellcraft = lines 147 +  194 + int
+                    cache = Convert.ToInt32(input[148]) + Convert.ToInt32(input[195]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//spot = lines 148 +  195 + wis
+                    cache = Convert.ToInt32(input[149]) + Convert.ToInt32(input[196]) + Group[0].modifier(Convert.ToInt32(input[54]));
+                    dnd.Add(cache.ToString());//Survival = lines 149 +  196 + wis
+                    cache = Convert.ToInt32(input[150]) + Convert.ToInt32(input[197]) + Group[0].modifier(Convert.ToInt32(input[24]));
+                    dnd.Add(cache.ToString());//Swim = lines 150 +  197 + str
+                    cache = Convert.ToInt32(input[151]) + Convert.ToInt32(input[198]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//Tumble = lines 151 +  198 + dex
+                    cache = Convert.ToInt32(input[152]) + Convert.ToInt32(input[199]) + Group[0].modifier(Convert.ToInt32(input[57]));
+                    dnd.Add(cache.ToString());//UseMagicDevice = lines 152 +  199 + char
+                    cache = Convert.ToInt32(input[153]) + Convert.ToInt32(input[200]) + Group[0].modifier(Convert.ToInt32(input[49]));
+                    dnd.Add(cache.ToString());//UseRope = lines 153 +  200 + dex
                     cache = Convert.ToInt32(input[154]) + Convert.ToInt32(input[201]);
                     dnd.Add(cache.ToString());//Other = lines 154 +  201
 
@@ -316,24 +319,33 @@ namespace MyControlLibrary
             return slot;
         }//end of EmptySLotFinder
 
-        private String MultilineParser(ArrayList input)
+        private void MultilineParser(ArrayList input)
         {
-            //used to find 
+            //multiline
+            //used to find language, items and Saving_Throw_Mod
             String language = "";
             int k = Convert.ToInt32(input[0]) + 1;
             k += Convert.ToInt32(input[k]) + 1;            
             k += Convert.ToInt32(input[k]) + 1;
             int length = Convert.ToInt32(input[k]) + k+1;
-            for (int i = k+1; i < length; i++)
+            for (int j = 0; j< 2; j++)
             {
-                language += input[i];
+                for (int i = k + 1; i < length; i++)
+                {
+                    language += input[i];
 
-                //only add newline if not the last element
-                if(i < length)
-                    language +=  Environment.NewLine;
-            }
-            return language;
-        }
+                    //only add newline if not the last element
+                    if (i < length)
+                        language += Environment.NewLine;
+                    if (i == length - 1)
+                        k += i-1;
+                }//end of inner for
+                multiline[j] = language;
+                language = "";
+                if(k < input.Count)
+                    length = Convert.ToInt32(input[k]) + k + 1;
+            }//end of outter for
+        }//end of MultilineParser
 
         private String[] ClassSplitter(String[] ClassAndLvL)
         {
