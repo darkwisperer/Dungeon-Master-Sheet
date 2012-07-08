@@ -88,3 +88,21 @@ C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_She
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_Sheet.exe.manifest
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_Sheet.application
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_Sheet.exe
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_Sheet.pdb
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.AboutBox1.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.ErrorMSG.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.Form1.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.CharTabPage.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.ErrorMSG.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\MyControlLibrary.TabCtlEx.resources
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe
+C:\Users\code\Documents\GitHub\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.pdb
