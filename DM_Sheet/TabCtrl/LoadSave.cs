@@ -336,14 +336,14 @@ namespace MyControlLibrary
 
                     //only add newline if not the last element
                     if (i < length)
-                        language += Environment.NewLine;
+                        language += ", ";
                     if (i == length - 1)
                         k += i-1;
                 }//end of inner for
                 multiline[j] = language;
                 language = "";
                 if(k < input.Count)
-                    length = Convert.ToInt32(input[k]) + k + 1;
+                    length = Convert.ToInt32(input[length]) + k + 1;
             }//end of outter for
         }//end of MultilineParser
 

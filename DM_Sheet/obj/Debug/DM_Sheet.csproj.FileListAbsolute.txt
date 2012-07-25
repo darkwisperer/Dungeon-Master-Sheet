@@ -88,3 +88,5 @@ C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\bin\Debug\DM_She
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.Properties.Resources.resources
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.exe.manifest
 C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\DM_Sheet.application
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\ResGen.read.1.tlog
+C:\Users\Shafire\Desktop\DM Toolz\Dungeon-Master-Sheet\DM_Sheet\obj\Debug\ResGen.write.1.tlog

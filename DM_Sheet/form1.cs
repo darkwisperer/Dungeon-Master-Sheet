@@ -514,7 +514,7 @@ namespace DM_Sheet
         {
             // Displays an OpenFileDialog so the user can select a Cursor.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.dnd | DM Group (*.DG)|*.DG";
+            openFileDialog1.Filter = "All Dnd files(*.DM,*.DND,*.DG)|*.DM;*.DND;*.DG|DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.DND | DM Group (*.DG)|*.DG";
             openFileDialog1.Title = "Select a DM Sheet to load";
             openFileDialog1.ShowDialog();
             PATH = openFileDialog1.FileName;
