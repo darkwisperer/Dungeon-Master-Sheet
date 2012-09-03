@@ -85,7 +85,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(317, 17);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Version: 1.1.2";
+            this.labelVersion.Text = "Version: 1.2.2";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -137,7 +137,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DM_Sheet.Properties.Resources.gplv3_127x51;
+            this.pictureBox1.Image = global::DM_Sheet.Properties.Resources.gplv3;
             this.pictureBox1.Location = new System.Drawing.Point(209, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 55);

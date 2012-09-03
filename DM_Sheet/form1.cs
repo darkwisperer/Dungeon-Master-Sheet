@@ -46,7 +46,6 @@ namespace DM_Sheet
         private MenuItem New3charTab;
         private MenuItem New2charTab;
         private MenuItem New1charTab;
-        private CharTabPage tabPage1;
         private TabCtlEx userControl11;
         private System.ComponentModel.IContainer components;
         private Panel panel1;
@@ -64,13 +63,15 @@ namespace DM_Sheet
         private ToolStripMenuItem ThreeCharcterSheet;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem oneCharacterSheetToolStripMenuItem;
-        private CharTabPage LastTabPage = null;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be substatuted to prevent visable loading of the page.
+        private CharTabPage_3_0 LastTabPage = null;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be substatuted to prevent visable loading of the page.
         private ToolStripMenuItem saveAsGroupToolStripMenuItem;
         private ToolStripMenuItem saveAllToolStripMenuItem;
         private ToolStripMenuItem printToolStripMenuItem;
         private PrintDocument printDocument1;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripSeparator toolStripSeparator2;
+        private CharTabPage_3_0 tabPage1;
+        private ToolStripMenuItem optionsToolStripMenuItem;
 
         private String PATH = null;
 
@@ -120,7 +121,6 @@ namespace DM_Sheet
             this.closeTabToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.userControl11 = new MyControlLibrary.TabCtlEx();
-            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,14 +132,16 @@ namespace DM_Sheet
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.tabPage1 = new MyControlLibrary.CharTabPage_3_0(this.components);
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -226,23 +228,11 @@ namespace DM_Sheet
             this.userControl11.TabStop = false;
             this.userControl11.OnClose += new MyControlLibrary.TabCtlEx.OnHeaderCloseDelegate(this.userControl11_OnClose);
             // 
-            // tabPage1
-            // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Menu = this.contextMenuStrip1;
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "New Group                                                 ";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.optionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -334,18 +324,11 @@ namespace DM_Sheet
             // saveAllToolStripMenuItem
             // 
             this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.S)));
+            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
             this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.saveAllToolStripMenuItem.Text = "Save All";
             this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem1
-            // 
-            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
-            this.saveToolStripMenuItem1.Text = "Save as...";
-            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // saveAsGroupToolStripMenuItem
             // 
@@ -354,6 +337,13 @@ namespace DM_Sheet
             this.saveAsGroupToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.saveAsGroupToolStripMenuItem.Text = "Save as Group";
             this.saveAsGroupToolStripMenuItem.Click += new System.EventHandler(this.saveAsGroupToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
+            this.saveToolStripMenuItem1.Text = "Save as...";
+            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // toolStripSeparator2
             // 
@@ -387,13 +377,33 @@ namespace DM_Sheet
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Menu = this.contextMenuStrip1;
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "New Group                                                 ";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -403,7 +413,7 @@ namespace DM_Sheet
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "DM Sheet 1.1.2";
+            this.Text = "DM Sheet 1.2.2";
             this.panel1.ResumeLayout(false);
             this.userControl11.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
@@ -423,7 +433,7 @@ namespace DM_Sheet
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
-                CharTabPage tabPage;
+                CharTabPage_3_0 tabPage;
                 tabPage = this.LastTabPage;
                 this.userControl11.Controls.Add(tabPage);
             }
@@ -432,9 +442,9 @@ namespace DM_Sheet
         private void New4charTab_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 0);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -447,9 +457,9 @@ namespace DM_Sheet
         private void New3charTab_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 1);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -462,9 +472,9 @@ namespace DM_Sheet
         private void New2charTab_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 2);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -477,9 +487,9 @@ namespace DM_Sheet
         private void New1charTab_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 3);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -498,9 +508,9 @@ namespace DM_Sheet
         private void fourCharacterSheetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 0);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -526,16 +536,16 @@ namespace DM_Sheet
                 else
                 {
                     String[] GroupName = PATH.Split('\\');
-                    CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+                    CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[this.userControl11.SelectedIndex];
                     bool isNew = t.isNew();
                     int lineCount = File.ReadAllLines(PATH).Length;
 
                     tabs++;
 
-                    CharTabPage tabPage = null;
+                    CharTabPage_3_0 tabPage = null;
                     switch (lineCount)
                     {
-                        case 1: tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
+                        case 1: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 3);
                             tabPage.Location = new System.Drawing.Point(4, 28);
                             tabPage.Menu = this.contextMenuStrip1;
                             tabPage.Name = "New Group " + tabs;
@@ -551,7 +561,7 @@ namespace DM_Sheet
                             else this.userControl11.Controls.Add(tabPage);
                             t = tabPage;
                             break;
-                        case 2: tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+                        case 2: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 2);
                             tabPage.Location = new System.Drawing.Point(4, 28);
                             tabPage.Menu = this.contextMenuStrip1;
                             tabPage.Name = "New Group " + tabs;
@@ -567,7 +577,7 @@ namespace DM_Sheet
                             else this.userControl11.Controls.Add(tabPage);
                             t = tabPage;
                             break;
-                        case 3: tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+                        case 3: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 1);
                             tabPage.Location = new System.Drawing.Point(4, 28);
                             tabPage.Menu = this.contextMenuStrip1;
                             tabPage.Name = "New Group " + tabs;
@@ -583,7 +593,7 @@ namespace DM_Sheet
                             else this.userControl11.Controls.Add(tabPage);
                             t = tabPage;
                             break;
-                        case 4: tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+                        case 4: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 0);
                             tabPage.Location = new System.Drawing.Point(4, 28);
                             tabPage.Menu = this.contextMenuStrip1;
                             tabPage.Name = "New Group " + tabs;
@@ -596,7 +606,7 @@ namespace DM_Sheet
                                 t = tabPage;
                             }
                             break;
-                        default: tabPage = (CharTabPage)this.userControl11.TabPages[0]; break;
+                        default: tabPage = (CharTabPage_3_0)this.userControl11.TabPages[0]; break;
                     }//end of switch
 
 
@@ -617,7 +627,7 @@ namespace DM_Sheet
             object[] test = (object[])myGruops[0];
             ArrayList tmp = ArrayList.Adapter(test);
             this.tabPage1.LoadGroup(path, tmp);
-            CharTabPage tabPage = null;
+            CharTabPage_3_0 tabPage = null;
             
             for (int i = 1; i < myGruops.Count; i++)
             {
@@ -630,7 +640,7 @@ namespace DM_Sheet
                 tabPage = null;
                 switch (lineCount)
                 {
-                    case 1: tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
+                    case 1: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 3);
                         tabPage.Location = new System.Drawing.Point(4, 28);
                         tabPage.Menu = this.contextMenuStrip1;
                         tabPage.Name = "New Group " + tabs;
@@ -639,7 +649,7 @@ namespace DM_Sheet
                         tabPage.Text = "New Group " + tabs;
                         this.userControl11.Controls.Add(tabPage);
                         break;
-                    case 2: tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+                    case 2: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 2);
                         tabPage.Location = new System.Drawing.Point(4, 28);
                         tabPage.Menu = this.contextMenuStrip1;
                         tabPage.Name = "New Group " + tabs;
@@ -648,7 +658,7 @@ namespace DM_Sheet
                         tabPage.Text = "New Group " + tabs;
                         this.userControl11.Controls.Add(tabPage);
                         break;
-                    case 3: tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+                    case 3: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 1);
                         tabPage.Location = new System.Drawing.Point(4, 28);
                         tabPage.Menu = this.contextMenuStrip1;
                         tabPage.Name = "New Group " + tabs;
@@ -657,7 +667,7 @@ namespace DM_Sheet
                         tabPage.Text = "New Group " + tabs;
                         this.userControl11.Controls.Add(tabPage);
                         break;
-                    case 4: tabPage = new MyControlLibrary.CharTabPage(this.components, 0);
+                    case 4: tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 0);
                         tabPage.Location = new System.Drawing.Point(4, 28);
                         tabPage.Menu = this.contextMenuStrip1;
                         tabPage.Name = "New Group " + tabs;
@@ -666,7 +676,7 @@ namespace DM_Sheet
                         tabPage.Text = "New Group " + tabs;
                         this.userControl11.Controls.Add(tabPage);
                         break;
-                    default: tabPage = (CharTabPage)this.userControl11.TabPages[0]; break;
+                    default: tabPage = (CharTabPage_3_0)this.userControl11.TabPages[0]; break;
                 }//end of switch
 
                 tabPage.LoadGroup(path, tmp);
@@ -679,7 +689,7 @@ namespace DM_Sheet
 
             if (PATH != null)
             {
-                CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+                CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[this.userControl11.SelectedIndex];
                 t.SaveSheet(PATH);//call save routine and pass in a File name
             }
             else
@@ -692,7 +702,7 @@ namespace DM_Sheet
 
                 if (saveFileDialog1.FileName != "")
                 {
-                    CharTabPage t = (CharTabPage)this.userControl11.TabPages[0];
+                    CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[0];
                     t.SaveSheet(saveFileDialog1.FileName);//call save routine and pass in a File name
                     PATH = saveFileDialog1.FileName;
                 }//end if
@@ -710,7 +720,7 @@ namespace DM_Sheet
 
             if (saveFileDialog1.FileName != "")
             {
-                CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+                CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[this.userControl11.SelectedIndex];
                 t.SaveSheet(saveFileDialog1.FileName);
                 PATH = saveFileDialog1.FileName;
             }//end if            
@@ -726,9 +736,9 @@ namespace DM_Sheet
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 1);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 1);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -741,9 +751,9 @@ namespace DM_Sheet
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 2);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 2);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -756,9 +766,9 @@ namespace DM_Sheet
         private void oneCharacterSheetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //new tab
-            CharTabPage tabPage;
+            CharTabPage_3_0 tabPage;
             tabs++;
-            tabPage = new MyControlLibrary.CharTabPage(this.components, 3);
+            tabPage = new MyControlLibrary.CharTabPage_3_0(this.components, 3);
             tabPage.Location = new System.Drawing.Point(4, 28);
             tabPage.Menu = this.contextMenuStrip1;
             tabPage.Name = "New Group " + tabs;
@@ -774,7 +784,7 @@ namespace DM_Sheet
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
-                CharTabPage tabPage;
+                CharTabPage_3_0 tabPage;
                 tabPage = this.LastTabPage;
                 this.userControl11.Controls.Add(tabPage);
             }
@@ -789,10 +799,10 @@ namespace DM_Sheet
             saveFileDialog1.Title = "Save Group";
             saveFileDialog1.ShowDialog();
 
-            List<CharTabPage> Group = new List<CharTabPage>();
+            List<CharTabPage_3_0> Group = new List<CharTabPage_3_0>();
             for (int i = 0; i < this.userControl11.TabPages.Count; i++)
             {
-                Group.Add((CharTabPage)this.userControl11.TabPages[i]);
+                Group.Add((CharTabPage_3_0)this.userControl11.TabPages[i]);
             }//end for
 
             if (saveFileDialog1.FileName != "")
@@ -807,7 +817,7 @@ namespace DM_Sheet
             //save each page individualy
             for (int i = 0; i < this.userControl11.TabPages.Count; i++)
             {
-                CharTabPage t = (CharTabPage)this.userControl11.TabPages[i];
+                CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[i];
 
                 // Displays a SaveFileDialog so the user can save
                 SaveFileDialog saveFileDialog1 = new SaveFileDialog();
@@ -851,7 +861,7 @@ namespace DM_Sheet
 
         private void closeAllButThisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CharTabPage t = (CharTabPage)this.userControl11.TabPages[this.userControl11.SelectedIndex];
+            CharTabPage_3_0 t = (CharTabPage_3_0)this.userControl11.TabPages[this.userControl11.SelectedIndex];
 
             for (int i = 0; i < this.userControl11.TabPages.Count; i++)
             {
@@ -862,12 +872,18 @@ namespace DM_Sheet
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
-                CharTabPage tabPage;
+                CharTabPage_3_0 tabPage;
                 tabPage = this.LastTabPage;
                 this.userControl11.Controls.Add(tabPage);
                 tabs = 1;
             }
 
+        }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Options op = new Options();
+            op.Show();
         }
 
     }//end of class

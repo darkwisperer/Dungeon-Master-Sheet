@@ -39,7 +39,7 @@ namespace MyControlLibrary
 	/// <summary>
 	/// Summary description for TabPage.
 	/// </summary>
-	public class CharTabPage : System.Windows.Forms.TabPage
+	public class CharTabPage_3_0 : System.Windows.Forms.TabPage
 	{
         private bool isError = true;
         private Character PC1;
@@ -54,7 +54,7 @@ namespace MyControlLibrary
 		/// </summary>
 	  private System.ComponentModel.Container components = null;
 
-      public CharTabPage(System.ComponentModel.IContainer container, int SheetNum)
+      public CharTabPage_3_0(System.ComponentModel.IContainer container, int SheetNum)
 		{
 			///
 			/// Required for Windows.Forms Class Composition Designer support
@@ -69,7 +69,7 @@ namespace MyControlLibrary
 			//
 		}
 
-      public CharTabPage(System.ComponentModel.IContainer container)
+      public CharTabPage_3_0(System.ComponentModel.IContainer container)
       {
           ///
           /// Required for Windows.Forms Class Composition Designer support
@@ -84,7 +84,7 @@ namespace MyControlLibrary
           //
       }
 
-		public CharTabPage()
+		public CharTabPage_3_0()
 		{
 			///
 			/// Required for Windows.Forms Class Composition Designer support
@@ -18157,7 +18157,7 @@ namespace MyControlLibrary
             Save sf = new Save(path, Group);
         }//end of SaveSheet
 
-        public void SaveAll(String path, List<CharTabPage> Group)
+        public void SaveAll(String path, List<CharTabPage_3_0> Group)
         {   //saves all open sheets
             Save sf = new Save(path, Group);
         }//end of SaveGroup

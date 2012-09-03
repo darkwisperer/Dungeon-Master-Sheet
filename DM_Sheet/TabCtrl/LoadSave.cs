@@ -505,11 +505,11 @@ namespace MyControlLibrary
         //
         //Save Group of sheets (i.e Save ALL sheets as one file)
         //
-        public Save(String PathFile, List<CharTabPage> Groups)
+        public Save(String PathFile, List<CharTabPage_3_0> Groups)
         {
             using (StreamWriter outfile = new StreamWriter(PathFile))
             {
-                foreach (CharTabPage Group in Groups)
+                foreach (CharTabPage_3_0 Group in Groups)
                 {
                     List<Character> G = Group.getGroup();
                     foreach (Character PC in G)
