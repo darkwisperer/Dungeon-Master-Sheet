@@ -119,8 +119,6 @@ namespace DM_Sheet
             this.closeAllButThisToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.closeTabToolStripMenuItem = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.userControl11 = new MyControlLibrary.TabCtlEx();
-            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -132,17 +130,20 @@ namespace DM_Sheet
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.userControl11 = new MyControlLibrary.TabCtlEx();
+            this.tabPage1 = new MyControlLibrary.CharTabPage(this.components);
+            this.LastTabPage = new MyControlLibrary.CharTabPage(this.components);
             this.panel1.SuspendLayout();
-            this.userControl11.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.userControl11.SuspendLayout();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -209,35 +210,6 @@ namespace DM_Sheet
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1078, 527);
             this.panel1.TabIndex = 1;
-            // 
-            // userControl11
-            // 
-            this.userControl11.ConfirmOnClose = true;
-            this.userControl11.Controls.Add(this.tabPage1);
-            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userControl11.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userControl11.ItemSize = new System.Drawing.Size(330, 24);
-            this.userControl11.Location = new System.Drawing.Point(0, 0);
-            this.userControl11.Name = "userControl11";
-            this.userControl11.SelectedIndex = 0;
-            this.userControl11.Size = new System.Drawing.Size(1061, 770);
-            this.userControl11.TabIndex = 0;
-            this.userControl11.TabStop = false;
-            this.userControl11.OnClose += new MyControlLibrary.TabCtlEx.OnHeaderCloseDelegate(this.userControl11_OnClose);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Menu = this.contextMenuStrip1;
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "New Group                                                 ";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -334,18 +306,11 @@ namespace DM_Sheet
             // saveAllToolStripMenuItem
             // 
             this.saveAllToolStripMenuItem.Name = "saveAllToolStripMenuItem";
-            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.S)));
+            this.saveAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
             this.saveAllToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.saveAllToolStripMenuItem.Text = "Save All";
             this.saveAllToolStripMenuItem.Click += new System.EventHandler(this.saveAllToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem1
-            // 
-            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
-            this.saveToolStripMenuItem1.Text = "Save as...";
-            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // saveAsGroupToolStripMenuItem
             // 
@@ -354,6 +319,13 @@ namespace DM_Sheet
             this.saveAsGroupToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.saveAsGroupToolStripMenuItem.Text = "Save as Group";
             this.saveAsGroupToolStripMenuItem.Click += new System.EventHandler(this.saveAsGroupToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem1
+            // 
+            this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(190, 22);
+            this.saveToolStripMenuItem1.Text = "Save as...";
+            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // toolStripSeparator2
             // 
@@ -395,6 +367,48 @@ namespace DM_Sheet
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // userControl11
+            // 
+            this.userControl11.ConfirmOnClose = true;
+            this.userControl11.Controls.Add(this.tabPage1);
+            this.userControl11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userControl11.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.userControl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userControl11.ItemSize = new System.Drawing.Size(330, 24);
+            this.userControl11.Location = new System.Drawing.Point(0, 0);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.SelectedIndex = 0;
+            this.userControl11.Size = new System.Drawing.Size(1061, 770);
+            this.userControl11.TabIndex = 0;
+            this.userControl11.TabStop = false;
+            this.userControl11.OnClose += new MyControlLibrary.TabCtlEx.OnHeaderCloseDelegate(this.userControl11_OnClose);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.tabPage1.Location = new System.Drawing.Point(4, 28);
+            this.tabPage1.Menu = this.contextMenuStrip1;
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1053, 738);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "New Group                                                 ";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // LastTabPage
+            // 
+            this.LastTabPage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LastTabPage.BackgroundImage")));
+            this.LastTabPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.LastTabPage.Location = new System.Drawing.Point(4, 22);
+            this.LastTabPage.Menu = null;
+            this.LastTabPage.Name = "LastTabPage";
+            this.LastTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.LastTabPage.Size = new System.Drawing.Size(816, 288);
+            this.LastTabPage.TabIndex = 0;
+            this.LastTabPage.Text = "New Group                                                 ";
+            this.LastTabPage.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -403,16 +417,14 @@ namespace DM_Sheet
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "DM Sheet 1.1.2";
+            this.Text = "DM Sheet 1.2.3";
             this.panel1.ResumeLayout(false);
-            this.userControl11.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.userControl11.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
-            //initialize the last tabpage for when the only tabpage is closed.
-            LastTabPage = new MyControlLibrary.CharTabPage(this.components, 0);
         }
         #endregion
 
@@ -525,7 +537,7 @@ namespace DM_Sheet
         {
             // Displays an OpenFileDialog so the user can select a Cursor.
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.dnd | DM Group (*.DG)|*.DG";
+            openFileDialog1.Filter = "All DnD sheets (*.DM; *.dnd; *.DG)|*.DM; *.dnd; *.DG|DM Sheet (*.DM)|*.DM| Dnd character sheet (*.dnd)|*.dnd | DM Group (*.DG)|*.DG";
             openFileDialog1.Title = "Select a DM Sheet to load";
             openFileDialog1.ShowDialog();
             PATH = openFileDialog1.FileName;
