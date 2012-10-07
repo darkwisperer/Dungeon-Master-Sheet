@@ -64,7 +64,7 @@ namespace DM_Sheet
         private ToolStripMenuItem ThreeCharcterSheet;
         private ToolStripMenuItem toolStripMenuItem3;
         private ToolStripMenuItem oneCharacterSheetToolStripMenuItem;
-        private CharTabPage LastTabPage = new CharTabPage();// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be substatuted to prevent visable loading of the page.
+        private CharTabPage LastTabPage = null;// this is used to pre-load the base character sheet for when all sheets have been closed this new one can be substatuted to prevent visable loading of the page.
         private ToolStripMenuItem saveAsGroupToolStripMenuItem;
         private ToolStripMenuItem saveAllToolStripMenuItem;
         private ToolStripMenuItem printToolStripMenuItem;
@@ -411,6 +411,8 @@ namespace DM_Sheet
             this.ResumeLayout(false);
             this.PerformLayout();
 
+            //initialize the last tabpage for when the only tabpage is closed.
+            LastTabPage = new MyControlLibrary.CharTabPage(this.components, 0);
         }
         #endregion
 
@@ -420,12 +422,21 @@ namespace DM_Sheet
         {
             this.userControl11.Controls.Remove(this.userControl11.TabPages[e.TabIndex]);
             tabs--;
+
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
                 CharTabPage tabPage;
-                tabPage = this.LastTabPage;
+                tabPage = LastTabPage;
+                tabs++;
+                tabPage.Location = new System.Drawing.Point(4, 28);
+                tabPage.Menu = this.contextMenuStrip1;
+                tabPage.Name = "New Group " + tabs;
+                tabPage.Size = new System.Drawing.Size(816, 288);
+                tabPage.TabIndex = tabs;
+                tabPage.Text = "New Group " + tabs;
                 this.userControl11.Controls.Add(tabPage);
+                
             }
         }
 
@@ -774,9 +785,17 @@ namespace DM_Sheet
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
-                CharTabPage tabPage;
-                tabPage = this.LastTabPage;
+                CharTabPage tabPage;                
+                tabPage = LastTabPage;
+                tabs++;
+                tabPage.Location = new System.Drawing.Point(4, 28);
+                tabPage.Menu = this.contextMenuStrip1;
+                tabPage.Name = "New Group " + tabs;
+                tabPage.Size = new System.Drawing.Size(816, 288);
+                tabPage.TabIndex = tabs;
+                tabPage.Text = "New Group " + tabs;
                 this.userControl11.Controls.Add(tabPage);
+                
             }
         }
 
@@ -862,10 +881,17 @@ namespace DM_Sheet
             if (tabs == 0)
             {
                 //Copy and add LastTabPage
-                CharTabPage tabPage;
-                tabPage = this.LastTabPage;
+                CharTabPage tabPage;               
+                tabPage = LastTabPage; 
+                tabs++;
+                tabPage.Location = new System.Drawing.Point(4, 28);
+                tabPage.Menu = this.contextMenuStrip1;
+                tabPage.Name = "New Group " + tabs;
+                tabPage.Size = new System.Drawing.Size(816, 288);
+                tabPage.TabIndex = tabs;
+                tabPage.Text = "New Group " + tabs;
                 this.userControl11.Controls.Add(tabPage);
-                tabs = 1;
+                
             }
 
         }
