@@ -39,7 +39,7 @@ namespace MyControlLibrary
 	/// <summary>
 	/// Summary description for TabPage.
 	/// </summary>
-	public class CharTabPage_3_0 : System.Windows.Forms.TabPage
+	public class CharTabPage : System.Windows.Forms.TabPage
 	{
         private bool isError = true;
         private Character PC1;
@@ -54,7 +54,7 @@ namespace MyControlLibrary
 		/// </summary>
 	  private System.ComponentModel.Container components = null;
 
-      public CharTabPage_3_0(System.ComponentModel.IContainer container, int SheetNum)
+      public CharTabPage(System.ComponentModel.IContainer container, int SheetNum)
 		{
 			///
 			/// Required for Windows.Forms Class Composition Designer support
@@ -69,7 +69,7 @@ namespace MyControlLibrary
 			//
 		}
 
-      public CharTabPage_3_0(System.ComponentModel.IContainer container)
+      public CharTabPage(System.ComponentModel.IContainer container)
       {
           ///
           /// Required for Windows.Forms Class Composition Designer support
@@ -84,7 +84,7 @@ namespace MyControlLibrary
           //
       }
 
-		public CharTabPage_3_0()
+		public CharTabPage()
 		{
 			///
 			/// Required for Windows.Forms Class Composition Designer support
@@ -167,11 +167,11 @@ namespace MyControlLibrary
 
             this.Char1MaxHP = new System.Windows.Forms.TextBox();
             this.Char1HP = new System.Windows.Forms.TextBox();
-            this.Char1AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char1AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char1Touch = new System.Windows.Forms.TextBox();
             this.Char1FlatFoot = new System.Windows.Forms.TextBox();
             this.Char1AC = new System.Windows.Forms.TextBox();
-            this.Char1SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char1SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char1WILL = new System.Windows.Forms.TextBox();
             this.Char1REF = new System.Windows.Forms.TextBox();
             this.Char1Fort = new System.Windows.Forms.TextBox();
@@ -191,13 +191,13 @@ namespace MyControlLibrary
             this.Char1CON = new System.Windows.Forms.TextBox();
             this.Char1Dex = new System.Windows.Forms.TextBox();
             this.Char1STR = new System.Windows.Forms.TextBox();
-            this.Char1Items = new System.Windows.Forms.TextBox();
+            this.Char1Items = new System.Windows.Forms.RichTextBox();
             this.Char1Align = new System.Windows.Forms.ComboBox();
             this.Char1Size = new System.Windows.Forms.ComboBox();
             this.Char1Level = new System.Windows.Forms.TextBox();
-            this.Char1Weapon = new System.Windows.Forms.TextBox();
-            this.Char1Armor = new System.Windows.Forms.TextBox();
-            this.Char1Language = new System.Windows.Forms.TextBox();
+            this.Char1Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char1Armor = new System.Windows.Forms.RichTextBox();
+            this.Char1Language = new System.Windows.Forms.RichTextBox();
             this.Char1Deity = new System.Windows.Forms.TextBox();
             this.Char1Weight = new System.Windows.Forms.TextBox();
             this.Char1Class = new System.Windows.Forms.TextBox();
@@ -1176,9 +1176,9 @@ namespace MyControlLibrary
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Weapon.Location = new System.Drawing.Point(23, 235);
+            this.Char1Weapon.Location = new System.Drawing.Point(23, 231);
             this.Char1Weapon.Name = "Char1Weapon";
-            this.Char1Weapon.Size = new System.Drawing.Size(175, 14);
+            this.Char1Weapon.Size = new System.Drawing.Size(175, 18);
             this.Char1Weapon.TabIndex = 17;
             this.Char1Weapon.TextChanged += new System.EventHandler(this.Char1Weapon_TextChanged);
             // 
@@ -1186,9 +1186,9 @@ namespace MyControlLibrary
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Armor.Location = new System.Drawing.Point(23, 206);
+            this.Char1Armor.Location = new System.Drawing.Point(23, 202);
             this.Char1Armor.Name = "Char1Armor";
-            this.Char1Armor.Size = new System.Drawing.Size(175, 14);
+            this.Char1Armor.Size = new System.Drawing.Size(175, 20);
             this.Char1Armor.TabIndex = 16;
             this.Char1Armor.TextChanged += new System.EventHandler(this.Char1Armor_TextChanged);
             // 
@@ -1387,11 +1387,11 @@ namespace MyControlLibrary
 
             this.Char2MaxHP = new System.Windows.Forms.TextBox();
             this.Char2HP = new System.Windows.Forms.TextBox();
-            this.Char2AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char2AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char2Touch = new System.Windows.Forms.TextBox();
             this.Char2FlatFoot = new System.Windows.Forms.TextBox();
             this.Char2AC = new System.Windows.Forms.TextBox();
-            this.Char2SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char2SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char2WILL = new System.Windows.Forms.TextBox();
             this.Char2REF = new System.Windows.Forms.TextBox();
             this.Char2Fort = new System.Windows.Forms.TextBox();
@@ -1411,10 +1411,10 @@ namespace MyControlLibrary
             this.Char2CON = new System.Windows.Forms.TextBox();
             this.Char2Dex = new System.Windows.Forms.TextBox();
             this.Char2STR = new System.Windows.Forms.TextBox();
-            this.Char2Items = new System.Windows.Forms.TextBox();
-            this.Char2Weapon = new System.Windows.Forms.TextBox();
-            this.Char2Armor = new System.Windows.Forms.TextBox();
-            this.Char2Language = new System.Windows.Forms.TextBox();
+            this.Char2Items = new System.Windows.Forms.RichTextBox();
+            this.Char2Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char2Armor = new System.Windows.Forms.RichTextBox();
+            this.Char2Language = new System.Windows.Forms.RichTextBox();
             this.Char2Align = new System.Windows.Forms.ComboBox();
             this.Char2Deity = new System.Windows.Forms.TextBox();
             this.Char2Weight = new System.Windows.Forms.TextBox();
@@ -1428,11 +1428,11 @@ namespace MyControlLibrary
             this.char2Name = new System.Windows.Forms.TextBox();
             this.Char1MaxHP = new System.Windows.Forms.TextBox();
             this.Char1HP = new System.Windows.Forms.TextBox();
-            this.Char1AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char1AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char1Touch = new System.Windows.Forms.TextBox();
             this.Char1FlatFoot = new System.Windows.Forms.TextBox();
             this.Char1AC = new System.Windows.Forms.TextBox();
-            this.Char1SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char1SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char1WILL = new System.Windows.Forms.TextBox();
             this.Char1REF = new System.Windows.Forms.TextBox();
             this.Char1Fort = new System.Windows.Forms.TextBox();
@@ -1452,13 +1452,13 @@ namespace MyControlLibrary
             this.Char1CON = new System.Windows.Forms.TextBox();
             this.Char1Dex = new System.Windows.Forms.TextBox();
             this.Char1STR = new System.Windows.Forms.TextBox();
-            this.Char1Items = new System.Windows.Forms.TextBox();
+            this.Char1Items = new System.Windows.Forms.RichTextBox();
             this.Char1Align = new System.Windows.Forms.ComboBox();
             this.Char1Size = new System.Windows.Forms.ComboBox();
             this.Char1Level = new System.Windows.Forms.TextBox();
-            this.Char1Weapon = new System.Windows.Forms.TextBox();
-            this.Char1Armor = new System.Windows.Forms.TextBox();
-            this.Char1Language = new System.Windows.Forms.TextBox();
+            this.Char1Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char1Armor = new System.Windows.Forms.RichTextBox();
+            this.Char1Language = new System.Windows.Forms.RichTextBox();
             this.Char1Deity = new System.Windows.Forms.TextBox();
             this.Char1Weight = new System.Windows.Forms.TextBox();
             this.Char1Class = new System.Windows.Forms.TextBox();
@@ -2935,9 +2935,9 @@ namespace MyControlLibrary
             // 
             this.Char2Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Weapon.Location = new System.Drawing.Point(216, 248);
+            this.Char2Weapon.Location = new System.Drawing.Point(216, 246);
             this.Char2Weapon.Name = "Char2Weapon";
-            this.Char2Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char2Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char2Weapon.TabIndex = 61;
             this.Char2Weapon.TextChanged += new System.EventHandler(this.Char2Weapon_TextChanged);
             // 
@@ -2945,9 +2945,9 @@ namespace MyControlLibrary
             // 
             this.Char2Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Armor.Location = new System.Drawing.Point(215, 219);
+            this.Char2Armor.Location = new System.Drawing.Point(215, 216);
             this.Char2Armor.Name = "Char2Armor";
-            this.Char2Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char2Armor.Size = new System.Drawing.Size(190, 20);
             this.Char2Armor.TabIndex = 60;
             this.Char2Armor.TextChanged += new System.EventHandler(this.Char2Armor_TextChanged);
             // 
@@ -3448,9 +3448,9 @@ namespace MyControlLibrary
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Weapon.Location = new System.Drawing.Point(6, 248);
+            this.Char1Weapon.Location = new System.Drawing.Point(6, 246);
             this.Char1Weapon.Name = "Char1Weapon";
-            this.Char1Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char1Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char1Weapon.TabIndex = 17;
             this.Char1Weapon.TextChanged += new System.EventHandler(this.Char1Weapon_TextChanged);
             // 
@@ -3458,9 +3458,9 @@ namespace MyControlLibrary
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Armor.Location = new System.Drawing.Point(6, 219);
+            this.Char1Armor.Location = new System.Drawing.Point(6, 216);
             this.Char1Armor.Name = "Char1Armor";
-            this.Char1Armor.Size = new System.Drawing.Size(190, 14);
+            this.Char1Armor.Size = new System.Drawing.Size(190, 20);
             this.Char1Armor.TabIndex = 16;
             this.Char1Armor.TextChanged += new System.EventHandler(this.Char1Armor_TextChanged);
             // 
@@ -3702,11 +3702,11 @@ namespace MyControlLibrary
             this.ACCheckPenalty1 = new System.Windows.Forms.TextBox();      
             this.Char3MaxHP = new System.Windows.Forms.TextBox();
             this.Char3HP = new System.Windows.Forms.TextBox();
-            this.Char3AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char3AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char3Touch = new System.Windows.Forms.TextBox();
             this.Char3FlatFoot = new System.Windows.Forms.TextBox();
             this.Char3AC = new System.Windows.Forms.TextBox();
-            this.Char3SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char3SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char3WILL = new System.Windows.Forms.TextBox();
             this.Char3REF = new System.Windows.Forms.TextBox();
             this.Char3Fort = new System.Windows.Forms.TextBox();
@@ -3726,10 +3726,10 @@ namespace MyControlLibrary
             this.Char3CON = new System.Windows.Forms.TextBox();
             this.Char3Dex = new System.Windows.Forms.TextBox();
             this.Char3STR = new System.Windows.Forms.TextBox();
-            this.Char3Items = new System.Windows.Forms.TextBox();
-            this.Char3Weapon = new System.Windows.Forms.TextBox();
-            this.Char3Armor = new System.Windows.Forms.TextBox();
-            this.Char3Language = new System.Windows.Forms.TextBox();
+            this.Char3Items = new System.Windows.Forms.RichTextBox();
+            this.Char3Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char3Armor = new System.Windows.Forms.RichTextBox();
+            this.Char3Language = new System.Windows.Forms.RichTextBox();
             this.Char3Align = new System.Windows.Forms.ComboBox();
             this.Char3Deity = new System.Windows.Forms.TextBox();
             this.Char3Weight = new System.Windows.Forms.TextBox();
@@ -3743,11 +3743,11 @@ namespace MyControlLibrary
             this.char3Name = new System.Windows.Forms.TextBox();
             this.Char2MaxHP = new System.Windows.Forms.TextBox();
             this.Char2HP = new System.Windows.Forms.TextBox();
-            this.Char2AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char2AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char2Touch = new System.Windows.Forms.TextBox();
             this.Char2FlatFoot = new System.Windows.Forms.TextBox();
             this.Char2AC = new System.Windows.Forms.TextBox();
-            this.Char2SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char2SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char2WILL = new System.Windows.Forms.TextBox();
             this.Char2REF = new System.Windows.Forms.TextBox();
             this.Char2Fort = new System.Windows.Forms.TextBox();
@@ -3767,10 +3767,10 @@ namespace MyControlLibrary
             this.Char2CON = new System.Windows.Forms.TextBox();
             this.Char2Dex = new System.Windows.Forms.TextBox();
             this.Char2STR = new System.Windows.Forms.TextBox();
-            this.Char2Items = new System.Windows.Forms.TextBox();
-            this.Char2Weapon = new System.Windows.Forms.TextBox();
-            this.Char2Armor = new System.Windows.Forms.TextBox();
-            this.Char2Language = new System.Windows.Forms.TextBox();
+            this.Char2Items = new System.Windows.Forms.RichTextBox();
+            this.Char2Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char2Armor = new System.Windows.Forms.RichTextBox();
+            this.Char2Language = new System.Windows.Forms.RichTextBox();
             this.Char2Align = new System.Windows.Forms.ComboBox();
             this.Char2Deity = new System.Windows.Forms.TextBox();
             this.Char2Weight = new System.Windows.Forms.TextBox();
@@ -3784,11 +3784,11 @@ namespace MyControlLibrary
             this.char2Name = new System.Windows.Forms.TextBox();
             this.Char1MaxHP = new System.Windows.Forms.TextBox();
             this.Char1HP = new System.Windows.Forms.TextBox();
-            this.Char1AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char1AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char1Touch = new System.Windows.Forms.TextBox();
             this.Char1FlatFoot = new System.Windows.Forms.TextBox();
             this.Char1AC = new System.Windows.Forms.TextBox();
-            this.Char1SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char1SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char1WILL = new System.Windows.Forms.TextBox();
             this.Char1REF = new System.Windows.Forms.TextBox();
             this.Char1Fort = new System.Windows.Forms.TextBox();
@@ -3808,13 +3808,13 @@ namespace MyControlLibrary
             this.Char1CON = new System.Windows.Forms.TextBox();
             this.Char1Dex = new System.Windows.Forms.TextBox();
             this.Char1STR = new System.Windows.Forms.TextBox();
-            this.Char1Items = new System.Windows.Forms.TextBox();
+            this.Char1Items = new System.Windows.Forms.RichTextBox();
             this.Char1Align = new System.Windows.Forms.ComboBox();
             this.Char1Size = new System.Windows.Forms.ComboBox();
             this.Char1Level = new System.Windows.Forms.TextBox();
-            this.Char1Weapon = new System.Windows.Forms.TextBox();
-            this.Char1Armor = new System.Windows.Forms.TextBox();
-            this.Char1Language = new System.Windows.Forms.TextBox();
+            this.Char1Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char1Armor = new System.Windows.Forms.RichTextBox();
+            this.Char1Language = new System.Windows.Forms.RichTextBox();
             this.Char1Deity = new System.Windows.Forms.TextBox();
             this.Char1Weight = new System.Windows.Forms.TextBox();
             this.Char1Class = new System.Windows.Forms.TextBox();
@@ -5834,9 +5834,9 @@ namespace MyControlLibrary
             // 
             this.Char3Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Weapon.Location = new System.Drawing.Point(427, 250);
+            this.Char3Weapon.Location = new System.Drawing.Point(427, 247);
             this.Char3Weapon.Name = "Char3Weapon";
-            this.Char3Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char3Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char3Weapon.TabIndex = 102;
             this.Char3Weapon.TextChanged += new System.EventHandler(this.Char3Weapon_TextChanged);
             // 
@@ -5844,9 +5844,9 @@ namespace MyControlLibrary
             // 
             this.Char3Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Armor.Location = new System.Drawing.Point(427, 221);
+            this.Char3Armor.Location = new System.Drawing.Point(427, 217);
             this.Char3Armor.Name = "Char3Armor";
-            this.Char3Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char3Armor.Size = new System.Drawing.Size(190, 20);
             this.Char3Armor.TabIndex = 101;
             this.Char3Armor.TextChanged += new System.EventHandler(this.Char3Armor_TextChanged);
             // 
@@ -6302,9 +6302,9 @@ namespace MyControlLibrary
             // 
             this.Char2Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Weapon.Location = new System.Drawing.Point(217, 250);
+            this.Char2Weapon.Location = new System.Drawing.Point(217, 247);
             this.Char2Weapon.Name = "Char2Weapon";
-            this.Char2Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char2Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char2Weapon.TabIndex = 61;
             this.Char2Weapon.TextChanged += new System.EventHandler(this.Char2Weapon_TextChanged);
             // 
@@ -6312,9 +6312,9 @@ namespace MyControlLibrary
             // 
             this.Char2Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Armor.Location = new System.Drawing.Point(217, 221);
+            this.Char2Armor.Location = new System.Drawing.Point(217, 217);
             this.Char2Armor.Name = "Char2Armor";
-            this.Char2Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char2Armor.Size = new System.Drawing.Size(190, 20);
             this.Char2Armor.TabIndex = 60;
             this.Char2Armor.TextChanged += new System.EventHandler(this.Char2Armor_TextChanged);
             // 
@@ -6815,9 +6815,9 @@ namespace MyControlLibrary
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Weapon.Location = new System.Drawing.Point(7, 250);
+            this.Char1Weapon.Location = new System.Drawing.Point(7, 247);
             this.Char1Weapon.Name = "Char1Weapon";
-            this.Char1Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char1Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char1Weapon.TabIndex = 17;
             this.Char1Weapon.TextChanged += new System.EventHandler(this.Char1Weapon_TextChanged);
             // 
@@ -6825,9 +6825,9 @@ namespace MyControlLibrary
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Armor.Location = new System.Drawing.Point(7, 221);
+            this.Char1Armor.Location = new System.Drawing.Point(7, 217);
             this.Char1Armor.Name = "Char1Armor";
-            this.Char1Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char1Armor.Size = new System.Drawing.Size(190, 20);
             this.Char1Armor.TabIndex = 16;
             this.Char1Armor.TextChanged += new System.EventHandler(this.Char1Armor_TextChanged);
             // 
@@ -7113,11 +7113,11 @@ namespace MyControlLibrary
             this.ACCheckPenalty1 = new System.Windows.Forms.TextBox();
             this.Char4MaxHP = new System.Windows.Forms.TextBox();
             this.Char4HP = new System.Windows.Forms.TextBox();
-            this.Char4AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char4AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char4Touch = new System.Windows.Forms.TextBox();
             this.Char4FlatFoot = new System.Windows.Forms.TextBox();
             this.Char4AC = new System.Windows.Forms.TextBox();
-            this.Char4SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char4SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char4WILL = new System.Windows.Forms.TextBox();
             this.Char4REF = new System.Windows.Forms.TextBox();
             this.Char4Fort = new System.Windows.Forms.TextBox();
@@ -7137,10 +7137,10 @@ namespace MyControlLibrary
             this.Char4CON = new System.Windows.Forms.TextBox();
             this.Char4Dex = new System.Windows.Forms.TextBox();
             this.Char4STR = new System.Windows.Forms.TextBox();
-            this.Char4Items = new System.Windows.Forms.TextBox();
-            this.Char4Weapon = new System.Windows.Forms.TextBox();
-            this.Char4Armor = new System.Windows.Forms.TextBox();
-            this.Char4Language = new System.Windows.Forms.TextBox();
+            this.Char4Items = new System.Windows.Forms.RichTextBox();
+            this.Char4Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char4Armor = new System.Windows.Forms.RichTextBox();
+            this.Char4Language = new System.Windows.Forms.RichTextBox();
             this.Char4Align = new System.Windows.Forms.ComboBox();
             this.Char4Deity = new System.Windows.Forms.TextBox();
             this.Char4Weight = new System.Windows.Forms.TextBox();
@@ -7154,11 +7154,11 @@ namespace MyControlLibrary
             this.char4Name = new System.Windows.Forms.TextBox();
             this.Char3MaxHP = new System.Windows.Forms.TextBox();
             this.Char3HP = new System.Windows.Forms.TextBox();
-            this.Char3AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char3AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char3Touch = new System.Windows.Forms.TextBox();
             this.Char3FlatFoot = new System.Windows.Forms.TextBox();
             this.Char3AC = new System.Windows.Forms.TextBox();
-            this.Char3SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char3SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char3WILL = new System.Windows.Forms.TextBox();
             this.Char3REF = new System.Windows.Forms.TextBox();
             this.Char3Fort = new System.Windows.Forms.TextBox();
@@ -7178,10 +7178,10 @@ namespace MyControlLibrary
             this.Char3CON = new System.Windows.Forms.TextBox();
             this.Char3Dex = new System.Windows.Forms.TextBox();
             this.Char3STR = new System.Windows.Forms.TextBox();
-            this.Char3Items = new System.Windows.Forms.TextBox();
-            this.Char3Weapon = new System.Windows.Forms.TextBox();
-            this.Char3Armor = new System.Windows.Forms.TextBox();
-            this.Char3Language = new System.Windows.Forms.TextBox();
+            this.Char3Items = new System.Windows.Forms.RichTextBox();
+            this.Char3Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char3Armor = new System.Windows.Forms.RichTextBox();
+            this.Char3Language = new System.Windows.Forms.RichTextBox();
             this.Char3Align = new System.Windows.Forms.ComboBox();
             this.Char3Deity = new System.Windows.Forms.TextBox();
             this.Char3Weight = new System.Windows.Forms.TextBox();
@@ -7195,11 +7195,11 @@ namespace MyControlLibrary
             this.char3Name = new System.Windows.Forms.TextBox();
             this.Char2MaxHP = new System.Windows.Forms.TextBox();
             this.Char2HP = new System.Windows.Forms.TextBox();
-            this.Char2AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char2AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char2Touch = new System.Windows.Forms.TextBox();
             this.Char2FlatFoot = new System.Windows.Forms.TextBox();
             this.Char2AC = new System.Windows.Forms.TextBox();
-            this.Char2SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char2SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char2WILL = new System.Windows.Forms.TextBox();
             this.Char2REF = new System.Windows.Forms.TextBox();
             this.Char2Fort = new System.Windows.Forms.TextBox();
@@ -7219,10 +7219,10 @@ namespace MyControlLibrary
             this.Char2CON = new System.Windows.Forms.TextBox();
             this.Char2Dex = new System.Windows.Forms.TextBox();
             this.Char2STR = new System.Windows.Forms.TextBox();
-            this.Char2Items = new System.Windows.Forms.TextBox();
-            this.Char2Weapon = new System.Windows.Forms.TextBox();
-            this.Char2Armor = new System.Windows.Forms.TextBox();
-            this.Char2Language = new System.Windows.Forms.TextBox();
+            this.Char2Items = new System.Windows.Forms.RichTextBox();
+            this.Char2Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char2Armor = new System.Windows.Forms.RichTextBox();
+            this.Char2Language = new System.Windows.Forms.RichTextBox();
             this.Char2Align = new System.Windows.Forms.ComboBox();
             this.Char2Deity = new System.Windows.Forms.TextBox();
             this.Char2Weight = new System.Windows.Forms.TextBox();
@@ -7236,11 +7236,11 @@ namespace MyControlLibrary
             this.char2Name = new System.Windows.Forms.TextBox();
             this.Char1MaxHP = new System.Windows.Forms.TextBox();
             this.Char1HP = new System.Windows.Forms.TextBox();
-            this.Char1AC_MOD = new System.Windows.Forms.TextBox();
+            this.Char1AC_MOD = new System.Windows.Forms.RichTextBox();
             this.Char1Touch = new System.Windows.Forms.TextBox();
             this.Char1FlatFoot = new System.Windows.Forms.TextBox();
             this.Char1AC = new System.Windows.Forms.TextBox();
-            this.Char1SavingThrowMods = new System.Windows.Forms.TextBox();
+            this.Char1SavingThrowMods = new System.Windows.Forms.RichTextBox();
             this.Char1WILL = new System.Windows.Forms.TextBox();
             this.Char1REF = new System.Windows.Forms.TextBox();
             this.Char1Fort = new System.Windows.Forms.TextBox();
@@ -7260,13 +7260,13 @@ namespace MyControlLibrary
             this.Char1CON = new System.Windows.Forms.TextBox();
             this.Char1Dex = new System.Windows.Forms.TextBox();
             this.Char1STR = new System.Windows.Forms.TextBox();
-            this.Char1Items = new System.Windows.Forms.TextBox();
+            this.Char1Items = new System.Windows.Forms.RichTextBox();
             this.Char1Align = new System.Windows.Forms.ComboBox();
             this.Char1Size = new System.Windows.Forms.ComboBox();
             this.Char1Level = new System.Windows.Forms.TextBox();
-            this.Char1Weapon = new System.Windows.Forms.TextBox();
-            this.Char1Armor = new System.Windows.Forms.TextBox();
-            this.Char1Language = new System.Windows.Forms.TextBox();
+            this.Char1Weapon = new System.Windows.Forms.RichTextBox();
+            this.Char1Armor = new System.Windows.Forms.RichTextBox();
+            this.Char1Language = new System.Windows.Forms.RichTextBox();
             this.Char1Deity = new System.Windows.Forms.TextBox();
             this.Char1Weight = new System.Windows.Forms.TextBox();
             this.Char1Class = new System.Windows.Forms.TextBox();
@@ -9788,9 +9788,9 @@ namespace MyControlLibrary
             // 
             this.Char4Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char4Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Weapon.Location = new System.Drawing.Point(638, 248);
+            this.Char4Weapon.Location = new System.Drawing.Point(638, 246);
             this.Char4Weapon.Name = "Char4Weapon";
-            this.Char4Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char4Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char4Weapon.TabIndex = 143;
             this.Char4Weapon.TextChanged += new System.EventHandler(this.Char4Weapon_TextChanged);
             // 
@@ -9798,9 +9798,9 @@ namespace MyControlLibrary
             // 
             this.Char4Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char4Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Armor.Location = new System.Drawing.Point(638, 220);
+            this.Char4Armor.Location = new System.Drawing.Point(638, 217);
             this.Char4Armor.Name = "Char4Armor";
-            this.Char4Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char4Armor.Size = new System.Drawing.Size(190, 20);
             this.Char4Armor.TabIndex = 142;
             this.Char4Armor.TextChanged += new System.EventHandler(this.Char4Armor_TextChanged);
             // 
@@ -9808,7 +9808,7 @@ namespace MyControlLibrary
             // 
             this.Char4Language.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char4Language.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char4Language.Location = new System.Drawing.Point(638, 173);
+            this.Char4Language.Location = new System.Drawing.Point(638, 170);
             this.Char4Language.Multiline = true;
             this.Char4Language.Name = "Char4Language";
             this.Char4Language.Size = new System.Drawing.Size(190, 20);
@@ -10256,9 +10256,9 @@ namespace MyControlLibrary
             // 
             this.Char3Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Weapon.Location = new System.Drawing.Point(428, 248);
+            this.Char3Weapon.Location = new System.Drawing.Point(428, 246);
             this.Char3Weapon.Name = "Char3Weapon";
-            this.Char3Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char3Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char3Weapon.TabIndex = 102;
             this.Char3Weapon.TextChanged += new System.EventHandler(this.Char3Weapon_TextChanged);
             // 
@@ -10266,9 +10266,9 @@ namespace MyControlLibrary
             // 
             this.Char3Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char3Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char3Armor.Location = new System.Drawing.Point(428, 220);
+            this.Char3Armor.Location = new System.Drawing.Point(428, 217);
             this.Char3Armor.Name = "Char3Armor";
-            this.Char3Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char3Armor.Size = new System.Drawing.Size(190, 20);
             this.Char3Armor.TabIndex = 101;
             this.Char3Armor.TextChanged += new System.EventHandler(this.Char3Armor_TextChanged);
             // 
@@ -10724,9 +10724,9 @@ namespace MyControlLibrary
             // 
             this.Char2Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Weapon.Location = new System.Drawing.Point(218, 248);
+            this.Char2Weapon.Location = new System.Drawing.Point(218, 246);
             this.Char2Weapon.Name = "Char2Weapon";
-            this.Char2Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char2Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char2Weapon.TabIndex = 61;
             this.Char2Weapon.TextChanged += new System.EventHandler(this.Char2Weapon_TextChanged);
             // 
@@ -10734,9 +10734,9 @@ namespace MyControlLibrary
             // 
             this.Char2Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char2Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char2Armor.Location = new System.Drawing.Point(218, 220);
+            this.Char2Armor.Location = new System.Drawing.Point(218, 217);
             this.Char2Armor.Name = "Char2Armor";
-            this.Char2Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char2Armor.Size = new System.Drawing.Size(190, 20);
             this.Char2Armor.TabIndex = 60;
             this.Char2Armor.TextChanged += new System.EventHandler(this.Char2Armor_TextChanged);
             // 
@@ -11237,9 +11237,9 @@ namespace MyControlLibrary
             // 
             this.Char1Weapon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Weapon.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Weapon.Location = new System.Drawing.Point(8, 248);
+            this.Char1Weapon.Location = new System.Drawing.Point(8, 246);
             this.Char1Weapon.Name = "Char1Weapon";
-            this.Char1Weapon.Size = new System.Drawing.Size(190, 13);
+            this.Char1Weapon.Size = new System.Drawing.Size(190, 18);
             this.Char1Weapon.TabIndex = 17;
             this.Char1Weapon.TextChanged += new System.EventHandler(this.Char1Weapon_TextChanged);
             // 
@@ -11247,9 +11247,9 @@ namespace MyControlLibrary
             // 
             this.Char1Armor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Char1Armor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Char1Armor.Location = new System.Drawing.Point(8, 220);
+            this.Char1Armor.Location = new System.Drawing.Point(8, 217);
             this.Char1Armor.Name = "Char1Armor";
-            this.Char1Armor.Size = new System.Drawing.Size(190, 13);
+            this.Char1Armor.Size = new System.Drawing.Size(190, 20);
             this.Char1Armor.TabIndex = 16;
             this.Char1Armor.TextChanged += new System.EventHandler(this.Char1Armor_TextChanged);
             // 
@@ -11427,9 +11427,9 @@ namespace MyControlLibrary
         //texbox's and whatnot---------------------------------------------------------------------------------------------------------------------------------------
         //===========================================================================================================================================================
         #region Variables
-        private System.Windows.Forms.TextBox Char1Weapon;
-        private System.Windows.Forms.TextBox Char1Armor;
-        private System.Windows.Forms.TextBox Char1Language;
+        private System.Windows.Forms.RichTextBox Char1Weapon;
+        private System.Windows.Forms.RichTextBox Char1Armor;
+        private System.Windows.Forms.RichTextBox Char1Language;
         private System.Windows.Forms.TextBox Char1Deity;
         private System.Windows.Forms.TextBox Char1Weight;
         private System.Windows.Forms.TextBox Char1Class;
@@ -11441,7 +11441,7 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char1Level;
         private System.Windows.Forms.ComboBox Char1Size;
         private System.Windows.Forms.ComboBox Char1Align;
-        private System.Windows.Forms.TextBox Char1Items;
+        private System.Windows.Forms.RichTextBox Char1Items;
         private System.Windows.Forms.TextBox Char1STR;
         private System.Windows.Forms.TextBox Char1Dex;
         private System.Windows.Forms.TextBox Char1CON;
@@ -11461,11 +11461,11 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char1Fort;
         private System.Windows.Forms.TextBox Char1REF;
         private System.Windows.Forms.TextBox Char1WILL;
-        private System.Windows.Forms.TextBox Char1SavingThrowMods;
+        private System.Windows.Forms.RichTextBox Char1SavingThrowMods;
         private System.Windows.Forms.TextBox Char1AC;
         private System.Windows.Forms.TextBox Char1FlatFoot;
         private System.Windows.Forms.TextBox Char1Touch;
-        private System.Windows.Forms.TextBox Char1AC_MOD;
+        private System.Windows.Forms.RichTextBox Char1AC_MOD;
         private System.Windows.Forms.TextBox Char1MaxHP;
         private System.Windows.Forms.TextBox Char1HP;
         private System.Windows.Forms.TextBox Char2Level;
@@ -11479,10 +11479,10 @@ namespace MyControlLibrary
         private System.Windows.Forms.ComboBox Char2Gender;
         private System.Windows.Forms.ComboBox Char2Align;
         private System.Windows.Forms.TextBox Char2Deity;
-        private System.Windows.Forms.TextBox Char2Weapon;
-        private System.Windows.Forms.TextBox Char2Armor;
-        private System.Windows.Forms.TextBox Char2Language;
-        private System.Windows.Forms.TextBox Char2Items;
+        private System.Windows.Forms.RichTextBox Char2Weapon;
+        private System.Windows.Forms.RichTextBox Char2Armor;
+        private System.Windows.Forms.RichTextBox Char2Language;
+        private System.Windows.Forms.RichTextBox Char2Items;
         private System.Windows.Forms.TextBox Char2CON_MOD;
         private System.Windows.Forms.TextBox Char2DEX_MOD;
         private System.Windows.Forms.TextBox Char2STR_MOD;
@@ -11501,11 +11501,11 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char2SPEED;
         private System.Windows.Forms.TextBox Char2MaxHP;
         private System.Windows.Forms.TextBox Char2HP;
-        private System.Windows.Forms.TextBox Char2AC_MOD;
+        private System.Windows.Forms.RichTextBox Char2AC_MOD;
         private System.Windows.Forms.TextBox Char2Touch;
         private System.Windows.Forms.TextBox Char2FlatFoot;
         private System.Windows.Forms.TextBox Char2AC;
-        private System.Windows.Forms.TextBox Char2SavingThrowMods;
+        private System.Windows.Forms.RichTextBox Char2SavingThrowMods;
         private System.Windows.Forms.TextBox Char2WILL;
         private System.Windows.Forms.TextBox Char2REF;
         private System.Windows.Forms.TextBox Char2Fort;
@@ -11520,10 +11520,10 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char3Weight;
         private System.Windows.Forms.ComboBox Char3Align;
         private System.Windows.Forms.TextBox Char3Deity;
-        private System.Windows.Forms.TextBox Char3Language;
-        private System.Windows.Forms.TextBox Char3Armor;
-        private System.Windows.Forms.TextBox Char3Weapon;
-        private System.Windows.Forms.TextBox Char3Items;
+        private System.Windows.Forms.RichTextBox Char3Language;
+        private System.Windows.Forms.RichTextBox Char3Armor;
+        private System.Windows.Forms.RichTextBox Char3Weapon;
+        private System.Windows.Forms.RichTextBox Char3Items;
         private System.Windows.Forms.TextBox Char3CON_MOD;
         private System.Windows.Forms.TextBox Char3DEX_MOD;
         private System.Windows.Forms.TextBox Char3STR_MOD;
@@ -11540,11 +11540,11 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char3OG;
         private System.Windows.Forms.TextBox Char3OH;
         private System.Windows.Forms.TextBox Char3SPEED;
-        private System.Windows.Forms.TextBox Char3SavingThrowMods;
+        private System.Windows.Forms.RichTextBox Char3SavingThrowMods;
         private System.Windows.Forms.TextBox Char3WILL;
         private System.Windows.Forms.TextBox Char3REF;
         private System.Windows.Forms.TextBox Char3Fort;
-        private System.Windows.Forms.TextBox Char3AC_MOD;
+        private System.Windows.Forms.RichTextBox Char3AC_MOD;
         private System.Windows.Forms.TextBox Char3Touch;
         private System.Windows.Forms.TextBox Char3FlatFoot;
         private System.Windows.Forms.TextBox Char3AC;
@@ -11559,12 +11559,12 @@ namespace MyControlLibrary
         private System.Windows.Forms.ComboBox Char4Gender;
         private System.Windows.Forms.TextBox Char4Level;
         private System.Windows.Forms.TextBox Char4Class;
-        private System.Windows.Forms.TextBox Char4Language;
+        private System.Windows.Forms.RichTextBox Char4Language;
         private System.Windows.Forms.ComboBox Char4Align;
         private System.Windows.Forms.TextBox Char4Deity;
-        private System.Windows.Forms.TextBox Char4Items;
-        private System.Windows.Forms.TextBox Char4Weapon;
-        private System.Windows.Forms.TextBox Char4Armor;
+        private System.Windows.Forms.RichTextBox Char4Items;
+        private System.Windows.Forms.RichTextBox Char4Weapon;
+        private System.Windows.Forms.RichTextBox Char4Armor;
         private System.Windows.Forms.TextBox Char4CHA_MOD;
         private System.Windows.Forms.TextBox Char4WIS_MOD;
         private System.Windows.Forms.TextBox Char4INT_MOD;
@@ -11581,11 +11581,11 @@ namespace MyControlLibrary
         private System.Windows.Forms.TextBox Char4OG;
         private System.Windows.Forms.TextBox Char4OH;
         private System.Windows.Forms.TextBox Char4SPEED;
-        private System.Windows.Forms.TextBox Char4SavingThrowMods;
+        private System.Windows.Forms.RichTextBox Char4SavingThrowMods;
         private System.Windows.Forms.TextBox Char4WILL;
         private System.Windows.Forms.TextBox Char4REF;
         private System.Windows.Forms.TextBox Char4Fort;
-        private System.Windows.Forms.TextBox Char4AC_MOD;
+        private System.Windows.Forms.RichTextBox Char4AC_MOD;
         private System.Windows.Forms.TextBox Char4Touch;
         private System.Windows.Forms.TextBox Char4FlatFoot;
         private System.Windows.Forms.TextBox Char4AC;
@@ -18157,7 +18157,7 @@ namespace MyControlLibrary
             Save sf = new Save(path, Group);
         }//end of SaveSheet
 
-        public void SaveAll(String path, List<CharTabPage_3_0> Group)
+        public void SaveAll(String path, List<CharTabPage> Group)
         {   //saves all open sheets
             Save sf = new Save(path, Group);
         }//end of SaveGroup

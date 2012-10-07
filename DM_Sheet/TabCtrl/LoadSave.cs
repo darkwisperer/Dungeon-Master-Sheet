@@ -336,14 +336,14 @@ namespace MyControlLibrary
 
                     //only add newline if not the last element
                     if (i < length)
-                        language += ", ";
+                        language += Environment.NewLine;
                     if (i == length - 1)
                         k += i-1;
                 }//end of inner for
                 multiline[j] = language;
                 language = "";
                 if(k < input.Count)
-                    length = Convert.ToInt32(input[length]) + k + 1;
+                    length = Convert.ToInt32(input[k]) + k + 1;
             }//end of outter for
         }//end of MultilineParser
 
@@ -505,11 +505,11 @@ namespace MyControlLibrary
         //
         //Save Group of sheets (i.e Save ALL sheets as one file)
         //
-        public Save(String PathFile, List<CharTabPage_3_0> Groups)
+        public Save(String PathFile, List<CharTabPage> Groups)
         {
             using (StreamWriter outfile = new StreamWriter(PathFile))
             {
-                foreach (CharTabPage_3_0 Group in Groups)
+                foreach (CharTabPage Group in Groups)
                 {
                     List<Character> G = Group.getGroup();
                     foreach (Character PC in G)

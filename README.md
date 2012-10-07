@@ -30,7 +30,7 @@ For whats next look [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/
 
 Sources Cited
 ------------------------------------------------------------------------------------------------------------------------
-The sited below helped tremendously in the creation of this tool.
+The sources below helped tremendously in the creation of this tool.
 
 Original DM_sheet can be found in pdf and word doc [here](http://www.militaryfocus.com/dnd/index.htm)
 

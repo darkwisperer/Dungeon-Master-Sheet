@@ -225,7 +225,7 @@ namespace MyControlLibrary
       {
           try
           {
-              if (((CharTabPage_3_0)this.TabPages[nIndex]).Menu != null)
+              if (((CharTabPage)this.TabPages[nIndex]).Menu != null)
                   return true;
               return false;
           }
@@ -514,9 +514,9 @@ namespace MyControlLibrary
                   pt = new Point(e.X, e.Y);
                   if (tabMenuArea.Contains(pt))
                   {
-                      if (((CharTabPage_3_0) this.TabPages[SelectedIndex]).Menu != null)
+                      if (((CharTabPage) this.TabPages[SelectedIndex]).Menu != null)
                       {
-                          ((CharTabPage_3_0) this.TabPages[SelectedIndex]).Menu.Show(this,
+                          ((CharTabPage) this.TabPages[SelectedIndex]).Menu.Show(this,
                                                                                new Point((int) tabMenuArea.X,
                                                                                          (int)
                                                                                          (tabMenuArea.Y +
