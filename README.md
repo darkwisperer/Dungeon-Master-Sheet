@@ -32,7 +32,7 @@ Sources Cited
 ------------------------------------------------------------------------------------------------------------------------
 The sources below helped tremendously in the creation of this tool.
 
-Original DM_sheet can be found in pdf and word doc [here](http://www.militaryfocus.com/dnd/index.htm)
+Original DM_sheet can be found in pdf and word doc [here](http://www.irossco.com/dnd/index.htm)
 
 Firefox like tab code was modified from the following site and is under The Code Project Open License (CPOL):
 
