@@ -134,6 +134,9 @@
     <Compile Include="TabCtrl\CharTabPage.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TabCtrl\CharTabPageV3.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TabCtrl\ErrorMSG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,7 +152,8 @@
     <Content Include="BugList.txt" />
     <Content Include="Planned.txt" />
     <Content Include="README.txt" />
-    <None Include="Resources\gplv3-127x51.png" />
+    <Content Include="Resources\V3FourChars.bmp" />
+    <None Include="Resources\gplv3_Logo.png" />
     <None Include="Resources\DM_Sheet_4char.bmp" />
     <None Include="Resources\DM_Sheet_3char.bmp" />
     <None Include="Resources\DM_Sheet_2char.bmp" />

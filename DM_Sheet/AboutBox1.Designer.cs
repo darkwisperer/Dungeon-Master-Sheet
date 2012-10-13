@@ -137,7 +137,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DM_Sheet.Properties.Resources.gplv3_127x51;
+            this.pictureBox1.Image = global::DM_Sheet.Properties.Resources.gplv3_Logo;
             this.pictureBox1.Location = new System.Drawing.Point(209, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 55);

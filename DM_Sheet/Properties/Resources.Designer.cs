@@ -88,9 +88,16 @@ namespace DM_Sheet.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap gplv3_127x51 {
+        internal static System.Drawing.Bitmap gplv3_Logo {
             get {
-                object obj = ResourceManager.GetObject("gplv3-127x51", resourceCulture);
+                object obj = ResourceManager.GetObject("gplv3_Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap V3FourChars {
+            get {
+                object obj = ResourceManager.GetObject("V3FourChars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
