@@ -101,5 +101,26 @@ namespace DM_Sheet.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap V3OneChar {
+            get {
+                object obj = ResourceManager.GetObject("V3OneChar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap V3ThreeChars {
+            get {
+                object obj = ResourceManager.GetObject("V3ThreeChars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap V3TwoChars {
+            get {
+                object obj = ResourceManager.GetObject("V3TwoChars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

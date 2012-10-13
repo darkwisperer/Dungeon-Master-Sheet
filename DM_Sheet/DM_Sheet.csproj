@@ -153,6 +153,9 @@
     <Content Include="Planned.txt" />
     <Content Include="README.txt" />
     <Content Include="Resources\V3FourChars.bmp" />
+    <Content Include="Resources\V3OneChar.bmp" />
+    <Content Include="Resources\V3ThreeChars.bmp" />
+    <Content Include="Resources\V3TwoChars.bmp" />
     <None Include="Resources\gplv3_Logo.png" />
     <None Include="Resources\DM_Sheet_4char.bmp" />
     <None Include="Resources\DM_Sheet_3char.bmp" />
