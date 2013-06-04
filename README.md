@@ -28,8 +28,10 @@ Features:
 
 For whats next look [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/issues?state=open)
 
-Sources Cited
-------------------------------------------------------------------------------------------------------------------------
+## Want to contribute?
+Fork it, make a change then send a pull request.
+
+##Sources Cited
 The sources below helped tremendously in the creation of this tool.
 
 Original DM_sheet can be found in pdf and word doc [here](http://www.irossco.com/dnd/index.htm)
@@ -40,8 +42,7 @@ Firefox like tab code was modified from the following site and is under The Code
 [The Code Project Open License (CPOL)](http://www.codeproject.com/info/cpol10.aspx)
 
 
-Below is the legal stuff.
------------------------------------------------------------------------------------------------------------------------------------------------
+##Below is the legal stuff.
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
