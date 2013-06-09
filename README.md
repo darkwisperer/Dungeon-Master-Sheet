@@ -28,8 +28,7 @@ Features:
 
 For whats next look [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/issues?state=open)
 
-##Download
-[Executable for windows](https://sourceforge.net/projects/dungeonmastersh/)
+*[Download](https://sourceforge.net/projects/dungeonmastersh/)*
 
 ## Want to contribute?
 Fork it, make a change then send a pull request.
