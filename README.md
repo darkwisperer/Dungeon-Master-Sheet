@@ -31,7 +31,9 @@ For whats next look [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/
 *[Download](https://sourceforge.net/projects/dungeonmastersh/)*
 
 ## Want to contribute?
-Fork it, make a change then send a pull request.
+Fork it, make a change then send a pull request. 
+Not a programmer? Submit ideas [here](https://github.com/darkwisperer/Dungeon-Master-Sheet/issues/new) or send me an email.
+All contributions are greatly appreciated.
 
 ##Sources Cited
 The sources below helped tremendously in the creation of this tool.
